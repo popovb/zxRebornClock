@@ -19,18 +19,24 @@ set(FLAGS
   -W
   -Wall
   -Wextra
-  -march=rv32ecxw
-  -mabi=ilp32e
+  -Wunused
+  -Wuninitialized
+  -march=rv32imacxw
+  -mabi=ilp32
   -msmall-data-limit=8
-  -mno-save-restore
+  -msave-restore
+  -misa-spec=2.2
+  -march=rv32imac_xw
   -Os
   -fmessage-length=0
   -fsigned-char
   -ffunction-sections
   -fdata-sections
+  -fno-common
 )  
 #################################################################
 
+#-imultilib rv32imac_xw/ilp32
 #
 # TODO
 #
