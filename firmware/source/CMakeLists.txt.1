@@ -1,0 +1,178 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(Clock)
+
+enable_language(ASM)
+
+#################################################################
+set(cur_dir     "${CMAKE_CURRENT_SOURCE_DIR}")
+set(src_dir     "${cur_dir}/src")
+set(vendor_dir  "${cur_dir}/vendor")
+set(ld_dir      "${cur_dir}/ld")
+set(include_dir "${cur_dir}/include")
+set(core_dir    "${src_dir}/core")
+set(ds1302_dir  "${src_dir}/ds1302")
+#################################################################
+
+#################################################################
+set(FLAGS
+  -g
+  -W
+  -Wall
+  -Wextra
+  -march=rv32ecxw
+  -mabi=ilp32e
+  -msmall-data-limit=8
+  -mno-save-restore
+  -Os
+  -fmessage-length=0
+  -fsigned-char
+  -ffunction-sections
+  -fdata-sections
+)  
+#################################################################
+
+#################################################################
+set(ds1302_src
+  ${ds1302_dir}/Command.cpp
+  ${ds1302_dir}/Data.cpp
+  ${ds1302_dir}/Seconds.cpp
+  ${ds1302_dir}/Minutes.cpp
+  ${ds1302_dir}/Hour.cpp
+  ${ds1302_dir}/Date.cpp
+  ${ds1302_dir}/Month.cpp
+  ${ds1302_dir}/Day.cpp
+  ${ds1302_dir}/Year.cpp
+  ${ds1302_dir}/WriteProtect.cpp
+)
+
+add_library(ds1302
+  ${ds1302_src}
+)
+
+target_include_directories(ds1302 PUBLIC
+  "${include_dir}"
+)
+
+target_compile_options(ds1302 PRIVATE
+  ${FLAGS}
+)
+#################################################################
+
+#################################################################
+set(core_src
+  ${core_dir}/Port.cpp
+  ${core_dir}/Pin.cpp
+  ${core_dir}/PinNo.cpp
+  ${core_dir}/Delayer.cpp
+)
+
+add_library(core
+  ${core_src}
+)
+
+target_include_directories(core PRIVATE
+  "${include_dir}"
+  "${vendor_dir}"
+  "${src_dir}"
+)
+
+target_compile_options(core PRIVATE
+  ${FLAGS}
+)
+#################################################################
+
+#################################################################
+set(vendor_src
+  ${vendor_dir}/ch32v00x_adc.c
+  ${vendor_dir}/ch32v00x_gpio.c
+  ${vendor_dir}/ch32v00x_pwr.c
+  ${vendor_dir}/ch32v00x_wwdg.c
+  ${vendor_dir}/ch32v00x_dbgmcu.c
+  ${vendor_dir}/ch32v00x_i2c.c
+  ${vendor_dir}/ch32v00x_rcc.c
+  ${vendor_dir}/core_riscv.c
+  ${vendor_dir}/ch32v00x_dma.c
+  ${vendor_dir}/ch32v00x_iwdg.c
+  ${vendor_dir}/ch32v00x_spi.c
+  ${vendor_dir}/debug.c
+  ${vendor_dir}/ch32v00x_exti.c
+  ${vendor_dir}/ch32v00x_misc.c
+  ${vendor_dir}/ch32v00x_tim.c
+  ${vendor_dir}/ch32v00x_flash.c
+  ${vendor_dir}/ch32v00x_opa.c
+  ${vendor_dir}/ch32v00x_usart.c
+  ${vendor_dir}/startup_ch32v00x.S
+)
+
+add_library(vendor
+  ${vendor_src}
+)
+
+target_include_directories(vendor PUBLIC
+  "${vendor_dir}"
+  "${src_dir}"
+)
+
+target_compile_options(vendor PRIVATE
+  ${FLAGS}
+)
+#################################################################
+
+#################################################################
+set(name "Clock")
+
+set(src
+  ${src_dir}/ch32v00x_it.c
+  ${src_dir}/system_ch32v00x.c
+  ${src_dir}/main.cpp
+)
+
+add_executable(${name}.elf
+  ${src}
+)
+
+target_link_libraries(${name}.elf PRIVATE
+  ds1302
+  core
+  vendor
+)
+
+target_compile_options(${name}.elf PUBLIC
+  ${FLAGS}
+)
+
+target_include_directories(${name}.elf PUBLIC
+  "${include_dir}"
+)
+
+target_link_options(${name}.elf PUBLIC
+  ${FLAGS}
+  -T ${ld_dir}/Link.ld
+  -nostartfiles
+  -Xlinker
+  --gc-sections
+  -Wl,-Map,${name}.map
+  --specs=nano.specs
+  --specs=nosys.specs
+)
+#################################################################
+
+#################################################################
+add_custom_command(TARGET ${name}.elf POST_BUILD
+  COMMAND ${SIZE} --format=berkley ${name}.elf
+  COMMENT "Print size")
+
+add_custom_command(TARGET ${name}.elf POST_BUILD
+  COMMAND ${OBJCOPY} -O ihex ${name}.elf  ${name}.hex
+  COMMENT "Creating HEX")
+
+add_custom_command(TARGET ${name}.elf POST_BUILD
+  COMMAND ${OBJCOPY} -O binary ${name}.elf  ${name}.bin
+  COMMENT "Creating BIN")
+
+add_custom_command(TARGET ${name}.elf POST_BUILD
+  COMMAND ${OBJDUMP} --all-headers
+  --demangle --disassemble -M xw ${name}.elf > ${name}.lst
+  COMMENT "Disassembling")
+#################################################################
