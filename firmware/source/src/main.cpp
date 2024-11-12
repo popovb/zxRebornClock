@@ -18,6 +18,7 @@
  ***Only PA0--PA15 and PC16--PC17 support input pull-down.
  */
 
+#include "ch32x035.h"
 #include "debug.h"
 
 /* Global define */
@@ -49,8 +50,7 @@ void GPIO_Toggle_INIT(void)
  *
  * @return  none
  */
-int main(void)
-{
+int main() {
     u8 i = 0;
 
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
@@ -62,9 +62,10 @@ int main(void)
     printf("GPIO Toggle TEST\r\n");
     GPIO_Toggle_INIT();
 
-    while(1)
-    {
+    while (1) {
         Delay_Ms(500);
-        GPIO_WriteBit(GPIOA, GPIO_Pin_0, (i == 0) ? (i = Bit_SET) : (i = Bit_RESET));
+        GPIO_WriteBit(GPIOA,
+                GPIO_Pin_0,
+                (BitAction)((i == 0) ? (i = Bit_SET) : (i = Bit_RESET)));
     }
 }
