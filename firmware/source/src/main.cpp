@@ -4,11 +4,11 @@
  * Version            : V1.0.0
  * Date               : 2023/12/26
  * Description        : Main program body.
-*********************************************************************************
-* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
-* Attention: This software (modified or not) and binary are used for
-* microcontroller manufactured by Nanjing Qinheng Microelectronics.
-*******************************************************************************/
+ *********************************************************************************
+ * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+ * Attention: This software (modified or not) and binary are used for
+ * microcontroller manufactured by Nanjing Qinheng Microelectronics.
+ *******************************************************************************/
 
 /*
  *@Note
@@ -32,9 +32,8 @@
  *
  * @return  none
  */
-void GPIO_Toggle_INIT(void)
-{
-    GPIO_InitTypeDef GPIO_InitStructure = {0};
+void GPIO_Toggle_INIT(void) {
+    GPIO_InitTypeDef GPIO_InitStructure = { 0 };
 
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
@@ -58,7 +57,7 @@ int main() {
     Delay_Init();
     USART_Printf_Init(115200);
     printf("SystemClk:%d\r\n", SystemCoreClock);
-    printf( "ChipID:%08x\r\n", DBGMCU_GetCHIPID() );
+    printf("ChipID:%08x\r\n", DBGMCU_GetCHIPID());
     printf("GPIO Toggle TEST\r\n");
     GPIO_Toggle_INIT();
 
