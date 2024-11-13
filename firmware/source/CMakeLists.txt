@@ -32,18 +32,6 @@ set(FLAGS
   -fdata-sections
   -fno-common
 )
-
-
-#-misa-spec=2.2
-#-march=rv32imac_xw
-
-
-
-
-
-
-
-#-imultilib rv32imac_xw/ilp32
 #################################################################
 
 #################################################################
@@ -123,33 +111,7 @@ target_link_options(${name}.elf PUBLIC
   -march=rv32imac_xw
   -dumpdir
 )
-
-#COLLECT_GCC_OPTIONS=
-#'-Wunused'
-#'-Wuninitialized'
-#'-g' '-T' 'link.ld'
-#'-LD:\boris\source\zxRebornClock\firmware\source\ld'
-#'-specs=nano.specs'
-#'-specs=nosys.specs'
-#'-v' '-o' 'zxRebornClock.elf'
-#'-misa-spec=2.2'
-#'-march=rv32imac_xw'
-#'-dumpdir'
-#'zxRebornClock.elf.'
-
-
-
-
 #################################################################
-
-
-#'-LD:\boris\source\zxRebornClock\firmware\source\ld'
-#'-v' '-o' 'zxRebornClock.elf'
-
-
-#
-# TODO
-#
 
 #################################################################
 add_custom_command(TARGET ${name}.elf POST_BUILD
