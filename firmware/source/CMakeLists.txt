@@ -25,8 +25,6 @@ set(FLAGS
   -mabi=ilp32
   -msmall-data-limit=8
   -msave-restore
-  -misa-spec=2.2
-  -march=rv32imac_xw
   -Os
   -fmessage-length=0
   -fsigned-char
@@ -34,6 +32,17 @@ set(FLAGS
   -fdata-sections
   -fno-common
 )
+
+
+#-misa-spec=2.2
+#-march=rv32imac_xw
+
+
+
+
+
+
+
 #-imultilib rv32imac_xw/ilp32
 #################################################################
 
@@ -105,13 +114,33 @@ target_link_options(${name}.elf PUBLIC
   ${FLAGS}
   -T ${ld_dir}/link.ld
   -nostartfiles
-  -Wl,-Map,${name}.map
   --specs=nano.specs
   --specs=nosys.specs
+  -Xlinker
+  --gc-sections
+  -Wl,-Map,${name}.map
+  -misa-spec=2.2
+  -march=rv32imac_xw
+  -dumpdir
 )
+
+#COLLECT_GCC_OPTIONS=
+#'-Wunused'
+#'-Wuninitialized'
+#'-g' '-T' 'link.ld'
+#'-LD:\boris\source\zxRebornClock\firmware\source\ld'
+#'-specs=nano.specs'
+#'-specs=nosys.specs'
+#'-v' '-o' 'zxRebornClock.elf'
+#'-misa-spec=2.2'
+#'-march=rv32imac_xw'
+#'-dumpdir'
+#'zxRebornClock.elf.'
+
+
+
+
 #################################################################
-
-
 
 
 #'-LD:\boris\source\zxRebornClock\firmware\source\ld'
