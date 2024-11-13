@@ -10,7 +10,7 @@ set(src_dir     "${cur_dir}/src")
 set(vendor_dir  "${cur_dir}/vendor")
 set(ld_dir      "${cur_dir}/ld")
 set(include_dir "${cur_dir}/include")
-set(debug_dir   "${src_dir}/debug")
+set(debug_dir   "${cur_dir}/debug")
 #################################################################
 
 #################################################################
@@ -66,6 +66,7 @@ add_library(vendor
 )
 
 target_include_directories(vendor PUBLIC
+  "${include_dir}"
   "${vendor_dir}"
   "${debug_dir}"
 )
@@ -74,6 +75,48 @@ target_compile_options(vendor PRIVATE
   ${FLAGS}
 )
 #################################################################
+
+#################################################################
+set(name "zxRebornClock")
+
+set(src
+  ${src_dir}/ch32x035_it.c
+  ${src_dir}/main.cpp
+  ${src_dir}/system_ch32x035.c
+)
+
+add_executable(${name}.elf
+  ${src}
+)
+
+target_link_libraries(${name}.elf PRIVATE
+  vendor
+)
+
+target_compile_options(${name}.elf PUBLIC
+  ${FLAGS}
+)
+
+#target_include_directories(${name}.elf PUBLIC
+#  "${include_dir}"
+#)
+
+target_link_options(${name}.elf PUBLIC
+  ${FLAGS}
+  -T ${ld_dir}/link.ld
+  -nostartfiles
+  -Wl,-Map,${name}.map
+  --specs=nano.specs
+  --specs=nosys.specs
+)
+#################################################################
+
+
+
+
+#'-LD:\boris\source\zxRebornClock\firmware\source\ld'
+#'-v' '-o' 'zxRebornClock.elf'
+
 
 #
 # TODO
