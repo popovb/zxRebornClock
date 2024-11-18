@@ -17,7 +17,7 @@
 extern "C" {
 #endif
 
-#include <ch32x035.h>
+#include "ch32x035.h"
 
 /* I2C Init structure definition  */
 typedef struct

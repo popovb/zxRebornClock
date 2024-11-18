@@ -17,7 +17,7 @@
 extern "C" {
 #endif
 
-#include <ch32x035.h>
+#include "ch32x035.h"
 
 /* PWR_AWU_Prescaler */
 #define AWU_Prescaler_1       ((uint32_t)0x00000000)

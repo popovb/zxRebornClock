@@ -16,7 +16,7 @@
 extern "C" {
 #endif
 
-#include <ch32x035.h>
+#include "ch32x035.h"
 
 /* RCC_Exported_Types */
 typedef struct

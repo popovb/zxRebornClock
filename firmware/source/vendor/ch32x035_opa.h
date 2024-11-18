@@ -17,7 +17,7 @@
 extern "C" {
 #endif
 
-#include <ch32x035.h>
+#include "ch32x035.h"
 
 /* OPA_member_enumeration */
 typedef enum

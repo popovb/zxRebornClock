@@ -9,8 +9,8 @@
 * Attention: This software (modified or not) and binary are used for 
 * microcontroller manufactured by Nanjing Qinheng Microelectronics.
 *******************************************************************************/
-#include <ch32x035_rcc.h>
-#include <ch32x035_tim.h>
+#include "ch32x035_tim.h"
+#include "ch32x035_rcc.h"
 
 /* TIM registers bit mask */
 #define SMCFGR_ETR_Mask    ((uint16_t)0x00FF)

@@ -9,7 +9,7 @@
 * Attention: This software (modified or not) and binary are used for 
 * microcontroller manufactured by Nanjing Qinheng Microelectronics.
 *******************************************************************************/
-#include <ch32x035_awu.h>
+#include "ch32x035_awu.h"
 
 /* PSC registers bit mask */
 #define AWUPSC_MASK      ((uint32_t)0xFFFFFFF0)

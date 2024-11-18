@@ -18,7 +18,7 @@
  extern "C" {
 #endif
 
-#include <ch32x035.h>
+#include "ch32x035.h"
 
 #ifndef VOID
 #define VOID                    void

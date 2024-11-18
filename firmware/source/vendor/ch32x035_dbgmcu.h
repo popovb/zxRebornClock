@@ -17,7 +17,7 @@
 extern "C" {
 #endif
 
-#include <ch32x035.h>
+#include "ch32x035.h"
 
 #define DBGMCU_SLEEP                 ((uint32_t)0x00000001)
 #define DBGMCU_STOP                  ((uint32_t)0x00000002)

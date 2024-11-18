@@ -17,7 +17,7 @@
 extern "C" {
 #endif
 
-#include <ch32x035.h>
+#include "ch32x035.h"
 
 /* CSR_INTSYSCR_INEST_definition */
 #define INTSYSCR_INEST_NoEN   0x00   /* interrupt nesting disable(CSR-0x804 bit1 = 0) */

@@ -17,7 +17,7 @@
 extern "C" {
 #endif
 
-#include <ch32x035.h>
+#include "ch32x035.h"
 
 /* PVD_detection_level  */
 #define PWR_PVDLevel_0            ((uint32_t)0x00000000)
