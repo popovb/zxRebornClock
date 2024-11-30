@@ -1,15 +1,3 @@
-/********************************** (C) COPYRIGHT *******************************
- * File Name          : main.c
- * Author             : WCH
- * Version            : V1.0.0
- * Date               : 2023/12/26
- * Description        : Main program body.
- *********************************************************************************
- * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
- * Attention: This software (modified or not) and binary are used for
- * microcontroller manufactured by Nanjing Qinheng Microelectronics.
- *******************************************************************************/
-
 /*
  *@Note
  *GPIO routine:
@@ -17,21 +5,9 @@
  *
  ***Only PA0--PA15 and PC16--PC17 support input pull-down.
  */
-
 #include "ch32x035.h"
 #include "debug.h"
 
-/* Global define */
-
-/* Global Variable */
-
-/*********************************************************************
- * @fn      GPIO_Toggle_INIT
- *
- * @brief   Initializes GPIOA.0
- *
- * @return  none
- */
 void GPIO_Toggle_INIT(void) {
     GPIO_InitTypeDef GPIO_InitStructure = { 0 };
 
@@ -42,13 +18,6 @@ void GPIO_Toggle_INIT(void) {
     GPIO_Init(GPIOA, &GPIO_InitStructure);
 }
 
-/*********************************************************************
- * @fn      main
- *
- * @brief   Main program.
- *
- * @return  none
- */
 int main() {
     u8 i = 0;
 
