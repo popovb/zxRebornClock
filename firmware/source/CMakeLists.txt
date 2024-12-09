@@ -81,7 +81,7 @@ set(name "zxRebornClock")
 
 set(src
   ${src_dir}/interrupt.c
-  ${src_dir}/system_ch32x035.c
+  ${src_dir}/system_clock.c
   ${src_dir}/main.cpp
 )
 
