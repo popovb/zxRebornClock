@@ -63,9 +63,9 @@ add_executable(test
   ${test_src}
 )
 
-#target_include_directories(test PRIVATE
-#  "${include_dir}"
-#)
+target_include_directories(test PRIVATE
+  "${src_dir}"
+)
 
 target_link_libraries(test PRIVATE
 #  ds1302
