@@ -1,7 +1,5 @@
 #include "ch32x035.h"
 
-#define SYSCLK_FREQ_48MHz_HSI  HSI_VALUE
-
 uint32_t SystemCoreClock = HSI_VALUE;
 
 __I uint8_t AHBPrescTable[16] = {
