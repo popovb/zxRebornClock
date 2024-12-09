@@ -9,7 +9,9 @@
 
 namespace gric {
 
-     using u8  = std::uint8_t;
-     using u32 = std::uint32_t;
+     using u8    = std::uint8_t;
+     using u32   = std::uint32_t;
+
+     using pin_t = u8;
 }
 #endif // _GRIC_TYPES_HPP_

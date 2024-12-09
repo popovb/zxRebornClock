@@ -53,3 +53,9 @@ TEST(test_01) {
      CHECK(PortName::C == 2);
      CHECK(PortName::D == 3);
 }
+
+TEST(test_02) {
+     using namespace gric;
+     pin_t p = 2;
+     CHECK(p == 2);
+}
