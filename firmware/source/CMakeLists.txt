@@ -80,9 +80,9 @@ target_compile_options(vendor PRIVATE
 set(name "zxRebornClock")
 
 set(src
-  ${src_dir}/ch32x035_it.c
-  ${src_dir}/main.cpp
+  ${src_dir}/interrupt.c
   ${src_dir}/system_ch32x035.c
+  ${src_dir}/main.cpp
 )
 
 add_executable(${name}.elf
