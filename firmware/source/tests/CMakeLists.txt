@@ -55,6 +55,24 @@ find_package(UnitTest++ REQUIRED)
 ###################################################################
 
 ###################################################################
+set(src_src
+  ${src_dir}/McuNetConfig.cpp
+)
+
+add_library(src
+  ${src_src}
+)
+
+target_include_directories(src PUBLIC
+  "${src_dir}"
+)
+
+if("${CMAKE_C_COMPILER_ID}" STREQUAL "GNU")
+  target_compile_options(src PRIVATE -pipe -g -W -Wall -Wextra)
+endif()
+###################################################################
+
+###################################################################
 set(test_src
   test.cpp
 )
@@ -63,12 +81,12 @@ add_executable(test
   ${test_src}
 )
 
-target_include_directories(test PRIVATE
-  "${src_dir}"
-)
+#target_include_directories(test PRIVATE
+#  "${src_dir}"
+#)
 
 target_link_libraries(test PRIVATE
-#  ds1302
+  src
   "${UNITTEST_LIBRARIES}"
 #  draw
 #  dumb

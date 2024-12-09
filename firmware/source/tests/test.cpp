@@ -64,7 +64,7 @@ TEST(test_02) {
 TEST(test_03) {
      using namespace gric;
      McuNetConfig mnc;
-     auto& c = mnc[McuNet::K1];
+     const auto& c = mnc[McuNet::K1];
 
      CHECK(c.port == PortName::D);
      CHECK(c.pin == 14);

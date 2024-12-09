@@ -13,7 +13,11 @@ namespace gric {
      class McuNetConfig {
 
      public:
-	  PortPin& operator[](McuNet::net_t) const;
+	  const PortPin& operator[](McuNet::net_t) const;
+
+     private:
+	  static const u8 len = 14;
+	  static const PortPin pp[len];
      };
 }
 #endif // _GRIC_MCU_NET_CONFIG_HPP_
