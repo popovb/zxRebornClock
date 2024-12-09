@@ -2,6 +2,7 @@
 #include <iostream>
 
 #include "McuNet.hpp"
+#include "PortName.hpp"
 
 /*
 #include "ds1302/Target.hpp"
@@ -43,4 +44,12 @@ TEST(test_00) {
      CHECK(McuNet::SA2 == 11);
      CHECK(McuNet::SA3 == 12);
      CHECK(McuNet::SA4 == 13);
+}
+
+TEST(test_01) {
+     using namespace gric;
+     CHECK(PortName::A == 0);
+     CHECK(PortName::B == 1);
+     CHECK(PortName::C == 2);
+     CHECK(PortName::D == 3);
 }
