@@ -4,7 +4,7 @@
 #include "McuNet.hpp"
 #include "PortName.hpp"
 #include "McuNetConfig.hpp"
-
+#include "Mcu.hpp"
 /*
 #include "ds1302/Target.hpp"
 #include "ds1302/Direction.hpp"
@@ -80,4 +80,9 @@ TEST(test_03) {
      const auto& d = mnc[McuNet::SA4];
      CHECK(d.port == PortName::A);
      CHECK(d.pin == 13);
+}
+
+TEST(test_04) {
+     using namespace gric;
+     Mcu mcu;
 }
