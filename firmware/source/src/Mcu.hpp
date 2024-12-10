@@ -11,6 +11,9 @@ namespace gric {
 
      public:
 	  Mcu();
+
+     private:
+	  void init() const;
      };
 }
 #endif // _GRIC_MCU_HPP_

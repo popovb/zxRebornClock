@@ -3,3 +3,7 @@
 //
 
 #include "Mcu.hpp"
+
+gric::Mcu::Mcu() {
+     init();
+}
