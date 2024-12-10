@@ -3,6 +3,7 @@
 //
 
 #include "Mcu.hpp"
+#include "ch32x035.h"
 
 gric::Mcu::Mcu() {
      init();
@@ -11,4 +12,8 @@ gric::Mcu::Mcu() {
 void gric::Mcu::init() const {
      nvic_config();
      clock_update();
+}
+
+void gric::Mcu::nvic_config() const {
+     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
 }
