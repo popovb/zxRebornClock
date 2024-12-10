@@ -14,6 +14,8 @@ namespace gric {
 
      private:
 	  void init() const;
+	  void nvic_config() const;
+	  void clock_update() const;
      };
 }
 #endif // _GRIC_MCU_HPP_

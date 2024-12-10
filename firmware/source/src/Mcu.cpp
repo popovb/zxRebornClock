@@ -7,3 +7,8 @@
 gric::Mcu::Mcu() {
      init();
 }
+
+void gric::Mcu::init() const {
+     nvic_config();
+     clock_update();
+}
