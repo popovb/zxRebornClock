@@ -5,6 +5,7 @@
 #include "PortName.hpp"
 #include "McuNetConfig.hpp"
 #include "Mcu.hpp"
+#include "PinDir.hpp"
 /*
 #include "ds1302/Target.hpp"
 #include "ds1302/Direction.hpp"
@@ -86,3 +87,15 @@ TEST(test_04) {
      using namespace gric;
      Mcu mcu;
 }
+
+TEST(test_05) {
+     using namespace gric;
+     CHECK(PinDir::Out == 0);
+     CHECK(PinDir::In == 1);
+}
+     
+     //Mcu mcu;
+     //Configurator cnf(mcu);
+     //
+     // TODO
+     //
