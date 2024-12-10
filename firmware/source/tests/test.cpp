@@ -6,6 +6,7 @@
 #include "McuNetConfig.hpp"
 #include "Mcu.hpp"
 #include "PinDir.hpp"
+#include "PinMode.hpp"
 /*
 #include "ds1302/Target.hpp"
 #include "ds1302/Direction.hpp"
@@ -92,6 +93,14 @@ TEST(test_05) {
      using namespace gric;
      CHECK(PinDir::Out == 0);
      CHECK(PinDir::In == 1);
+}
+
+TEST(test_06) {
+     using namespace gric;
+     CHECK(PinMode::PushPull == 0);
+     CHECK(PinMode::Float == 1);
+     CHECK(PinMode::PullUp == 2);
+     CHECK(PinMode::PullDown == 3);
 }
      
      //Mcu mcu;
