@@ -17,3 +17,7 @@ void gric::Mcu::init() const {
 void gric::Mcu::nvic_config() const {
      NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
 }
+
+void gric::Mcu::clock_update() const {
+     SystemCoreClockUpdate();
+}
