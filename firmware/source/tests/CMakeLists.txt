@@ -11,6 +11,8 @@ set(src_dir     "${root_dir}/src")
 list(APPEND CMAKE_MODULE_PATH "${cur_dir}/cmake")
 find_package(UnitTest++ REQUIRED)
 
+add_compile_definitions(UNITTEST)
+
 ###################################################################
 #set(ds1302_src
 #  ${ds1302_dir}/Command.cpp
@@ -57,6 +59,7 @@ find_package(UnitTest++ REQUIRED)
 ###################################################################
 set(src_src
   ${src_dir}/McuNetConfig.cpp
+  ${src_dir}/Mcu.cpp
 )
 
 add_library(src
