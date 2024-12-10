@@ -102,6 +102,11 @@ TEST(test_06) {
      CHECK(PinMode::PullUp == 2);
      CHECK(PinMode::PullDown == 3);
 }
+
+TEST(test_07) {
+     using namespace gric;
+     PinConf pc(PinDir::Out, PinMode::PushPull);
+}
      
      //Mcu mcu;
      //Configurator cnf(mcu);
