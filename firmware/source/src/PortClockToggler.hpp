@@ -19,6 +19,12 @@ namespace gric {
 
 	  bool is_on(PortName::name_t) const;
 	  bool is_off(PortName::name_t) const;
+
+     private:
+	  bool a;
+	  bool b;
+	  bool c;
+	  bool d;
      };
 }
 #endif // _GRIC_PORT_CLOCK_TOGGLER_HPP_
