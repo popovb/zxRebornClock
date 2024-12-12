@@ -34,6 +34,7 @@ add_compile_definitions(UNITTEST)
 set(src_src
   ${src_dir}/McuNetConfig.cpp
   ${src_dir}/Mcu.cpp
+  ${src_dir}/PinConf.cpp
 )
 
 add_library(src
