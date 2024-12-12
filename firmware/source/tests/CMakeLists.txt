@@ -35,6 +35,7 @@ set(src_src
   ${src_dir}/McuNetConfig.cpp
   ${src_dir}/Mcu.cpp
   ${src_dir}/PinConf.cpp
+  ${src_dir}/PortPin.cpp
 )
 
 add_library(src
