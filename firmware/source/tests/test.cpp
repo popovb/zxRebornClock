@@ -109,6 +109,8 @@ TEST(test_06) {
 TEST(test_07) {
      using namespace gric;
      PinConf pc(PinDir::Out, PinMode::PushPull);
+     CHECK(pc.dir == PinDir::Out);
+     CHECK(pc.mode == PinMode::PushPull);
 }
      
      //Mcu mcu;

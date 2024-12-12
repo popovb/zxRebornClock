@@ -12,6 +12,9 @@ namespace gric {
 
      struct PinConf {
 	  PinConf(PinDir::dir_t, PinMode::mode_t);
+
+	  PinDir::dir_t dir;
+	  PinMode::mode_t mode;
      };
 }
 #endif // _GRIC_PIN_CONF_HPP_
