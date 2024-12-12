@@ -5,10 +5,11 @@
 #include "PortClockToggler.hpp"
 
 gric::PortClockToggler::PortClockToggler():
-     a(false),
-     b(false),
-     c(false),
-     d(false)
+     state{ false, }
 {
      return;
+}
+
+bool gric::PortClockToggler::is_on(PortName::name_t v) const {
+     return state[v];
 }
