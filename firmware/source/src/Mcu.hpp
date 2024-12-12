@@ -2,6 +2,9 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
+#include "PortPin.hpp"
+#include "PinConf.hpp"
+
 #ifndef _GRIC_MCU_HPP_
 #define _GRIC_MCU_HPP_
 
@@ -11,6 +14,8 @@ namespace gric {
 
      public:
 	  Mcu();
+
+	  void init(const PortPin&, const PinConf&);
 
      private:
 	  void init() const;
