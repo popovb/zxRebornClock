@@ -9,6 +9,7 @@
 #include "PinMode.hpp"
 #include "PinConf.hpp"
 #include "PortClockToggler.hpp"
+#include "Gpio.hpp"
 
 /*
 #include "ds1302/Target.hpp"
@@ -133,7 +134,14 @@ TEST(test_09) {
      pct.off(PortName::A);
      CHECK(pct.is_off(PortName::A));
 }
-     
+
+TEST(test_10) {
+     using namespace gric;
+     PinConf pc(PinDir::Out, PinMode::PushPull);
+     PortPin pp(PortName::A, 0);
+     Gpio gpio;
+     gpio.init(pp, pc);
+}
      //Mcu mcu;
      //Configurator cnf(mcu);
      //
