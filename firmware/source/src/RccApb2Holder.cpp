@@ -3,6 +3,8 @@
 //
 
 #include "RccApb2Holder.hpp"
+
+#ifndef UNITTEST
 #include "ch32x035.h"
 
 ///////////////////////////////////////////////////////////////////
@@ -20,3 +22,4 @@ gric::u32 gric::RccApb2Holder::get(PortName::name_t v) const {
      return rcc_apb2[v];
 }
 ///////////////////////////////////////////////////////////////////
+#endif
