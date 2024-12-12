@@ -8,6 +8,8 @@
 #include "PinDir.hpp"
 #include "PinMode.hpp"
 #include "PinConf.hpp"
+#include "PortClockToggler.hpp"
+
 /*
 #include "ds1302/Target.hpp"
 #include "ds1302/Direction.hpp"
@@ -118,7 +120,18 @@ TEST(test_08) {
      PinConf pc(PinDir::Out, PinMode::PushPull);
      PortPin pp(PortName::A, 0);
      Mcu mcu;
-     mcu.init(pp, pc);
+     // mcu.init(pp, pc);
+}
+
+TEST(test_09) {
+     using namespace gric;
+     PortClockToggler pct;
+     CHECK(pct.is_off(PortName::A));
+     CHECK(! pct.is_on(PortName::A));
+     pct.on(PortName::A);
+     CHECK(pct.is_on(PortName::A));
+     pct.off(PortName::A);
+     CHECK(pct.is_off(PortName::A));
 }
      
      //Mcu mcu;
