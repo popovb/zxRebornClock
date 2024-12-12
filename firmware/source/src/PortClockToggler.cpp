@@ -13,3 +13,7 @@ gric::PortClockToggler::PortClockToggler():
 bool gric::PortClockToggler::is_on(PortName::name_t v) const {
      return state[v];
 }
+
+bool gric::PortClockToggler::is_off(PortName::name_t v) const {
+     return !state[v];
+}
