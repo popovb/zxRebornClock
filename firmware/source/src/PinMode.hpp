@@ -17,6 +17,8 @@ namespace gric {
 	       Float    = 1,
 	       PullUp   = 2,
 	       PullDown = 3,
+	       Analog   = 4,
+	       Alter    = 5,
 	  };
      };
 }

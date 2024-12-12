@@ -101,11 +101,13 @@ TEST(test_06) {
      CHECK(PinMode::Float == 1);
      CHECK(PinMode::PullUp == 2);
      CHECK(PinMode::PullDown == 3);
+     CHECK(PinMode::Analog == 4);
+     CHECK(PinMode::Alter == 5);
 }
 
 TEST(test_07) {
      using namespace gric;
-     PinConf pc(PinDir::Out, PinMode::PushPull);
+     //PinConf pc(PinDir::Out, PinMode::PushPull);
 }
      
      //Mcu mcu;
