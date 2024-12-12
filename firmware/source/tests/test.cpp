@@ -120,7 +120,7 @@ TEST(test_08) {
      PinConf pc(PinDir::Out, PinMode::PushPull);
      PortPin pp(PortName::A, 0);
      Mcu mcu;
-     // mcu.init(pp, pc);
+     mcu.init(pp, pc);
 }
 
 TEST(test_09) {
