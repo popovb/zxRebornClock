@@ -15,6 +15,8 @@ namespace gric {
 	  u32 get(PortName::name_t) const;
 
      private:
+	  static const u8 len = 4;
+	  static const u32 rcc_apb2[len];
      };
 }
 #endif // _GRIC_RCC_APB2_HOLDER_HPP_

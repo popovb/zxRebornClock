@@ -37,6 +37,7 @@ set(src_src
   ${src_dir}/PinConf.cpp
   ${src_dir}/PortPin.cpp
   ${src_dir}/PortClockToggler.cpp
+  ${src_dir}/RccApb2Holder.cpp
 )
 
 add_library(src

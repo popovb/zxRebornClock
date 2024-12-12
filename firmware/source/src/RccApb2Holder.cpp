@@ -1,0 +1,22 @@
+//
+// Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
+//
+
+#include "RccApb2Holder.hpp"
+#include "ch32x035.h"
+
+///////////////////////////////////////////////////////////////////
+const gric::u32
+gric::RccApb2Holder::rcc_apb2[] = {
+     RCC_APB2Periph_GPIOA,
+     RCC_APB2Periph_GPIOB,
+     RCC_APB2Periph_GPIOC,
+     RCC_APB2Periph_GPIOA,
+};
+///////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////
+gric::u32 gric::RccApb2Holder::get(PortName::name_t v) const {
+     return rcc_apb2[v];
+}
+///////////////////////////////////////////////////////////////////
