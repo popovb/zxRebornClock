@@ -7,6 +7,7 @@
 #include "Mcu.hpp"
 #include "PinDir.hpp"
 #include "PinMode.hpp"
+#include "PinConf.hpp"
 /*
 #include "ds1302/Target.hpp"
 #include "ds1302/Direction.hpp"
@@ -107,7 +108,7 @@ TEST(test_06) {
 
 TEST(test_07) {
      using namespace gric;
-     //PinConf pc(PinDir::Out, PinMode::PushPull);
+     PinConf pc(PinDir::Out, PinMode::PushPull);
 }
      
      //Mcu mcu;
