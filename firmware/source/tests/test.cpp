@@ -112,6 +112,14 @@ TEST(test_07) {
      CHECK(pc.dir == PinDir::Out);
      CHECK(pc.mode == PinMode::PushPull);
 }
+
+TEST(test_08) {
+     using namespace gric;
+     PinConf pc(PinDir::Out, PinMode::PushPull);
+     PortPin pp(PortName::A, 0);
+     //
+     //
+}
      
      //Mcu mcu;
      //Configurator cnf(mcu);

@@ -10,6 +10,8 @@
 namespace gric {
 
      struct PortPin {
+	  PortPin(PortName::name_t, pin_t);
+
 	  PortName::name_t port;
 	  pin_t pin;
      };
