@@ -4,6 +4,7 @@
 
 #include "PortPin.hpp"
 #include "PinConf.hpp"
+#include "PortClockToggler.hpp"
 
 #ifndef _GRIC_MCU_HPP_
 #define _GRIC_MCU_HPP_
@@ -21,6 +22,9 @@ namespace gric {
 	  void init() const;
 	  void nvic_config() const;
 	  void clock_update() const;
+
+     private:
+	  PortClockToggler pct;
      };
 }
 #endif // _GRIC_MCU_HPP_
