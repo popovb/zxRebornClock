@@ -3,20 +3,15 @@
 //
 
 #include "Gpio.hpp"
+#include "ch32x035.h"
 
 void gric::Gpio::init(const PortPin& pp, const PinConf& pc) {
-     //
-     // TODO
-     //
+     GPIO_InitTypeDef i;
+     PinHolder ph;
+     i.GPIO_Pin = ph.get(pp.pin);
+     GpioModeCalc gmc;
+     i.GPIO_Mode = gmc.get(pc);
+     i.GPIO_Speed = GPIO_Speed_50MHz;
+     PortHolder poh;
+     GPIO_Init(poh.get(pp.port), &i);
 }
-/*
-void GPIO_Toggle_INIT(void) {
-    GPIO_InitTypeDef GPIO_InitStructure = { 0 };
-
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
-    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_Init(GPIOA, &GPIO_InitStructure);
-}
-*/
