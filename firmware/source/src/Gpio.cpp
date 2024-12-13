@@ -6,6 +6,12 @@
 #include "PinHolder.hpp"
 #include "GpioModeCalc.hpp"
 #include "PortHolder.hpp"
+
+#ifdef UNITTEST
+void gric::Gpio::init(const PortPin&, const PinConf&) {
+     return;
+}
+#else
 #include "ch32x035.h"
 
 void gric::Gpio::init(const PortPin& pp, const PinConf& pc) {
@@ -18,3 +24,4 @@ void gric::Gpio::init(const PortPin& pp, const PinConf& pc) {
      i.GPIO_Speed = GPIO_Speed_50MHz;
      GPIO_Init((GPIO_TypeDef*)poh.get(pp.port), &i);
 }
+#endif
