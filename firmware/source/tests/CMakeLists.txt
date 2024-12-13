@@ -40,6 +40,7 @@ set(src_src
   ${src_dir}/RccApb2Holder.cpp
   ${src_dir}/Gpio.cpp
   ${src_dir}/PinHolder.cpp
+  ${src_dir}/GpioModeCalc.cpp
 )
 
 add_library(src

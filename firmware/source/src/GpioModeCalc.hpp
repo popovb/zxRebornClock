@@ -14,6 +14,10 @@ namespace gric {
 
      public:
 	  GPIOMode_TypeDef get(const PinConf&) const;
+
+     private:
+	  GPIOMode_TypeDef get_out(PinMode::mode_t) const;
+	  GPIOMode_TypeDef get_in(PinMode::mode_t) const;
      };
 }
 #endif // _GRIC_GPIO_MODE_CALC_HPP_
