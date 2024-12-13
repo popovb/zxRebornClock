@@ -41,6 +41,7 @@ set(src_src
   ${src_dir}/Gpio.cpp
   ${src_dir}/PinHolder.cpp
   ${src_dir}/GpioModeCalc.cpp
+  ${src_dir}/PortHolder.cpp
 )
 
 add_library(src
