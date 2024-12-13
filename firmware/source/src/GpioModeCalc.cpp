@@ -32,37 +32,22 @@ GPIOMode_TypeDef gric::GpioModeCalc::get_out(PinMode::mode_t v) const {
      }
 }
 
-/*
-typedef enum
-{
-    GPIO_Mode_AIN = 0x0,
-    GPIO_Mode_IN_FLOATING = 0x04,
-    GPIO_Mode_IPD = 0x28,
-    GPIO_Mode_IPU = 0x48,
-    * GPIO_Mode_Out_PP = 0x10,
-    * GPIO_Mode_AF_PP = 0x18
-} GPIOMode_TypeDef;
-
+GPIOMode_TypeDef gric::GpioModeCalc::get_in(PinMode::mode_t v) const {
      switch (v) {
 
-     case PinMode::PushPull:
-	  return GPIO_Mode_Out_PP;
-
      case PinMode::Float:
-	  break;
+	  return GPIO_Mode_IN_FLOATING;
 
      case PinMode::PullUp:
-	  break;
+	  return GPIO_Mode_IPU;
 
      case PinMode::PullDown:
-	  break;
+	  return GPIO_Mode_IPD;
 
      case PinMode::Analog:
-	  break;
+	  return GPIO_Mode_AIN;
 
-     case PinMode::Alter:
-	  return GPIO_Mode_AF_PP;
+     default:
+	  return GPIO_Mode_IN_FLOATING;
      }
-
-
- */
+}
