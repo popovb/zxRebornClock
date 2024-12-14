@@ -8,6 +8,7 @@ set(include_dir "${root_dir}/include")
 set(src_dir     "${root_dir}/src")
 set(vendor_dir  "${root_dir}/vendor")
 set(debug_dir   "${root_dir}/debug")
+set(core_dir    "${src_dir}/core")
 
 list(APPEND CMAKE_MODULE_PATH "${cur_dir}/cmake")
 find_package(UnitTest++ REQUIRED)
@@ -31,17 +32,36 @@ add_compile_definitions(UNITTEST)
 ###################################################################
 
 ###################################################################
+set(core_src
+  ${core_dir}/Mcu.cpp
+  ${core_dir}/PinConf.cpp
+  ${core_dir}/PortPin.cpp
+  ${core_dir}/PortClockToggler.cpp
+  ${core_dir}/RccApb2Holder.cpp
+  ${core_dir}/Gpio.cpp
+  ${core_dir}/PinHolder.cpp
+  ${core_dir}/GpioModeCalc.cpp
+  ${core_dir}/PortHolder.cpp
+)
+
+add_library(core
+  ${core_src}
+)
+
+target_include_directories(core PRIVATE
+  "${vendor_dir}"
+  "${include_dir}"
+  "${debug_dir}"
+)
+
+if("${CMAKE_C_COMPILER_ID}" STREQUAL "GNU")
+  target_compile_options(core PRIVATE -pipe -g -W -Wall -Wextra)
+endif()
+###################################################################
+
+###################################################################
 set(src_src
   ${src_dir}/McuNetConfig.cpp
-  ${src_dir}/Mcu.cpp
-  ${src_dir}/PinConf.cpp
-  ${src_dir}/PortPin.cpp
-  ${src_dir}/PortClockToggler.cpp
-  ${src_dir}/RccApb2Holder.cpp
-  ${src_dir}/Gpio.cpp
-  ${src_dir}/PinHolder.cpp
-  ${src_dir}/GpioModeCalc.cpp
-  ${src_dir}/PortHolder.cpp
 )
 
 add_library(src
@@ -69,12 +89,13 @@ add_executable(test
   ${test_src}
 )
 
-#target_include_directories(test PRIVATE
-#  "${src_dir}"
-#)
+target_include_directories(test PRIVATE
+  "${src_dir}"
+)
 
 target_link_libraries(test PRIVATE
   src
+  core
   "${UNITTEST_LIBRARIES}"
 #  draw
 #  dumb

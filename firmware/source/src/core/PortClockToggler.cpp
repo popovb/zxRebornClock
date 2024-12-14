@@ -2,7 +2,7 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
-#include "PortClockToggler.hpp"
+#include "core/PortClockToggler.hpp"
 #include "RccApb2Holder.hpp"
 
 #ifndef UNITTEST

@@ -2,7 +2,7 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
-#include "PortName.hpp"
+#include "core/PortName.hpp"
 
 #ifndef _GRIC_PORT_HOLDER_HPP_
 #define _GRIC_PORT_HOLDER_HPP_

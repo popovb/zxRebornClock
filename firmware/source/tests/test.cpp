@@ -2,14 +2,14 @@
 #include <iostream>
 
 #include "McuNet.hpp"
-#include "PortName.hpp"
+#include "core/PortName.hpp"
 #include "McuNetConfig.hpp"
-#include "Mcu.hpp"
-#include "PinDir.hpp"
-#include "PinMode.hpp"
-#include "PinConf.hpp"
-#include "PortClockToggler.hpp"
-#include "Gpio.hpp"
+#include "core/Mcu.hpp"
+#include "core/PinDir.hpp"
+#include "core/PinMode.hpp"
+#include "core/PinConf.hpp"
+#include "core/PortClockToggler.hpp"
+#include "core/Gpio.hpp"
 
 /*
 #include "ds1302/Target.hpp"

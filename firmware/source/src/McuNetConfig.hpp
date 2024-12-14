@@ -3,7 +3,7 @@
 //
 
 #include "McuNet.hpp"
-#include "PortPin.hpp"
+#include "core/PortPin.hpp"
 
 #ifndef _GRIC_MCU_NET_CONFIG_HPP_
 #define _GRIC_MCU_NET_CONFIG_HPP_

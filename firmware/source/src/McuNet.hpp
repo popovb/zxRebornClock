@@ -2,7 +2,7 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
-#include "Types.hpp"
+#include "core/Types.hpp"
 
 #ifndef _GRIC_MCU_NET_HPP_
 #define _GRIC_MCU_NET_HPP_

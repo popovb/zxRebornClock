@@ -14,6 +14,7 @@ set(vendor_dir  "${cur_dir}/vendor")
 set(ld_dir      "${cur_dir}/ld")
 set(include_dir "${cur_dir}/include")
 set(debug_dir   "${cur_dir}/debug")
+set(core_dir    "${src_dir}/core")
 #################################################################
 
 #################################################################
@@ -77,6 +78,34 @@ target_compile_options(vendor PRIVATE
 #################################################################
 
 #################################################################
+set(core_src
+  ${core_dir}/Mcu.cpp
+  ${core_dir}/PortClockToggler.cpp
+  ${core_dir}/Gpio.cpp
+  ${core_dir}/GpioModeCalc.cpp
+  ${core_dir}/PinConf.cpp
+  ${core_dir}/PinHolder.cpp
+  ${core_dir}/PortHolder.cpp
+  ${core_dir}/PortPin.cpp
+  ${core_dir}/RccApb2Holder.cpp
+)
+
+add_library(core
+  ${core_src}
+)
+
+target_include_directories(core PRIVATE
+  "${include_dir}"
+  "${vendor_dir}"
+  "${debug_dir}"
+)
+
+target_compile_options(core PRIVATE
+  ${FLAGS}
+)
+#################################################################
+
+#################################################################
 set(name "zxRebornClock")
 
 set(src
@@ -90,6 +119,7 @@ add_executable(${name}.elf
 )
 
 target_link_libraries(${name}.elf PRIVATE
+  core
   vendor
 )
 

@@ -2,7 +2,7 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
-#include "Types.hpp"
+#include "core/Types.hpp"
 
 #ifndef _GRIC_PIN_HOLDER_HPP_
 #define _GRIC_PIN_HOLDER_HPP_

@@ -2,7 +2,7 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
-#include "PinConf.hpp"
+#include "core/PinConf.hpp"
 #include "ch32x035.h"
 
 #ifndef _GRIC_GPIO_MODE_CALC_HPP_
