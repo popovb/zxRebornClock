@@ -79,6 +79,7 @@ target_compile_options(vendor PRIVATE
 
 #################################################################
 set(core_src
+  ${core_dir}/Delayer.cpp
   ${core_dir}/Mcu.cpp
   ${core_dir}/PortClockToggler.cpp
   ${core_dir}/Gpio.cpp

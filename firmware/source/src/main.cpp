@@ -1,6 +1,7 @@
 // #include "ch32x035.h"
 // #include "debug.h"
 #include "core/Mcu.hpp"
+#include "core/Delayer.hpp"
 
 /*
 void GPIO_Toggle_INIT(void) {
@@ -16,12 +17,13 @@ void GPIO_Toggle_INIT(void) {
 
 int main() {
      gric::Mcu mcu;
+     gric::Delayer dl;
      /*
      u8 i = 0;
 
-     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
-     SystemCoreClockUpdate();
-     Delay_Init();
+     * NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+     * SystemCoreClockUpdate();
+     * Delay_Init();
      USART_Printf_Init(115200);
      printf("SystemClk:%d\r\n", SystemCoreClock);
      printf("ChipID:%08x\r\n", DBGMCU_GetCHIPID());
