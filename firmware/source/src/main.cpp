@@ -1,26 +1,17 @@
-// #include "ch32x035.h"
-// #include "debug.h"
 #include "core/Mcu.hpp"
 #include "core/Delayer.hpp"
 
-/*
-void GPIO_Toggle_INIT(void) {
-     GPIO_InitTypeDef GPIO_InitStructure = { 0 };
-
-     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
-     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
-     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-     GPIO_Init(GPIOA, &GPIO_InitStructure);
-}
-*/
-
 int main() {
-     gric::Mcu mcu;
-     gric::Delayer dl;
-     gric::PrintConf pc(115200);
+     using namespace gric;
+     Mcu mcu;
+     Delayer dl;
+     PrintConf pc(115200);
      mcu.init(pc);
-     //gric::Printf pr(115200);
+     PortPin ppp(PortName::A, 0);
+     PinConf ppc(PinDir::Out, PinMode::PushPull);
+     mcu.init(ppp, ppc);
+
+
      /*
      u8 i = 0;
 
@@ -31,7 +22,7 @@ int main() {
      * printf("SystemClk:%d\r\n", SystemCoreClock);
      * printf("ChipID:%08x\r\n", DBGMCU_GetCHIPID());
      * printf("GPIO Toggle TEST\r\n");
-     GPIO_Toggle_INIT();
+     * GPIO_Toggle_INIT();
 
      while (1) {
 	  Delay_Ms(500);
