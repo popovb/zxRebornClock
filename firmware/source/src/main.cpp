@@ -7,9 +7,11 @@ int main() {
      Delayer dl;
      PrintConf pc(115200);
      mcu.init(pc);
-     PortPin ppp(PortName::A, 0);
-     PinConf ppc(PinDir::Out, PinMode::PushPull);
-     mcu.init(ppp, ppc);
+     // PortPin ppp(PortName::A, 0);
+     // PinConf ppc(PinDir::Out, PinMode::PushPull);
+     // mcu.init(ppp, ppc);
+     Led led(PortName::A, 0);
+     mcu.init(led);
 
 
      /*
