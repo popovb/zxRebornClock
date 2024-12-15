@@ -11,7 +11,7 @@
 #include "core/PortClockToggler.hpp"
 #include "core/Gpio.hpp"
 #include "core/PrintConf.hpp"
-#include "core/Led.hpp"
+#include "core/LedConf.hpp"
 
 /*
 #include "ds1302/Target.hpp"
@@ -154,7 +154,7 @@ TEST(test_11) {
 
 TEST(test_12) {
      using namespace gric;
-     Led led(PortName::A, 0);
+     LedConf led(PortName::A, 0);
      Mcu mcu;
      mcu.init(led);
 }
