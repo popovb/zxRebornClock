@@ -10,3 +10,10 @@ gric::PortPin::PortPin(PortName::name_t n, pin_t p):
 {
      return;
 }
+
+gric::PortPin::PortPin(const LedConf& v):
+     port(v.port),
+     pin(v.pin)
+{
+     return;
+}
