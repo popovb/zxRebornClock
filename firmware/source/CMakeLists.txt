@@ -90,6 +90,8 @@ set(core_src
   ${core_dir}/PortPin.cpp
   ${core_dir}/RccApb2Holder.cpp
   ${core_dir}/PrintConf.cpp
+  ${core_dir}/LedConf.cpp
+  ${core_dir}/LedPinConf.cpp
 )
 
 add_library(core

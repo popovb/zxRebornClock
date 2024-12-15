@@ -10,8 +10,8 @@ int main() {
      // PortPin ppp(PortName::A, 0);
      // PinConf ppc(PinDir::Out, PinMode::PushPull);
      // mcu.init(ppp, ppc);
-     Led led(PortName::A, 0);
-     mcu.init(led);
+     LedConf lc(PortName::A, 0);
+     mcu.init(lc);
 
 
      /*
