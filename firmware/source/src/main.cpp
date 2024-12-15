@@ -18,16 +18,19 @@ void GPIO_Toggle_INIT(void) {
 int main() {
      gric::Mcu mcu;
      gric::Delayer dl;
+     gric::PrintConf pc(115200);
+     mcu.init(pc);
+     //gric::Printf pr(115200);
      /*
      u8 i = 0;
 
      * NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
      * SystemCoreClockUpdate();
      * Delay_Init();
-     USART_Printf_Init(115200);
-     printf("SystemClk:%d\r\n", SystemCoreClock);
-     printf("ChipID:%08x\r\n", DBGMCU_GetCHIPID());
-     printf("GPIO Toggle TEST\r\n");
+     * USART_Printf_Init(115200);
+     * printf("SystemClk:%d\r\n", SystemCoreClock);
+     * printf("ChipID:%08x\r\n", DBGMCU_GetCHIPID());
+     * printf("GPIO Toggle TEST\r\n");
      GPIO_Toggle_INIT();
 
      while (1) {

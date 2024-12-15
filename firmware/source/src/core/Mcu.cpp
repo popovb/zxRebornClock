@@ -25,11 +25,11 @@ void gric::Mcu::init(const PortPin& pp, const PinConf& pc) {
      gpio.init(pp, pc);
 }
 
+#ifdef    UNITTEST
+
 void gric::Mcu::init(const PrintConf&) const {
      return;
 }
-
-#ifdef    UNITTEST
 
 void gric::Mcu::nvic_config() const {
      return;
@@ -51,8 +51,8 @@ void gric::Mcu::clock_update() const {
 
 void gric::Mcu::init(const PrintConf& v) const {
      USART_Printf_Init(v.speed);
-     printf("SystemCoreClock: %d\r\n", SystemCoreClock);
-     printf("ChipID: %08x\r\n", DBGMCU_GetCHIPID());
+     printf("SystemCoreClock: %d\r\n", (int)SystemCoreClock);
+     printf("ChipID: %08x\r\n", (int)DBGMCU_GetCHIPID());
 }
 
 #endif // UNITTEST
