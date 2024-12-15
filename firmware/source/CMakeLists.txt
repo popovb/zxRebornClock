@@ -89,6 +89,7 @@ set(core_src
   ${core_dir}/PortHolder.cpp
   ${core_dir}/PortPin.cpp
   ${core_dir}/RccApb2Holder.cpp
+  ${core_dir}/PrintConf.cpp
 )
 
 add_library(core
