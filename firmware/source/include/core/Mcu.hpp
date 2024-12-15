@@ -20,7 +20,7 @@ namespace gric {
 
 	  void init(const PortPin&, const PinConf&);
 	  void init(const PrintConf&) const;
-	  void init(const LedConf&) const;
+	  void init(const LedConf&);
 
      private:
 	  void init() const;

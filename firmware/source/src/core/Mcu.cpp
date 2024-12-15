@@ -4,6 +4,7 @@
 
 #include "core/Mcu.hpp"
 #include "Gpio.hpp"
+#include "LedPinConf.hpp"
 
 #ifndef UNITTEST
 #include "ch32x035.h"
@@ -23,6 +24,12 @@ void gric::Mcu::init(const PortPin& pp, const PinConf& pc) {
      if (pct.is_off(pp.port)) pct.on(pp.port);
      Gpio gpio;
      gpio.init(pp, pc);
+}
+
+void gric::Mcu::init(const LedConf& v) {
+     PortPin pp(v);
+     LedPinConf lpc;
+     init(pp, lpc);
 }
 
 #ifdef    UNITTEST

@@ -3,6 +3,7 @@
 //
 
 #include "PortName.hpp"
+#include "LedConf.hpp"
 
 #ifndef _GRIC_MCU_PORT_PIN_HPP_
 #define _GRIC_MCU_PORT_PIN_HPP_
@@ -11,6 +12,7 @@ namespace gric {
 
      struct PortPin {
 	  PortPin(PortName::name_t, pin_t);
+	  PortPin(const LedConf&);
 
 	  PortName::name_t port;
 	  pin_t pin;
