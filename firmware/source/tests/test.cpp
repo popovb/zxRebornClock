@@ -10,6 +10,7 @@
 #include "core/PinConf.hpp"
 #include "core/PortClockToggler.hpp"
 #include "core/Gpio.hpp"
+#include "core/PrintConf.hpp"
 
 /*
 #include "ds1302/Target.hpp"
@@ -141,6 +142,13 @@ TEST(test_10) {
      PortPin pp(PortName::A, 0);
      Gpio gpio;
      gpio.init(pp, pc);
+}
+
+TEST(test_11) {
+     using namespace gric;
+     PrintConf pc(115200);
+     Mcu mcu;
+     mcu.init(pc);
 }
      //Mcu mcu;
      //Configurator cnf(mcu);

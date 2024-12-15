@@ -4,6 +4,7 @@
 
 #include "PortPin.hpp"
 #include "PinConf.hpp"
+#include "PrintConf.hpp"
 #include "PortClockToggler.hpp"
 
 #ifndef _GRIC_MCU_HPP_
@@ -17,6 +18,7 @@ namespace gric {
 	  Mcu();
 
 	  void init(const PortPin&, const PinConf&);
+	  void init(const PrintConf&) const;
 
      private:
 	  void init() const;
