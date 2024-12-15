@@ -36,6 +36,7 @@ set(core_src
   ${core_dir}/Mcu.cpp
   ${core_dir}/PinConf.cpp
   ${core_dir}/LedConf.cpp
+  ${core_dir}/LedPinConf.cpp
   ${core_dir}/PortPin.cpp
   ${core_dir}/PortClockToggler.cpp
   ${core_dir}/RccApb2Holder.cpp
