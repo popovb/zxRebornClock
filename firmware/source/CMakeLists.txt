@@ -92,6 +92,7 @@ set(core_src
   ${core_dir}/PrintConf.cpp
   ${core_dir}/LedConf.cpp
   ${core_dir}/LedPinConf.cpp
+  ${core_dir}/Led.cpp
 )
 
 add_library(core
