@@ -159,6 +159,18 @@ TEST(test_12) {
      mcu.init(led);
 }
 
+TEST(test_13) {
+     using namespace gric;
+     LedConf lc(PortName::A, 0);
+     Mcu mcu;
+     mcu.init(lc);
+     Led led = mcu.get(lc);
+     led.on();
+     led.off();
+     led.toggle();
+     led.off();
+}
+
      //Mcu mcu;
      //Configurator cnf(mcu);
      //
