@@ -45,6 +45,7 @@ set(core_src
   ${core_dir}/GpioModeCalc.cpp
   ${core_dir}/PortHolder.cpp
   ${core_dir}/PrintConf.cpp
+  ${core_dir}/Led.cpp
 )
 
 add_library(core
