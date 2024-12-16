@@ -13,7 +13,8 @@ namespace gric {
      class Gpio {
 
      public:
-	  void init(const PortPin&, const PinConf&);
+	  void init(const PortPin&, const PinConf&) const;
+	  void write_bit(u32, u32, bool);
      };
 }
 #endif // _GRIC_GPIO_HPP_

@@ -3,6 +3,7 @@
 //
 
 #include "core/Led.hpp"
+#include "Gpio.hpp"
 
 void gric::Led::toggle() {
      if (emit) {
@@ -13,4 +14,10 @@ void gric::Led::toggle() {
 	  on();
 	  emit = true;
      }
+}
+
+void gric::Led::on() {
+     Gpio gpio;
+     gpio.write_bit(port, pin, false);
+     emit = true;
 }
