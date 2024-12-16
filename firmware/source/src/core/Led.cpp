@@ -23,3 +23,10 @@ void gric::Led::off() {
      gpio.write_bit(port, pin, true);
      emit = false;
 }
+
+gric::Led::Led(u32 p, u32 i):
+     port(p),
+     pin(i)
+{
+     return;
+}
