@@ -11,6 +11,8 @@ namespace gric {
 
      class Led {
 
+	  friend class Mcu;
+
      public:
 	  void on();
 	  void off();
@@ -22,7 +24,7 @@ namespace gric {
 	  u32 pin;
 
      private:
-	  Led();
+	  Led(u32, u32);
      };
 }
 #endif // _GRIC_MCU_LED_HPP_

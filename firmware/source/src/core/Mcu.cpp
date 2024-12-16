@@ -5,6 +5,8 @@
 #include "core/Mcu.hpp"
 #include "Gpio.hpp"
 #include "LedPinConf.hpp"
+#include "PortHolder.hpp"
+#include "PinHolder.hpp"
 
 #ifndef UNITTEST
 #include "ch32x035.h"
@@ -30,6 +32,13 @@ void gric::Mcu::init(const LedConf& v) {
      PortPin pp(v);
      LedPinConf lpc;
      init(pp, lpc);
+     get(v).off();
+}
+
+gric::Led gric::Mcu::get(const LedConf& lc) const {
+     PortHolder poh;
+     PinHolder pih;
+     return Led(poh.get(lc.port), pih.get(lc.pin));
 }
 
 #ifdef    UNITTEST
