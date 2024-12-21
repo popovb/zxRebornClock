@@ -12,7 +12,7 @@ void gric::Gpio::init(const PortPinConf&, const PinConf&) const {
      return;
 }
 
-void gric::Gpio::write_bit(u32, u32, bool) {
+void gric::Gpio::write_bit(u32, u32, bool) const {
      return;
 }
 #else
@@ -29,7 +29,7 @@ void gric::Gpio::init(const PortPinConf& pp, const PinConf& pc) const {
      GPIO_Init((GPIO_TypeDef*)poh.get(pp.port), &i);
 }
 
-void gric::Gpio::write_bit(u32 p, u32 i, bool v) {
+void gric::Gpio::write_bit(u32 p, u32 i, bool v) const {
      BitAction vv = (v) ? Bit_SET : Bit_RESET;
      GPIO_WriteBit((GPIO_TypeDef*)p, i, vv);
 }

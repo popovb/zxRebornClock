@@ -14,7 +14,8 @@ namespace gric {
 
      public:
 	  void init(const PortPinConf&, const PinConf&) const;
-	  void write_bit(u32, u32, bool);
+	  void write_bit(u32, u32, bool) const;
+	  bool read_bit(u32, u32) const;
      };
 }
 #endif // _GRIC_GPIO_HPP_

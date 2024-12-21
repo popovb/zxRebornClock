@@ -10,6 +10,11 @@ void gric::Pin::write(bool v) const {
      gpio.write_bit(port, pin, v);
 }
 
+bool gric::Pin::read() const {
+     Gpio gpio;
+     return gpio.read_bit(port, pin);
+}
+
 gric::Pin::Pin(u32 p, u32 i):
      port(p),
      pin(i)
