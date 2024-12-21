@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.18)
 project(zxRebornClock)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=gnu99")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11 -fabi-version=0")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++14 -fabi-version=0")
 
 enable_language(ASM)
 

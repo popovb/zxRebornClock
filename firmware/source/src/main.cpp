@@ -1,10 +1,12 @@
 #include "core/Mcu.hpp"
 #include "core/Delayer.hpp"
+#include "core/DelayerNop.hpp"
 
 int main() {
      using namespace gric;
      Mcu mcu;
      Delayer dl;
+     DelayerNop<3'000'000> dln;
      PrintConf pc(115200);
      mcu.init(pc);
      LedConf lc(PortName::A, 0);
@@ -12,7 +14,7 @@ int main() {
      auto led = mcu.get(lc);
 
      while (true) {
-	  dl.ms(500);
+	  dln.ms(1000);
 	  led.toggle();
      }
 }
