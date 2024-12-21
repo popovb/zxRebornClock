@@ -41,6 +41,12 @@ gric::Led gric::Mcu::get(const LedConf& lc) const {
      return Led(poh.get(lc.port), pih.get(lc.pin));
 }
 
+gric::Pin gric::Mcu::get(const PortPinConf& pc) const {
+     PortHolder poh;
+     PinHolder pih;
+     return Pin(poh.get(pc.port), pih.get(pc.pin));
+}
+
 #ifdef    UNITTEST
 
 void gric::Mcu::init(const PrintConf&) const {
