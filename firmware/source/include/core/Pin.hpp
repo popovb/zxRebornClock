@@ -15,6 +15,7 @@ namespace gric {
 
      public:
 	  void write(bool) const;
+	  bool read() const;
 
      private:
 	  bool emit;
