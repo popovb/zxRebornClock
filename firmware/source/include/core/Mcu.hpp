@@ -2,7 +2,7 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
-#include "PortPin.hpp"
+#include "PortPinConf.hpp"
 #include "PinConf.hpp"
 #include "PrintConf.hpp"
 #include "LedConf.hpp"
@@ -19,7 +19,7 @@ namespace gric {
      public:
 	  Mcu();
 
-	  void init(const PortPin&, const PinConf&);
+	  void init(const PortPinConf&, const PinConf&);
 	  void init(const PrintConf&) const;
 
 	  void init(const LedConf&);

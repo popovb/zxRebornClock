@@ -8,7 +8,7 @@
 #include "PortHolder.hpp"
 
 #ifdef UNITTEST
-void gric::Gpio::init(const PortPin&, const PinConf&) const {
+void gric::Gpio::init(const PortPinConf&, const PinConf&) const {
      return;
 }
 
@@ -18,7 +18,7 @@ void gric::Gpio::write_bit(u32, u32, bool) {
 #else
 #include "ch32x035.h"
 
-void gric::Gpio::init(const PortPin& pp, const PinConf& pc) const {
+void gric::Gpio::init(const PortPinConf& pp, const PinConf& pc) const {
      GPIO_InitTypeDef i;
      PinHolder ph;
      GpioModeCalc gmc;

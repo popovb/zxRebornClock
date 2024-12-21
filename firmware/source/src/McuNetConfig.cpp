@@ -5,7 +5,7 @@
 #include "McuNetConfig.hpp"
 
 ///////////////////////////////////////////////////////////////////
-const gric::PortPin
+const gric::PortPinConf
 gric::McuNetConfig::pp[] = {
      { PortName::C, 14 },
      { PortName::A,  8 },
@@ -25,7 +25,7 @@ gric::McuNetConfig::pp[] = {
 ///////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////
-const gric::PortPin&
+const gric::PortPinConf&
 gric::McuNetConfig::operator[](McuNet::net_t v) const {
      return pp[v];
 }

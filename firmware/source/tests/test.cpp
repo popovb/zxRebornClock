@@ -121,7 +121,7 @@ TEST(test_07) {
 TEST(test_08) {
      using namespace gric;
      PinConf pc(PinDir::Out, PinMode::PushPull);
-     PortPin pp(PortName::A, 0);
+     PortPinConf pp(PortName::A, 0);
      Mcu mcu;
      mcu.init(pp, pc);
 }
@@ -140,7 +140,7 @@ TEST(test_09) {
 TEST(test_10) {
      using namespace gric;
      PinConf pc(PinDir::Out, PinMode::PushPull);
-     PortPin pp(PortName::A, 0);
+     PortPinConf pp(PortName::A, 0);
      Gpio gpio;
      gpio.init(pp, pc);
 }

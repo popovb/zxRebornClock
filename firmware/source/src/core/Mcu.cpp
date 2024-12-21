@@ -22,14 +22,14 @@ void gric::Mcu::init() const {
      clock_update();
 }
 
-void gric::Mcu::init(const PortPin& pp, const PinConf& pc) {
+void gric::Mcu::init(const PortPinConf& pp, const PinConf& pc) {
      if (pct.is_off(pp.port)) pct.on(pp.port);
      Gpio gpio;
      gpio.init(pp, pc);
 }
 
 void gric::Mcu::init(const LedConf& v) {
-     PortPin pp(v);
+     PortPinConf pp(v);
      LedPinConf lpc;
      init(pp, lpc);
      get(v).off();
