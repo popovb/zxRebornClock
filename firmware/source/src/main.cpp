@@ -11,9 +11,13 @@ int main() {
      mcu.init(pp, pc);
      auto pin = mcu.get(pp);
 
-
+     bool hi = true;
+     while (true) {
+	  dln.ms(1000);
+	  pin.write(hi);
+	  hi = !hi;
+     }
 }
-
 
 /*
 int main() {
