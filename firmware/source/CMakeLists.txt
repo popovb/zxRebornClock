@@ -93,6 +93,7 @@ set(core_src
   ${core_dir}/LedConf.cpp
   ${core_dir}/LedPinConf.cpp
   ${core_dir}/Led.cpp
+  ${core_dir}/Pin.cpp
 )
 
 add_library(core
