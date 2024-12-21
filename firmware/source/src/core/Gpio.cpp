@@ -33,4 +33,8 @@ void gric::Gpio::write_bit(u32 p, u32 i, bool v) const {
      BitAction vv = (v) ? Bit_SET : Bit_RESET;
      GPIO_WriteBit((GPIO_TypeDef*)p, i, vv);
 }
+
+bool gric::Gpio::read_bit(u32 p, u32 i) const {
+     return GPIO_ReadInputDataBit((GPIO_TypeDef*)p, i);
+}
 #endif
