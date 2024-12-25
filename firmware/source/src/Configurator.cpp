@@ -40,3 +40,8 @@ init(const McuNetConfig::NetPortPinConf& v) const {
 	  return;
      }
 }
+
+void gric::Configurator::init_push_pull(const PortPinConf& v) const {
+     PinConf pc(PinDir::Out, PinMode::PushPull);
+     mcu.init(v, pc);
+}
