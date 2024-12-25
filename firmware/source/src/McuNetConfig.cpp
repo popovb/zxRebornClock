@@ -30,4 +30,8 @@ gric::McuNetConfig::operator[](u8 v) const {
      if (v >= len) return pp[len - 1];
      return pp[v];
 }
+
+gric::u8 gric::McuNetConfig::size() const {
+     return len;
+}
 ///////////////////////////////////////////////////////////////////
