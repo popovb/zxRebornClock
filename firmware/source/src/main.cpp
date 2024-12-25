@@ -1,21 +1,29 @@
 #include "Configurator.hpp"
 #include "McuNetConfig.hpp"
+#include "Anodes.hpp"
+#include "Cathodes.hpp"
+#include "Tubes.hpp"
 #include "core/Mcu.hpp"
-// // #include "core/Delayer.hpp"
-// #include "core/DelayerNop.hpp"
 
 int main() {
      using namespace gric;
      Mcu mcu;
-
      Configurator cnf(mcu);
      McuNetConfig mnc;
      cnf.init(mnc);
+
+     Anodes as(mcu, mnc);
+     Cathodes cs(mcu, mnc);
+     Tubes tb(as, cs);
      //
      // TODO
      //
 }
+
 /*
+// // #include "core/Delayer.hpp"
+// #include "core/DelayerNop.hpp"
+
 int main() {
      using namespace gric;
      Mcu mcu;
