@@ -1,4 +1,5 @@
 #include "Configurator.hpp"
+#include "McuNetConfig.hpp"
 #include "core/Mcu.hpp"
 // // #include "core/Delayer.hpp"
 // #include "core/DelayerNop.hpp"
@@ -8,6 +9,8 @@ int main() {
      Mcu mcu;
 
      Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
      //
      // TODO
      //
