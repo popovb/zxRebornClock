@@ -118,6 +118,7 @@ set(src
   ${src_dir}/interrupt.c
   ${src_dir}/system_clock.c
   ${src_dir}/main.cpp
+  ${src_dir}/Configurator.cpp
 )
 
 add_executable(${name}.elf

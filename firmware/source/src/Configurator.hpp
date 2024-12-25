@@ -13,6 +13,9 @@ namespace gric {
 
      public:
 	  Configurator(Mcu&);
+
+     private:
+	  Mcu& mcu;
      };
 }
 #endif // _GRIC_CONFIGURATOR_HPP_
