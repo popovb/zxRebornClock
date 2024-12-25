@@ -1,7 +1,18 @@
+#include "Configurator.hpp"
 #include "core/Mcu.hpp"
-// #include "core/Delayer.hpp"
-#include "core/DelayerNop.hpp"
+// // #include "core/Delayer.hpp"
+// #include "core/DelayerNop.hpp"
 
+int main() {
+     using namespace gric;
+     Mcu mcu;
+
+     Configurator cnf(mcu);
+     //
+     // TODO
+     //
+}
+/*
 int main() {
      using namespace gric;
      Mcu mcu;
@@ -19,7 +30,6 @@ int main() {
      }
 }
 
-/*
 int main() {
      using namespace gric;
      Mcu mcu;
