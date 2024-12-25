@@ -73,19 +73,19 @@ TEST(test_03) {
      using namespace gric;
      McuNetConfig mnc;
 
-     const auto& c = mnc[McuNet::K1];
+     const auto& c = mnc.get(McuNet::K1);
      CHECK(c.port == PortName::C);
      CHECK(c.pin == 14);
 
-     const auto& a = mnc[McuNet::K5];
+     const auto& a = mnc.get(McuNet::K5);
      CHECK(a.port == PortName::A);
      CHECK(a.pin == 14);
 
-     const auto& b = mnc[McuNet::K0];
+     const auto& b = mnc.get(McuNet::K0);
      CHECK(b.port == PortName::A);
      CHECK(b.pin == 23);
 
-     const auto& d = mnc[McuNet::SA4];
+     const auto& d = mnc.get(McuNet::SA4);
      CHECK(d.port == PortName::A);
      CHECK(d.pin == 13);
 }

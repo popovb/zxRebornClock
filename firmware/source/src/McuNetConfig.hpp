@@ -20,6 +20,7 @@ namespace gric {
 
      public:
 	  const NetPortPinConf& operator[](u8) const;
+	  const PortPinConf& get(McuNet::net_t) const;
 
 	  u8 size() const;
 
