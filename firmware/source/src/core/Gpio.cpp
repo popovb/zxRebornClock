@@ -15,6 +15,10 @@ void gric::Gpio::init(const PortPinConf&, const PinConf&) const {
 void gric::Gpio::write_bit(u32, u32, bool) const {
      return;
 }
+
+bool gric::Gpio::read_bit(u32 p, u32 i) const {
+     return true;
+}
 #else
 #include "ch32x035.h"
 
