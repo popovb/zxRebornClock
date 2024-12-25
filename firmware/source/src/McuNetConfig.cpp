@@ -31,6 +31,15 @@ gric::McuNetConfig::operator[](u8 v) const {
      return pp[v];
 }
 
+const gric::PortPinConf&
+gric::McuNetConfig::get(McuNet::net_t v) const {
+     for (u8 i = 0; i < len; i++) {
+	  const auto& vv = pp[i];
+	  if (vv.net == v) return vv.conf;
+     }
+     return pp[len - 1].conf;
+}
+
 gric::u8 gric::McuNetConfig::size() const {
      return len;
 }
