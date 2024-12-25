@@ -9,3 +9,9 @@ gric::Configurator::Configurator(Mcu& v):
 {
      return;
 }
+
+void gric::Configurator::init(const McuNetConfig& v) const {
+     for (u8 i = 0; i < v.size(); i++) {
+	  init(v[i]);
+     }
+}
