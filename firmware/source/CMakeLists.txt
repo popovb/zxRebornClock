@@ -119,6 +119,7 @@ set(src
   ${src_dir}/system_clock.c
   ${src_dir}/main.cpp
   ${src_dir}/Configurator.cpp
+  ${src_dir}/McuNetConfig.cpp
 )
 
 add_executable(${name}.elf

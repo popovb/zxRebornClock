@@ -27,10 +27,9 @@ gric::McuNetConfig::pp[] = {
 ///////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////
-/*
-const gric::PortPinConf&
-gric::McuNetConfig::operator[](McuNet::net_t v) const {
+const gric::McuNetConfig::NetPortPinConf&
+gric::McuNetConfig::operator[](u8 v) const {
+     if (v >= len) return pp[len - 1];
      return pp[v];
 }
-*/
 ///////////////////////////////////////////////////////////////////
