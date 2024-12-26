@@ -2,12 +2,12 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
-#include "Types.hpp"
+#include "core/Types.hpp"
 
-#ifndef _GRI_COUNTER_HPP_
-#define _GRI_COUNTER_HPP_
+#ifndef _GRIC_COUNTER_HPP_
+#define _GRIC_COUNTER_HPP_
 
-namespace gri {
+namespace gric {
 
      class Counter {
 
@@ -25,4 +25,4 @@ namespace gri {
 	  static const u16 max = 10000;
      };
 }
-#endif // _GRI_COUNTER_HPP_
+#endif // _GRIC_COUNTER_HPP_

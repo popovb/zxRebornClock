@@ -3,6 +3,8 @@
 #include "Anodes.hpp"
 #include "Cathodes.hpp"
 #include "Tubes.hpp"
+#include "Counter.hpp"
+#include "DigitExtractor.hpp"
 #include "core/Mcu.hpp"
 
 int main() {
@@ -15,6 +17,14 @@ int main() {
      Anodes as(mcu, mnc);
      Cathodes cs(mcu, mnc);
      Tubes tb(as, cs);
+
+     // TODO : Led led;
+
+     Counter cn(989);
+     DigitExtractor<4> de;
+     u8 v[4];
+     de.extract(v, cn.get());
+
      //
      // TODO
      //
