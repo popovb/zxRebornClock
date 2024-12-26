@@ -2,6 +2,8 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
+#include "McuNetConfig.hpp"
+#include "core/Mcu.hpp"
 #include "core/Pin.hpp"
 
 #ifndef _GRIC_ANODES_HPP_
@@ -12,7 +14,7 @@ namespace gric {
      class Anodes {
 
      public:
-	  Anodes();
+	  Anodes(const Mcu&, const McuNetConfig&);
 
 	  void setup() const;
 	  void clear() const;
