@@ -3,6 +3,7 @@
 #include "Anodes.hpp"
 #include "Cathodes.hpp"
 #include "Tubes.hpp"
+#include "WorkLed.hpp"
 #include "Counter.hpp"
 #include "DigitExtractor.hpp"
 #include "core/Mcu.hpp"
@@ -18,7 +19,7 @@ int main() {
      Cathodes cs(mcu, mnc);
      Tubes tb(as, cs);
 
-     // TODO : Led led;
+     WorkLed led(mcu, mnc);
 
      Counter cn(989);
      DigitExtractor<4> de;
@@ -29,7 +30,7 @@ int main() {
        for (u8 i = 0; i < 51; i++) tb.display(v);
 	  cn.tick();
 	  de.extract(v, cn.get());
-	  // TODO : led.toggle();
+	  led.toggle();
      }
 }
 
