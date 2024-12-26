@@ -15,6 +15,7 @@ set(ld_dir      "${cur_dir}/ld")
 set(include_dir "${cur_dir}/include")
 set(debug_dir   "${cur_dir}/debug")
 set(core_dir    "${src_dir}/core")
+set(ds1302_dir  "${src_dir}/ds1302")
 #################################################################
 
 #################################################################
@@ -112,6 +113,33 @@ target_compile_options(core PRIVATE
 #################################################################
 
 #################################################################
+set(ds1302_src
+  ${ds1302_dir}/Command.cpp
+  ${ds1302_dir}/Data.cpp
+  ${ds1302_dir}/Date.cpp
+  ${ds1302_dir}/Day.cpp
+  ${ds1302_dir}/Hour.cpp
+  ${ds1302_dir}/Minutes.cpp
+  ${ds1302_dir}/Month.cpp
+  ${ds1302_dir}/Seconds.cpp
+  ${ds1302_dir}/WriteProtect.cpp
+  ${ds1302_dir}/Year.cpp
+)
+
+add_library(ds1302
+  ${ds1302_src}
+)
+
+target_include_directories(ds1302 PRIVATE
+  "${include_dir}"
+)
+
+target_compile_options(ds1302 PRIVATE
+  ${FLAGS}
+)
+#################################################################
+
+#################################################################
 set(name "zxRebornClock")
 
 set(src
@@ -132,6 +160,7 @@ add_executable(${name}.elf
 
 target_link_libraries(${name}.elf PRIVATE
   core
+  ds1302
   vendor
 )
 
