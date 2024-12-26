@@ -15,6 +15,9 @@ namespace gric {
 
      public:
 	  WorkLed(const Mcu&, const McuNetConfig&);
+
+     private:
+	  void init(const Mcu&, const McuNetConfig&);
      };
 }
 #endif // _GRIC_WORK_LED_HPP_

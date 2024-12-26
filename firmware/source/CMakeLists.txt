@@ -124,6 +124,7 @@ set(src
   ${src_dir}/Anodes.cpp
   ${src_dir}/Cathodes.cpp
   ${src_dir}/Counter.cpp
+  ${src_dir}/WorkLed.cpp
 )
 
 add_executable(${name}.elf
