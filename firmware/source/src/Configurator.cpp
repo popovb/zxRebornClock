@@ -49,3 +49,8 @@ void gric::Configurator::init_push_pull(const PortPinConf& v) const {
      PinConf pc(PinDir::Out, PinMode::PushPull);
      mcu.init(v, pc);
 }
+
+void gric::Configurator::init_led(const PortPinConf& v) const {
+     LedConf lc(v.port, v.pin);
+     mcu.init(lc);
+}
