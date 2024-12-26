@@ -4,12 +4,12 @@
 
 #include "Anodes.hpp"
 #include "Cathodes.hpp"
-#include "Delayer.hpp"
+#include "core/DelayerNop.hpp"
 
-#ifndef _GRI_TUBES_HPP_
-#define _GRI_TUBES_HPP_
+#ifndef _GRIC_TUBES_HPP_
+#define _GRIC_TUBES_HPP_
 
-namespace gri {
+namespace gric {
 
      class Tubes {
 
@@ -23,7 +23,7 @@ namespace gri {
 	  const Cathodes& cs;
 
      private:
-	  Delayer<9'000'000> delay;
+	  DelayerNop<3'000'000> delay;
 	  static const u16 blank_time_us   = 900; // 100 - 300 us
 	  static const u16 display_time_ms =   4; //   1 -   4 ms
 
@@ -35,4 +35,4 @@ namespace gri {
 	  void display_4(u8[4]) const;
      };
 }
-#endif // _GRI_TUBES_HPP_
+#endif // _GRIC_TUBES_HPP_
