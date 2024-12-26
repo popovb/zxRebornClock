@@ -25,9 +25,12 @@ int main() {
      u8 v[4];
      de.extract(v, cn.get());
 
-     //
-     // TODO
-     //
+     while (true) {
+       for (u8 i = 0; i < 51; i++) tb.display(v);
+	  cn.tick();
+	  de.extract(v, cn.get());
+	  // TODO : led.toggle();
+     }
 }
 
 /*
