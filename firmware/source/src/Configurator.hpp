@@ -23,6 +23,7 @@ namespace gric {
      private:
 	  void init(const McuNetConfig::NetPortPinConf&) const;
 	  void init_push_pull(const PortPinConf&) const;
+	  void init_led(const PortPinConf&) const;
      };
 }
 #endif // _GRIC_CONFIGURATOR_HPP_

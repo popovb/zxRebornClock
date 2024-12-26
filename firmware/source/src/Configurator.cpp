@@ -36,6 +36,10 @@ init(const McuNetConfig::NetPortPinConf& v) const {
 	  init_push_pull(v.conf);
 	  return;
 
+     case McuNet::WL:
+	  init_led(v.conf);
+	  return;
+
      default:
 	  return;
      }

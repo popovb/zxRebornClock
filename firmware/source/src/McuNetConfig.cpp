@@ -21,6 +21,7 @@ gric::McuNetConfig::pp[] = {
      { McuNet::SA2, { PortName::A,  9 } },
      { McuNet::SA3, { PortName::A, 11 } },
      { McuNet::SA4, { PortName::A, 13 } },
+     { McuNet::WL,  { PortName::A,  0 } },
 };
 ///////////////////////////////////////////////////////////////////
 
