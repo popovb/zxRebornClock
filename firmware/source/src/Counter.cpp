@@ -4,23 +4,23 @@
 
 #include "Counter.hpp"
 
-gri::Counter::Counter():
+gric::Counter::Counter():
      count(0)
 {
      return;
 }
 
-gri::Counter::Counter(u16 v):
+gric::Counter::Counter(u16 v):
      count(v)
 {
      return;
 }
 
-gri::u16 gri::Counter::get() const {
+gric::u16 gric::Counter::get() const {
      return count;
 }
 
-void gri::Counter::tick() {
+void gric::Counter::tick() {
      ++count;
      if (count == max) count = 0;
 }

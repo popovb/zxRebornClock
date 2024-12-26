@@ -123,6 +123,7 @@ set(src
   ${src_dir}/Tubes.cpp
   ${src_dir}/Anodes.cpp
   ${src_dir}/Cathodes.cpp
+  ${src_dir}/Counter.cpp
 )
 
 add_executable(${name}.elf
