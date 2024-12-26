@@ -22,6 +22,10 @@ namespace gric {
      private:
 	  static const u8 N = 10;
 	  Pin pins[N];
+
+     private:
+	  void init(const Mcu&, const McuNetConfig&);
+	  void init(u8, const PortPinConf&, const Mcu&);
      };
 }
 #endif // _GRIC_CATHODES_HPP_

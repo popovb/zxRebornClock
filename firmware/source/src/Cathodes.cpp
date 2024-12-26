@@ -4,6 +4,10 @@
 
 #include "Cathodes.hpp"
 
+gric::Cathodes::Cathodes(const Mcu& m, const McuNetConfig& mnc) {
+     init(m, mnc);
+     clear();
+}
 /*
   КАТОД 1  -> PA2
   КАТОД 2  -> PA3
