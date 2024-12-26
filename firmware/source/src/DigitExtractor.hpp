@@ -2,13 +2,13 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
-#include "Types.hpp"
+#include "core/Types.hpp"
 
-#ifndef _GRI_DIGIT_EXTRACTOR_HPP_
-#define _GRI_DIGIT_EXTRACTOR_HPP_
+#ifndef _GRIC_DIGIT_EXTRACTOR_HPP_
+#define _GRIC_DIGIT_EXTRACTOR_HPP_
 
 ///////////////////////////////////////////////////////////////////
-namespace gri {
+namespace gric {
 
      template<u8 N>
      class DigitExtractor {
@@ -23,8 +23,8 @@ namespace gri {
 ///////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////
-template<gri::u8 N>
-void gri::DigitExtractor<N>::extract(u8 v[N], u32 vin) const {
+template<gric::u8 N>
+void gric::DigitExtractor<N>::extract(u8 v[N], u32 vin) const {
      clear(v);
      for (u8 i = 0; i < N; i++) {
 	  v[i] = vin % 10;
@@ -32,9 +32,9 @@ void gri::DigitExtractor<N>::extract(u8 v[N], u32 vin) const {
      }
 }
 
-template<gri::u8 N>
-void gri::DigitExtractor<N>::clear(u8 v[N]) const {
+template<gric::u8 N>
+void gric::DigitExtractor<N>::clear(u8 v[N]) const {
      for (u8 i = 0; i < N; i++) v[i] = 0;
 }
 ///////////////////////////////////////////////////////////////////
-#endif // _GRI_DIGIT_EXTRACTOR_HPP_
+#endif // _GRIC_DIGIT_EXTRACTOR_HPP_
