@@ -15,6 +15,7 @@ namespace gric {
 
      public:
 	  WorkLed(const Mcu&, const McuNetConfig&);
+	  WorkLed& operator=(const Led&);
 
      private:
 	  void init(const Mcu&, const McuNetConfig&);
