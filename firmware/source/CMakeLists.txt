@@ -122,6 +122,7 @@ set(src
   ${src_dir}/McuNetConfig.cpp
   ${src_dir}/Tubes.cpp
   ${src_dir}/Anodes.cpp
+  ${src_dir}/Cathodes.cpp
 )
 
 add_executable(${name}.elf

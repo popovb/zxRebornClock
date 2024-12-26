@@ -3,8 +3,6 @@
 //
 
 #include "Cathodes.hpp"
-#include "PortA.hpp"
-#include "PortB.hpp"
 
 /*
   КАТОД 1  -> PA2
@@ -18,30 +16,30 @@
   КАТОД 9  -> PB10
   КАТОД 0  -> PB11
  */
-gri::Cathodes::Cathodes() {
-     PortA a;
-     PortB b;
-     pins[0] = b[11];
-     pins[1] = a[2];
-     pins[2] = a[3];
-     pins[3] = a[4];
-     pins[4] = a[5];
-     pins[5] = a[6];
-     pins[6] = a[7];
-     pins[7] = b[0];
-     pins[8] = b[1];
-     pins[9] = b[10];
+// gric::Cathodes::Cathodes() {
+//      PortA a;
+//      PortB b;
+//      pins[0] = b[11];
+//      pins[1] = a[2];
+//      pins[2] = a[3];
+//      pins[3] = a[4];
+//      pins[4] = a[5];
+//      pins[5] = a[6];
+//      pins[6] = a[7];
+//      pins[7] = b[0];
+//      pins[8] = b[1];
+//      pins[9] = b[10];
+// }
+
+// void gric::Cathodes::setup() const {
+//      clear();
+// }
+
+void gric::Cathodes::clear() const {
+     for (u8 i = 0; i < N; i++) pins[i].write(false);
 }
 
-void gri::Cathodes::setup() const {
-     clear();
-}
-
-void gri::Cathodes::clear() const {
-     for (u8 i = 0; i < N; i++) pins[i].clear();
-}
-
-void gri::Cathodes::set(u8 v) const {
+void gric::Cathodes::set(u8 v) const {
      if (v >= N) v = N - 1;
-     pins[v].set();
+     pins[v].write(true);
 }
