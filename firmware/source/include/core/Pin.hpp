@@ -14,6 +14,8 @@ namespace gric {
 	  friend class Mcu;
 
      public:
+	  Pin();
+
 	  void write(bool) const;
 	  bool read() const;
 

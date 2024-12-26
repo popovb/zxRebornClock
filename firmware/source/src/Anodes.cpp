@@ -4,6 +4,10 @@
 
 #include "Anodes.hpp"
 
+gric::Anodes::Anodes(const Mcu& m, const McuNetConfig& mnc) {
+     init(m, mnc);
+}
+
 // gric::Anodes::Anodes() {
 //      PortB b;
 //      pins[0] = b[15];

@@ -21,3 +21,10 @@ gric::Pin::Pin(u32 p, u32 i):
 {
      return;
 }
+
+gric::Pin::Pin():
+     port(0),
+     pin(0)
+{
+     return;
+}

@@ -22,6 +22,9 @@ namespace gric {
      private:
 	  static const u8 N = 4;
 	  Pin pins[N];
+
+     private:
+	  void init(const Mcu&, const McuNetConfig&);
      };
 }
 #endif // _GRIC_ANODES_HPP_
