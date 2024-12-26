@@ -25,6 +25,7 @@ namespace gric {
 
      private:
 	  void init(const Mcu&, const McuNetConfig&);
+	  void init(u8, const PortPinConf&);
      };
 }
 #endif // _GRIC_ANODES_HPP_
