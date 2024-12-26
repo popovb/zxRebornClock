@@ -18,7 +18,6 @@ namespace gric {
 	  bool read() const;
 
      private:
-	  bool emit;
 	  u32 port;
 	  u32 pin;
 

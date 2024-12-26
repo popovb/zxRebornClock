@@ -121,6 +121,7 @@ set(src
   ${src_dir}/Configurator.cpp
   ${src_dir}/McuNetConfig.cpp
   ${src_dir}/Tubes.cpp
+  ${src_dir}/Anodes.cpp
 )
 
 add_executable(${name}.elf
