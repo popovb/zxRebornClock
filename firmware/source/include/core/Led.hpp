@@ -14,8 +14,6 @@ namespace gric {
 	  friend class Mcu;
 
      public:
-	  Led();
-
 	  void on();
 	  void off();
 	  void toggle();

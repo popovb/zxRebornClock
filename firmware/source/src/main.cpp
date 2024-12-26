@@ -3,7 +3,6 @@
 #include "Anodes.hpp"
 #include "Cathodes.hpp"
 #include "Tubes.hpp"
-#include "WorkLed.hpp"
 #include "Counter.hpp"
 #include "DigitExtractor.hpp"
 #include "core/Mcu.hpp"
@@ -19,7 +18,9 @@ int main() {
      Cathodes cs(mcu, mnc);
      Tubes tb(as, cs);
 
-     WorkLed led(mcu, mnc);
+     const auto& ppc = mnc.get(McuNet::WL);
+     LedConf lc(ppc.port, ppc.pin);
+     Led led = mcu.get(lc);
 
      Counter cn(989);
      DigitExtractor<4> de;
