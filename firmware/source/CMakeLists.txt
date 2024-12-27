@@ -152,6 +152,8 @@ set(src
   ${src_dir}/Anodes.cpp
   ${src_dir}/Cathodes.cpp
   ${src_dir}/Counter.cpp
+  ${src_dir}/TimeChecker.cpp
+  ${src_dir}/Time.cpp
 )
 
 add_executable(${name}.elf
