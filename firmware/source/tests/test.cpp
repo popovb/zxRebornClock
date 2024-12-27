@@ -157,5 +157,12 @@ TEST(test_14) {
      using namespace gric;
      TimeChecker tc;
      CHECK(! tc);
-     //Time t1(9, 15);
+}
+
+TEST(test_15) {
+     using namespace gric;
+     TimeChecker tc;
+     Time t1(9, 15);
+     tc.put(t1);
+     CHECK(! tc);
 }

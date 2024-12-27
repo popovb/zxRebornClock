@@ -9,14 +9,18 @@
 
 namespace gric {
 
-     struct Time {
-	  Time();
+     class Time {
 
-	  i8 hour;
-	  i8 minute;
+     public:
+	  Time();
+	  Time(u8, u8);
 
 	  u8* get() const;
 	  operator bool() const;
+
+     private:
+	  i8 hour;
+	  i8 minute;
      };
 }
 #endif // _GRIC_TIME_HPP_
