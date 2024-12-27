@@ -12,3 +12,8 @@ gric::TimeChecker::operator bool() const {
      //
      return true;
 }
+
+void gric::TimeChecker::put(const Time& v) {
+     prev = curr;
+     curr = v;
+}
