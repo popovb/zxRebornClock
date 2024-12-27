@@ -5,6 +5,7 @@
 #include "Tubes.hpp"
 #include "Rtc.hpp"
 #include "Time.hpp"
+#include "TimeChecker.hpp"
 #include "core/Mcu.hpp"
 
 int main() {
