@@ -10,8 +10,10 @@
 namespace gric {
 
      struct Time {
-	  u8 hour;
-	  u8 minute;
+	  Time();
+
+	  i8 hour;
+	  i8 minute;
 
 	  u8* get() const;
 	  operator bool() const;

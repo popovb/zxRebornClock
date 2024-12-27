@@ -156,6 +156,6 @@ TEST(test_13) {
 TEST(test_14) {
      using namespace gric;
      TimeChecker tc;
-     CHECK(tc);
+     CHECK(! tc);
      //Time t1(9, 15);
 }

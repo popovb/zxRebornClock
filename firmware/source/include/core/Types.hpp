@@ -13,6 +13,8 @@ namespace gric {
      using u16   = std::uint16_t;
      using u32   = std::uint32_t;
 
+     using i8    = std::int8_t;
+
      using pin_t   = u8;
      using speed_t = u32;
 }
