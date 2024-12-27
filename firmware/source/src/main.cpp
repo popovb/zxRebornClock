@@ -3,10 +3,37 @@
 #include "Anodes.hpp"
 #include "Cathodes.hpp"
 #include "Tubes.hpp"
-#include "Counter.hpp"
-#include "DigitExtractor.hpp"
 #include "core/Mcu.hpp"
 
+int main() {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+
+     Anodes as(mcu, mnc);
+     Cathodes cs(mcu, mnc);
+     Tubes tb(as, cs);
+
+     const auto& ppc = mnc.get(McuNet::WL);
+     LedConf lc(ppc.port, ppc.pin);
+     Led led = mcu.get(lc);
+
+     Rtc rtc(mcu, mnc);
+     Time tm = rtc.pull();
+     TimeChecker tc;
+     tc.put(tm);
+     while (true) {
+	  tm = rtc.pull();
+	  tc.put(tm);
+	  if (tc) {
+	       for (u8 i = 0; i < 51; i++) tb.display(tm.get());
+	  }
+	  led.toggle();
+     }
+}
+/*
 int main() {
      using namespace gric;
      Mcu mcu;
@@ -34,10 +61,6 @@ int main() {
 	  led.toggle();
      }
 }
-
-/*
-// // #include "core/Delayer.hpp"
-// #include "core/DelayerNop.hpp"
 
 int main() {
      using namespace gric;
