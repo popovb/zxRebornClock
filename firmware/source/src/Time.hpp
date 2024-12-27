@@ -12,6 +12,7 @@ namespace gric {
      ///////////////////////////////////////////////////////////////////
      class Time {
 
+	  friend class TimeChecker;
 	  friend bool operator==(const Time&, const Time&);
 
      public:

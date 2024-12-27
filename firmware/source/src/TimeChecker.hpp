@@ -18,6 +18,9 @@ namespace gric {
      private:
 	  Time prev;
 	  Time curr;
+
+     private:
+	  bool check_if_eq_hour() const;
      };
 }
 #endif // _GRIC_TIME_CHECKER_HPP_
