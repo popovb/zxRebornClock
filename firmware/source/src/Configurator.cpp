@@ -33,6 +33,9 @@ init(const McuNetConfig::NetPortPinConf& v) const {
      case McuNet::SA2:
      case McuNet::SA3:
      case McuNet::SA4:
+     case McuNet::RTC_CE:
+     case McuNet::RTC_SCLK:
+     case McuNet::RTC_IO:
 	  init_push_pull(v.conf);
 	  return;
 
