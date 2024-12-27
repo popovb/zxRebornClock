@@ -195,3 +195,13 @@ TEST(test_18) {
      tc.put(t2);
      CHECK(! tc);
 }
+
+TEST(test_19) {
+     using namespace gric;
+     TimeChecker tc;
+     Time t1(9, 15);
+     Time t2(9, 16);
+     tc.put(t1);
+     tc.put(t2);
+     CHECK(tc);
+}
