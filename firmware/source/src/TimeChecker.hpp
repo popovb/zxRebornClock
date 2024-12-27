@@ -21,6 +21,7 @@ namespace gric {
 
      private:
 	  bool check_if_eq_hour() const;
+	  bool check_if_ne_hour() const;
      };
 }
 #endif // _GRIC_TIME_CHECKER_HPP_

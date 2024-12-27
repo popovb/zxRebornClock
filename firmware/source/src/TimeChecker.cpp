@@ -9,10 +9,7 @@ gric::TimeChecker::operator bool() const {
      if (! curr) return false;
      if (prev == curr) return true;
      if (prev.hour == curr.hour) return check_if_eq_hour();
-     //
-     // TODO
-     //
-     return false;
+     return check_if_ne_hour();;
 }
 
 void gric::TimeChecker::put(const Time& v) {
