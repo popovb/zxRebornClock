@@ -27,12 +27,16 @@ int main() {
      Time tm = rtc.pull();
      TimeChecker tc;
      tc.put(tm);
+     u8 v[4];
      while (true) {
 	  tm = rtc.pull();
 	  tc.put(tm);
-	  if (tc) {
-	       for (u8 i = 0; i < 51; i++) tb.display(tm.get());
-	  }
+	  if (tc)
+	       tc.fill(v);
+	  else
+	       tc.fill_prev(v);
+
+	  for (u8 i = 0; i < 51; i++) tb.display(v);
 	  led.toggle();
      }
 }

@@ -15,6 +15,9 @@ namespace gric {
 	  void put(const Time&);
 	  operator bool() const;
 
+	  void fill(u8[4]) const;
+	  void fill_prev(u8[4]) const;
+
      private:
 	  Time prev;
 	  Time curr;
