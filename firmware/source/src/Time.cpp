@@ -3,6 +3,7 @@
 //
 
 #include "Time.hpp"
+#include "DigitExtractor.hpp"
 
 ///////////////////////////////////////////////////////////////////
 gric::Time::Time():
@@ -28,9 +29,10 @@ gric::Time::operator bool() const {
 }
 
 void gric::Time::fill(u8* v) const {
-     //
-     // TODO
-     //
+     DigitExtractor<2> de;
+     de.extract(v, minute);
+     v += 2;
+     de.extract(v, hour);
 }
 ///////////////////////////////////////////////////////////////////
 
