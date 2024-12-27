@@ -10,7 +10,7 @@ gric::TimeChecker::operator bool() const {
      //
      // TODO
      //
-     return true;
+     return false;
 }
 
 void gric::TimeChecker::put(const Time& v) {
