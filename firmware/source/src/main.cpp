@@ -3,6 +3,7 @@
 #include "Anodes.hpp"
 #include "Cathodes.hpp"
 #include "Tubes.hpp"
+#include "Rtc.hpp"
 #include "core/Mcu.hpp"
 
 int main() {
