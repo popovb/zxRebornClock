@@ -4,6 +4,7 @@
 #include "Cathodes.hpp"
 #include "Tubes.hpp"
 #include "Rtc.hpp"
+#include "Time.hpp"
 #include "core/Mcu.hpp"
 
 int main() {
