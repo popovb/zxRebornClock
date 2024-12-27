@@ -19,3 +19,9 @@ void gric::TimeChecker::put(const Time& v) {
      prev = curr;
      curr = v;
 }
+
+bool gric::TimeChecker::check_if_eq_hour() const {
+     i8 delta = curr.minute - prev.minute;
+     if (delta == 1) return true;
+     return false;
+}
