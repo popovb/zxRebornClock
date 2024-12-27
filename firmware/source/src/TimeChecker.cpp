@@ -7,6 +7,7 @@
 gric::TimeChecker::operator bool() const {
      if (! prev) return false;
      if (! curr) return false;
+     if (prev == curr) return true;
      //
      // TODO
      //
