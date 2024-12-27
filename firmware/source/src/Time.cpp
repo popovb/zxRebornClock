@@ -11,6 +11,13 @@ gric::Time::Time():
      return;
 }
 
+gric::Time::Time(u8 h, u8 m):
+     hour(h),
+     minute(m)
+{
+     return;
+}
+
 gric::Time::operator bool() const {
      if (minute < 0) return false;
      if (hour < 0) return false;
