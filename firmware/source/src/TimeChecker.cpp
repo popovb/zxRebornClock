@@ -34,3 +34,7 @@ bool gric::TimeChecker::check_if_ne_hour() const {
 void gric::TimeChecker::fill(u8* v) const {
      curr.fill(v);
 }
+
+void gric::TimeChecker::fill_prev(u8* v) const {
+     prev.fill(v);
+}
