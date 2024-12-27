@@ -68,6 +68,7 @@ endif()
 ###################################################################
 set(src_src
   ${src_dir}/McuNetConfig.cpp
+  ${src_dir}/TimeChecker.cpp
 )
 
 add_library(src

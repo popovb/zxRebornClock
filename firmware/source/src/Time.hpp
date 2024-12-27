@@ -14,6 +14,7 @@ namespace gric {
 	  u8 minute;
 
 	  u8* get() const;
+	  operator bool() const;
      };
 }
 #endif // _GRIC_TIME_HPP_

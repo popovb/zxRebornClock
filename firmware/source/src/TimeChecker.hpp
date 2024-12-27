@@ -14,6 +14,10 @@ namespace gric {
      public:
 	  void put(const Time&);
 	  operator bool() const;
+
+     private:
+	  Time prev;
+	  Time curr;
      };
 }
 #endif // _GRIC_TIME_CHECKER_HPP_
