@@ -235,3 +235,14 @@ TEST(test_22) {
      tc.put(t2);
      CHECK(! tc);
 }
+
+TEST(test_23) {
+     using namespace gric;
+     Time t(10, 56);
+     u8 v[4] = { 0, 0, 0, 0, };
+     t.fill(v);
+     CHECK(v[0] == 6);
+     CHECK(v[1] == 5);
+     CHECK(v[2] == 0);
+     CHECK(v[3] == 1);
+}
