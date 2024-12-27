@@ -30,3 +30,7 @@ bool gric::TimeChecker::check_if_ne_hour() const {
      if (d_minute != 59) return false;
      return true;
 }
+
+void gric::TimeChecker::fill(u8* v) const {
+     curr.fill(v);
+}

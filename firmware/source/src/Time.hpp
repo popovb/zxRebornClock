@@ -19,7 +19,7 @@ namespace gric {
 	  Time();
 	  Time(u8, u8);
 
-	  u8* get() const;
+	  void fill(u8[4]) const;
 	  operator bool() const;
 
      private:
