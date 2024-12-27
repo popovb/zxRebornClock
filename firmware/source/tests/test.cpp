@@ -2,6 +2,7 @@
 #include <iostream>
 
 #include "McuNet.hpp"
+#include "TimeChecker.hpp"
 #include "core/PortName.hpp"
 #include "McuNetConfig.hpp"
 #include "core/Mcu.hpp"
@@ -12,25 +13,6 @@
 #include "core/Gpio.hpp"
 #include "core/PrintConf.hpp"
 #include "core/LedConf.hpp"
-
-/*
-#include "ds1302/Target.hpp"
-#include "ds1302/Direction.hpp"
-#include "ds1302/Register.hpp"
-#include "ds1302/Command.hpp"
-#include "ds1302/ClockHalt.hpp"
-#include "ds1302/Seconds.hpp"
-#include "ds1302/Minutes.hpp"
-#include "ds1302/Meridiem.hpp"
-#include "ds1302/HourMode.hpp"
-#include "ds1302/Hour.hpp"
-#include "ds1302/Date.hpp"
-#include "ds1302/Month.hpp"
-#include "ds1302/Day.hpp"
-#include "ds1302/Year.hpp"
-#include "ds1302/WriteProtect.hpp"
-#include "ds1302/Transfer.hpp"
-*/
 
 int main(int, const char**) {
      return UnitTest::RunAllTests();
@@ -171,8 +153,9 @@ TEST(test_13) {
      led.off();
 }
 
-     //Mcu mcu;
-     //Configurator cnf(mcu);
-     //
-     // TODO
-     //
+TEST(test_14) {
+     using namespace gric;
+     TimeChecker tc;
+     CHECK(tc);
+     //Time t1(9, 15);
+}
