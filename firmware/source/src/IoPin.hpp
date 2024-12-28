@@ -2,6 +2,7 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
+#include "RtcPin.hpp"
 #include "McuNetConfig.hpp"
 #include "core/Mcu.hpp"
 
@@ -10,7 +11,7 @@
 
 namespace gric {
 
-     class IoPin {
+     class IoPin : public RtcPin {
 
      public:
 	  IoPin(const Mcu&, const McuNetConfig&);
