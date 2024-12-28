@@ -14,3 +14,7 @@ gric::RtcPin::RtcPin(const Mcu& m, Pin p):
 void gric::RtcPin::write(bool v) const {
      pin.write(v);
 }
+
+bool gric::RtcPin::read() const {
+     return pin.read();
+}
