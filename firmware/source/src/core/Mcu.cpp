@@ -28,6 +28,11 @@ void gric::Mcu::init(const PortPinConf& pp, const PinConf& pc) {
      gpio.init(pp, pc);
 }
 
+void gric::Mcu::init(const Pin& p, const PinConf& pc) const {
+     Gpio gpio;
+     gpio.init(p, pc);
+}
+
 void gric::Mcu::init(const LedConf& v) {
      PortPinConf pp(v);
      LedPinConf lpc;
