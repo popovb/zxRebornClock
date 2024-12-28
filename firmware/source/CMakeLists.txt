@@ -154,6 +154,7 @@ set(src
   ${src_dir}/Counter.cpp
   ${src_dir}/TimeChecker.cpp
   ${src_dir}/Time.cpp
+  ${src_dir}/Rtc.cpp
 )
 
 add_executable(${name}.elf

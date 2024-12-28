@@ -17,6 +17,11 @@ namespace gric {
 	  Rtc(const Mcu&, const McuNetConfig&);
 
 	  Time pull() const;
+
+     private:
+	  CePin ce;
+	  SclkPin sclk;
+	  IoPin io;
      };
 }
 #endif // _GRIC_RTC_HPP_
