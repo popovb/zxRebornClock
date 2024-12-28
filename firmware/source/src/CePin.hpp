@@ -2,6 +2,7 @@
 // Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
 //
 
+#include "RtcPin.hpp"
 #include "McuNetConfig.hpp"
 #include "core/Mcu.hpp"
 
@@ -10,7 +11,7 @@
 
 namespace gric {
 
-     class CePin {
+     class CePin : public RtcPin {
 
      public:
 	  CePin(const Mcu&, const McuNetConfig&);

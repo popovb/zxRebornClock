@@ -155,6 +155,7 @@ set(src
   ${src_dir}/TimeChecker.cpp
   ${src_dir}/Time.cpp
   ${src_dir}/Rtc.cpp
+  ${src_dir}/CePin.cpp
 )
 
 add_executable(${name}.elf
