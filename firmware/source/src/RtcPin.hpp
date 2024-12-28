@@ -13,6 +13,10 @@ namespace gric {
 
      public:
 	  RtcPin(const Mcu&, Pin);
+
+     private:
+	  const Mcu& mcu;
+	  const Pin pin;
      };
 }
 #endif // _GRIC_MCU_RTC_PIN_HPP_

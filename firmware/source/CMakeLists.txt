@@ -158,6 +158,7 @@ set(src
   ${src_dir}/CePin.cpp
   ${src_dir}/SclkPin.cpp
   ${src_dir}/IoPin.cpp
+  ${src_dir}/RtcPin.cpp
 )
 
 add_executable(${name}.elf
