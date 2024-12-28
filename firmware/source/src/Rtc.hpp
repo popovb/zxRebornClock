@@ -3,6 +3,7 @@
 //
 
 #include "McuNetConfig.hpp"
+#include "CePin.hpp"
 #include "Time.hpp"
 #include "core/Mcu.hpp"
 
