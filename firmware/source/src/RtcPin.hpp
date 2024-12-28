@@ -14,6 +14,12 @@ namespace gric {
      public:
 	  RtcPin(const Mcu&, Pin);
 
+	  void init_in() const;
+	  void init_out() const;
+
+	  void write(bool) const;
+	  bool read() const;
+
      private:
 	  const Mcu& mcu;
 	  const Pin pin;
