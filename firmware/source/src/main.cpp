@@ -39,6 +39,7 @@ int main() {
 	  for (u8 i = 0; i < 51; i++) tb.display(v);
 	  led.toggle();
      }
+     return 0;
 }
 /*
 int main() {
