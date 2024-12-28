@@ -33,6 +33,15 @@ void gric::Gpio::init(const PortPinConf& pp, const PinConf& pc) const {
      GPIO_Init((GPIO_TypeDef*)poh.get(pp.port), &i);
 }
 
+void gric::Gpio::init(const Pin& pi, const PinConf& pc) const {
+     GPIO_InitTypeDef i;
+     GpioModeCalc gmc;
+     i.GPIO_Pin = pi.pin;
+     i.GPIO_Mode = gmc.get(pc);
+     i.GPIO_Speed = GPIO_Speed_50MHz;
+     GPIO_Init((GPIO_TypeDef*)(pi.port), &i);
+}
+
 void gric::Gpio::write_bit(u32 p, u32 i, bool v) const {
      BitAction vv = (v) ? Bit_SET : Bit_RESET;
      GPIO_WriteBit((GPIO_TypeDef*)p, i, vv);

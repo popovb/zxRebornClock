@@ -12,6 +12,7 @@ namespace gric {
      class Pin {
 
 	  friend class Mcu;
+	  friend class Gpio;
 
      public:
 	  Pin();
