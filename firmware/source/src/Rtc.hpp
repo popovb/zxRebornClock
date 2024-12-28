@@ -8,6 +8,8 @@
 #include "IoPin.hpp"
 #include "Time.hpp"
 #include "core/Mcu.hpp"
+#include "core/DelayerNop.hpp"
+#include "ds1302/Transfer.hpp"
 
 #ifndef _GRIC_RTC_HPP_
 #define _GRIC_RTC_HPP_
@@ -25,6 +27,12 @@ namespace gric {
 	  CePin ce;
 	  SclkPin sclk;
 	  IoPin io;
+
+	  using Delayer = DelayerNop<3'000'000>;
+	  Delayer dln;
+
+	  using Transfer = ds1302::Transfer<RtcPin, Delayer>;
+	  Transfer transfer;
      };
 }
 #endif // _GRIC_RTC_HPP_
