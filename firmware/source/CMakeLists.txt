@@ -156,6 +156,7 @@ set(src
   ${src_dir}/Time.cpp
   ${src_dir}/Rtc.cpp
   ${src_dir}/CePin.cpp
+  ${src_dir}/SclkPin.cpp
 )
 
 add_executable(${name}.elf
