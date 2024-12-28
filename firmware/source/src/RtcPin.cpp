@@ -23,3 +23,8 @@ void gric::RtcPin::init_out() const {
      PinConf pc(PinDir::Out, PinMode::PushPull);
      mcu.init(pin, pc);
 }
+
+void gric::RtcPin::init_in() const {
+     PinConf pc(PinDir::In, PinMode::Float);
+     mcu.init(pin, pc);
+}
