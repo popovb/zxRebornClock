@@ -18,3 +18,8 @@ void gric::RtcPin::write(bool v) const {
 bool gric::RtcPin::read() const {
      return pin.read();
 }
+
+void gric::RtcPin::init_out() const {
+     PinConf pc(PinDir::Out, PinMode::PushPull);
+     mcu.init(pin, pc);
+}

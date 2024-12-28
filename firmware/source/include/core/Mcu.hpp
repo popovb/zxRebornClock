@@ -21,6 +21,7 @@ namespace gric {
 	  Mcu();
 
 	  void init(const PortPinConf&, const PinConf&);
+	  void init(const Pin&, const PinConf&) const;
 	  Pin get(const PortPinConf&) const;
 
 	  void init(const PrintConf&) const;
