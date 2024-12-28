@@ -10,3 +10,7 @@ gric::RtcPin::RtcPin(const Mcu& m, Pin p):
 {
      return;
 }
+
+void gric::RtcPin::write(bool v) const {
+     pin.write(v);
+}
