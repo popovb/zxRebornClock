@@ -87,13 +87,15 @@ int main() {
      }
 }
 
+#include "core/DelayerNop.hpp"
+
 int main() {
      using namespace gric;
      Mcu mcu;
-     Delayer dl;
-     DelayerNop<3'000'000> dln;
-     PrintConf pc(115200);
-     mcu.init(pc);
+     //Delayer dl;
+     DelayerNop<4'000'000> dln;
+     //PrintConf pc(115200);
+     //mcu.init(pc);
      LedConf lc(PortName::A, 0);
      mcu.init(lc);
      auto led = mcu.get(lc);
