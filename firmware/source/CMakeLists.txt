@@ -36,6 +36,7 @@ set(FLAGS
   -ffunction-sections
   -fdata-sections
   -fno-common
+  -fverbose-asm
 )
 #################################################################
 
