@@ -23,7 +23,7 @@ namespace gric {
 	  const Cathodes& cs;
 
      private:
-	  DelayerNop<3'000'000> delay;
+	  DelayerNop<4'000'000> delay;
 	  static const u16 blank_time_us   = 900; // 100 - 300 us
 	  static const u16 display_time_ms =   4; //   1 -   4 ms
 

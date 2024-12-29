@@ -28,7 +28,7 @@ namespace gric {
 	  SclkPin sclk;
 	  IoPin io;
 
-	  using Delayer = DelayerNop<3'000'000>;
+	  using Delayer = DelayerNop<4'000'000>;
 	  Delayer dln;
 
 	  using Transfer = ds1302::Transfer<RtcPin, Delayer>;
