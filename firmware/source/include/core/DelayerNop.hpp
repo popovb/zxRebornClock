@@ -25,18 +25,21 @@ namespace gric {
 /////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////
-#define _NOP() __asm__ __volatile__("nop")
+//#define _NOP() __asm__ __volatile__("nop")
 
 template<gric::u32 S>
 void gric::DelayerNop<S>::ms(u32 v) const {
      asm("");
-     for (u32 i = 0; i < v * MS; i++) _NOP();
+     for (u32 i = 0; i < v * MS; i++)
+	  __asm__("nop");
+	  
 }
 
 template<gric::u32 S>
 void gric::DelayerNop<S>::us(u32 v) const {
      asm("");
-     for (u32 i = 0; i < v * US; i++) _NOP();
+     for (u32 i = 0; i < v * US; i++)
+	  __asm__("nop");
 }
 /////////////////////////////////////////////////////////////////
 #endif // _GRIC_DELAYER_NOP_HPP_

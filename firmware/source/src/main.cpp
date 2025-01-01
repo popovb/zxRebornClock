@@ -7,7 +7,7 @@
 #include "Time.hpp"
 #include "TimeChecker.hpp"
 #include "core/Mcu.hpp"
-
+/*
 int main() {
      using namespace gric;
      Mcu mcu;
@@ -19,9 +19,9 @@ int main() {
      Cathodes cs(mcu, mnc);
      Tubes tb(as, cs);
 
-     const auto& ppc = mnc.get(McuNet::WL);
-     LedConf lc(ppc.port, ppc.pin);
-     Led led = mcu.get(lc);
+     // const auto& ppc = mnc.get(McuNet::WL);
+     // LedConf lc(ppc.port, ppc.pin);
+     // Led led = mcu.get(lc);
 
      Rtc rtc(mcu, mnc);
      Time tm = rtc.pull();
@@ -37,11 +37,13 @@ int main() {
 	       tc.fill_prev(v);
 
 	  for (u8 i = 0; i < 51; i++) tb.display(v);
-	  led.toggle();
+	  // led.toggle();
      }
      return 0;
 }
-/*
+*/
+#include "DigitExtractor.hpp"
+#include "Counter.hpp"
 int main() {
      using namespace gric;
      Mcu mcu;
@@ -53,9 +55,9 @@ int main() {
      Cathodes cs(mcu, mnc);
      Tubes tb(as, cs);
 
-     const auto& ppc = mnc.get(McuNet::WL);
-     LedConf lc(ppc.port, ppc.pin);
-     Led led = mcu.get(lc);
+     // const auto& ppc = mnc.get(McuNet::WL);
+     // LedConf lc(ppc.port, ppc.pin);
+     // Led led = mcu.get(lc);
 
      Counter cn(989);
      DigitExtractor<4> de;
@@ -66,10 +68,10 @@ int main() {
        for (u8 i = 0; i < 51; i++) tb.display(v);
 	  cn.tick();
 	  de.extract(v, cn.get());
-	  led.toggle();
+	  // led.toggle();
      }
 }
-
+/*
 int main() {
      using namespace gric;
      Mcu mcu;

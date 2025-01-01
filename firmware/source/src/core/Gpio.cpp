@@ -12,6 +12,10 @@ void gric::Gpio::init(const PortPinConf&, const PinConf&) const {
      return;
 }
 
+void gric::Gpio::init(const Pin&, const PinConf&) const {
+     return;
+}
+
 void gric::Gpio::write_bit(u32, u32, bool) const {
      return;
 }
