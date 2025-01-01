@@ -11,7 +11,6 @@ gric::PortHolder::ports[] = {
      GPIOA_BASE,
      GPIOB_BASE,
      GPIOC_BASE,
-     GPIOA_BASE,
 };
 ///////////////////////////////////////////////////////////////////
 

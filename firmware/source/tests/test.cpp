@@ -13,6 +13,8 @@
 #include "core/Gpio.hpp"
 #include "core/PrintConf.hpp"
 #include "core/LedConf.hpp"
+#include "core/PortHolder.hpp"
+#include "ch32x035.h"
 
 int main(int, const char**) {
      return UnitTest::RunAllTests();
@@ -42,7 +44,6 @@ TEST(test_01) {
      CHECK(PortName::A == 0);
      CHECK(PortName::B == 1);
      CHECK(PortName::C == 2);
-     CHECK(PortName::D == 3);
 }
 
 TEST(test_02) {
@@ -245,4 +246,12 @@ TEST(test_23) {
      CHECK(v[1] == 5);
      CHECK(v[2] == 0);
      CHECK(v[3] == 1);
+}
+
+TEST(test_24) {
+     using namespace gric;
+     PortHolder poh;
+     CHECK(poh.get(PortName::A) == GPIOA_BASE);
+     CHECK(poh.get(PortName::B) == GPIOB_BASE);
+     CHECK(poh.get(PortName::C) == GPIOC_BASE);
 }
