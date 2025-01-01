@@ -254,4 +254,20 @@ TEST(test_24) {
      CHECK(poh.get(PortName::A) == GPIOA_BASE);
      CHECK(poh.get(PortName::B) == GPIOB_BASE);
      CHECK(poh.get(PortName::C) == GPIOC_BASE);
+
+     u32 a = 0x40000000 + 0x10000 + 0x0800;
+     u32 b = 0x40000000 + 0x10000 + 0x0C00;
+     u32 c = 0x40000000 + 0x10000 + 0x1000;
+
+     CHECK(poh.get(PortName::A) == a);
+     CHECK(poh.get(PortName::B) == b);
+     CHECK(poh.get(PortName::C) == c);
+
+     CHECK(poh.get(PortName::A) == 0X40010800);
+     CHECK(poh.get(PortName::B) == 0X40010C00);
+     CHECK(poh.get(PortName::C) == 0X40011000);
+
+     CHECK(poh.get(PortName::A) == 1073809408);
+     CHECK(poh.get(PortName::B) == 1073810432);
+     CHECK(poh.get(PortName::C) == 1073811456);
 }
