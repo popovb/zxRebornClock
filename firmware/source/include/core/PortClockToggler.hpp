@@ -21,7 +21,7 @@ namespace gric {
 	  bool is_off(PortName::name_t) const;
 
      private:
-	  static const u8 len = 4;
+	  static constexpr u8 len = 3;
 	  bool state[len];
      };
 }
