@@ -59,15 +59,15 @@ int main() {
      LedConf lc(ppc.port, ppc.pin);
      Led led = mcu.get(lc);
 
-     Counter cn(989);
+     Counter cnt(989);
      DigitExtractor<4> de;
      u8 v[4];
-     de.extract(v, cn.get());
+     de.extract(v, cnt.get());
 
      while (true) {
        for (u8 i = 0; i < 51; i++) tb.display(v);
-       cn.tick();
-       de.extract(v, cn.get());
+       cnt.tick();
+       de.extract(v, cnt.get());
        led.toggle();
      }
      return 0;
