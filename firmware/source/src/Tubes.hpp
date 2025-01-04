@@ -24,8 +24,10 @@ namespace gric {
 
      private:
 	  DelayerNop<4'000'000> delay;
-	  static const u16 blank_time_us   = 900; // 100 - 300 us
-	  static const u16 display_time_ms =   4; //   1 -   4 ms
+	  static constexpr u16 blank_time_us =
+	       900; // 100 - 300 us
+	  static constexpr u16 display_time_ms =
+	       4; // 1 - 4 ms
 
      private:
 	  void blank() const;
