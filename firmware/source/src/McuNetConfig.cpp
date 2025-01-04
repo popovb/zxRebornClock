@@ -4,7 +4,7 @@
 
 #include "McuNetConfig.hpp"
 
-///////////////////////////////////////////////////////////////////
+/*
 const gric::McuNetConfig::NetPortPinConf
 gric::McuNetConfig::pp[] = {
      { McuNet::K1,       { PortName::C, 14 } },
@@ -29,9 +29,8 @@ gric::McuNetConfig::pp[] = {
      { McuNet::RTC_SCLK, { PortName::B,  0 } },
      { McuNet::RTC_IO,   { PortName::C,  6 } },
 };
-///////////////////////////////////////////////////////////////////
+*/
 
-///////////////////////////////////////////////////////////////////
 const gric::McuNetConfig::NetPortPinConf&
 gric::McuNetConfig::operator[](u8 v) const {
      if (v >= len) return pp[len - 1];
@@ -50,4 +49,3 @@ gric::McuNetConfig::get(McuNet::net_t v) const {
 gric::u8 gric::McuNetConfig::size() const {
      return len;
 }
-///////////////////////////////////////////////////////////////////

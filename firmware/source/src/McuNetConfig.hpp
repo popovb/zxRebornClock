@@ -19,14 +19,16 @@ namespace gric {
 	  };
 
      public:
+	  McuNetConfig();
+
 	  const NetPortPinConf& operator[](u8) const;
 	  const PortPinConf& get(McuNet::net_t) const;
 
 	  u8 size() const;
 
      private:
-	  static const u8 len = 18;
-	  static const NetPortPinConf pp[len];
+	  static constexpr u8 len = 18;
+	  const NetPortPinConf pp[len];
      };
 }
 #endif // _GRIC_MCU_NET_CONFIG_HPP_
