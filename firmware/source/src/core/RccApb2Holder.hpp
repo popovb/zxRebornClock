@@ -15,7 +15,7 @@ namespace gric {
 	  u32 get(PortName::name_t) const;
 
      private:
-	  static const u8 len = 4;
+	  static constexpr u8 len = 3;
 	  static const u32 rcc_apb2[len];
      };
 }

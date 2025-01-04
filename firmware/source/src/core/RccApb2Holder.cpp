@@ -13,7 +13,6 @@ gric::RccApb2Holder::rcc_apb2[] = {
      RCC_APB2Periph_GPIOA,
      RCC_APB2Periph_GPIOB,
      RCC_APB2Periph_GPIOC,
-     RCC_APB2Periph_GPIOA,
 };
 ///////////////////////////////////////////////////////////////////
 
