@@ -30,8 +30,7 @@ set(FLAGS
   -mabi=ilp32
   -msmall-data-limit=8
   -msave-restore
-#  -Os
-  -O0
+  -Os
   -fmessage-length=0
   -fsigned-char
   -ffunction-sections
