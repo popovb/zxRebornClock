@@ -70,6 +70,8 @@ set(src_src
   ${src_dir}/McuNetConfig.cpp
   ${src_dir}/TimeChecker.cpp
   ${src_dir}/Time.cpp
+  ${src_dir}/Anodes.cpp
+  ${src_dir}/Configurator.cpp
 )
 
 add_library(src

@@ -3,6 +3,8 @@
 
 #include "McuNet.hpp"
 #include "TimeChecker.hpp"
+#include "Configurator.hpp"
+#include "Anodes.hpp"
 #include "core/PortName.hpp"
 #include "McuNetConfig.hpp"
 #include "core/Mcu.hpp"
@@ -270,4 +272,14 @@ TEST(test_24) {
      CHECK(poh.get(PortName::A) == 1073809408);
      CHECK(poh.get(PortName::B) == 1073810432);
      CHECK(poh.get(PortName::C) == 1073811456);
+}
+
+TEST(test_25) {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+
+     Anodes as(mcu, mnc);
 }
