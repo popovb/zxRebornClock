@@ -17,6 +17,7 @@ namespace gric {
 	  Anodes(const Mcu&, const McuNetConfig&);
 
 	  void clear() const;
+	  void clear(u8) const;
 	  void set(u8) const;
 
      private:

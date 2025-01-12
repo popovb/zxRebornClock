@@ -51,5 +51,10 @@ void gric::Cathodes::clear() const {
 
 void gric::Cathodes::set(u8 v) const {
      if (v >= N) v = N - 1;
-     pins[v].write(true);
+     for (u8 i = 0; i < N; i++) {
+	  if (v == i)
+	       pins[i].write(true);
+	  else
+	       pins[i].write(false);
+     }
 }

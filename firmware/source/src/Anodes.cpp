@@ -34,3 +34,9 @@ void gric::Anodes::set(u8 v) const {
      if (v >= N) v = N - 1;
      pins[v].write(true);
 }
+
+void gric::Anodes::clear(u8 v) const {
+     --v;
+     if (v >= N) v = N - 1;
+     pins[v].write(false);
+}

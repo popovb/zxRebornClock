@@ -29,8 +29,16 @@ namespace gric {
 	  static constexpr u16 display_time_ms =
 	       4; // 1 - 4 ms
 
+	  static constexpr u16 pause_time_us =
+	       900; // 100 - 300 us
+	  static constexpr u16 anode_time_ms =
+	       1; // 1 - 4 ms
+
+	  static constexpr u16 pause_time   = 3;
+	  static constexpr u16 display_time = 2;
+
      private:
-	  void blank() const;
+	  // void blank() const;
 	  void display_1(u8[4]) const;
 	  void display_2(u8[4]) const;
 	  void display_3(u8[4]) const;

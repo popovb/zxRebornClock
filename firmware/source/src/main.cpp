@@ -19,9 +19,9 @@ int main() {
      Cathodes cs(mcu, mnc);
      Tubes tb(as, cs);
 
-     // const auto& ppc = mnc.get(McuNet::WL);
-     // LedConf lc(ppc.port, ppc.pin);
-     // Led led = mcu.get(lc);
+     const auto& ppc = mnc.get(McuNet::WL);
+     LedConf lc(ppc.port, ppc.pin);
+     Led led = mcu.get(lc);
 
      Rtc rtc(mcu, mnc);
      Time tm = rtc.pull();
@@ -37,7 +37,7 @@ int main() {
 	       tc.fill_prev(v);
 
 	  for (u8 i = 0; i < 51; i++) tb.display(v);
-	  // led.toggle();
+	  led.toggle();
      }
      return 0;
 }
@@ -65,13 +65,14 @@ int main() {
      de.extract(v, cnt.get());
 
      while (true) {
-       for (u8 i = 0; i < 51; i++) tb.display(v);
+       for (u8 i = 0; i < 50; i++) tb.display(v);
        cnt.tick();
        de.extract(v, cnt.get());
        led.toggle();
      }
      return 0;
 }
+
 /*
 int main() {
      using namespace gric;
