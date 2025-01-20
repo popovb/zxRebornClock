@@ -49,6 +49,7 @@ set(core_src
   ${core_dir}/Pin.cpp
   ${core_dir}/Gpio.cpp
   ${core_dir}/PinRx.cpp
+  ${core_dir}/PinTx.cpp
 )
 
 add_library(core
