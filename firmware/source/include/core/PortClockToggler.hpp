@@ -29,7 +29,10 @@ namespace gric {
 
      private:
 	  static constexpr u8 len = 3;
-	  bool state[len];
+	  bool port_state[len];
+
+	  static constexpr u8 ulen = 4;
+	  bool uart_state[ulen];
      };
 }
 #endif // _GRIC_PORT_CLOCK_TOGGLER_HPP_

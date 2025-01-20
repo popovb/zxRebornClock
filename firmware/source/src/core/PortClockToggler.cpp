@@ -10,37 +10,38 @@
 #endif
 
 gric::PortClockToggler::PortClockToggler():
-     state{ false, }
+     port_state{ false, },
+     uart_state{ false, }
 {
      return;
 }
 
 bool gric::PortClockToggler::is_on(PortName::name_t v) const {
-     return state[v];
+     return port_state[v];
 }
 
 bool gric::PortClockToggler::is_off(PortName::name_t v) const {
-     return !state[v];
+     return !port_state[v];
 }
 
 #ifdef UNITTEST
 void gric::PortClockToggler::on(PortName::name_t v) {
-     state[v] = true;
+     port_state[v] = true;
 }
 
 void gric::PortClockToggler::off(PortName::name_t v) {
-     state[v] = false;
+     port_state[v] = false;
 }
 #else
 void gric::PortClockToggler::on(PortName::name_t v) {
      RccApb2Holder rah;
      RCC_APB2PeriphClockCmd(rah.get(v), ENABLE);
-     state[v] = true;
+     port_state[v] = true;
 }
 
 void gric::PortClockToggler::off(PortName::name_t v) {
      RccApb2Holder rah;
      RCC_APB2PeriphClockCmd(rah.get(v), DISABLE);
-     state[v] = false;
+     port_state[v] = false;
 }
 #endif
