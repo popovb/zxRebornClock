@@ -7,6 +7,8 @@
 #include "Anodes.hpp"
 #include "core/PortName.hpp"
 #include "core/UartName.hpp"
+#include "core/PinTx.hpp"
+#include "core/PinRx.hpp"
 #include "McuNetConfig.hpp"
 #include "core/Mcu.hpp"
 #include "core/PinDir.hpp"
@@ -294,5 +296,11 @@ TEST(test_26) {
      // UartConf uc(UartName::Uart1, 0);
      //
      // TODO
-     //
+     // PortPinConf pp(PortName::A, 0);
+}
+
+TEST(test_27) {
+     using namespace gric;
+     PinTx ptx(PortName::A, 2);
+     PinRx prx(PortName::A, 3);
 }
