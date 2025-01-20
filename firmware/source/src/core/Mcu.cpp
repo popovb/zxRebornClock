@@ -29,6 +29,11 @@ void gric::Mcu::init(const UartConf& uc) {
      init(uc.name, uc.speed);
 }
 
+void gric::Mcu::init(const PinTx& v) {
+     PinConf pc(PinDir::Out, PinMode::Alter);
+     init(v, pc);
+}
+
 void gric::Mcu::init(const PortPinConf& pp, const PinConf& pc) {
      if (pct.is_off(pp.port)) pct.on(pp.port);
      Gpio gpio;
