@@ -308,3 +308,13 @@ TEST(test_28) {
      PinRx prx(PortName::A, 3);
      UartConf uc(UartName::Uart1, 115200, ptx, prx);
 }
+
+TEST(test_29) {
+     using namespace gric;
+     PinTx ptx(PortName::A, 2);
+     PinRx prx(PortName::A, 3);
+     UartConf uc(UartName::Uart1, 115200, ptx, prx);
+
+     Mcu mcu;
+     mcu.init(uc);
+}
