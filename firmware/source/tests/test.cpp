@@ -6,6 +6,7 @@
 #include "Configurator.hpp"
 #include "Anodes.hpp"
 #include "core/PortName.hpp"
+#include "core/UartName.hpp"
 #include "McuNetConfig.hpp"
 #include "core/Mcu.hpp"
 #include "core/PinDir.hpp"
@@ -282,4 +283,15 @@ TEST(test_25) {
      cnf.init(mnc);
 
      Anodes as(mcu, mnc);
+}
+
+TEST(test_26) {
+     CHECK(UartName::Uart1 == 0);
+     CHECK(UartName::Uart2 == 1);
+     CHECK(UartName::Uart3 == 2);
+     CHECK(UartName::Uart4 == 3);
+     // UartConf uc(UartName::Uart1, 0);
+     //
+     // TODO
+     //
 }
