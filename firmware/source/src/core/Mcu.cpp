@@ -4,6 +4,7 @@
 
 #include "core/Mcu.hpp"
 #include "Gpio.hpp"
+#include "Uart.hpp"
 #include "LedPinConf.hpp"
 #include "PortHolder.hpp"
 #include "PinHolder.hpp"
@@ -37,6 +38,11 @@ void gric::Mcu::init(const PinTx& v) {
 void gric::Mcu::init(const PinRx& v) {
      PinConf pc(PinDir::In, PinMode::Float);
      init(v, pc);
+}
+
+void gric::Mcu::init(UartName::name_t n, u32 s) const {
+     Uart uart;
+     uart.init(n, s);
 }
 
 void gric::Mcu::init(const PortPinConf& pp, const PinConf& pc) {
