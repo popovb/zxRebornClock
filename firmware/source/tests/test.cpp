@@ -286,6 +286,7 @@ TEST(test_25) {
 }
 
 TEST(test_26) {
+     using namespace gric;
      CHECK(UartName::Uart1 == 0);
      CHECK(UartName::Uart2 == 1);
      CHECK(UartName::Uart3 == 2);
