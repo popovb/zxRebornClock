@@ -50,6 +50,7 @@ set(core_src
   ${core_dir}/Gpio.cpp
   ${core_dir}/PinRx.cpp
   ${core_dir}/PinTx.cpp
+  ${core_dir}/UartConf.cpp
 )
 
 add_library(core
