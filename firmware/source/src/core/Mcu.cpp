@@ -22,6 +22,13 @@ void gric::Mcu::init() const {
      clock_update();
 }
 
+void gric::Mcu::init(const UartConf& uc) {
+     if (pct.is_off(uc.name)) pct.on(uc.name);
+     init(uc.pin_tx);
+     init(uc.pin_rx);
+     init(uc.name, uc.speed);
+}
+
 void gric::Mcu::init(const PortPinConf& pp, const PinConf& pc) {
      if (pct.is_off(pp.port)) pct.on(pp.port);
      Gpio gpio;
