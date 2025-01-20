@@ -4,6 +4,7 @@
 
 #include "core/PortClockToggler.hpp"
 #include "RccApb2Holder.hpp"
+#include "RccApbHolder.hpp"
 
 #ifndef UNITTEST
 #include "ch32x035.h"
@@ -52,4 +53,24 @@ void gric::PortClockToggler::off(PortName::name_t v) {
      RCC_APB2PeriphClockCmd(rah.get(v), DISABLE);
      port_state[v] = false;
 }
+
+void gric::PortClockToggler::on(UartName::name_t v) {
+     RccApbHolder rah;
+     RCC_APB1PeriphClockCmd(rah.get(v), ENABLE);
+     uart_state[v] = true;
+}
+
+void gric::PortClockToggler::off(UartName::name_t v) {
+     RccApbHolder rah;
+     RCC_APB1PeriphClockCmd(rah.get(v), DISABLE);
+     uart_state[v] = false;
+}
 #endif
+/*
+#define RCC_APB2Periph_USART1          ((uint32_t)0x00004000)
+#define RCC_APB1Periph_USART2          ((uint32_t)0x00020000)
+#define RCC_APB1Periph_USART3          ((uint32_t)0x00040000)
+#define RCC_APB1Periph_USART4          ((uint32_t)0x00080000)
+
+RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2 | RCC_APB1Periph_USART3, ENABLE);
+ */
