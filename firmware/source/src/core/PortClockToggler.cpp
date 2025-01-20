@@ -24,6 +24,14 @@ bool gric::PortClockToggler::is_off(PortName::name_t v) const {
      return !port_state[v];
 }
 
+bool gric::PortClockToggler::is_on(UartName::name_t v) const {
+     return uart_state[v];
+}
+
+bool gric::PortClockToggler::is_off(UartName::name_t v) const {
+     return !uart_state[v];
+}
+
 #ifdef UNITTEST
 void gric::PortClockToggler::on(PortName::name_t v) {
      port_state[v] = true;
