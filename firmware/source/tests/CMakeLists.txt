@@ -48,6 +48,7 @@ set(core_src
   ${core_dir}/Led.cpp
   ${core_dir}/Pin.cpp
   ${core_dir}/Gpio.cpp
+  ${core_dir}/PinRx.cpp
 )
 
 add_library(core
