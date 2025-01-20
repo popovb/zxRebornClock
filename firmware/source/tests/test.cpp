@@ -9,6 +9,7 @@
 #include "core/UartName.hpp"
 #include "core/PinTx.hpp"
 #include "core/PinRx.hpp"
+#include "core/UartConf.hpp"
 #include "McuNetConfig.hpp"
 #include "core/Mcu.hpp"
 #include "core/PinDir.hpp"
@@ -293,14 +294,17 @@ TEST(test_26) {
      CHECK(UartName::Uart2 == 1);
      CHECK(UartName::Uart3 == 2);
      CHECK(UartName::Uart4 == 3);
-     // UartConf uc(UartName::Uart1, 0);
-     //
-     // TODO
-     // PortPinConf pp(PortName::A, 0);
 }
 
 TEST(test_27) {
      using namespace gric;
      PinTx ptx(PortName::A, 2);
      PinRx prx(PortName::A, 3);
+}
+
+TEST(test_28) {
+     using namespace gric;
+     PinTx ptx(PortName::A, 2);
+     PinRx prx(PortName::A, 3);
+     UartConf uc(UartName::Uart1, 115200, ptx, prx);
 }
