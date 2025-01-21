@@ -8,6 +8,7 @@
 #include "LedPinConf.hpp"
 #include "PortHolder.hpp"
 #include "PinHolder.hpp"
+#include "UsartHolder.hpp"
 
 #ifndef UNITTEST
 #include "ch32x035.h"
@@ -73,6 +74,11 @@ gric::Pin gric::Mcu::get(const PortPinConf& pc) const {
      PortHolder poh;
      PinHolder pih;
      return Pin(poh.get(pc.port), pih.get(pc.pin));
+}
+
+gric::Uart gric::Mcu::get(UartName::name_t n) const {
+     UsartHolder uh;
+     return uh.get(n);
 }
 
 #ifdef    UNITTEST
