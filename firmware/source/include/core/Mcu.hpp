@@ -8,6 +8,7 @@
 #include "LedConf.hpp"
 #include "UartConf.hpp"
 #include "Led.hpp"
+#include "Uart.hpp"
 #include "Pin.hpp"
 #include "ClockToggler.hpp"
 
@@ -29,6 +30,7 @@ namespace gric {
 
 	  Pin get(const PortPinConf&) const;
 	  Led get(const LedConf&) const;
+	  Uart get(UartName::name_t) const;
 
      private:
 	  void init() const;

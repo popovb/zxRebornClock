@@ -23,6 +23,8 @@ int main() {
      mcu.init(uc1);
      mcu.init(uc2);
 
+     Uart uart2 = mcu.get(UartName::Uart2);
+     Uart uart3 = mcu.get(UartName::Uart3);
      //
      // TODO
      //
