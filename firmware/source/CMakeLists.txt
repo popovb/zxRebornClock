@@ -102,6 +102,7 @@ set(core_src
   ${core_dir}/Usart.cpp
   ${core_dir}/UsartHolder.cpp
   ${core_dir}/RccUsartHolder.cpp
+  ${core_dir}/Uart.cpp
 )
 
 add_library(core

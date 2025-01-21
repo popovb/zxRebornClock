@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
+// Copyright (c) 2025 Boris Popov <popov@whitekefir.ru>
 //
 
 #include "Types.hpp"
