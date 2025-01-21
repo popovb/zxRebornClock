@@ -2,19 +2,19 @@
 // Copyright (c) 2025 Boris Popov <popov@whitekefir.ru>
 //
 
-#include "Uart.hpp"
+#include "Usart.hpp"
 #include "UsartHolder.hpp"
 
 #ifdef UNITTEST
 
-void gric::Uart::init(UartName::name_t, u32) const {
+void gric::Usart::init(UartName::name_t, u32) const {
      return;
 }
 
 #else
 #include "ch32x035.h"
 
-void gric::Uart::init(UartName::name_t n, u32 s) const {
+void gric::Usart::init(UartName::name_t n, u32 s) const {
      UsartHolder uh;
      USART_InitTypeDef u;
      u.USART_BaudRate = s;

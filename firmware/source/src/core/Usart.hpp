@@ -4,15 +4,15 @@
 
 #include "core/UartName.hpp"
 
-#ifndef _GRIC_UART_HPP_
-#define _GRIC_UART_HPP_
+#ifndef _GRIC_USART_HPP_
+#define _GRIC_USART_HPP_
 
 namespace gric {
 
-     class Uart {
+     class Usart {
 
      public:
 	  void init(UartName::name_t, u32) const;
      };
 }
-#endif // _GRIC_UART_HPP_
+#endif // _GRIC_USART_HPP_

@@ -4,7 +4,7 @@
 
 #include "core/Mcu.hpp"
 #include "Gpio.hpp"
-#include "Uart.hpp"
+#include "Usart.hpp"
 #include "LedPinConf.hpp"
 #include "PortHolder.hpp"
 #include "PinHolder.hpp"
@@ -41,7 +41,7 @@ void gric::Mcu::init(const PinRx& v) {
 }
 
 void gric::Mcu::init(UartName::name_t n, u32 s) const {
-     Uart uart;
+     Usart uart;
      uart.init(n, s);
 }
 
