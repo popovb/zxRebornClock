@@ -16,6 +16,9 @@ namespace gric {
      public:
 	  Uart();
 
+	  void enable() const;
+	  void disable() const;
+
      private:
 	  u32 usart;
 

@@ -25,6 +25,11 @@ int main() {
 
      Uart uart2 = mcu.get(UartName::Uart2);
      Uart uart3 = mcu.get(UartName::Uart3);
+
+     uart2.disable();
+     uart2.enable();
+     uart3.enable();
+     
      //
      // TODO
      //
