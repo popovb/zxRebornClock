@@ -7,6 +7,32 @@
 #include "Time.hpp"
 #include "TimeChecker.hpp"
 #include "core/Mcu.hpp"
+
+int main() {
+     using namespace gric;
+     Mcu mcu;
+
+     PinTx ptx1(PortName::A, 2);
+     PinRx prx1(PortName::A, 3);
+     UartConf uc1(UartName::Uart2, 115200, ptx1, prx1);
+
+     PinTx ptx2(PortName::B, 3);
+     PinRx prx2(PortName::B, 4);
+     UartConf uc2(UartName::Uart3, 115200, ptx2, prx2);
+
+     mcu.init(uc1);
+     mcu.init(uc2);
+
+     //
+     // TODO
+     //
+}
+     // PinTx ptx(PortName::A, 2);
+     // PinRx prx(PortName::A, 3);
+     // UartConf uc(UartName::Uart1, 115200, ptx, prx);
+
+     // Mcu mcu;
+     // mcu.init(uc);
 /*
 int main() {
      using namespace gric;
@@ -42,6 +68,7 @@ int main() {
      return 0;
 }
 */
+/*
 #include "DigitExtractor.hpp"
 #include "Counter.hpp"
 int main() {
@@ -72,7 +99,7 @@ int main() {
      }
      return 0;
 }
-
+*/
 /*
 int main() {
      using namespace gric;
