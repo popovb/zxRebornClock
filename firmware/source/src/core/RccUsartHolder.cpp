@@ -1,0 +1,22 @@
+//
+// Copyright (c) 2025 Boris Popov <popov@whitekefir.ru>
+//
+
+#include "RccUsartHolder.hpp"
+#include "ch32x035.h"
+
+///////////////////////////////////////////////////////////////////
+const gric::u32
+gric::RccUsartHolder::rcc[] = {
+     RCC_APB2Periph_USART1,
+     RCC_APB1Periph_USART2,
+     RCC_APB1Periph_USART3,
+     RCC_APB1Periph_USART4,
+};
+///////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////
+gric::u32 gric::RccUsartHolder::get(UartName::name_t v) const {
+     return rcc[v];
+}
+///////////////////////////////////////////////////////////////////

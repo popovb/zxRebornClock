@@ -66,9 +66,3 @@ void gric::PortClockToggler::off(UartName::name_t v) {
      uart_state[v] = false;
 }
 #endif
-/*
-#define RCC_APB2Periph_USART1          ((uint32_t)0x00004000)
-#define RCC_APB1Periph_USART2          ((uint32_t)0x00020000)
-#define RCC_APB1Periph_USART3          ((uint32_t)0x00040000)
-#define RCC_APB1Periph_USART4          ((uint32_t)0x00080000)
- */
