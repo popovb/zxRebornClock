@@ -39,7 +39,7 @@ set(core_src
   ${core_dir}/LedPinConf.cpp
   ${core_dir}/PortPinConf.cpp
   ${core_dir}/ClockToggler.cpp
-  ${core_dir}/RccApb2Holder.cpp
+  ${core_dir}/RccPortHolder.cpp
   ${core_dir}/Gpio.cpp
   ${core_dir}/PinHolder.cpp
   ${core_dir}/GpioModeCalc.cpp

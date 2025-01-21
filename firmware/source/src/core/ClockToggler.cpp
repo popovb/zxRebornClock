@@ -3,7 +3,7 @@
 //
 
 #include "core/ClockToggler.hpp"
-#include "RccApb2Holder.hpp"
+#include "RccPortHolder.hpp"
 #include "RccUsartHolder.hpp"
 
 #ifndef UNITTEST
@@ -51,13 +51,13 @@ void gric::ClockToggler::off(UartName::name_t v) {
 }
 #else
 void gric::ClockToggler::on(PortName::name_t v) {
-     RccApb2Holder rah;
+     RccPortHolder rah;
      RCC_APB2PeriphClockCmd(rah.get(v), ENABLE);
      port_state[v] = true;
 }
 
 void gric::ClockToggler::off(PortName::name_t v) {
-     RccApb2Holder rah;
+     RccPortHolder rah;
      RCC_APB2PeriphClockCmd(rah.get(v), DISABLE);
      port_state[v] = false;
 }
