@@ -83,19 +83,25 @@ target_compile_options(vendor PRIVATE
 set(core_src
   ${core_dir}/Delayer.cpp
   ${core_dir}/Mcu.cpp
-  ${core_dir}/PortClockToggler.cpp
+  ${core_dir}/ClockToggler.cpp
   ${core_dir}/Gpio.cpp
   ${core_dir}/GpioModeCalc.cpp
   ${core_dir}/PinConf.cpp
   ${core_dir}/PinHolder.cpp
   ${core_dir}/PortHolder.cpp
   ${core_dir}/PortPinConf.cpp
-  ${core_dir}/RccApb2Holder.cpp
+  ${core_dir}/RccPortHolder.cpp
   ${core_dir}/PrintConf.cpp
   ${core_dir}/LedConf.cpp
   ${core_dir}/LedPinConf.cpp
   ${core_dir}/Led.cpp
   ${core_dir}/Pin.cpp
+  ${core_dir}/PinRx.cpp
+  ${core_dir}/PinTx.cpp
+  ${core_dir}/UartConf.cpp
+  ${core_dir}/Uart.cpp
+  ${core_dir}/UsartHolder.cpp
+  ${core_dir}/RccUsartHolder.cpp
 )
 
 add_library(core
