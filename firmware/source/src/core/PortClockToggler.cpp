@@ -41,6 +41,14 @@ void gric::PortClockToggler::on(PortName::name_t v) {
 void gric::PortClockToggler::off(PortName::name_t v) {
      port_state[v] = false;
 }
+
+void gric::PortClockToggler::on(UartName::name_t v) {
+     uart_state[v] = true;
+}
+
+void gric::PortClockToggler::off(UartName::name_t v) {
+     uart_state[v] = false;
+}
 #else
 void gric::PortClockToggler::on(PortName::name_t v) {
      RccApb2Holder rah;
