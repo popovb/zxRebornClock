@@ -99,7 +99,7 @@ set(core_src
   ${core_dir}/PinRx.cpp
   ${core_dir}/PinTx.cpp
   ${core_dir}/UartConf.cpp
-  ${core_dir}/Uart.cpp
+  ${core_dir}/Usart.cpp
   ${core_dir}/UsartHolder.cpp
   ${core_dir}/RccUsartHolder.cpp
 )
