@@ -15,7 +15,7 @@
 #include "core/PinDir.hpp"
 #include "core/PinMode.hpp"
 #include "core/PinConf.hpp"
-#include "core/PortClockToggler.hpp"
+#include "core/ClockToggler.hpp"
 #include "core/Gpio.hpp"
 #include "core/PrintConf.hpp"
 #include "core/LedConf.hpp"
@@ -117,7 +117,7 @@ TEST(test_08) {
 
 TEST(test_09) {
      using namespace gric;
-     PortClockToggler pct;
+     ClockToggler pct;
      CHECK(pct.is_off(PortName::A));
      CHECK(! pct.is_on(PortName::A));
      pct.on(PortName::A);

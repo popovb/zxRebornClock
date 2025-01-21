@@ -9,7 +9,7 @@
 #include "UartConf.hpp"
 #include "Led.hpp"
 #include "Pin.hpp"
-#include "PortClockToggler.hpp"
+#include "ClockToggler.hpp"
 
 #ifndef _GRIC_MCU_HPP_
 #define _GRIC_MCU_HPP_
@@ -39,7 +39,7 @@ namespace gric {
 	  void init(UartName::name_t, u32) const;
 
      private:
-	  PortClockToggler pct;
+	  ClockToggler pct;
      };
 }
 #endif // _GRIC_MCU_HPP_

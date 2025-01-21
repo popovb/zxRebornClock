@@ -10,10 +10,10 @@
 
 namespace gric {
 
-     class PortClockToggler {
+     class ClockToggler {
 
      public:
-	  PortClockToggler();
+	  ClockToggler();
 
 	  void on(PortName::name_t);
 	  void off(PortName::name_t);
