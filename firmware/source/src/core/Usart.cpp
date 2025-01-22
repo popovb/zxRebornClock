@@ -29,4 +29,8 @@ void gric::Usart::init(UartName::name_t n, u32 s) const {
 void gric::Usart::disable(u32 v) const {
      USART_Cmd((USART_TypeDef*)v, DISABLE);
 }
+
+void gric::Usart::enable(u32 v) const {
+     USART_Cmd((USART_TypeDef*)v, ENABLE);
+}
 #endif
