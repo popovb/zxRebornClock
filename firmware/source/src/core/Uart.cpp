@@ -26,3 +26,8 @@ void gric::Uart::enable() const {
      Usart u;
      u.enable(usart);
 }
+
+void gric::Uart::send(u8 v) const {
+     Usart u;
+     u.send(usart, v);
+}
