@@ -3,6 +3,7 @@
 //
 
 #include "core/Uart.hpp"
+#include "Usart.hpp"
 
 gric::Uart::Uart(u32 i):
      usart(i)
@@ -14,4 +15,9 @@ gric::Uart::Uart():
      usart(0)
 {
      return;
+}
+
+void gric::Uart::disable() const {
+     Usart u;
+     u.disable(usart);
 }
