@@ -7,10 +7,14 @@
 #include "Time.hpp"
 #include "TimeChecker.hpp"
 #include "core/Mcu.hpp"
+#include "debug.h"
 
 int main() {
      using namespace gric;
      Mcu mcu;
+
+     PrintConf pc(115200);
+     mcu.init(pc);
 
      PinTx ptx1(PortName::A, 2);
      PinRx prx1(PortName::A, 3);
@@ -26,7 +30,6 @@ int main() {
      Uart uart2 = mcu.get(UartName::Uart2);
      Uart uart3 = mcu.get(UartName::Uart3);
 
-     uart2.disable();
      uart2.enable();
      uart3.enable();
 
@@ -38,9 +41,10 @@ int main() {
 	  while (! uart2.rx_not_empty()) { ; }
 	  rxb[i] = uart3.receive();
      }
-     //
-     // TODO
-     //
+
+     printf("txb: %s \r\n", txb);
+     printf("rxb: %s \r\n", rxb);
+     while (true) { ; }
 }
 /*
 int main() {
