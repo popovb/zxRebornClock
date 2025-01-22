@@ -41,4 +41,9 @@ void gric::Usart::send(u32 u, u8 v) const {
 u8 gric::Usart::receive(u32 u) const {
      return USART_ReceiveData((USART_TypeDef*)u);
 }
+
+bool gric::Usart::tx_empty(u32 u) const {
+     return (USART_GetFlagStatus((USART_TypeDef*)u,
+				 USART_FLAG_TXE) == SET);
+}
 #endif
