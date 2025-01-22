@@ -19,6 +19,9 @@ namespace gric {
 	  void enable() const;
 	  void disable() const;
 
+	  void send(u8) const;
+	  u8 receive() const;
+
      private:
 	  u32 usart;
 

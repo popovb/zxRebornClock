@@ -29,7 +29,16 @@ int main() {
      uart2.disable();
      uart2.enable();
      uart3.enable();
-     
+
+     u8 txb[11] = "0123456789";
+     u8 rxb[11] = { 0, };
+     for (u8 i = 0; i < 10; i++) {
+	  uart2.send(txb[i]);
+	  //
+	  // TODO
+	  //
+	  rxb[i] = uart3.receive();
+     }
      //
      // TODO
      //
