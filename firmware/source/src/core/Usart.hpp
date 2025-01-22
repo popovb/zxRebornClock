@@ -19,6 +19,8 @@ namespace gric {
 
 	  void send(u32, u8) const;
 	  u8 receive(u32) const;
+
+	  bool tx_empty(u32) const;
      };
 }
 #endif // _GRIC_USART_HPP_

@@ -36,3 +36,8 @@ gric::u8 gric::Uart::receive() const {
      Usart u;
      return u.receive(usart);
 }
+
+bool gric::Uart::tx_empty() const {
+     Usart u;
+     return u.tx_empty(usart);
+}
