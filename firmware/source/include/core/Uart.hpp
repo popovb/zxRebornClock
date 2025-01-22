@@ -22,6 +22,9 @@ namespace gric {
 	  void send(u8) const;
 	  u8 receive() const;
 
+	  bool tx_empty() const;
+	  bool rx_not_empty() const;
+
      private:
 	  u32 usart;
 

@@ -34,21 +34,14 @@ int main() {
      u8 rxb[11] = { 0, };
      for (u8 i = 0; i < 10; i++) {
 	  uart2.send(txb[i]);
-	  //
-	  // TODO
-	  //
+	  while (! uart2.tx_empty()) { ; }
+	  while (! uart2.rx_not_empty()) { ; }
 	  rxb[i] = uart3.receive();
      }
      //
      // TODO
      //
 }
-     // PinTx ptx(PortName::A, 2);
-     // PinRx prx(PortName::A, 3);
-     // UartConf uc(UartName::Uart1, 115200, ptx, prx);
-
-     // Mcu mcu;
-     // mcu.init(uc);
 /*
 int main() {
      using namespace gric;
