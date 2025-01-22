@@ -33,4 +33,8 @@ void gric::Usart::disable(u32 v) const {
 void gric::Usart::enable(u32 v) const {
      USART_Cmd((USART_TypeDef*)v, ENABLE);
 }
+
+void gric::Usart::send(u32 u, u8 v) const {
+     USART_SendData((USART_TypeDef*)u, v);
+}
 #endif
