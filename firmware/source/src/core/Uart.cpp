@@ -31,3 +31,8 @@ void gric::Uart::send(u8 v) const {
      Usart u;
      u.send(usart, v);
 }
+
+gric::u8 gric::Uart::receive() const {
+     Usart u;
+     return u.receive(usart);
+}
