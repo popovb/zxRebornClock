@@ -41,3 +41,8 @@ bool gric::Uart::tx_empty() const {
      Usart u;
      return u.tx_empty(usart);
 }
+
+bool gric::Uart::rx_not_empty() const {
+     Usart u;
+     return u.rx_not_empty(usart);
+}
