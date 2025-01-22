@@ -21,3 +21,8 @@ void gric::Uart::disable() const {
      Usart u;
      u.disable(usart);
 }
+
+void gric::Uart::enable() const {
+     Usart u;
+     u.enable(usart);
+}
