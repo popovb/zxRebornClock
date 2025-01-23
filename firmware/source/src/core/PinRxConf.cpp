@@ -2,9 +2,9 @@
 // Copyright (c) 2025 Boris Popov <popov@whitekefir.ru>
 //
 
-#include "core/PinTx.hpp"
+#include "core/PinRxConf.hpp"
 
-gric::PinTx::PinTx(PortName::name_t a, pin_t b):
+gric::PinRxConf::PinRxConf(PortName::name_t a, pin_t b):
      PortPinConf(a, b)
 {
      return;

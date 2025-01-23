@@ -36,8 +36,8 @@ namespace gric {
 	  void init() const;
 	  void nvic_config() const;
 	  void clock_update() const;
-	  void init(const PinTx&);
-	  void init(const PinRx&);
+	  void init(const PinTxConf&);
+	  void init(const PinRxConf&);
 	  void init(UartName::name_t, u32) const;
 
      private:

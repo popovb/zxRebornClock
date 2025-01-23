@@ -16,12 +16,12 @@ int main() {
      PrintConf pc(115200);
      mcu.init(pc);
 
-     PinTx ptx1(PortName::A, 2);
-     PinRx prx1(PortName::A, 3);
+     PinTxConf ptx1(PortName::A, 2);
+     PinRxConf prx1(PortName::A, 3);
      UartConf uc1(UartName::Uart2, 115200, ptx1, prx1);
 
-     PinTx ptx2(PortName::B, 3);
-     PinRx prx2(PortName::B, 4);
+     PinTxConf ptx2(PortName::B, 3);
+     PinRxConf prx2(PortName::B, 4);
      UartConf uc2(UartName::Uart3, 115200, ptx2, prx2);
 
      mcu.init(uc1);

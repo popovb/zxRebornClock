@@ -11,6 +11,30 @@ void gric::Usart::init(UartName::name_t, u32) const {
      return;
 }
 
+void gric::Usart::disable(u32) const {
+     return;
+}
+
+void gric::Usart::enable(u32) const {
+     return;
+}
+
+void gric::Usart::send(u32, u8) const {
+     return;
+}
+
+gric::u8 gric::Usart::receive(u32) const {
+     return 0;
+}
+
+bool gric::Usart::tx_empty(u32) const {
+     return true;
+}
+
+bool gric::Usart::rx_not_empty(u32) const {
+     return true;
+}
+
 #else
 #include "ch32x035.h"
 
@@ -38,7 +62,7 @@ void gric::Usart::send(u32 u, u8 v) const {
      USART_SendData((USART_TypeDef*)u, v);
 }
 
-u8 gric::Usart::receive(u32 u) const {
+gric::u8 gric::Usart::receive(u32 u) const {
      return USART_ReceiveData((USART_TypeDef*)u);
 }
 

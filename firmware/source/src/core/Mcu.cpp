@@ -31,12 +31,12 @@ void gric::Mcu::init(const UartConf& uc) {
      init(uc.name, uc.speed);
 }
 
-void gric::Mcu::init(const PinTx& v) {
+void gric::Mcu::init(const PinTxConf& v) {
      PinConf pc(PinDir::Out, PinMode::Alter);
      init(v, pc);
 }
 
-void gric::Mcu::init(const PinRx& v) {
+void gric::Mcu::init(const PinRxConf& v) {
      PinConf pc(PinDir::In, PinMode::Float);
      init(v, pc);
 }

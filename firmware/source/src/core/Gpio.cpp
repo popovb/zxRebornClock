@@ -20,7 +20,7 @@ void gric::Gpio::write_bit(u32, u32, bool) const {
      return;
 }
 
-bool gric::Gpio::read_bit(u32 p, u32 i) const {
+bool gric::Gpio::read_bit(u32, u32) const {
      return true;
 }
 #else

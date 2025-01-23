@@ -6,8 +6,8 @@
 
 gric::UartConf::UartConf(UartName::name_t a,
 			 u32 b,
-			 const PinTx& c,
-			 const PinRx& d):
+			 const PinTxConf& c,
+			 const PinRxConf& d):
      name(a),
      speed(b),
      pin_tx(c),
