@@ -7,9 +7,53 @@
 #include "Time.hpp"
 #include "TimeChecker.hpp"
 #include "core/Mcu.hpp"
-#include "debug.h"
 
 int main() {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+
+     Anodes as(mcu, mnc);
+     Cathodes cs(mcu, mnc);
+     Tubes tb(as, cs);
+
+     Esp12f esp(mcu, mnc);
+
+     ///////////////////////////////////////////////
+     //
+     // TODO : need Leds red, green, yellow
+     //
+     const auto& ppc = mnc.get(McuNet::WL);
+     LedConf lc(ppc.port, ppc.pin);
+     Led led = mcu.get(lc);
+     ///////////////////////////////////////////////
+
+     Rtc rtc(mcu, mnc);
+     Time tm = rtc.pull();
+     TimeChecker tc;
+     tc.put(tm);
+     u8 v[4];
+     while (true) {
+	  tm = rtc.pull();
+	  tc.put(tm);
+	  if (tc)
+	       tc.fill(v);
+	  else
+	       tc.fill_prev(v);
+
+	  for (u8 i = 0; i < 51; i++) tb.display(v);
+	  led.toggle();
+     }
+     return 0;
+}
+/*
+#include "debug.h"
+int main() {
+     //
+     // TODO : need to test
+     //
      using namespace gric;
      Mcu mcu;
 
@@ -46,6 +90,7 @@ int main() {
      printf("rxb: %s \r\n", rxb);
      while (true) { ; }
 }
+*/
 /*
 int main() {
      using namespace gric;

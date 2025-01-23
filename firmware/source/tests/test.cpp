@@ -5,6 +5,7 @@
 #include "TimeChecker.hpp"
 #include "Configurator.hpp"
 #include "Anodes.hpp"
+#include "Esp12f.hpp"
 #include "core/PortName.hpp"
 #include "core/UartName.hpp"
 #include "core/PinTxConf.hpp"
@@ -317,4 +318,14 @@ TEST(test_29) {
 
      Mcu mcu;
      mcu.init(uc);
+}
+
+TEST(test_30) {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+
+     Esp12f esp(mcu, mnc);
 }
