@@ -592,9 +592,9 @@
 				)
 			)
 		)
-		(symbol "Transistor_BJT:MPSA42"
+		(symbol "Transistor_BJT:MMBTA42"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -607,7 +607,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "MPSA42"
+			(property "Value" "MMBTA42"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -616,7 +616,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -627,7 +627,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MPSA42-D.PDF"
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
 				(at 0 0 0)
 				(effects
 					(font
@@ -637,7 +637,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92"
+			(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -655,7 +655,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?92*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -664,7 +664,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MPSA42_0_1"
+			(symbol "MMBTA42_0_1"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0.635 0)
@@ -737,11 +737,11 @@
 					)
 				)
 			)
-			(symbol "MPSA42_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
+			(symbol "MMBTA42_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 5.08)
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -756,10 +756,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.08)
-					(name "B"
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -928,7 +928,7 @@
 		(uuid "1a9e2622-e9fc-42c4-bbdf-64c5a70a924f")
 	)
 	(junction
-		(at 391.16 66.04)
+		(at 391.16 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d539436-03c7-446d-8570-6fab6ac5ae1e")
@@ -946,7 +946,7 @@
 		(uuid "4c569942-26f4-40da-b28d-05dc86f5e0bb")
 	)
 	(junction
-		(at 391.16 78.74)
+		(at 391.16 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4df1a479-365b-48d8-9725-6238709a6628")
@@ -1030,7 +1030,7 @@
 		(uuid "dbf044a9-b696-4103-a0f7-367273674d8a")
 	)
 	(junction
-		(at 391.16 53.34)
+		(at 391.16 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ebfb246a-014f-416f-a2cb-0b54d9c2800b")
@@ -1112,6 +1112,16 @@
 			(type default)
 		)
 		(uuid "29d0e042-e331-4f9d-a638-0c26eced715f")
+	)
+	(wire
+		(pts
+			(xy 391.16 52.07) (xy 391.16 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2da42753-a75b-4fd2-8e12-d36308f8f8e4")
 	)
 	(wire
 		(pts
@@ -1235,7 +1245,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 53.34) (xy 391.16 66.04)
+			(xy 391.16 46.99) (xy 391.16 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1265,6 +1275,16 @@
 	)
 	(wire
 		(pts
+			(xy 391.16 57.15) (xy 391.16 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63c02aee-60f4-46de-bdda-6b2d640d5c52")
+	)
+	(wire
+		(pts
 			(xy 148.59 50.8) (xy 154.94 50.8)
 		)
 		(stroke
@@ -1272,16 +1292,6 @@
 			(type default)
 		)
 		(uuid "652f25fb-0911-4482-b59a-675bed0fbedb")
-	)
-	(wire
-		(pts
-			(xy 391.16 66.04) (xy 391.16 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67d1cf81-10a2-4bf3-b447-9addd68ef275")
 	)
 	(wire
 		(pts
@@ -1362,16 +1372,6 @@
 			(type default)
 		)
 		(uuid "73cb4114-9093-49d4-bbb6-0364aef8b24c")
-	)
-	(wire
-		(pts
-			(xy 391.16 78.74) (xy 391.16 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73f9d31e-7a6e-4967-811e-86cbb272e5dd")
 	)
 	(wire
 		(pts
@@ -1595,7 +1595,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 41.91) (xy 391.16 53.34)
+			(xy 391.16 41.91) (xy 391.16 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1615,7 +1615,6 @@
 	)
 	(label "6"
 		(at 185.42 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1627,7 +1626,6 @@
 	)
 	(label "A1"
 		(at 355.6 41.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1639,7 +1637,6 @@
 	)
 	(label "5"
 		(at 38.1 29.21 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1651,7 +1648,6 @@
 	)
 	(label "200V"
 		(at 344.17 27.94 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1664,7 +1660,6 @@
 	)
 	(label "4"
 		(at 124.46 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1676,7 +1671,6 @@
 	)
 	(label "2"
 		(at 63.5 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1688,7 +1682,6 @@
 	)
 	(label "SA4"
 		(at 340.36 74.93 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1701,7 +1694,6 @@
 	)
 	(label "A3"
 		(at 355.6 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1713,7 +1705,6 @@
 	)
 	(label "5"
 		(at 154.94 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1725,7 +1716,6 @@
 	)
 	(label "K6"
 		(at 170.18 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1737,7 +1727,6 @@
 	)
 	(label "K3"
 		(at 78.74 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1749,7 +1738,6 @@
 	)
 	(label "7"
 		(at 48.26 29.21 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1761,7 +1749,6 @@
 	)
 	(label "4"
 		(at 33.02 29.21 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1773,7 +1760,6 @@
 	)
 	(label "SA1"
 		(at 340.36 36.83 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1786,7 +1772,6 @@
 	)
 	(label "3"
 		(at 27.94 29.21 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1797,8 +1782,7 @@
 		(uuid "7646a315-74db-4b04-99a2-03781c138c12")
 	)
 	(label "A3"
-		(at 383.54 66.04 180)
-		(fields_autoplaced yes)
+		(at 383.54 52.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1809,8 +1793,7 @@
 		(uuid "7ab3800d-9a90-4952-98f5-5647730d5727")
 	)
 	(label "A4"
-		(at 383.54 78.74 180)
-		(fields_autoplaced yes)
+		(at 383.54 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1822,7 +1805,6 @@
 	)
 	(label "8"
 		(at 53.34 29.21 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1834,7 +1816,6 @@
 	)
 	(label "K0"
 		(at 292.1 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1846,7 +1827,6 @@
 	)
 	(label "K2"
 		(at 48.26 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1858,7 +1838,6 @@
 	)
 	(label "1"
 		(at 17.78 29.21 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1870,7 +1849,6 @@
 	)
 	(label "K9"
 		(at 261.62 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1882,7 +1860,6 @@
 	)
 	(label "8"
 		(at 246.38 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1894,7 +1871,6 @@
 	)
 	(label "K8"
 		(at 231.14 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1906,7 +1882,6 @@
 	)
 	(label "K4"
 		(at 109.22 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1918,7 +1893,6 @@
 	)
 	(label "0"
 		(at 63.5 29.21 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1930,7 +1904,6 @@
 	)
 	(label "1"
 		(at 33.02 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1942,7 +1915,6 @@
 	)
 	(label "9"
 		(at 58.42 29.21 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1954,7 +1926,6 @@
 	)
 	(label "K5"
 		(at 139.7 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1966,7 +1937,6 @@
 	)
 	(label "2"
 		(at 22.86 29.21 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1978,7 +1948,6 @@
 	)
 	(label "9"
 		(at 276.86 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1990,7 +1959,6 @@
 	)
 	(label "SA3"
 		(at 340.36 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2003,7 +1971,6 @@
 	)
 	(label "SA2"
 		(at 340.36 49.53 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2016,7 +1983,6 @@
 	)
 	(label "3"
 		(at 93.98 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2028,7 +1994,6 @@
 	)
 	(label "A4"
 		(at 355.6 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2040,7 +2005,6 @@
 	)
 	(label "7"
 		(at 215.9 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2052,7 +2016,6 @@
 	)
 	(label "A1"
 		(at 383.54 41.91 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2064,7 +2027,6 @@
 	)
 	(label "0"
 		(at 307.34 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2076,7 +2038,6 @@
 	)
 	(label "A2"
 		(at 355.6 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2088,7 +2049,6 @@
 	)
 	(label "K7"
 		(at 200.66 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2100,7 +2060,6 @@
 	)
 	(label "K1"
 		(at 17.78 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2111,8 +2070,7 @@
 		(uuid "f0f7a7f2-e29f-4e54-a83b-92c0ea4b08b4")
 	)
 	(label "A2"
-		(at 383.54 53.34 180)
-		(fields_autoplaced yes)
+		(at 383.54 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2124,7 +2082,6 @@
 	)
 	(label "6"
 		(at 43.18 29.21 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2196,6 +2153,82 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:MMBTA42")
+		(at 243.84 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0488b000-13db-4120-878f-624099c23cd3")
+		(property "Reference" "Q7"
+			(at 248.92 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBTA42"
+			(at 248.92 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 248.92 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
+			(at 243.84 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
+			(at 243.84 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1acc4ce9-a92d-4935-94d4-ff6266c939cf")
+		)
+		(pin "3"
+			(uuid "fc1188ef-f6e3-4b4c-813f-adc43b26ec2f")
+		)
+		(pin "1"
+			(uuid "76c9a9b3-d7c5-4299-981b-a035e76114ef")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -2404,7 +2437,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 387.35 53.34 90)
+		(at 387.35 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2412,7 +2445,7 @@
 		(dnp no)
 		(uuid "263d31b5-c019-4985-a0fe-6c207157bce8")
 		(property "Reference" "R33"
-			(at 387.35 51.308 90)
+			(at 387.35 44.958 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2420,7 +2453,7 @@
 			)
 		)
 		(property "Value" "470K"
-			(at 387.35 53.34 90)
+			(at 387.35 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2428,7 +2461,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 387.35 55.118 90)
+			(at 387.35 48.768 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2437,7 +2470,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 387.35 53.34 0)
+			(at 387.35 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2446,7 +2479,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 387.35 53.34 0)
+			(at 387.35 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2464,82 +2497,6 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:MPSA42")
-		(at 121.92 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27980ca7-4661-4c0e-932a-85507cd538cd")
-		(property "Reference" "Q4"
-			(at 127 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MPSA42"
-			(at 127 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 127 45.085 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MPSA42-D.PDF"
-			(at 121.92 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92"
-			(at 121.92 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c0ba6a31-82b0-4473-b6dc-7c665aec3d4b")
-		)
-		(pin "1"
-			(uuid "b72546c0-ed46-475c-9a13-253147a8f799")
-		)
-		(pin "3"
-			(uuid "fbd6e19c-beff-40da-b0fd-fa33f548a907")
-		)
-		(instances
-			(project "zxRebornClock"
-				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -2680,17 +2637,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MPSA42")
-		(at 182.88 43.18 0)
+		(lib_id "Transistor_BJT:MMBTA42")
+		(at 60.96 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2ab27855-2900-4cba-bcf3-e2a6a4c4fd84")
-		(property "Reference" "Q6"
-			(at 187.96 41.9099 0)
+		(uuid "2e31ec06-85d2-4ec2-b967-e02580e848e8")
+		(property "Reference" "Q1"
+			(at 66.04 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2698,8 +2655,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MPSA42"
-			(at 187.96 44.4499 0)
+		(property "Value" "MMBTA42"
+			(at 66.04 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2707,8 +2664,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 187.96 45.085 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 66.04 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2718,8 +2675,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MPSA42-D.PDF"
-			(at 182.88 43.18 0)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
+			(at 60.96 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2728,8 +2685,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92"
-			(at 182.88 43.18 0)
+		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
+			(at 60.96 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2738,18 +2695,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "39c3a982-8495-4903-a41d-3f8c689dc371")
-		)
-		(pin "1"
-			(uuid "9d82d8e5-d6a1-4a82-a96c-69ed1cd32bf9")
+			(uuid "5bfba2cf-37c2-43eb-b98b-38164d07944d")
 		)
 		(pin "3"
-			(uuid "fba25926-5ac5-4755-ad89-33a56eff0f65")
+			(uuid "fbbea19c-9aa1-46c6-9742-a5d1ba549771")
+		)
+		(pin "1"
+			(uuid "122be512-bfd1-4607-b349-ebff6f00d591")
 		)
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q6")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -3091,82 +3048,6 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:MPSA42")
-		(at 243.84 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a9f9e5b-d46c-4476-98c8-a9e27e9b2b41")
-		(property "Reference" "Q8"
-			(at 248.92 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MPSA42"
-			(at 248.92 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 248.92 45.085 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MPSA42-D.PDF"
-			(at 243.84 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92"
-			(at 243.84 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dc66f12f-adf1-40a6-997e-c82c15a87008")
-		)
-		(pin "1"
-			(uuid "5860ba78-bdf1-4c04-aaf2-6a72760a6719")
-		)
-		(pin "3"
-			(uuid "e985c439-ed47-490e-a290-ade49d3ef9d9")
-		)
-		(instances
-			(project "zxRebornClock"
-				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -3576,6 +3457,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:MMBTA42")
+		(at 91.44 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52ada36c-877b-49c7-92fa-32fdfb930516")
+		(property "Reference" "Q2"
+			(at 96.52 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBTA42"
+			(at 96.52 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 96.52 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
+			(at 91.44 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
+			(at 91.44 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "83a2b011-ee2f-45bf-bd89-a5f8010ea2c4")
+		)
+		(pin "3"
+			(uuid "2bb6d263-d0ec-46d2-9238-12de5c92449b")
+		)
+		(pin "1"
+			(uuid "a5ca479f-faa9-495d-976e-dbf7ef6f4fc8")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 26.67 46.99 180)
 		(unit 1)
@@ -3637,6 +3594,82 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:MMBTA42")
+		(at 121.92 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a60eed0-ef86-4934-b64f-8ac9471f7502")
+		(property "Reference" "Q3"
+			(at 127 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBTA42"
+			(at 127 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 127 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
+			(at 121.92 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
+			(at 121.92 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "87f11ec1-ba54-43fe-8bbb-1c062dc326e6")
+		)
+		(pin "3"
+			(uuid "97b27dec-5d6b-4132-b642-931fae65dbee")
+		)
+		(pin "1"
+			(uuid "137dbdcf-7a05-49e9-9283-e36b9d5354a2")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -3911,82 +3944,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MPSA42")
-		(at 152.4 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "663f3d71-1932-462d-acbd-fb75105d895c")
-		(property "Reference" "Q5"
-			(at 157.48 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MPSA42"
-			(at 157.48 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 157.48 45.085 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MPSA42-D.PDF"
-			(at 152.4 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92"
-			(at 152.4 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1a349a24-0d80-47a0-853c-59ad4e34fe72")
-		)
-		(pin "1"
-			(uuid "a7f51aac-f053-4b91-9b59-631b3386cc86")
-		)
-		(pin "3"
-			(uuid "b3e37ae6-cdb9-4118-a869-8338e0f82ee6")
-		)
-		(instances
-			(project "zxRebornClock"
-				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 38.1 25.4 180)
 		(unit 1)
@@ -4189,7 +4146,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 387.35 66.04 90)
+		(at 387.35 52.07 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4197,7 +4154,7 @@
 		(dnp no)
 		(uuid "762f5a62-9208-43de-af6e-a4cb8c3922a1")
 		(property "Reference" "R34"
-			(at 387.35 64.008 90)
+			(at 387.35 50.038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4205,7 +4162,7 @@
 			)
 		)
 		(property "Value" "470K"
-			(at 387.35 66.04 90)
+			(at 387.35 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4213,7 +4170,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 387.35 67.818 90)
+			(at 387.35 53.848 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4222,7 +4179,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 387.35 66.04 0)
+			(at 387.35 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4231,7 +4188,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 387.35 66.04 0)
+			(at 387.35 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4249,6 +4206,82 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:MMBTA42")
+		(at 30.48 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "769fef87-7c27-4b1d-84a9-1d4972c62ab9")
+		(property "Reference" "Q11"
+			(at 35.56 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBTA42"
+			(at 35.56 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 35.56 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
+			(at 30.48 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
+			(at 30.48 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "733d7d79-12de-4d6d-bd6e-234add10dbdd")
+		)
+		(pin "3"
+			(uuid "9ab3b4ce-5c12-4a43-aa19-80cb9becf545")
+		)
+		(pin "1"
+			(uuid "72b07191-1c22-44f9-9ceb-87f1f90c904a")
+		)
+		(instances
+			(project ""
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "Q11")
 					(unit 1)
 				)
 			)
@@ -4524,8 +4557,160 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:MMBTA42")
+		(at 304.8 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99c7327a-a769-4238-86e9-8fd3e94ea8f5")
+		(property "Reference" "Q9"
+			(at 309.88 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBTA42"
+			(at 309.88 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 309.88 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
+			(at 304.8 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
+			(at 304.8 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0aeb6c19-bc54-4612-af26-92901c1eaddc")
+		)
+		(pin "3"
+			(uuid "099687ee-2bfb-45e9-b146-884cd14a8c76")
+		)
+		(pin "1"
+			(uuid "0e7a9673-f585-47ee-8456-5cd0959232f9")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "Q9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:MMBTA42")
+		(at 152.4 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9be10b04-51b0-4fa7-8141-f4cf0b149757")
+		(property "Reference" "Q4"
+			(at 157.48 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBTA42"
+			(at 157.48 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 157.48 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
+			(at 152.4 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
+			(at 152.4 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "baf27e60-f2c5-47ac-a792-aa999f65c1a1")
+		)
+		(pin "3"
+			(uuid "9a04332d-bb43-4827-8a3f-6f5366d23804")
+		)
+		(pin "1"
+			(uuid "12a9774c-3feb-4afa-87db-8b873c5a2574")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 387.35 78.74 90)
+		(at 387.35 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4533,7 +4718,7 @@
 		(dnp no)
 		(uuid "9c50b690-3d6c-4e0e-9aca-ae05bad9e5c1")
 		(property "Reference" "R35"
-			(at 387.35 76.708 90)
+			(at 387.35 55.118 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4541,7 +4726,7 @@
 			)
 		)
 		(property "Value" "470K"
-			(at 387.35 78.74 90)
+			(at 387.35 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4549,7 +4734,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 387.35 80.518 90)
+			(at 387.35 58.928 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4558,7 +4743,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 387.35 78.74 0)
+			(at 387.35 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4567,7 +4752,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 387.35 78.74 0)
+			(at 387.35 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4585,82 +4770,6 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:MPSA42")
-		(at 274.32 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9c893341-7463-4263-aaf5-d022df1999d8")
-		(property "Reference" "Q9"
-			(at 279.4 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MPSA42"
-			(at 279.4 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 279.4 45.085 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MPSA42-D.PDF"
-			(at 274.32 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92"
-			(at 274.32 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ae820604-2ea3-4529-a2ee-95d63b8c2771")
-		)
-		(pin "1"
-			(uuid "b06315bd-0d1c-44e4-9486-777fa565f773")
-		)
-		(pin "3"
-			(uuid "06e28428-00ab-42c1-a888-e0f300bbf7ee")
-		)
-		(instances
-			(project "zxRebornClock"
-				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q9")
 					(unit 1)
 				)
 			)
@@ -5013,82 +5122,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MPSA42")
-		(at 213.36 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b1e96286-a9fb-4971-8f35-e6b4f4f3625b")
-		(property "Reference" "Q7"
-			(at 218.44 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MPSA42"
-			(at 218.44 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 218.44 45.085 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MPSA42-D.PDF"
-			(at 213.36 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92"
-			(at 213.36 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "016408c1-9215-44f2-a2de-fe3ec99ae6ba")
-		)
-		(pin "1"
-			(uuid "50f31fc2-e99a-4621-b954-6ce9be65364d")
-		)
-		(pin "3"
-			(uuid "3d2e4b8f-f558-4130-a70c-37350ee94d40")
-		)
-		(instances
-			(project "zxRebornClock"
-				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Isolator:TLP785")
 		(at 347.98 64.77 0)
 		(unit 1)
@@ -5228,82 +5261,6 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:MPSA42")
-		(at 60.96 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c879950e-26f1-4fe3-b6fb-08649814845c")
-		(property "Reference" "Q2"
-			(at 66.04 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MPSA42"
-			(at 66.04 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 66.04 45.085 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MPSA42-D.PDF"
-			(at 60.96 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92"
-			(at 60.96 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5678de9d-33e6-4a70-b02f-4a6afca7f76e")
-		)
-		(pin "1"
-			(uuid "497e9926-48f0-48e8-8679-b06fb3504bd8")
-		)
-		(pin "3"
-			(uuid "0cc9b2f2-06fb-45d6-be0f-facc335449c8")
-		)
-		(instances
-			(project "zxRebornClock"
-				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -5590,17 +5547,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MPSA42")
-		(at 91.44 43.18 0)
+		(lib_id "Transistor_BJT:MMBTA42")
+		(at 274.32 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d7f4affd-18d6-437f-a789-3211b06322bc")
-		(property "Reference" "Q3"
-			(at 96.52 41.9099 0)
+		(uuid "dc3040b0-4b14-4f86-b880-cc481a1374e7")
+		(property "Reference" "Q8"
+			(at 279.4 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5608,8 +5565,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MPSA42"
-			(at 96.52 44.4499 0)
+		(property "Value" "MMBTA42"
+			(at 279.4 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5617,8 +5574,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 96.52 45.085 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 279.4 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5628,8 +5585,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MPSA42-D.PDF"
-			(at 91.44 43.18 0)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
+			(at 274.32 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5638,8 +5595,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92"
-			(at 91.44 43.18 0)
+		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
+			(at 274.32 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5648,18 +5605,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "a63b9a26-aa46-45c5-a640-1ca6b95d5bc1")
-		)
-		(pin "1"
-			(uuid "9994e648-e703-4b67-bf29-39feea51ad40")
+			(uuid "336f1222-5f23-4777-81bb-44e03d9cbb48")
 		)
 		(pin "3"
-			(uuid "8039ea7d-e211-408f-9a89-a599097033a5")
+			(uuid "0ab044d5-b4bb-4c44-9071-bcf4c89e9325")
+		)
+		(pin "1"
+			(uuid "02ccb916-b3b7-4d46-ae4f-867c5e0ad7d4")
 		)
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q3")
+					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -5737,82 +5694,6 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:MPSA42")
-		(at 30.48 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e269cabe-ff0c-459d-afa6-d99c6ddcc8c7")
-		(property "Reference" "Q1"
-			(at 35.56 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MPSA42"
-			(at 35.56 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 35.56 45.085 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MPSA42-D.PDF"
-			(at 30.48 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92"
-			(at 30.48 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6ea03779-7593-4f14-b2bf-ae48d9dacd83")
-		)
-		(pin "1"
-			(uuid "7ef6097c-fa17-45d7-b22e-37147adbf83e")
-		)
-		(pin "3"
-			(uuid "0950649d-6ffd-4f6c-8433-9694eaeafb71")
-		)
-		(instances
-			(project "zxRebornClock"
-				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -6021,17 +5902,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MPSA42")
-		(at 304.8 43.18 0)
+		(lib_id "Transistor_BJT:MMBTA42")
+		(at 213.36 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f1f49d42-e6b5-449e-8b3e-532b52de0180")
-		(property "Reference" "Q10"
-			(at 309.88 41.9099 0)
+		(uuid "ec84695b-ab37-4e80-8ec2-33c8554720c7")
+		(property "Reference" "Q6"
+			(at 218.44 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6039,8 +5920,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MPSA42"
-			(at 309.88 44.4499 0)
+		(property "Value" "MMBTA42"
+			(at 218.44 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6048,8 +5929,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 309.88 45.085 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 218.44 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6059,8 +5940,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MPSA42-D.PDF"
-			(at 304.8 43.18 0)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
+			(at 213.36 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6069,8 +5950,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92"
-			(at 304.8 43.18 0)
+		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
+			(at 213.36 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6079,18 +5960,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "d5c8b722-fe17-4ad5-8e3d-f6f272e16c45")
-		)
-		(pin "1"
-			(uuid "73e0b262-7123-49f3-ab67-38aecac201f4")
+			(uuid "4095d8e5-a313-4d82-af1e-f21f7a095869")
 		)
 		(pin "3"
-			(uuid "8d4606ac-ee15-496f-87cd-bcf5d9e9ed09")
+			(uuid "ceaf3138-be68-496e-8754-94783f1438a6")
+		)
+		(pin "1"
+			(uuid "6cd08233-51cd-45b5-ad54-eccdcfdd5ffa")
 		)
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q10")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -6233,7 +6114,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 391.16 81.28 0)
+		(at 391.16 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6242,7 +6123,7 @@
 		(fields_autoplaced yes)
 		(uuid "f7b922e0-2b7c-44fe-b0df-a14e3c8ad7ae")
 		(property "Reference" "#PWR012"
-			(at 391.16 87.63 0)
+			(at 391.16 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6251,7 +6132,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 391.16 86.36 0)
+			(at 391.16 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6260,7 +6141,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 391.16 81.28 0)
+			(at 391.16 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6269,7 +6150,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 391.16 81.28 0)
+			(at 391.16 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6278,7 +6159,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 391.16 81.28 0)
+			(at 391.16 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6431,6 +6312,82 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:MMBTA42")
+		(at 182.88 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "feac31b1-7778-4eb5-81ef-a091823860f1")
+		(property "Reference" "Q5"
+			(at 187.96 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBTA42"
+			(at 187.96 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 187.96 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
+			(at 182.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
+			(at 182.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3271a483-f8d4-4106-97e7-46a7adbd52ee")
+		)
+		(pin "3"
+			(uuid "ba87d145-cc12-4746-a267-f6a7e79c069c")
+		)
+		(pin "1"
+			(uuid "52548f5e-79a6-4a83-a807-52d1c14bfea6")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "Q5")
 					(unit 1)
 				)
 			)
