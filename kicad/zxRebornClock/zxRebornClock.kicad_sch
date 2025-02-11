@@ -846,6 +846,175 @@
 				)
 			)
 		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -4092,6 +4261,16 @@
 	)
 	(wire
 		(pts
+			(xy 320.675 213.36) (xy 327.025 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12b4363a-0aca-4f84-8044-71d12e2a0254")
+	)
+	(wire
+		(pts
 			(xy 38.1 21.59) (xy 43.18 21.59)
 		)
 		(stroke
@@ -4119,6 +4298,16 @@
 			(type default)
 		)
 		(uuid "19f393a4-0a66-43fe-ab5b-d2619ef36f86")
+	)
+	(wire
+		(pts
+			(xy 320.675 219.71) (xy 327.025 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cdaa68a-5678-47a4-813d-bda2620e3d00")
 	)
 	(wire
 		(pts
@@ -4452,6 +4641,16 @@
 	)
 	(wire
 		(pts
+			(xy 320.675 207.01) (xy 327.025 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c2bb48c-6b16-490d-b207-cbf89756180d")
+	)
+	(wire
+		(pts
 			(xy 118.11 50.8) (xy 124.46 50.8)
 		)
 		(stroke
@@ -4619,6 +4818,16 @@
 			(type default)
 		)
 		(uuid "dcdbb8b9-df54-470d-bcff-4e92ed9cd946")
+	)
+	(wire
+		(pts
+			(xy 320.675 225.425) (xy 327.025 225.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e22fba0d-8996-4f80-b322-83a990657b42")
 	)
 	(wire
 		(pts
@@ -4901,6 +5110,16 @@
 		)
 		(uuid "165ae875-0703-4473-a729-67b4de0602fb")
 	)
+	(label "L_YELLOW"
+		(at 270.51 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "17b69be7-2bbf-4527-9031-7219738f894b")
+	)
 	(label "DS_CLK"
 		(at 251.46 152.4 270)
 		(effects
@@ -4963,6 +5182,16 @@
 		)
 		(uuid "20e1d039-1863-41c6-bda7-0a054a4744a3")
 	)
+	(label "L_GREEN"
+		(at 270.51 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2118c615-7ce6-4cb5-b29d-7a533eb741a5")
+	)
 	(label "4"
 		(at 124.46 38.1 180)
 		(effects
@@ -4973,6 +5202,16 @@
 			(justify right bottom)
 		)
 		(uuid "22ca2368-abb7-41f6-ac8e-a596d002439b")
+	)
+	(label "L_GREEN"
+		(at 327.025 219.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23577eef-e922-425d-84e5-c11552b33d7a")
 	)
 	(label "2"
 		(at 63.5 38.1 180)
@@ -5214,7 +5453,7 @@
 		(uuid "477c05ce-18ed-4d56-bf14-c1d444159279")
 	)
 	(label "VCC"
-		(at 361.95 227.33 180)
+		(at 361.95 219.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5330,6 +5569,16 @@
 		)
 		(uuid "598e725b-6d6b-40be-8f36-7cd1f3a4141e")
 	)
+	(label "VCC"
+		(at 305.435 207.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5b626bf8-43ba-43cc-96ec-c5eace14bdbc")
+	)
 	(label "SA2"
 		(at 251.46 106.68 90)
 		(effects
@@ -5388,7 +5637,7 @@
 		(uuid "72c9e89a-eebc-46f4-b5bd-5e1c6db6f4a1")
 	)
 	(label "VCC"
-		(at 361.95 237.49 180)
+		(at 361.95 226.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5570,6 +5819,16 @@
 		)
 		(uuid "894a3f98-c2b6-48d2-a447-af3bf22291f3")
 	)
+	(label "L_RED"
+		(at 270.51 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ac44008-90a3-4644-87c4-7f0e3385db41")
+	)
 	(label "VCC"
 		(at 361.95 207.01 180)
 		(effects
@@ -5581,7 +5840,7 @@
 		(uuid "93ae8307-85df-481a-bbd2-79a3b90a6b26")
 	)
 	(label "B_F"
-		(at 379.73 237.49 0)
+		(at 379.73 226.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5676,6 +5935,16 @@
 		)
 		(uuid "a8b6bcb4-ff70-4704-92aa-fce6e7a373fa")
 	)
+	(label "L_BLUE"
+		(at 327.025 225.425 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a98d63b3-a0ae-40ce-9efe-01abdfb864ff")
+	)
 	(label "SA3"
 		(at 246.38 106.68 90)
 		(effects
@@ -5689,7 +5958,7 @@
 		(uuid "af0ed4cf-1e2b-467e-b438-5736c6f42521")
 	)
 	(label "VCC"
-		(at 361.95 217.17 180)
+		(at 361.95 213.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5838,6 +6107,16 @@
 		)
 		(uuid "c103e6eb-6207-4069-821d-629a0a2396e2")
 	)
+	(label "VCC"
+		(at 305.435 213.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c24359f9-2001-43d2-b610-63c20417fd1f")
+	)
 	(label "DS_CE"
 		(at 241.3 152.4 270)
 		(effects
@@ -5868,6 +6147,16 @@
 			(justify right bottom)
 		)
 		(uuid "c614b97a-ae02-438e-9cba-d628deb93082")
+	)
+	(label "L_RED"
+		(at 327.025 207.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6193489-9f80-47e1-8445-4fc14949e219")
 	)
 	(label "5"
 		(at 62.23 60.96 180)
@@ -6003,6 +6292,26 @@
 		)
 		(uuid "d668c03a-4181-4497-82ff-b1b13ed41ca7")
 	)
+	(label "L_YELLOW"
+		(at 327.025 213.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d6aceef5-0ad2-4351-ae43-d50f5ac2771f")
+	)
+	(label "L_BLUE"
+		(at 270.51 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7a021e6-154f-40b1-bd3f-552c642ab045")
+	)
 	(label "3"
 		(at 93.98 38.1 180)
 		(effects
@@ -6090,7 +6399,7 @@
 		(uuid "e0521115-3cbb-4fbc-9f82-66f8fafd95cc")
 	)
 	(label "B_SS"
-		(at 379.73 227.33 0)
+		(at 379.73 219.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6098,6 +6407,16 @@
 			(justify left bottom)
 		)
 		(uuid "e20e0a6d-d007-4fd1-b9e4-cbbe08658179")
+	)
+	(label "VCC"
+		(at 305.435 225.425 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e3202569-292e-4675-8e3f-9bcf8f3a8b8c")
 	)
 	(label "VCC"
 		(at 340.36 199.39 0)
@@ -6271,7 +6590,7 @@
 		(uuid "fc2ca660-38ba-4757-aa2c-9f6be67179a5")
 	)
 	(label "B_MM"
-		(at 379.73 217.17 0)
+		(at 379.73 213.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6279,6 +6598,16 @@
 			(justify left bottom)
 		)
 		(uuid "fc7c8926-55c0-4212-9ca0-f5be815f872e")
+	)
+	(label "VCC"
+		(at 305.435 219.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ff6425eb-8943-4fc4-8461-98e3905b238a")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -7946,7 +8275,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 365.76 227.33 90)
+		(at 365.76 219.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7954,7 +8283,7 @@
 		(dnp no)
 		(uuid "4f8d8892-fca4-4405-87ed-6ed11e3992e8")
 		(property "Reference" "R42"
-			(at 365.76 224.79 90)
+			(at 365.76 217.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7962,7 +8291,7 @@
 			)
 		)
 		(property "Value" "4,7K"
-			(at 365.76 227.33 90)
+			(at 365.76 219.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7970,7 +8299,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 365.76 229.108 90)
+			(at 365.76 221.488 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7979,7 +8308,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 365.76 227.33 0)
+			(at 365.76 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7988,7 +8317,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 365.76 227.33 0)
+			(at 365.76 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8089,7 +8418,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 365.76 237.49 90)
+		(at 365.76 226.06 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8097,7 +8426,7 @@
 		(dnp no)
 		(uuid "52bc1476-95dc-4d20-896f-a760464c3aae")
 		(property "Reference" "R43"
-			(at 365.76 234.95 90)
+			(at 365.76 223.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8105,7 +8434,7 @@
 			)
 		)
 		(property "Value" "4,7K"
-			(at 365.76 237.49 90)
+			(at 365.76 226.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8113,7 +8442,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 365.76 239.268 90)
+			(at 365.76 227.838 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8122,7 +8451,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 365.76 237.49 0)
+			(at 365.76 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8131,7 +8460,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 365.76 237.49 0)
+			(at 365.76 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8149,6 +8478,73 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 316.865 225.425 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "545b1087-14aa-4a49-a7d5-a1928d037742")
+		(property "Reference" "D4"
+			(at 316.865 222.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "blue"
+			(at 321.31 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 316.865 225.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.865 225.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 316.865 225.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50ccb45f-c222-4a40-9ef9-59eec571e6a0")
+		)
+		(pin "2"
+			(uuid "115aee23-09d9-4017-87cd-aca7f5e88218")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -8570,7 +8966,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 374.65 227.33 0)
+		(at 374.65 219.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8578,7 +8974,7 @@
 		(dnp no)
 		(uuid "5fca50c1-f843-41b5-b2a2-73264c933f64")
 		(property "Reference" "SW3"
-			(at 372.618 224.536 0)
+			(at 372.618 216.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8586,7 +8982,7 @@
 			)
 		)
 		(property "Value" "SS"
-			(at 375.92 225.044 0)
+			(at 375.92 217.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8595,7 +8991,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 374.65 222.25 0)
+			(at 374.65 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8604,7 +9000,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 374.65 222.25 0)
+			(at 374.65 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8613,7 +9009,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 374.65 227.33 0)
+			(at 374.65 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9237,6 +9633,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 316.865 207.01 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "756c00ab-2f7d-45d6-bfea-9be61993a16b")
+		(property "Reference" "D1"
+			(at 316.865 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "red"
+			(at 320.675 203.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 316.865 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.865 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 316.865 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b169299-6b72-4397-8076-ce7a8513d952")
+		)
+		(pin "2"
+			(uuid "4ea809e7-5cff-4171-9229-83d19c19c8a2")
+		)
+		(instances
+			(project ""
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 387.35 52.07 90)
 		(unit 1)
@@ -9577,6 +10040,73 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 316.865 213.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b4df370-b616-410f-b47e-0a958e786e06")
+		(property "Reference" "D2"
+			(at 316.865 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "yellow"
+			(at 322.58 210.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 316.865 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.865 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 316.865 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4843e960-cc1f-4912-98c6-2819575bb771")
+		)
+		(pin "2"
+			(uuid "c0c98aa3-e7c1-4a2a-a52f-4c27940cb4e3")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -10490,6 +11020,73 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 309.245 213.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af389756-049a-4e1a-8705-8efa31a09930")
+		(property "Reference" "R45"
+			(at 309.245 210.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1,0K"
+			(at 309.245 213.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.245 215.138 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.245 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 309.245 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "973667a5-31c1-4421-af60-6b230be5cb6d")
+		)
+		(pin "1"
+			(uuid "6a414005-ba8c-403d-8c5d-606cf93813b5")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 148.59 46.99 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10634,7 +11231,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 374.65 217.17 0)
+		(at 374.65 213.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10642,7 +11239,7 @@
 		(dnp no)
 		(uuid "ba93665d-1efa-417f-a8e7-924d522dbb73")
 		(property "Reference" "SW2"
-			(at 372.618 214.376 0)
+			(at 372.618 210.566 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10650,7 +11247,7 @@
 			)
 		)
 		(property "Value" "MM"
-			(at 376.174 214.884 0)
+			(at 376.174 211.074 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10659,7 +11256,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 374.65 212.09 0)
+			(at 374.65 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10668,7 +11265,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 374.65 212.09 0)
+			(at 374.65 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10677,7 +11274,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 374.65 217.17 0)
+			(at 374.65 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10695,6 +11292,73 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 316.865 219.71 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c5d76534-2df2-4cee-a2a1-cbd1805b4225")
+		(property "Reference" "D3"
+			(at 316.865 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "green"
+			(at 321.945 216.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 316.865 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.865 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 316.865 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c91ea254-975f-403c-9d38-63984b659f16")
+		)
+		(pin "2"
+			(uuid "fa6f3f28-5d52-456b-ac14-02dd281ef3f0")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -10778,7 +11442,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 365.76 217.17 90)
+		(at 365.76 213.36 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10786,7 +11450,7 @@
 		(dnp no)
 		(uuid "cf743c72-0967-483d-9653-acc23e5e6eef")
 		(property "Reference" "R41"
-			(at 365.76 214.63 90)
+			(at 365.76 210.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10794,7 +11458,7 @@
 			)
 		)
 		(property "Value" "4,7K"
-			(at 365.76 217.17 90)
+			(at 365.76 213.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10802,7 +11466,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 365.76 218.948 90)
+			(at 365.76 215.138 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10811,7 +11475,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 365.76 217.17 0)
+			(at 365.76 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10820,7 +11484,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 365.76 217.17 0)
+			(at 365.76 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11189,6 +11853,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 309.245 219.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7eb114a-c563-403d-babd-abce2ae5e5d0")
+		(property "Reference" "R46"
+			(at 309.245 217.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1,0K"
+			(at 309.245 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.245 221.488 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.245 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 309.245 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1e40ab3b-90fe-4954-8cb1-3b7b35479e30")
+		)
+		(pin "1"
+			(uuid "f009701d-3a7c-44e3-bc07-711c9de3010c")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:MMBTA42")
 		(at 274.32 43.18 0)
 		(unit 1)
@@ -11266,7 +11997,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 374.65 237.49 0)
+		(at 374.65 226.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11274,7 +12005,7 @@
 		(dnp no)
 		(uuid "dd4d328a-6a32-483f-8bb9-62f27d0f59d2")
 		(property "Reference" "SW4"
-			(at 372.618 234.696 0)
+			(at 372.618 223.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11282,7 +12013,7 @@
 			)
 		)
 		(property "Value" "F"
-			(at 375.158 235.204 0)
+			(at 375.158 223.774 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11291,7 +12022,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 374.65 232.41 0)
+			(at 374.65 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11300,7 +12031,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 374.65 232.41 0)
+			(at 374.65 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11309,7 +12040,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 374.65 237.49 0)
+			(at 374.65 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11538,6 +12269,140 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 309.245 225.425 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5445c41-44e6-43e0-86e1-7918dc3b0394")
+		(property "Reference" "R47"
+			(at 309.245 222.885 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1,0K"
+			(at 309.245 225.425 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.245 227.203 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.245 225.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 309.245 225.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "50ec03bb-2abc-40f9-b802-ac351808610b")
+		)
+		(pin "1"
+			(uuid "12725549-16ca-44c6-83e2-1dad075ecdb4")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 309.245 207.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e67ec00c-ae67-40e3-aa5d-128476c9b1a8")
+		(property "Reference" "R44"
+			(at 309.245 204.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1,0K"
+			(at 309.245 207.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.245 208.788 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.245 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 309.245 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b0318919-97eb-4313-a051-0703fdeaa9a5")
+		)
+		(pin "1"
+			(uuid "4e50ed98-1c1f-4999-a0ce-dfb730d90e32")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "R44")
 					(unit 1)
 				)
 			)
