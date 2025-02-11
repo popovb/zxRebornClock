@@ -370,6 +370,346 @@
 				)
 			)
 		)
+		(symbol "Device:Battery_Cell"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BT"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Battery_Cell"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single-cell battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "battery cell"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Battery_Cell_0_1"
+				(rectangle
+					(start -2.286 1.778)
+					(end 2.286 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 1.016)
+					(end 1.524 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.048) (xy 1.778 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.556) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Battery_Cell_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Crystal"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Crystal"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Two pin crystal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_0_1"
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -1.27) (xy -1.905 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -1.27) (xy 1.905 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -948,6 +1288,229 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Timer_RTC:DS1302+"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -8.89 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "DS1302+"
+				(at 6.35 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/DS1302.pdf"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Trickle-Charge Timekeeping Chip, 2.0V to 5.5V VCC, 0°C to +70°C, DIP-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RTC, Trickle-Charge Timekeeping Chip"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DS1302+_1_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -2.54 10.16 270)
+					(length 2.54)
+					(name "VCC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "X1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "X2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "CE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "I/O"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VCC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2795,6 +3358,16 @@
 	)
 	(wire
 		(pts
+			(xy 318.77 129.54) (xy 327.66 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38d1b1fe-d9f5-4b51-a61e-6f0fe158757a")
+	)
+	(wire
+		(pts
 			(xy 58.42 21.59) (xy 63.5 21.59)
 		)
 		(stroke
@@ -2892,6 +3465,16 @@
 			(type default)
 		)
 		(uuid "553efd6e-79e0-4932-ba80-5d70fe5f4b23")
+	)
+	(wire
+		(pts
+			(xy 311.15 133.35) (xy 327.66 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58b487ec-a4a0-4cbf-935b-91ede20a8fb1")
 	)
 	(wire
 		(pts
@@ -3125,6 +3708,16 @@
 	)
 	(wire
 		(pts
+			(xy 327.66 133.35) (xy 327.66 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b31dc578-43c9-4500-8043-324cc6b17b67")
+	)
+	(wire
+		(pts
 			(xy 57.15 50.8) (xy 63.5 50.8)
 		)
 		(stroke
@@ -3142,6 +3735,16 @@
 			(type default)
 		)
 		(uuid "bc95651a-eff8-4a65-a41b-9bc703dc4aea")
+	)
+	(wire
+		(pts
+			(xy 311.15 129.54) (xy 311.15 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbca1e5d-286f-4c48-b5fb-94c8822c4dd8")
 	)
 	(wire
 		(pts
@@ -3414,6 +4017,16 @@
 		)
 		(uuid "165ae875-0703-4473-a729-67b4de0602fb")
 	)
+	(label "DS_CLK"
+		(at 251.46 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "182b391a-c1fd-4a35-87ca-da401d28424e")
+	)
 	(label "3"
 		(at 53.34 72.39 180)
 		(effects
@@ -3424,6 +4037,16 @@
 			(justify right bottom)
 		)
 		(uuid "18326e67-d63e-4b0f-84aa-57d1b59a72f3")
+	)
+	(label "VCC"
+		(at 337.82 116.84 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1997c5f3-3c3c-4cf6-8d42-efbdd0b23dd3")
 	)
 	(label "A4"
 		(at 129.54 86.36 0)
@@ -3500,6 +4123,16 @@
 			(justify right bottom)
 		)
 		(uuid "28bf477e-37a4-4ab5-8709-df510d3bbdeb")
+	)
+	(label "DS_CLK"
+		(at 327.66 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2bc826eb-87e1-4508-a613-cca33f84168c")
 	)
 	(label "8"
 		(at 78.74 69.85 0)
@@ -3730,6 +4363,16 @@
 			(justify right bottom)
 		)
 		(uuid "52bdee7b-eae6-43cd-8db1-942a3c01a300")
+	)
+	(label "GND"
+		(at 340.36 137.16 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5390599c-918a-433f-99f6-84a0ddc02208")
 	)
 	(label "6"
 		(at 34.29 60.96 180)
@@ -3996,6 +4639,16 @@
 		)
 		(uuid "99b3b6a9-821b-4f71-85d1-1f555a1ffbfd")
 	)
+	(label "DS_IO"
+		(at 246.38 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a5aa1052-3315-4db3-967c-16ee6f078518")
+	)
 	(label "1"
 		(at 17.78 29.21 270)
 		(effects
@@ -4160,6 +4813,16 @@
 			(justify right bottom)
 		)
 		(uuid "bf39c630-123b-4639-87c5-a6a1cba238d9")
+	)
+	(label "DS_CE"
+		(at 241.3 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c318b37f-aaba-4724-8e47-9e9f251f6b9b")
 	)
 	(label "RX"
 		(at 270.51 128.27 0)
@@ -4349,6 +5012,16 @@
 		)
 		(uuid "dd66f9f7-6335-4bfa-9504-9575267ffae6")
 	)
+	(label "GND"
+		(at 340.36 109.22 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ddb33e21-9520-4c0b-b6ed-66563a4173ff")
+	)
 	(label "9"
 		(at 142.24 73.66 0)
 		(effects
@@ -4370,6 +5043,16 @@
 			(justify left bottom)
 		)
 		(uuid "de1009c8-7cfc-4ae8-b984-989b77229f79")
+	)
+	(label "DS_CE"
+		(at 327.66 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dedf42ef-477c-460c-83bf-12ba07ecc687")
 	)
 	(label "K8"
 		(at 224.79 125.73 180)
@@ -4491,6 +5174,16 @@
 			(justify right bottom)
 		)
 		(uuid "f84e5eac-6af5-437d-a59e-c777cdfdafbc")
+	)
+	(label "DS_IO"
+		(at 353.06 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9a14d04-dfa1-4b7d-85e0-2463086919a4")
 	)
 	(label "6"
 		(at 43.18 29.21 270)
@@ -6654,6 +7347,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Crystal")
+		(at 314.96 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "744ff5e2-9750-4e74-9619-7e1b43ebd06c")
+		(property "Reference" "Y1"
+			(at 314.96 124.206 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "32768"
+			(at 314.96 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 314.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 314.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Two pin crystal"
+			(at 314.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e4a1c9c-2289-44cf-9fd3-c15a37bc5453")
+		)
+		(pin "2"
+			(uuid "4af55dde-158b-4cbe-8323-0f82f86bd02d")
+		)
+		(instances
+			(project ""
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 33.02 50.8 0)
 		(unit 1)
@@ -6858,6 +7618,75 @@
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "Q11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Battery_Cell")
+		(at 340.36 111.76 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c319c50-2bf9-4aa2-a18b-10fcf015b3e4")
+		(property "Reference" "BT1"
+			(at 341.122 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "CR2032"
+			(at 341.122 114.554 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 340.36 113.284 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 340.36 113.284 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single-cell battery"
+			(at 340.36 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cc1299d3-3dca-4029-ac38-8b8f7f980b0c")
+		)
+		(pin "1"
+			(uuid "ec40e7ee-d771-4c3a-b159-4101cbb2b8dc")
+		)
+		(instances
+			(project ""
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -8960,6 +9789,93 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Timer_RTC:DS1302+")
+		(at 340.36 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f66e2fff-03cf-4e54-a4ce-51dd5329f808")
+		(property "Reference" "U6"
+			(at 346.71 117.856 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS1302"
+			(at 345.186 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 340.36 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/DS1302.pdf"
+			(at 340.36 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Trickle-Charge Timekeeping Chip, 2.0V to 5.5V VCC, 0°C to +70°C, DIP-8"
+			(at 340.36 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "843125f1-8cf8-400c-92fe-b15098e68649")
+		)
+		(pin "7"
+			(uuid "41298341-4d35-4ccd-82cc-40d90c5fc4e4")
+		)
+		(pin "6"
+			(uuid "d8fcf613-4ee4-448c-9443-ad1dc167d912")
+		)
+		(pin "4"
+			(uuid "1a7f6f10-b81c-4f06-90f2-abe32df8234f")
+		)
+		(pin "5"
+			(uuid "e4930a6d-f749-42b4-8534-883e07ff67e2")
+		)
+		(pin "2"
+			(uuid "63a8971e-97c2-4a8a-ad4d-2a52966b5f75")
+		)
+		(pin "8"
+			(uuid "bac1033d-aa25-4264-9be0-d30c47415606")
+		)
+		(pin "1"
+			(uuid "69dd90d0-a539-400c-8a4f-225bd03803e8")
+		)
+		(instances
+			(project ""
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "U6")
 					(unit 1)
 				)
 			)
