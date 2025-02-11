@@ -1912,6 +1912,151 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Timer_RTC:DS1302+"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3848,6 +3993,10 @@
 		(uuid "0b1d149e-bdeb-469b-bf65-a9141d774f24")
 	)
 	(no_connect
+		(at 270.51 125.73)
+		(uuid "0bbb2308-dee0-4de9-abd1-78d2eb83d115")
+	)
+	(no_connect
 		(at 325.12 176.53)
 		(uuid "15aeabff-df50-4872-9aa0-3382ef9eb804")
 	)
@@ -3922,6 +4071,10 @@
 	(no_connect
 		(at 355.6 173.99)
 		(uuid "d0a003c7-e1a3-4df3-87a0-c399c1ca9e28")
+	)
+	(no_connect
+		(at 270.51 123.19)
+		(uuid "e1341660-096e-4b21-acc2-2c5ac1d8911d")
 	)
 	(no_connect
 		(at 125.73 86.36)
@@ -4984,6 +5137,16 @@
 		)
 		(uuid "3e7d5e3b-1746-40cc-9e94-00d03fc22716")
 	)
+	(label "B_MM"
+		(at 256.54 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "40ce2054-3945-4ddb-b3fa-187c4dc33475")
+	)
 	(label "1"
 		(at 116.84 80.01 180)
 		(effects
@@ -5050,6 +5213,16 @@
 		)
 		(uuid "477c05ce-18ed-4d56-bf14-c1d444159279")
 	)
+	(label "VCC"
+		(at 361.95 227.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "479e6f88-f7f7-497e-b4d2-275196e0fbaa")
+	)
 	(label "K3"
 		(at 78.74 43.18 180)
 		(effects
@@ -5093,6 +5266,16 @@
 			(justify left bottom)
 		)
 		(uuid "4e3cc47c-cff9-49f3-82e7-9c3b6f14e9af")
+	)
+	(label "B_F"
+		(at 261.62 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "51572036-1081-4e8b-84e1-c969c7ee0cce")
 	)
 	(label "4"
 		(at 33.02 29.21 270)
@@ -5203,6 +5386,16 @@
 			(justify right bottom)
 		)
 		(uuid "72c9e89a-eebc-46f4-b5bd-5e1c6db6f4a1")
+	)
+	(label "VCC"
+		(at 361.95 237.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "748f743c-8561-44d5-81f1-c6f6d2a25498")
 	)
 	(label "5"
 		(at 125.73 60.96 180)
@@ -5377,6 +5570,26 @@
 		)
 		(uuid "894a3f98-c2b6-48d2-a447-af3bf22291f3")
 	)
+	(label "VCC"
+		(at 361.95 207.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "93ae8307-85df-481a-bbd2-79a3b90a6b26")
+	)
+	(label "B_F"
+		(at 379.73 237.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "95e225c7-eb88-4b73-8851-c5ed69d48de2")
+	)
 	(label "K2"
 		(at 48.26 43.18 180)
 		(effects
@@ -5474,6 +5687,16 @@
 			(justify left bottom)
 		)
 		(uuid "af0ed4cf-1e2b-467e-b438-5736c6f42521")
+	)
+	(label "VCC"
+		(at 361.95 217.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "af22b11e-f7b7-4c71-aed2-630d159bdec9")
 	)
 	(label "K1"
 		(at 259.08 106.68 90)
@@ -5604,6 +5827,16 @@
 			(justify right bottom)
 		)
 		(uuid "bf39c630-123b-4639-87c5-a6a1cba238d9")
+	)
+	(label "B_HH"
+		(at 379.73 207.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c103e6eb-6207-4069-821d-629a0a2396e2")
 	)
 	(label "DS_CE"
 		(at 241.3 152.4 270)
@@ -5856,6 +6089,16 @@
 		)
 		(uuid "e0521115-3cbb-4fbc-9f82-66f8fafd95cc")
 	)
+	(label "B_SS"
+		(at 379.73 227.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e20e0a6d-d007-4fd1-b9e4-cbbe08658179")
+	)
 	(label "VCC"
 		(at 340.36 199.39 0)
 		(effects
@@ -5920,6 +6163,16 @@
 		)
 		(uuid "ede35c7e-4aca-4c1c-ba8d-ffd6e7ce0dd4")
 	)
+	(label "B_HH"
+		(at 254 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ee3a5d36-84e1-467e-b90e-22e43b9a8fd2")
+	)
 	(label "A2"
 		(at 355.6 54.61 0)
 		(effects
@@ -5941,6 +6194,16 @@
 			(justify right bottom)
 		)
 		(uuid "f0aac78c-3201-4984-a296-a98437d91d23")
+	)
+	(label "B_SS"
+		(at 259.08 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f0d57dfa-37af-4e9b-b5f0-bdcaa90b3a25")
 	)
 	(label "K1"
 		(at 17.78 43.18 180)
@@ -6006,6 +6269,16 @@
 			(justify right bottom)
 		)
 		(uuid "fc2ca660-38ba-4757-aa2c-9f6be67179a5")
+	)
+	(label "B_MM"
+		(at 379.73 217.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc7c8926-55c0-4212-9ca0-f5be815f872e")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -7269,6 +7542,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 374.65 207.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "342beb77-8c26-4933-bb12-7f7c643979c7")
+		(property "Reference" "SW1"
+			(at 372.618 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HH"
+			(at 375.92 204.724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 374.65 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 374.65 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20f12a14-0978-443c-8f65-b0288cae416a")
+		)
+		(pin "2"
+			(uuid "b0673c79-caed-4a5a-b668-0dcd620cf7dc")
+		)
+		(instances
+			(project ""
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 33.02 25.4 180)
 		(unit 1)
@@ -7604,6 +7945,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 365.76 227.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f8d8892-fca4-4405-87ed-6ed11e3992e8")
+		(property "Reference" "R42"
+			(at 365.76 224.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4,7K"
+			(at 365.76 227.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.76 229.108 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 365.76 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 365.76 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a4414589-e597-4417-b981-3d05f27412aa")
+		)
+		(pin "1"
+			(uuid "e6b39098-53ba-40fd-a25d-f7ca61adb1c0")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:MMBTA42")
 		(at 91.44 43.18 0)
 		(unit 1)
@@ -7674,6 +8082,73 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 365.76 237.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "52bc1476-95dc-4d20-896f-a760464c3aae")
+		(property "Reference" "R43"
+			(at 365.76 234.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4,7K"
+			(at 365.76 237.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.76 239.268 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 365.76 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 365.76 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a29656eb-56c7-4f30-a54b-93e213e282cb")
+		)
+		(pin "1"
+			(uuid "7b31d0f1-ed80-4282-af6e-d7abf085000f")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -8094,6 +8569,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 374.65 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fca50c1-f843-41b5-b2a2-73264c933f64")
+		(property "Reference" "SW3"
+			(at 372.618 224.536 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SS"
+			(at 375.92 225.044 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 374.65 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 374.65 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdc92937-62cf-483c-8ca8-caf01df7baf7")
+		)
+		(pin "2"
+			(uuid "7743ba99-417d-45c2-8b0c-536a0bf8814f")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 87.63 46.99 180)
 		(unit 1)
@@ -8155,6 +8698,73 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 365.76 207.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "62c21984-688a-4700-a381-1769a71f0765")
+		(property "Reference" "R40"
+			(at 365.76 204.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4,7K"
+			(at 365.76 207.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.76 208.788 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 365.76 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 365.76 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "77826d16-d492-4f47-8999-c99c6395f61e")
+		)
+		(pin "1"
+			(uuid "2adbce81-0b24-402b-aed2-36126fec50c1")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -10023,6 +10633,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 374.65 217.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba93665d-1efa-417f-a8e7-924d522dbb73")
+		(property "Reference" "SW2"
+			(at 372.618 214.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM"
+			(at 376.174 214.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 374.65 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 374.65 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6283844-a5d5-4d91-8115-bef12032577a")
+		)
+		(pin "2"
+			(uuid "8149a203-43d3-4d18-b531-840674fdb9c4")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 391.16 111.76 0)
 		(unit 1)
@@ -10093,6 +10771,73 @@
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 365.76 217.17 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cf743c72-0967-483d-9653-acc23e5e6eef")
+		(property "Reference" "R41"
+			(at 365.76 214.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4,7K"
+			(at 365.76 217.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.76 218.948 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 365.76 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 365.76 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "66148143-566e-46c3-b056-d85b58b6e626")
+		)
+		(pin "1"
+			(uuid "83d89394-3603-4ca7-b775-4c4124a6a846")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -10514,6 +11259,74 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 374.65 237.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd4d328a-6a32-483f-8bb9-62f27d0f59d2")
+		(property "Reference" "SW4"
+			(at 372.618 234.696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "F"
+			(at 375.158 235.204 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 374.65 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 374.65 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6b5a97b-c901-4470-92a1-c0e60fcb8a9e")
+		)
+		(pin "2"
+			(uuid "ff285ded-e63c-4b5f-ab84-bace61dd5ad1")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "SW4")
 					(unit 1)
 				)
 			)
