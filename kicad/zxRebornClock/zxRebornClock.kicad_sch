@@ -843,8 +843,8 @@
 			)
 			(symbol "CH32X035C8T6_0_1"
 				(rectangle
-					(start 19.05 -40.64)
-					(end -21.59 0)
+					(start -21.59 0)
+					(end 19.05 -40.64)
 					(stroke
 						(width 0)
 						(type default)
@@ -938,7 +938,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -13.97 -43.18 90)
+					(at -15.24 -43.18 90)
 					(length 2.54)
 					(name "PA3"
 						(effects
@@ -956,7 +956,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -11.43 -43.18 90)
+					(at -12.7 -43.18 90)
 					(length 2.54)
 					(name "PA4"
 						(effects
@@ -974,7 +974,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -8.89 -43.18 90)
+					(at -10.16 -43.18 90)
 					(length 2.54)
 					(name "PA5"
 						(effects
@@ -992,7 +992,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -6.35 -43.18 90)
+					(at -7.62 -43.18 90)
 					(length 2.54)
 					(name "PA6"
 						(effects
@@ -1010,7 +1010,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -3.81 -43.18 90)
+					(at -5.08 -43.18 90)
 					(length 2.54)
 					(name "PA7"
 						(effects
@@ -1028,7 +1028,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -1.27 -43.18 90)
+					(at -2.54 -43.18 90)
 					(length 2.54)
 					(name "PC6"
 						(effects
@@ -1046,7 +1046,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 1.27 -43.18 90)
+					(at 0 -43.18 90)
 					(length 2.54)
 					(name "PC7"
 						(effects
@@ -1082,7 +1082,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 3.81 -43.18 90)
+					(at 2.54 -43.18 90)
 					(length 2.54)
 					(name "PB0"
 						(effects
@@ -1100,7 +1100,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 6.35 -43.18 90)
+					(at 5.08 -43.18 90)
 					(length 2.54)
 					(name "PB1"
 						(effects
@@ -1118,7 +1118,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 8.89 -43.18 90)
+					(at 7.62 -43.18 90)
 					(length 2.54)
 					(name "PB2"
 						(effects
@@ -1136,7 +1136,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 11.43 -43.18 90)
+					(at 10.16 -43.18 90)
 					(length 2.54)
 					(name "PB3"
 						(effects
@@ -1154,7 +1154,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 13.97 -43.18 90)
+					(at 12.7 -43.18 90)
 					(length 2.54)
 					(name "PB4"
 						(effects
@@ -1406,7 +1406,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 13.97 2.54 270)
+					(at 12.7 2.54 270)
 					(length 2.54)
 					(name "PC19"
 						(effects
@@ -1424,7 +1424,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 11.43 2.54 270)
+					(at 10.16 2.54 270)
 					(length 2.54)
 					(name "PC14"
 						(effects
@@ -1442,7 +1442,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 8.89 2.54 270)
+					(at 7.62 2.54 270)
 					(length 2.54)
 					(name "PC15"
 						(effects
@@ -1478,7 +1478,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 6.35 2.54 270)
+					(at 5.08 2.54 270)
 					(length 2.54)
 					(name "PA8"
 						(effects
@@ -1496,7 +1496,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 3.81 2.54 270)
+					(at 2.54 2.54 270)
 					(length 2.54)
 					(name "PA9"
 						(effects
@@ -1514,7 +1514,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 1.27 2.54 270)
+					(at 0 2.54 270)
 					(length 2.54)
 					(name "PA10"
 						(effects
@@ -1532,7 +1532,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -1.27 2.54 270)
+					(at -2.54 2.54 270)
 					(length 2.54)
 					(name "PA11"
 						(effects
@@ -1550,7 +1550,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -3.81 2.54 270)
+					(at -5.08 2.54 270)
 					(length 2.54)
 					(name "PA12"
 						(effects
@@ -1568,7 +1568,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -6.35 2.54 270)
+					(at -7.62 2.54 270)
 					(length 2.54)
 					(name "PA13"
 						(effects
@@ -1586,7 +1586,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -8.89 2.54 270)
+					(at -10.16 2.54 270)
 					(length 2.54)
 					(name "PA14"
 						(effects
@@ -1604,7 +1604,7 @@
 					)
 				)
 				(pin power_in line
-					(at -11.43 2.54 270)
+					(at -12.7 2.54 270)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -1622,7 +1622,7 @@
 					)
 				)
 				(pin power_in line
-					(at -13.97 2.54 270)
+					(at -15.24 2.54 270)
 					(length 2.54)
 					(name "VDD"
 						(effects
@@ -1678,7 +1678,7 @@
 				(pin bidirectional line
 					(at -24.13 -21.59 0)
 					(length 2.54)
-					(name "RST"
+					(name "PA21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3155,7 +3155,7 @@
 		(uuid "3bc5605d-9539-40b8-818f-2bfb593a29af")
 	)
 	(label "K4"
-		(at 336.55 102.87 90)
+		(at 335.28 102.87 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3309,7 +3309,7 @@
 		(uuid "590e3e6f-5d5b-49cc-975e-4eabc2137b71")
 	)
 	(label "SA2"
-		(at 344.17 102.87 90)
+		(at 342.9 102.87 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3321,7 +3321,7 @@
 		(uuid "61076f06-8145-48c2-a01e-dc94bc3d37cf")
 	)
 	(label "K5"
-		(at 331.47 102.87 90)
+		(at 330.2 102.87 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3476,7 +3476,7 @@
 		(uuid "82f39500-1e7a-42e3-a348-6571999e628c")
 	)
 	(label "SA4"
-		(at 334.01 102.87 90)
+		(at 332.74 102.87 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3565,7 +3565,7 @@
 		(uuid "a8b6bcb4-ff70-4704-92aa-fce6e7a373fa")
 	)
 	(label "SA3"
-		(at 339.09 102.87 90)
+		(at 337.82 102.87 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3577,7 +3577,7 @@
 		(uuid "af0ed4cf-1e2b-467e-b438-5736c6f42521")
 	)
 	(label "K1"
-		(at 351.79 102.87 90)
+		(at 350.52 102.87 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3810,7 +3810,7 @@
 		(uuid "d3292ed1-b0c6-4fcc-8309-4a21943373c7")
 	)
 	(label "SA1"
-		(at 349.25 102.87 90)
+		(at 347.98 102.87 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3844,7 +3844,7 @@
 		(uuid "daa9d98b-6dc2-44b4-8681-9bfcccb0359f")
 	)
 	(label "K2"
-		(at 346.71 102.87 90)
+		(at 345.44 102.87 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3965,7 +3965,7 @@
 		(uuid "f0f7a7f2-e29f-4e54-a83b-92c0ea4b08b4")
 	)
 	(label "K3"
-		(at 341.63 102.87 90)
+		(at 340.36 102.87 90)
 		(effects
 			(font
 				(size 1.27 1.27)
