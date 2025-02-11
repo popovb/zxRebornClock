@@ -5,6 +5,174 @@
 	(uuid "1f59fcac-59e1-4c3b-9ba4-e653e2ae108c")
 	(paper "A3")
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016) hide)
@@ -3095,6 +3263,16 @@
 		)
 		(uuid "9aac2448-edd5-4abb-854f-4c3e38ca42fe")
 	)
+	(text "UART"
+		(exclude_from_sim no)
+		(at 387.096 121.666 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ea8e748d-04c7-4981-819c-d16d0e5c95a9")
+	)
 	(label "0"
 		(at 46.99 77.47 0)
 		(effects
@@ -3149,6 +3327,16 @@
 			(justify left bottom)
 		)
 		(uuid "0b713006-6f74-4d38-9d75-78e8cf42da1f")
+	)
+	(label "TX"
+		(at 270.51 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0cca5e3e-46d1-4c3a-9fd2-a9720a0ecce5")
 	)
 	(label "9"
 		(at 78.74 73.66 0)
@@ -3323,6 +3511,16 @@
 			(justify left bottom)
 		)
 		(uuid "2ec92b1d-cd5d-48aa-a803-549a28f6a96c")
+	)
+	(label "GND"
+		(at 386.08 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "31c857a1-c67c-40dd-9dfe-fa7c5615a871")
 	)
 	(label "A3"
 		(at 355.6 67.31 0)
@@ -3645,6 +3843,16 @@
 		)
 		(uuid "77a84f85-4cf6-43f3-a896-e27a872a3a07")
 	)
+	(label "RX"
+		(at 386.08 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7940f7b9-c356-4b47-8960-b3856436e841")
+	)
 	(label "A3"
 		(at 383.54 52.07 180)
 		(effects
@@ -3932,6 +4140,16 @@
 		)
 		(uuid "ba467994-dce1-4801-8ba1-8dd1e73ed30c")
 	)
+	(label "TX"
+		(at 386.08 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bb0ba0eb-6ed7-4af7-853b-20bba0e726a8")
+	)
 	(label "1"
 		(at 33.02 38.1 180)
 		(effects
@@ -3942,6 +4160,16 @@
 			(justify right bottom)
 		)
 		(uuid "bf39c630-123b-4639-87c5-a6a1cba238d9")
+	)
+	(label "RX"
+		(at 270.51 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c433b244-3b71-4623-b630-89bed9f456c8")
 	)
 	(label "9"
 		(at 58.42 29.21 270)
@@ -7453,6 +7681,79 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 391.16 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "abeecd94-7e07-45ce-abb1-3823f451c9e4")
+		(property "Reference" "J2"
+			(at 389.89 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 393.7 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 391.16 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 391.16 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 391.16 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6b10df8b-db35-48b9-a7c4-d4aacf1f92ca")
+		)
+		(pin "2"
+			(uuid "4d3e7138-3ecc-4544-94f0-d2de9e6688d2")
+		)
+		(pin "1"
+			(uuid "0ff0f46f-3013-4f75-9972-d6c79887afea")
+		)
+		(instances
+			(project ""
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "J2")
 					(unit 1)
 				)
 			)
