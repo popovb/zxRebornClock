@@ -5939,6 +5939,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 123.19) (xy 287.02 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd6400d6-8dca-489b-aed3-bf0c42436acb")
+	)
+	(wire
+		(pts
 			(xy 185.42 48.26) (xy 185.42 50.8)
 		)
 		(stroke
@@ -6464,6 +6474,16 @@
 		)
 		(uuid "40ce2054-3945-4ddb-b3fa-187c4dc33475")
 	)
+	(label "DOWNLOAD"
+		(at 278.765 179.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41274ddd-9ae7-42d8-9b80-12e29d891a90")
+	)
 	(label "1"
 		(at 116.84 80.01 180)
 		(effects
@@ -6927,6 +6947,16 @@
 		)
 		(uuid "8d0676a6-7a13-4717-a9f1-5ec0f07534db")
 	)
+	(label "DOWNLOAD"
+		(at 276.225 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "917ea4c9-be13-43f5-b7c7-8754f3d3310b")
+	)
 	(label "VCC"
 		(at 361.95 207.01 180)
 		(effects
@@ -7234,6 +7264,16 @@
 			(justify left bottom)
 		)
 		(uuid "c103e6eb-6207-4069-821d-629a0a2396e2")
+	)
+	(label "VCC"
+		(at 260.985 179.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c184ad57-56f6-41b6-9326-61e62c78adbe")
 	)
 	(label "VCC"
 		(at 305.435 213.36 180)
@@ -10284,6 +10324,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 264.795 179.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5ed4f412-0cd5-4355-98b9-8092f787e6eb")
+		(property "Reference" "R48"
+			(at 264.795 176.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4,7K"
+			(at 264.795 179.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.795 180.848 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.795 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 264.795 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6d5f8600-bda6-447b-bc89-1169499cd0f1")
+		)
+		(pin "1"
+			(uuid "e3d563fd-1cac-437e-a438-a0c7040c11dd")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 374.65 219.71 0)
 		(unit 1)
@@ -10346,6 +10453,74 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 273.685 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "60910941-d9dd-4b13-b42e-c011e9f8d4f6")
+		(property "Reference" "SW5"
+			(at 271.653 176.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 274.193 176.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.685 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 273.685 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 273.685 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b0c7b2a-c67f-4398-971b-b5553b152626")
+		)
+		(pin "2"
+			(uuid "c1ba1058-7a02-4ec5-9625-09e3369e18a2")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "SW5")
 					(unit 1)
 				)
 			)
