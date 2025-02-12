@@ -5,6 +5,185 @@
 	(uuid "1f59fcac-59e1-4c3b-9ba4-e653e2ae108c")
 	(paper "A3")
 	(lib_symbols
+		(symbol "Connector:Jack-DC"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.334 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jack-DC"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 1.27 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "DC Barrel Jack"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "DC power barrel jack connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "BarrelJack*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jack-DC_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(arc
+					(start -3.302 3.175)
+					(mid -3.9343 2.54)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 3.175)
+					(mid -3.9343 2.54)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.683 3.175)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Jack-DC_1_1"
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:USB_B_Micro"
 			(pin_names
 				(offset 1.016)
@@ -1033,6 +1212,164 @@
 				)
 			)
 		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:Crystal"
 			(pin_numbers hide)
 			(pin_names
@@ -1953,6 +2290,102 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_1"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_1_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -3104,6 +3537,142 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Regulator_Linear:AMS1117-5.0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AMS1117-5.0"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AMS1117-5.0_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AMS1117-5.0_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5024,6 +5593,18 @@
 		)
 	)
 	(junction
+		(at 99.695 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02f1aee7-3676-4590-a642-fab2f20bbf88")
+	)
+	(junction
+		(at 68.58 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "090b8937-8b5b-44e6-8d6f-d2fc58b1f264")
+	)
+	(junction
 		(at 43.18 21.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5040,6 +5621,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "10b3ea68-63f3-47fd-b311-aefefe7562d7")
+	)
+	(junction
+		(at 107.315 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10ccdc92-5d90-4ce3-9db5-3dd61849778d")
 	)
 	(junction
 		(at 363.22 27.94)
@@ -5078,16 +5665,46 @@
 		(uuid "4c569942-26f4-40da-b28d-05dc86f5e0bb")
 	)
 	(junction
+		(at 92.075 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d97ff5a-2214-4e5d-9c5a-09d7c79048c3")
+	)
+	(junction
 		(at 391.16 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4df1a479-365b-48d8-9725-6238709a6628")
 	)
 	(junction
+		(at 68.58 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5416c230-e72a-4551-9e59-3d715784454e")
+	)
+	(junction
+		(at 61.595 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55ac6809-4469-4d60-bdec-c891466fd22e")
+	)
+	(junction
 		(at 58.42 21.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f1c209b-439a-4296-a8ba-28ae51fd26d5")
+	)
+	(junction
+		(at 92.075 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "616aadff-75e0-421d-85bf-af7b59fac398")
+	)
+	(junction
+		(at 99.695 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62b5fb3b-c519-44b8-b910-1b1b033d641a")
 	)
 	(junction
 		(at 307.34 50.8)
@@ -5118,6 +5735,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75f7e83a-ce48-462e-9537-89dc90ab936f")
+	)
+	(junction
+		(at 79.375 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c773ee7-2e4f-4645-997f-cf55a9b34a50")
 	)
 	(junction
 		(at 48.26 21.59)
@@ -5172,6 +5795,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f08b48d6-d990-493f-becc-a13a501f623c")
+	)
+	(junction
+		(at 61.595 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8c72f10-fc02-4984-be21-33b860cedf4d")
 	)
 	(junction
 		(at 154.94 50.8)
@@ -5299,6 +5928,26 @@
 	)
 	(wire
 		(pts
+			(xy 92.075 157.48) (xy 99.695 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12e98ec6-0426-4688-8bb8-ded773c4eb48")
+	)
+	(wire
+		(pts
+			(xy 61.595 149.86) (xy 68.58 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "130ea5c6-19a4-4124-8b4f-e1e37c19b594")
+	)
+	(wire
+		(pts
 			(xy 38.1 21.59) (xy 43.18 21.59)
 		)
 		(stroke
@@ -5346,6 +5995,16 @@
 			(type default)
 		)
 		(uuid "23891cb4-8b67-4faf-86f3-7cbdcae4880e")
+	)
+	(wire
+		(pts
+			(xy 68.58 157.48) (xy 79.375 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "290b04eb-dd65-4b2a-b918-3df7a639a945")
 	)
 	(wire
 		(pts
@@ -5509,6 +6168,16 @@
 	)
 	(wire
 		(pts
+			(xy 61.595 154.94) (xy 61.595 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5495fd1e-73e8-4d2f-a76d-bee3ea94cc2d")
+	)
+	(wire
+		(pts
 			(xy 391.16 46.99) (xy 391.16 52.07)
 		)
 		(stroke
@@ -5516,6 +6185,16 @@
 			(type default)
 		)
 		(uuid "553efd6e-79e0-4932-ba80-5d70fe5f4b23")
+	)
+	(wire
+		(pts
+			(xy 92.075 149.86) (xy 99.695 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5754cf11-a212-4f00-a299-e842964d1669")
 	)
 	(wire
 		(pts
@@ -5536,6 +6215,16 @@
 			(type default)
 		)
 		(uuid "5983e365-199f-4e1b-a7c0-d8147bef90d5")
+	)
+	(wire
+		(pts
+			(xy 79.375 157.48) (xy 92.075 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6190e34c-d423-4b6c-8098-3c25810d018a")
 	)
 	(wire
 		(pts
@@ -5659,6 +6348,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.315 149.86) (xy 113.665 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d329a3c-ad47-47df-8492-a48f34e63934")
+	)
+	(wire
+		(pts
 			(xy 355.6 49.53) (xy 359.41 49.53)
 		)
 		(stroke
@@ -5676,6 +6375,16 @@
 			(type default)
 		)
 		(uuid "844a1905-9f8b-4b7c-9c89-9463d1a3db08")
+	)
+	(wire
+		(pts
+			(xy 68.58 149.86) (xy 71.755 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "849d568b-75a0-4117-a09e-5290bccb18fa")
 	)
 	(wire
 		(pts
@@ -5736,6 +6445,16 @@
 			(type default)
 		)
 		(uuid "a5d8f29f-d890-4ed8-a0b2-637c635788e8")
+	)
+	(wire
+		(pts
+			(xy 86.995 149.86) (xy 92.075 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6fcc9c7-0b7f-4858-bd35-694bb5f167b0")
 	)
 	(wire
 		(pts
@@ -5819,6 +6538,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.665 165.1) (xy 99.695 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf3b0b26-6d9d-416b-a802-79d7081de724")
+	)
+	(wire
+		(pts
 			(xy 246.38 48.26) (xy 246.38 50.8)
 		)
 		(stroke
@@ -5836,6 +6565,16 @@
 			(type default)
 		)
 		(uuid "d8a17af8-91db-4c54-8dd3-46d708a24d14")
+	)
+	(wire
+		(pts
+			(xy 99.695 149.86) (xy 107.315 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc2247f3-37f9-4194-b071-bef84f8c8f41")
 	)
 	(wire
 		(pts
@@ -5919,6 +6658,26 @@
 	)
 	(wire
 		(pts
+			(xy 99.695 157.48) (xy 99.695 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4b3ec27-be2d-45b8-a54f-468299aaaaad")
+	)
+	(wire
+		(pts
+			(xy 61.595 157.48) (xy 68.58 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7d58964-dbab-49ed-baf4-c89029ffb3a3")
+	)
+	(wire
+		(pts
 			(xy 391.16 41.91) (xy 391.16 46.99)
 		)
 		(stroke
@@ -5956,6 +6715,19 @@
 			(type default)
 		)
 		(uuid "ff679949-d471-4362-8957-7088af2b4d5f")
+	)
+	(text "=12V"
+		(exclude_from_sim no)
+		(at 42.545 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "14956211-3a64-4eb1-b4b8-3d2669f614a3")
 	)
 	(text "DEBUG"
 		(exclude_from_sim no)
@@ -6422,6 +7194,16 @@
 		)
 		(uuid "3a7d5160-4f1e-483e-a667-33b8f7ec974c")
 	)
+	(label "GND"
+		(at 113.665 165.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3b54d857-3ebb-49ba-8a1a-9ce55163ad08")
+	)
 	(label "UDP"
 		(at 230.505 180.34 180)
 		(effects
@@ -6851,6 +7633,16 @@
 			(justify right bottom)
 		)
 		(uuid "801b4f18-0b55-4e46-a4e2-bc00ccf96220")
+	)
+	(label "VCC"
+		(at 113.665 149.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8271516c-10e3-46ba-a72b-b3db1a45a6c0")
 	)
 	(label "8"
 		(at 53.34 29.21 270)
@@ -8394,6 +9186,93 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 92.075 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "155c304b-6a98-4ca0-ae50-786fd8be58c3")
+		(property "Reference" "C4"
+			(at 90.805 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF"
+			(at 88.9 159.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+			(at 93.0402 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.075 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 92.075 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://aliexpress.ru/item/4001227639043.html?sku_id=10000015368849017&spm=a2g2w.stores.seller_list.0.390e2b33TdpRsz"
+			(at 92.075 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 92.075 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e5a602f-cd84-4b44-bc04-5c1365b102eb")
+		)
+		(pin "2"
+			(uuid "40a3de6d-a0ab-4fc9-95a7-dd8725209219")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -10114,6 +10993,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 113.665 161.29 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a174153-dce2-49ae-acf6-9c2be66cea81")
+		(property "Reference" "D5"
+			(at 114.935 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 124.7774 159.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 113.665 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.665 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 113.665 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f97e8a89-aa24-4e31-81fb-da2fd024618a")
+		)
+		(pin "2"
+			(uuid "2ea6c638-52fd-444c-a147-969752f8a3dd")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:MMBTA42")
 		(at 121.92 43.18 0)
 		(unit 1)
@@ -10588,6 +11537,96 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:AMS1117-5.0")
+		(at 79.375 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61782fef-9765-4532-83af-2646092d7dd5")
+		(property "Reference" "U9"
+			(at 79.375 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-3.3"
+			(at 79.375 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 79.375 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.915 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 79.375 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://aliexpress.ru/item/32868348278.html?af=1954_7685&cn=2urus0rxhlj2a26lb42oc348en4sb3ob&cv=2&dp=2urus0rxhlj2a26lb42oc348en4sb3ob&sub=42s0rxhldu0uqsc94bkx8u7ip8ptxrhx&utm_campaign=1954_7685&utm_content=2&utm_medium=cpa&utm_source=aerkol&aff_fcid=d9bbc7b18e534b658df57505f8202b67-1694356041700-09763-_DmT3Su5&aff_fsk=_DmT3Su5&aff_platform=api-new-link-generate&sk=_DmT3Su5&aff_trace_key=d9bbc7b18e534b658df57505f8202b67-1694356041700-09763-_DmT3Su5&terminal_id=de55c4b9bfb0419ebf5abaefafc9d70b&sku_id=65500041848"
+			(at 79.375 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "sot-223"
+			(at 79.375 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f62e7d80-c7c9-41d2-90bc-dea358b05cfe")
+		)
+		(pin "2"
+			(uuid "2a595a3b-8bc9-4f12-953c-0b5392537bc5")
+		)
+		(pin "3"
+			(uuid "f5877da9-9871-4916-82ef-4afdebebf509")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -11194,6 +12233,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Jack-DC")
+		(at 53.975 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75bfe659-00fa-4772-bd7d-d5d767bfb209")
+		(property "Reference" "J5"
+			(at 53.975 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jack DC"
+			(at 53.975 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
+			(at 55.245 153.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.245 153.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.975 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://aliexpress.ru/item/32361314769.html?spm=a2g2w.orderdetail.0.0.77144aa6aQSCM3&sku_id=64847447207"
+			(at 53.975 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 53.975 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "857ca340-f156-4478-9658-5ff54a911cc1")
+		)
+		(pin "2"
+			(uuid "120d5235-be66-4e5d-b8d8-5e3d01ad397b")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 387.35 52.07 90)
 		(unit 1)
@@ -11485,6 +12611,93 @@
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 68.58 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "82c738ba-befa-4616-b260-5b48d7d1e0e4")
+		(property "Reference" "C3"
+			(at 67.31 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 66.04 159.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 69.5452 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "0805"
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://aliexpress.ru/item/33007425729.html?sku_id=67085457162&spm=a2g2w.stores.seller_list.5.390e2b33TdpRsz"
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "smd 0805"
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a56328c-e520-46f3-be97-2c0719839fab")
+		)
+		(pin "2"
+			(uuid "9f6656d1-598e-4032-977b-d8122b3e2b70")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -12448,6 +13661,74 @@
 		)
 	)
 	(symbol
+		(lib_name "PWR_FLAG_1")
+		(lib_id "power:PWR_FLAG")
+		(at 61.595 157.48 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aacbcf32-54d0-4721-ac45-7bebe3056970")
+		(property "Reference" "#FLG02"
+			(at 61.595 159.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 61.595 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 61.595 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 61.595 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 61.595 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b6cfd4b-3639-41af-9c7d-deb52b7001ae")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 391.16 128.27 0)
 		(unit 1)
@@ -12877,6 +14158,162 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 113.665 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf6bf0e1-e3c6-4eb4-b66d-cfbda9a28927")
+		(property "Reference" "R49"
+			(at 114.935 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1,0K"
+			(at 113.665 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 111.887 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.665 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 113.665 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f808dc4-2a32-4633-ba49-ca0ed4ebdbb4")
+		)
+		(pin "2"
+			(uuid "629095a8-d0a3-488d-900a-30476a87a478")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 99.695 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c5ac54e7-5d5f-4c99-8219-6e2db3215349")
+		(property "Reference" "C5"
+			(at 98.425 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 100.33 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 100.6602 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "0805"
+			(at 99.695 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.695 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://aliexpress.ru/item/33007425729.html?sku_id=67085457162&spm=a2g2w.stores.seller_list.5.390e2b33TdpRsz"
+			(at 99.695 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "smd 0805"
+			(at 99.695 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50f33a7e-356c-4911-b8ff-9a12794c76bb")
+		)
+		(pin "2"
+			(uuid "3518d4a4-3a82-4116-a1ec-4281a7369d17")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 316.865 219.71 180)
 		(unit 1)
@@ -13014,6 +14451,142 @@
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "PWR_FLAG_1")
+		(lib_id "power:PWR_FLAG")
+		(at 107.315 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ccacee0c-ee59-4f7f-b3b7-b3d71563467e")
+		(property "Reference" "#FLG03"
+			(at 107.315 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 107.315 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.315 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.315 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 107.315 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af7f3f63-db33-4518-a79c-73ecc983ded1")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "PWR_FLAG_1")
+		(lib_id "power:PWR_FLAG")
+		(at 61.595 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf1b2e0b-217b-4fca-8a7a-d2ed2a0f73e9")
+		(property "Reference" "#FLG01"
+			(at 61.595 151.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 61.595 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 61.595 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 61.595 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 61.595 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f72262fa-f940-4b60-b65d-8704f1569096")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
