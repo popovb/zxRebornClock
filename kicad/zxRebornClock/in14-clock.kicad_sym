@@ -2531,7 +2531,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 0 -29.21 90)
 				(length 5.08)
 				(name "A"
@@ -2549,7 +2549,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 12.7 -12.7 180)
 				(length 5.08)
 				(name "8"
@@ -2567,7 +2567,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 12.7 -16.51 180)
 				(length 5.08)
 				(name "9"
@@ -2585,7 +2585,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 12.7 -20.32 180)
 				(length 5.08)
 				(name "0"
@@ -2603,7 +2603,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 3.81 -29.21 90)
 				(length 5.08)
 				(name ","
@@ -2621,7 +2621,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -3.81 -29.21 90)
 				(length 5.08)
 				(name ","
@@ -2639,7 +2639,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -12.7 -22.86 0)
 				(length 5.08)
 				(name "1"
@@ -2657,7 +2657,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -12.7 -19.05 0)
 				(length 5.08)
 				(name "2"
@@ -2675,7 +2675,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -12.7 -15.24 0)
 				(length 5.08)
 				(name "3"
@@ -2693,7 +2693,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -12.7 -11.43 0)
 				(length 5.08)
 				(name "4"
@@ -2711,7 +2711,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -3.81 -3.81 270)
 				(length 5.08)
 				(name "5"
@@ -2729,7 +2729,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 0 -3.81 270)
 				(length 5.08)
 				(name "6"
@@ -2747,7 +2747,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 3.81 -3.81 270)
 				(length 5.08)
 				(name "7"
