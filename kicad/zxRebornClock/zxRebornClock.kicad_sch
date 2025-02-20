@@ -6034,10 +6034,6 @@
 		(uuid "2c67f0f8-712f-4485-b4e3-a11f981039da")
 	)
 	(no_connect
-		(at 236.22 106.68)
-		(uuid "39684ac3-3fd5-4712-b987-725a57e05815")
-	)
-	(no_connect
 		(at 270.51 118.11)
 		(uuid "3e7258ab-8ffb-48aa-9dc5-50f307086bf4")
 	)
@@ -6132,10 +6128,6 @@
 	(no_connect
 		(at 224.79 115.57)
 		(uuid "e2ade42d-2934-414c-a585-07fd8c97ca36")
-	)
-	(no_connect
-		(at 233.68 106.68)
-		(uuid "ea83cc45-269c-4fc5-a0b8-1b1a762cb3a2")
 	)
 	(no_connect
 		(at 125.73 86.36)
@@ -6457,6 +6449,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 106.68) (xy 233.68 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "577c407c-4f96-41fb-aad4-1360d1136141")
+	)
+	(wire
+		(pts
 			(xy 311.15 133.35) (xy 327.66 133.35)
 		)
 		(stroke
@@ -6534,6 +6536,16 @@
 			(type default)
 		)
 		(uuid "6b2b9025-4d5d-477d-b57c-ccf4f5d37d8d")
+	)
+	(wire
+		(pts
+			(xy 228.6 97.79) (xy 228.6 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b546ecb-18e7-451c-996d-b8344f3b2048")
 	)
 	(wire
 		(pts
@@ -6684,6 +6696,16 @@
 			(type default)
 		)
 		(uuid "94b8b473-f09c-43c0-9122-da3ad07298dd")
+	)
+	(wire
+		(pts
+			(xy 236.22 97.79) (xy 236.22 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94c6a1cf-8778-4f8a-a752-6d289216ad32")
 	)
 	(wire
 		(pts
@@ -6874,6 +6896,16 @@
 			(type default)
 		)
 		(uuid "e4254c5e-542f-4647-bd17-e740afe5ed6e")
+	)
+	(wire
+		(pts
+			(xy 233.68 104.14) (xy 228.6 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e91a04f7-1cea-483b-b495-4ddb7ce1b393")
 	)
 	(wire
 		(pts
@@ -8091,6 +8123,16 @@
 		)
 		(uuid "9aa27e37-8b8f-4396-a8c2-59988ee71b84")
 	)
+	(label "GND"
+		(at 236.22 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9addc986-70ab-4eb2-aac2-5a6021f22e94")
+	)
 	(label "ESP_EN"
 		(at 396.875 151.765 180)
 		(effects
@@ -8610,6 +8652,16 @@
 			(justify left bottom)
 		)
 		(uuid "d7a021e6-154f-40b1-bd3f-552c642ab045")
+	)
+	(label "VCC"
+		(at 228.6 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d7df5ef6-1075-4a3c-b22a-793fa0633daf")
 	)
 	(label "3"
 		(at 93.98 38.1 180)
@@ -14692,6 +14744,76 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 232.41 97.79 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c3843a06-9199-44ab-91e0-74b3eb13a89f")
+		(property "Reference" "C6"
+			(at 231.14 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 231.1401 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 98.7552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 232.41 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2387cd58-b0c9-43b9-b41b-db3c50135b82")
+		)
+		(pin "2"
+			(uuid "09abc745-5125-41f9-870f-ebf1d1473b35")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "C6")
 					(unit 1)
 				)
 			)
