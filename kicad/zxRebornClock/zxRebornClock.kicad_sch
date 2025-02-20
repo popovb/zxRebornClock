@@ -9341,7 +9341,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00dfc87e-04da-4a4e-8f2c-623a87d970a3")
-		(property "Reference" "R26"
+		(property "Reference" "R18"
 			(at 120.65 101.6 90)
 			(effects
 				(font
@@ -9393,7 +9393,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R26")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -9408,7 +9408,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "02ad711a-1052-4248-ba01-1cf737846f29")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at 90.17 82.55 90)
 			(effects
 				(font
@@ -9460,7 +9460,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -9475,7 +9475,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03eed9db-c2f2-47c1-a4cb-5d11d51c9fad")
-		(property "Reference" "C2"
+		(property "Reference" "C3"
 			(at 60.96 220.98 0)
 			(effects
 				(font
@@ -9530,7 +9530,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "C2")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -9545,7 +9545,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0446b84f-3576-4a5a-9cf0-d55061cc9415")
-		(property "Reference" "R19"
+		(property "Reference" "R38"
 			(at 187.96 79.502 90)
 			(effects
 				(font
@@ -9597,7 +9597,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R19")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -9613,7 +9613,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0488b000-13db-4120-878f-624099c23cd3")
-		(property "Reference" "Q7"
+		(property "Reference" "Q8"
 			(at 134.62 102.8699 0)
 			(effects
 				(font
@@ -9673,7 +9673,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q7")
+					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -9688,7 +9688,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "063f109d-cf5c-424f-b542-e4caeb2f4d76")
-		(property "Reference" "SW6"
+		(property "Reference" "SW1"
 			(at 161.798 150.876 0)
 			(effects
 				(font
@@ -9741,7 +9741,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "SW6")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -9857,7 +9857,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "09434d28-2d4d-403d-90b1-5d91981dc5f8")
-		(property "Reference" "R37"
+		(property "Reference" "R27"
 			(at 134.366 212.598 90)
 			(effects
 				(font
@@ -9909,7 +9909,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R37")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -10282,7 +10282,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23991821-a1d1-4b37-bd5e-4d043c5a32db")
-		(property "Reference" "R38"
+		(property "Reference" "R34"
 			(at 172.466 230.378 90)
 			(effects
 				(font
@@ -10334,7 +10334,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R38")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -10349,7 +10349,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "263d31b5-c019-4985-a0fe-6c207157bce8")
-		(property "Reference" "R33"
+		(property "Reference" "R46"
 			(at 187.96 121.158 90)
 			(effects
 				(font
@@ -10401,7 +10401,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R33")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -10416,7 +10416,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2691a771-6a2e-423f-8c98-6f8d3c283996")
-		(property "Reference" "R28"
+		(property "Reference" "R19"
 			(at 120.65 120.65 90)
 			(effects
 				(font
@@ -10468,7 +10468,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R28")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -10483,7 +10483,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2a1c0fde-4bdd-46c5-a48e-4df50efc3daa")
-		(property "Reference" "R15"
+		(property "Reference" "R42"
 			(at 187.96 99.822 90)
 			(effects
 				(font
@@ -10535,7 +10535,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R15")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -10550,7 +10550,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2a201a4d-c5a3-4c70-8793-c9afa2b43f71")
-		(property "Reference" "R29"
+		(property "Reference" "R24"
 			(at 122.428 127 90)
 			(effects
 				(font
@@ -10602,7 +10602,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R29")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -10618,7 +10618,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e31ec06-85d2-4ec2-b967-e02580e848e8")
-		(property "Reference" "Q1"
+		(property "Reference" "Q2"
 			(at 104.14 83.8199 0)
 			(effects
 				(font
@@ -10678,7 +10678,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q1")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -10693,7 +10693,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "32396805-249f-44dc-bb29-d412c6df1450")
-		(property "Reference" "R32"
+		(property "Reference" "R45"
 			(at 187.96 116.078 90)
 			(effects
 				(font
@@ -10745,7 +10745,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R32")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -10760,7 +10760,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "32749dcf-1272-458c-b28f-a4ceb5bd4de8")
-		(property "Reference" "R27"
+		(property "Reference" "R23"
 			(at 122.428 107.95 90)
 			(effects
 				(font
@@ -10812,7 +10812,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R27")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -10897,7 +10897,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "342beb77-8c26-4933-bb12-7f7c643979c7")
-		(property "Reference" "SW1"
+		(property "Reference" "SW3"
 			(at 161.798 172.466 0)
 			(effects
 				(font
@@ -10950,7 +10950,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "SW1")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -10965,7 +10965,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3f77979b-6777-4f86-b50e-56af9f747637")
-		(property "Reference" "R16"
+		(property "Reference" "R41"
 			(at 187.96 94.742 90)
 			(effects
 				(font
@@ -11017,7 +11017,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R16")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -11102,7 +11102,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "48567f6c-e691-4ffa-886b-8e2dd24d15f6")
-		(property "Reference" "R50"
+		(property "Reference" "R49"
 			(at 188.341 207.518 90)
 			(effects
 				(font
@@ -11154,7 +11154,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R50")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -11169,7 +11169,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "48aaa924-f83a-4156-948d-c524eec01365")
-		(property "Reference" "R7"
+		(property "Reference" "R10"
 			(at 91.948 127 90)
 			(effects
 				(font
@@ -11221,7 +11221,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R7")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -11236,7 +11236,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4996743b-5545-4926-8d75-cff96eb57d52")
-		(property "Reference" "R23"
+		(property "Reference" "R21"
 			(at 122.428 69.85 90)
 			(effects
 				(font
@@ -11288,7 +11288,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R23")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -11437,7 +11437,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f8d8892-fca4-4405-87ed-6ed11e3992e8")
-		(property "Reference" "R42"
+		(property "Reference" "R32"
 			(at 154.94 185.42 90)
 			(effects
 				(font
@@ -11489,7 +11489,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R42")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -11505,7 +11505,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "521b1f39-1872-4d36-901c-b48493a8b7ae")
-		(property "Reference" "J3"
+		(property "Reference" "J2"
 			(at 25.273 199.771 0)
 			(effects
 				(font
@@ -11570,7 +11570,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -11586,7 +11586,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52ada36c-877b-49c7-92fa-32fdfb930516")
-		(property "Reference" "Q2"
+		(property "Reference" "Q3"
 			(at 104.14 102.8699 0)
 			(effects
 				(font
@@ -11646,7 +11646,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q2")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -11661,7 +11661,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "52bc1476-95dc-4d20-896f-a760464c3aae")
-		(property "Reference" "R43"
+		(property "Reference" "R33"
 			(at 154.94 191.77 90)
 			(effects
 				(font
@@ -11713,7 +11713,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R43")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -11728,7 +11728,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "545b1087-14aa-4a49-a7d5-a1928d037742")
-		(property "Reference" "D4"
+		(property "Reference" "D5"
 			(at 122.555 192.405 0)
 			(effects
 				(font
@@ -11780,7 +11780,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "D4")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -11795,7 +11795,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5751aead-6212-44c2-be48-d3aec6311b2f")
-		(property "Reference" "R11"
+		(property "Reference" "R7"
 			(at 91.948 69.85 90)
 			(effects
 				(font
@@ -11847,7 +11847,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R11")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -11862,7 +11862,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "583a78ee-71c9-462f-aa08-463ad08f214b")
-		(property "Reference" "R6"
+		(property "Reference" "R5"
 			(at 90.17 120.65 90)
 			(effects
 				(font
@@ -11914,7 +11914,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R6")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -11929,7 +11929,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "58930bb9-4189-41fe-bda7-9c28f6a414dc")
-		(property "Reference" "C1"
+		(property "Reference" "C6"
 			(at 156.21 246.38 0)
 			(effects
 				(font
@@ -11984,7 +11984,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "C1")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -11999,7 +11999,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a174153-dce2-49ae-acf6-9c2be66cea81")
-		(property "Reference" "D5"
+		(property "Reference" "D1"
 			(at 90.17 246.38 90)
 			(effects
 				(font
@@ -12054,7 +12054,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "D5")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -12070,7 +12070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a60eed0-ef86-4934-b64f-8ac9471f7502")
-		(property "Reference" "Q3"
+		(property "Reference" "Q4"
 			(at 104.14 121.9199 0)
 			(effects
 				(font
@@ -12130,7 +12130,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q3")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -12145,7 +12145,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5bbf3098-2604-4b5e-8e26-0fedf6c905ee")
-		(property "Reference" "R18"
+		(property "Reference" "R39"
 			(at 187.96 84.582 90)
 			(effects
 				(font
@@ -12197,7 +12197,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R18")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -12212,7 +12212,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5bcda04c-a1d8-4c7e-ab72-72f250cbead2")
-		(property "Reference" "R13"
+		(property "Reference" "R44"
 			(at 187.96 109.982 90)
 			(effects
 				(font
@@ -12264,7 +12264,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R13")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -12279,7 +12279,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5ed4f412-0cd5-4355-98b9-8092f787e6eb")
-		(property "Reference" "R48"
+		(property "Reference" "R29"
 			(at 154.94 166.37 90)
 			(effects
 				(font
@@ -12331,7 +12331,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R48")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -12346,7 +12346,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5fca50c1-f843-41b5-b2a2-73264c933f64")
-		(property "Reference" "SW3"
+		(property "Reference" "SW5"
 			(at 161.798 185.166 0)
 			(effects
 				(font
@@ -12399,7 +12399,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "SW3")
+					(reference "SW5")
 					(unit 1)
 				)
 			)
@@ -12414,7 +12414,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "60910941-d9dd-4b13-b42e-c011e9f8d4f6")
-		(property "Reference" "SW5"
+		(property "Reference" "SW2"
 			(at 161.798 166.116 0)
 			(effects
 				(font
@@ -12467,7 +12467,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "SW5")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -12482,7 +12482,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "613e3227-1f0a-4c45-a4a0-c1e4239398e2")
-		(property "Reference" "R5"
+		(property "Reference" "R9"
 			(at 91.948 107.95 90)
 			(effects
 				(font
@@ -12534,7 +12534,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R5")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -12550,7 +12550,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61782fef-9765-4532-83af-2646092d7dd5")
-		(property "Reference" "U9"
+		(property "Reference" "U2"
 			(at 54.61 228.6 0)
 			(effects
 				(font
@@ -12624,7 +12624,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "U9")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -12639,7 +12639,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "62c21984-688a-4700-a381-1769a71f0765")
-		(property "Reference" "R40"
+		(property "Reference" "R30"
 			(at 154.94 172.72 90)
 			(effects
 				(font
@@ -12691,7 +12691,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R40")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -12706,7 +12706,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "64821839-9724-47e1-a913-498e98b4aabd")
-		(property "Reference" "U7"
+		(property "Reference" "U6"
 			(at 162.814 205.486 0)
 			(effects
 				(font
@@ -12822,7 +12822,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "U7")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -12904,7 +12904,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "697e2977-8ab7-4695-b371-f53643a772cb")
-		(property "Reference" "R17"
+		(property "Reference" "R40"
 			(at 187.96 89.662 90)
 			(effects
 				(font
@@ -12956,7 +12956,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R17")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -13172,7 +13172,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "756c00ab-2f7d-45d6-bfea-9be61993a16b")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 122.555 173.99 0)
 			(effects
 				(font
@@ -13224,7 +13224,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -13240,7 +13240,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75bfe659-00fa-4772-bd7d-d5d767bfb209")
-		(property "Reference" "J5"
+		(property "Reference" "J1"
 			(at 24.765 232.41 0)
 			(effects
 				(font
@@ -13311,7 +13311,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "J5")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -13326,7 +13326,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "762f5a62-9208-43de-af6e-a4cb8c3922a1")
-		(property "Reference" "R34"
+		(property "Reference" "R47"
 			(at 187.96 126.238 90)
 			(effects
 				(font
@@ -13378,7 +13378,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R34")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -13394,7 +13394,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "769fef87-7c27-4b1d-84a9-1d4972c62ab9")
-		(property "Reference" "Q11"
+		(property "Reference" "Q1"
 			(at 104.14 64.7699 0)
 			(effects
 				(font
@@ -13454,7 +13454,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q11")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -13538,7 +13538,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8244b607-123e-4c96-b7b1-70746cf86c97")
-		(property "Reference" "U8"
+		(property "Reference" "U4"
 			(at 60.325 200.66 0)
 			(effects
 				(font
@@ -13608,7 +13608,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "U8")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -13623,7 +13623,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82c738ba-befa-4616-b260-5b48d7d1e0e4")
-		(property "Reference" "C3"
+		(property "Reference" "C2"
 			(at 36.195 238.76 0)
 			(effects
 				(font
@@ -13695,7 +13695,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "C3")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -13710,7 +13710,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8abe41a4-1001-428e-b6a7-e147bee54aef")
-		(property "Reference" "R25"
+		(property "Reference" "R22"
 			(at 122.428 88.9 90)
 			(effects
 				(font
@@ -13762,7 +13762,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R25")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -13844,7 +13844,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8b4df370-b616-410f-b47e-0a958e786e06")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 122.555 180.34 0)
 			(effects
 				(font
@@ -13896,7 +13896,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -14012,7 +14012,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8fbfce77-1834-4f57-a265-029243852f1b")
-		(property "Reference" "R31"
+		(property "Reference" "R25"
 			(at 122.428 146.05 90)
 			(effects
 				(font
@@ -14064,7 +14064,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R31")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -14079,7 +14079,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "96047383-4979-4ece-a509-f1796b0ec398")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 90.17 63.5 90)
 			(effects
 				(font
@@ -14131,7 +14131,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -14147,7 +14147,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99c7327a-a769-4238-86e9-8fd3e94ea8f5")
-		(property "Reference" "Q9"
+		(property "Reference" "Q10"
 			(at 134.62 140.9699 0)
 			(effects
 				(font
@@ -14207,7 +14207,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q9")
+					(reference "Q10")
 					(unit 1)
 				)
 			)
@@ -14223,7 +14223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9be10b04-51b0-4fa7-8141-f4cf0b149757")
-		(property "Reference" "Q4"
+		(property "Reference" "Q5"
 			(at 104.14 140.9699 0)
 			(effects
 				(font
@@ -14283,7 +14283,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q4")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -14298,7 +14298,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c0f7ff0-5ec7-4c09-a271-4be9dc5feaed")
-		(property "Reference" "R36"
+		(property "Reference" "R26"
 			(at 134.366 207.518 90)
 			(effects
 				(font
@@ -14350,7 +14350,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R36")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -14365,7 +14365,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c50b690-3d6c-4e0e-9aca-ae05bad9e5c1")
-		(property "Reference" "R35"
+		(property "Reference" "R48"
 			(at 187.96 131.318 90)
 			(effects
 				(font
@@ -14417,7 +14417,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R35")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -14432,7 +14432,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a1ccd285-4bdd-43e3-9246-c2053b58c8d3")
-		(property "Reference" "R14"
+		(property "Reference" "R43"
 			(at 187.96 104.902 90)
 			(effects
 				(font
@@ -14484,7 +14484,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R14")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -14500,7 +14500,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5208437-5340-42fb-941b-c0a7151a1360")
-		(property "Reference" "VL3"
+		(property "Reference" "VL2"
 			(at 46.99 96.5514 0)
 			(effects
 				(font
@@ -14585,7 +14585,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "VL3")
+					(reference "VL2")
 					(unit 1)
 				)
 			)
@@ -14600,7 +14600,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a8ca85ef-9e43-478e-9841-aac0508674f6")
-		(property "Reference" "J4"
+		(property "Reference" "J5"
 			(at 190.5 177.165 0)
 			(effects
 				(font
@@ -14658,7 +14658,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "J4")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -14673,7 +14673,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a9701831-6fb6-43fa-a0ed-c8c3548d2fb8")
-		(property "Reference" "R21"
+		(property "Reference" "R36"
 			(at 187.96 69.342 90)
 			(effects
 				(font
@@ -14725,7 +14725,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R21")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -14740,7 +14740,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "abeecd94-7e07-45ce-abb1-3823f451c9e4")
-		(property "Reference" "J2"
+		(property "Reference" "J4"
 			(at 190.5 162.56 0)
 			(effects
 				(font
@@ -14798,7 +14798,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "J2")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -14813,7 +14813,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ade1cae2-055f-4e5a-b014-ada6a95295d3")
-		(property "Reference" "U1"
+		(property "Reference" "U7"
 			(at 162.56 83.566 0)
 			(effects
 				(font
@@ -14875,7 +14875,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "U1")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -14890,7 +14890,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "af389756-049a-4e1a-8705-8efa31a09930")
-		(property "Reference" "R45"
+		(property "Reference" "R13"
 			(at 114.935 180.34 90)
 			(effects
 				(font
@@ -14942,7 +14942,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R45")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -14957,7 +14957,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b0541243-19a9-4e89-b799-a2950acfc215")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 91.948 146.05 90)
 			(effects
 				(font
@@ -15009,7 +15009,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R9")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -15024,7 +15024,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b35dccb3-4656-41f4-8076-dd315e141569")
-		(property "Reference" "U10"
+		(property "Reference" "U3"
 			(at 54.61 248.285 0)
 			(effects
 				(font
@@ -15082,7 +15082,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "U10")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -15097,7 +15097,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b67802c3-44c5-4b19-8928-2e678f2cdcd1")
-		(property "Reference" "U3"
+		(property "Reference" "U9"
 			(at 162.56 108.966 0)
 			(effects
 				(font
@@ -15159,7 +15159,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "U3")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -15174,7 +15174,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ba93665d-1efa-417f-a8e7-924d522dbb73")
-		(property "Reference" "SW2"
+		(property "Reference" "SW4"
 			(at 161.798 178.816 0)
 			(effects
 				(font
@@ -15227,7 +15227,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "SW2")
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -15242,7 +15242,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf6bf0e1-e3c6-4eb4-b66d-cfbda9a28927")
-		(property "Reference" "R49"
+		(property "Reference" "R1"
 			(at 90.17 238.76 0)
 			(effects
 				(font
@@ -15296,7 +15296,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R49")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -15311,7 +15311,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c3843a06-9199-44ab-91e0-74b3eb13a89f")
-		(property "Reference" "C6"
+		(property "Reference" "C1"
 			(at 26.67 134.62 90)
 			(effects
 				(font
@@ -15366,7 +15366,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "C6")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -15468,7 +15468,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c5d76534-2df2-4cee-a2a1-cbd1805b4225")
-		(property "Reference" "D3"
+		(property "Reference" "D4"
 			(at 122.555 186.69 0)
 			(effects
 				(font
@@ -15520,7 +15520,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "D3")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -15535,7 +15535,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c87125cd-6119-4111-92d3-a1da0c7adbcd")
-		(property "Reference" "J1"
+		(property "Reference" "J3"
 			(at 190.754 146.05 0)
 			(effects
 				(font
@@ -15596,7 +15596,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "J1")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -15611,7 +15611,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cf743c72-0967-483d-9653-acc23e5e6eef")
-		(property "Reference" "R41"
+		(property "Reference" "R31"
 			(at 154.94 179.07 90)
 			(effects
 				(font
@@ -15663,7 +15663,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R41")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -15678,7 +15678,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cf7ff81c-e453-4040-99b8-b7172df01fb6")
-		(property "Reference" "R39"
+		(property "Reference" "R50"
 			(at 188.341 212.598 90)
 			(effects
 				(font
@@ -15730,7 +15730,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R39")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -15812,7 +15812,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d319df5c-b9fc-4c5e-83bf-e266fa185ec8")
-		(property "Reference" "R24"
+		(property "Reference" "R17"
 			(at 120.65 82.55 90)
 			(effects
 				(font
@@ -15864,7 +15864,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R24")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -15879,7 +15879,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d34def4e-e5ad-451a-8831-b9d6e259f4ea")
-		(property "Reference" "U4"
+		(property "Reference" "U10"
 			(at 162.56 121.666 0)
 			(effects
 				(font
@@ -15941,7 +15941,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "U4")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -15956,7 +15956,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d35125c9-29ff-4782-9043-371f65fad503")
-		(property "Reference" "R10"
+		(property "Reference" "R16"
 			(at 120.65 63.5 90)
 			(effects
 				(font
@@ -16008,7 +16008,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R10")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -16023,7 +16023,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d7eb114a-c563-403d-babd-abce2ae5e5d0")
-		(property "Reference" "R46"
+		(property "Reference" "R14"
 			(at 114.935 186.69 90)
 			(effects
 				(font
@@ -16075,7 +16075,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R46")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -16091,7 +16091,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc3040b0-4b14-4f86-b880-cc481a1374e7")
-		(property "Reference" "Q8"
+		(property "Reference" "Q9"
 			(at 134.62 121.9199 0)
 			(effects
 				(font
@@ -16151,7 +16151,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q8")
+					(reference "Q9")
 					(unit 1)
 				)
 			)
@@ -16166,7 +16166,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd4d328a-6a32-483f-8bb9-62f27d0f59d2")
-		(property "Reference" "SW4"
+		(property "Reference" "SW6"
 			(at 161.798 191.516 0)
 			(effects
 				(font
@@ -16219,7 +16219,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "SW4")
+					(reference "SW6")
 					(unit 1)
 				)
 			)
@@ -16234,7 +16234,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dfa5a6a6-138d-4c48-b2c8-e5d8a36aa2d5")
-		(property "Reference" "U2"
+		(property "Reference" "U8"
 			(at 162.56 96.266 0)
 			(effects
 				(font
@@ -16296,7 +16296,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "U2")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -16311,7 +16311,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2d86a3e-aa7a-41c4-a8b3-b572d377cedb")
-		(property "Reference" "R3"
+		(property "Reference" "R8"
 			(at 91.948 88.9 90)
 			(effects
 				(font
@@ -16363,7 +16363,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R3")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -16445,7 +16445,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5445c41-44e6-43e0-86e1-7918dc3b0394")
-		(property "Reference" "R47"
+		(property "Reference" "R15"
 			(at 114.935 192.405 90)
 			(effects
 				(font
@@ -16497,7 +16497,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R47")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -16512,7 +16512,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e67ec00c-ae67-40e3-aa5d-128476c9b1a8")
-		(property "Reference" "R44"
+		(property "Reference" "R12"
 			(at 114.935 173.99 90)
 			(effects
 				(font
@@ -16564,7 +16564,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R44")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -16579,7 +16579,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e7a0200c-4d81-4882-b6bb-b867642f6bde")
-		(property "Reference" "R8"
+		(property "Reference" "R6"
 			(at 90.17 139.7 90)
 			(effects
 				(font
@@ -16631,7 +16631,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R8")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -16646,7 +16646,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eac58691-3237-477e-b439-7887a3f44f79")
-		(property "Reference" "R30"
+		(property "Reference" "R20"
 			(at 120.65 139.7 90)
 			(effects
 				(font
@@ -16698,7 +16698,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R30")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -16714,7 +16714,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec84695b-ab37-4e80-8ec2-33c8554720c7")
-		(property "Reference" "Q6"
+		(property "Reference" "Q7"
 			(at 134.62 83.8199 0)
 			(effects
 				(font
@@ -16774,7 +16774,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q6")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -16856,7 +16856,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f38535d1-60ff-4b5a-b3ee-7b7b83f901aa")
-		(property "Reference" "R22"
+		(property "Reference" "R35"
 			(at 187.96 64.262 90)
 			(effects
 				(font
@@ -16908,7 +16908,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R22")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -16923,7 +16923,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f66e2fff-03cf-4e54-a4ce-51dd5329f808")
-		(property "Reference" "U6"
+		(property "Reference" "U5"
 			(at 107.95 205.486 0)
 			(effects
 				(font
@@ -16995,7 +16995,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "U6")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -17146,7 +17146,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "faed1f36-e82e-4f99-9a41-5bae36bf5261")
-		(property "Reference" "VL2"
+		(property "Reference" "VL3"
 			(at 78.74 64.8014 0)
 			(effects
 				(font
@@ -17231,7 +17231,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "VL2")
+					(reference "VL3")
 					(unit 1)
 				)
 			)
@@ -17246,7 +17246,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc7bc8b5-5a0d-489f-9852-34182c4d2f74")
-		(property "Reference" "R12"
+		(property "Reference" "R28"
 			(at 152.654 139.192 90)
 			(effects
 				(font
@@ -17300,7 +17300,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R12")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -17315,7 +17315,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fcc2416c-6806-4964-9fe2-275bd5ef9aed")
-		(property "Reference" "U5"
+		(property "Reference" "U1"
 			(at 62.23 140.97 0)
 			(effects
 				(font
@@ -17505,7 +17505,7 @@
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "U5")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -17520,7 +17520,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fe5a6896-95ff-4635-97dd-978bfa22034c")
-		(property "Reference" "R20"
+		(property "Reference" "R37"
 			(at 187.96 74.422 90)
 			(effects
 				(font
@@ -17572,7 +17572,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "R20")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -17588,7 +17588,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "feac31b1-7778-4eb5-81ef-a091823860f1")
-		(property "Reference" "Q5"
+		(property "Reference" "Q6"
 			(at 134.62 64.7699 0)
 			(effects
 				(font
@@ -17648,7 +17648,7 @@
 		(instances
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
-					(reference "Q5")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
