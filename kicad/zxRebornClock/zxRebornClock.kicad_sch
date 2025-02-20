@@ -5883,10 +5883,6 @@
 		(uuid "15aeabff-df50-4872-9aa0-3382ef9eb804")
 	)
 	(no_connect
-		(at 355.6 158.75)
-		(uuid "1c5b9e09-9a24-428c-a23f-215392d4ad94")
-	)
-	(no_connect
 		(at 101.6 86.36)
 		(uuid "1e889435-4b60-4648-94eb-88b53c680c23")
 	)
@@ -6272,6 +6268,16 @@
 	)
 	(wire
 		(pts
+			(xy 355.6 158.75) (xy 371.475 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f6b3bea-e640-46fe-a70e-9038721204b6")
+	)
+	(wire
+		(pts
 			(xy 355.6 36.83) (xy 355.6 27.94)
 		)
 		(stroke
@@ -6479,6 +6485,16 @@
 			(type default)
 		)
 		(uuid "849d568b-75a0-4117-a09e-5290bccb18fa")
+	)
+	(wire
+		(pts
+			(xy 355.6 163.83) (xy 371.475 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "892d5d18-a5a7-4740-9b44-7d9c395a3c89")
 	)
 	(wire
 		(pts
@@ -7202,6 +7218,16 @@
 		)
 		(uuid "2ec92b1d-cd5d-48aa-a803-549a28f6a96c")
 	)
+	(label "VCC"
+		(at 379.095 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2fe68dca-8b3d-463f-a10e-9c358f45d687")
+	)
 	(label "GND"
 		(at 386.08 128.27 180)
 		(effects
@@ -7534,7 +7560,7 @@
 		(uuid "590e3e6f-5d5b-49cc-975e-4eabc2137b71")
 	)
 	(label "VCC"
-		(at 363.22 163.83 0)
+		(at 379.095 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10261,6 +10287,73 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 375.285 158.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "48567f6c-e691-4ffa-886b-8e2dd24d15f6")
+		(property "Reference" "R50"
+			(at 375.031 156.718 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 375.285 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 375.285 156.972 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 375.285 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 375.285 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e92ec0ee-ba7f-4520-ac48-e2a5b8c7e915")
+		)
+		(pin "1"
+			(uuid "2148abef-4c22-42f5-95d8-b75e4997c2df")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -14561,7 +14654,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 359.41 163.83 270)
+		(at 375.285 163.83 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14569,7 +14662,7 @@
 		(dnp no)
 		(uuid "cf7ff81c-e453-4040-99b8-b7172df01fb6")
 		(property "Reference" "R39"
-			(at 359.156 161.798 90)
+			(at 375.031 161.798 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14577,7 +14670,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 359.41 163.83 90)
+			(at 375.285 163.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14585,7 +14678,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 359.41 162.052 90)
+			(at 375.285 162.052 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14594,7 +14687,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 359.41 163.83 0)
+			(at 375.285 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14603,7 +14696,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 359.41 163.83 0)
+			(at 375.285 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
