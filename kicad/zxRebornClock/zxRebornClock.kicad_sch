@@ -5179,7 +5179,7 @@
 				(pin bidirectional line
 					(at -24.13 -21.59 0)
 					(length 2.54)
-					(name "PA21"
+					(name "PA21/RST"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5798,6 +5798,12 @@
 		(uuid "1a9e2622-e9fc-42c4-bbdf-64c5a70a924f")
 	)
 	(junction
+		(at 268.605 193.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37e55412-98f4-4626-9e36-172c0ac1ef8f")
+	)
+	(junction
 		(at 391.16 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5948,6 +5954,12 @@
 		(uuid "a62b58ee-32dd-4e39-8093-b151949d664e")
 	)
 	(junction
+		(at 278.765 193.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b044ed0a-b59f-4a28-b946-bf03b6d054a5")
+	)
+	(junction
 		(at 63.5 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6058,10 +6070,6 @@
 		(uuid "62e95c29-82a4-4655-9561-0a215a1cf34d")
 	)
 	(no_connect
-		(at 224.79 128.27)
-		(uuid "6d9dea60-0109-489a-9f26-4f1b0f0456a1")
-	)
-	(no_connect
 		(at 325.12 173.99)
 		(uuid "709f894f-e0a5-4ec7-a30a-9762d6c69338")
 	)
@@ -6166,6 +6174,16 @@
 			(type default)
 		)
 		(uuid "12e98ec6-0426-4688-8bb8-ded773c4eb48")
+	)
+	(wire
+		(pts
+			(xy 268.605 195.58) (xy 269.875 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14c6877a-9f7d-44e2-a89b-b9d27371d16e")
 	)
 	(wire
 		(pts
@@ -6286,6 +6304,16 @@
 			(type default)
 		)
 		(uuid "340333f6-62b2-41bb-828e-fbe5e46aebbb")
+	)
+	(wire
+		(pts
+			(xy 268.605 193.04) (xy 268.605 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "349e150b-faa9-42f8-a403-a5d0891c60d2")
 	)
 	(wire
 		(pts
@@ -6569,6 +6597,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.765 193.04) (xy 278.765 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e00c604-6612-4f3d-9f9d-c8929de2e3ee")
+	)
+	(wire
+		(pts
 			(xy 43.18 21.59) (xy 48.26 21.59)
 		)
 		(stroke
@@ -6629,6 +6667,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.765 190.5) (xy 278.765 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "849bdcf2-55b6-47c3-b91b-be42d6b9aff5")
+	)
+	(wire
+		(pts
 			(xy 68.58 149.86) (xy 71.755 149.86)
 		)
 		(stroke
@@ -6676,6 +6724,16 @@
 			(type default)
 		)
 		(uuid "918e3640-f1ad-4a4c-88de-79ecc2225158")
+	)
+	(wire
+		(pts
+			(xy 277.495 195.58) (xy 278.765 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93617462-394c-49ca-aa8d-ad5119828cba")
 	)
 	(wire
 		(pts
@@ -6799,6 +6857,26 @@
 	)
 	(wire
 		(pts
+			(xy 267.335 193.04) (xy 268.605 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7303a5b-9a85-4421-a5e2-e431bd8ae415")
+	)
+	(wire
+		(pts
+			(xy 278.765 193.04) (xy 280.035 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c93b5d6f-dffe-40b2-b63e-456078809b2e")
+	)
+	(wire
+		(pts
 			(xy 311.15 129.54) (xy 311.15 133.35)
 		)
 		(stroke
@@ -6816,6 +6894,16 @@
 			(type default)
 		)
 		(uuid "ccb2b04a-2a79-43c9-a690-7572b93ba562")
+	)
+	(wire
+		(pts
+			(xy 268.605 190.5) (xy 268.605 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd5d49b6-e219-4cb7-be92-a427c3bf99b9")
 	)
 	(wire
 		(pts
@@ -7098,7 +7186,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right bottom)
 		)
@@ -7551,7 +7639,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left bottom)
 		)
@@ -7643,6 +7731,17 @@
 		)
 		(uuid "477c05ce-18ed-4d56-bf14-c1d444159279")
 	)
+	(label "RST"
+		(at 267.335 193.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right bottom)
+		)
+		(uuid "4789197a-5466-493b-b979-a5a8697f42b6")
+	)
 	(label "VCC"
 		(at 361.95 219.71 180)
 		(effects
@@ -7718,6 +7817,17 @@
 		)
 		(uuid "52bdee7b-eae6-43cd-8db1-942a3c01a300")
 	)
+	(label "RST"
+		(at 224.79 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right bottom)
+		)
+		(uuid "5326ec63-fe4e-4a06-80eb-1fd5d58f528a")
+	)
 	(label "GND"
 		(at 340.36 137.16 270)
 		(effects
@@ -7775,8 +7885,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left bottom)
 		)
@@ -7797,7 +7906,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left bottom)
 		)
@@ -7906,7 +8015,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right bottom)
 		)
@@ -7982,8 +8091,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left bottom)
 		)
@@ -8231,8 +8339,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left bottom)
 		)
@@ -8253,7 +8360,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left bottom)
 		)
@@ -8271,11 +8378,11 @@
 		(uuid "b30d7ec7-299f-4b0b-8b03-c843785e994c")
 	)
 	(label "K9"
-		(at 224.79 130.81 180)
+		(at 224.79 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right bottom)
 		)
@@ -8297,7 +8404,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right bottom)
 		)
@@ -8535,6 +8642,16 @@
 		(uuid "c7658cfe-d19b-444a-bd4e-433f44f4e9d9")
 	)
 	(label "GND"
+		(at 280.035 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8864c05-d845-4ef0-a732-ed18f2a60819")
+	)
+	(label "GND"
 		(at 396.875 111.125 180)
 		(effects
 			(font
@@ -8606,8 +8723,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left bottom)
 		)
@@ -8690,7 +8806,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left bottom)
 		)
@@ -8743,7 +8859,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right bottom)
 		)
@@ -8911,7 +9027,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left bottom)
 		)
@@ -9338,6 +9454,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 273.685 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "063f109d-cf5c-424f-b542-e4caeb2f4d76")
+		(property "Reference" "SW6"
+			(at 271.653 187.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RESET"
+			(at 276.86 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.685 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 273.685 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 273.685 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd178b81-78e6-4f3d-b52a-930eb6d5f6e5")
+		)
+		(pin "2"
+			(uuid "2284a227-e3e5-4dfc-9d02-9124d6de03aa")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "in14-clock:ИН-14")
 		(at 129.54 57.15 0)
 		(unit 1)
@@ -9567,6 +9751,76 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 273.685 195.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14036fe4-727e-4f75-880b-a5f3478d90fd")
+		(property "Reference" "C7"
+			(at 274.955 199.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 274.9549 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 277.495 194.6148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 273.685 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 273.685 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "097a32fc-3740-4014-81fb-9a1288a5542d")
+		)
+		(pin "2"
+			(uuid "09905a69-8bb5-4d66-ac44-de5dd6f5e9da")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -16761,10 +17015,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fcc2416c-6806-4964-9fe2-275bd5ef9aed")
 		(property "Reference" "U5"
-			(at 270.51 110.5214 0)
+			(at 266.7 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
