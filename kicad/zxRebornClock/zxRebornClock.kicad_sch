@@ -10973,7 +10973,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
 			(at 163.83 170.18 0)
 			(effects
 				(font
@@ -12489,7 +12489,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
 			(at 163.83 182.88 0)
 			(effects
 				(font
@@ -15451,7 +15451,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
 			(at 163.83 176.53 0)
 			(effects
 				(font
@@ -16443,7 +16443,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
 			(at 163.83 189.23 0)
 			(effects
 				(font
@@ -17583,15 +17583,16 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "CH32X035C8T6"
 			(at 66.04 145.4465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
 			(at 10.16 138.43 0)
 			(effects
 				(font
