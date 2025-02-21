@@ -5992,6 +5992,12 @@
 		(uuid "62b5fb3b-c519-44b8-b910-1b1b033d641a")
 	)
 	(junction
+		(at 26.67 219.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65160740-35d5-4a33-a407-891fc6b65b6a")
+	)
+	(junction
 		(at 54.61 242.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6122,6 +6128,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ddb7f9fb-bdc4-4353-b83b-b83a28638ef8")
+	)
+	(junction
+		(at 82.55 250.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e94013b4-b63a-4a00-baa0-7c230cf5a6a0")
 	)
 	(junction
 		(at 93.98 142.24)
@@ -6262,7 +6274,7 @@
 		(uuid "b62b080f-b6ad-45f1-87c3-676e54f930d3")
 	)
 	(no_connect
-		(at 32.893 214.376)
+		(at 35.56 214.63)
 		(uuid "bfce83d6-71e6-4e4e-a2b1-659eea6e5ec9")
 	)
 	(no_connect
@@ -6384,6 +6396,16 @@
 			(type default)
 		)
 		(uuid "23891cb4-8b67-4faf-86f3-7cbdcae4880e")
+	)
+	(wire
+		(pts
+			(xy 82.55 250.19) (xy 74.93 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25c4411e-c73a-4635-a5d9-1e243094f010")
 	)
 	(wire
 		(pts
@@ -6767,7 +6789,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.733 219.456) (xy 25.273 219.456)
+			(xy 25.4 219.71) (xy 26.67 219.71)
 		)
 		(stroke
 			(width 0)
@@ -7007,6 +7029,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 219.71) (xy 27.94 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4e17889-aed4-4f4d-906f-52ed5bdaf8a0")
+	)
+	(wire
+		(pts
 			(xy 124.46 111.76) (xy 132.08 111.76)
 		)
 		(stroke
@@ -7067,7 +7099,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 250.19) (xy 74.93 250.19)
+			(xy 88.9 250.19) (xy 82.55 250.19)
 		)
 		(stroke
 			(width 0)
@@ -7460,16 +7492,6 @@
 			(justify right bottom)
 		)
 		(uuid "13cc2889-f638-459d-834b-2a4977ef778b")
-	)
-	(label "GND"
-		(at 25.273 219.456 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "141265eb-9c7b-47c2-965a-89fcd6496da6")
 	)
 	(label "5"
 		(at 191.77 87.63 0)
@@ -8013,16 +8035,6 @@
 		)
 		(uuid "5326ec63-fe4e-4a06-80eb-1fd5d58f528a")
 	)
-	(label "GND"
-		(at 101.6 224.79 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5390599c-918a-433f-99f6-84a0ddc02208")
-	)
 	(label "6"
 		(at 34.29 60.96 180)
 		(effects
@@ -8364,7 +8376,7 @@
 		(uuid "93ae8307-85df-481a-bbd2-79a3b90a6b26")
 	)
 	(label "200V"
-		(at 63.5 252.095 0)
+		(at 63.5 252.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8458,7 +8470,7 @@
 		(uuid "a129e368-ea8e-47f1-8efd-e3112c64e329")
 	)
 	(label "UDP"
-		(at 32.893 209.296 0)
+		(at 35.56 209.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8530,16 +8542,6 @@
 		)
 		(uuid "abcd508c-49f4-455c-85b2-98ffd9425b71")
 	)
-	(label "GND"
-		(at 45.72 255.905 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ad0cbf7a-ae37-42bd-a751-17e9e3e71a86")
-	)
 	(label "SA3"
 		(at 41.91 139.7 90)
 		(effects
@@ -8573,7 +8575,7 @@
 		(uuid "afc493b5-9f4e-4279-94cc-239fdd1d6801")
 	)
 	(label "12V"
-		(at 45.72 252.095 180)
+		(at 45.72 252.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8649,7 +8651,7 @@
 		(uuid "b81cb94a-b386-42b3-aada-4021edb6d36f")
 	)
 	(label "VBUS"
-		(at 32.893 204.216 0)
+		(at 35.56 204.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8966,7 +8968,7 @@
 		(uuid "d7344538-cf9c-4746-bfd8-874cc190433f")
 	)
 	(label "UDM"
-		(at 32.893 211.836 0)
+		(at 35.56 212.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9237,16 +9239,6 @@
 			(justify right bottom)
 		)
 		(uuid "f0f7a7f2-e29f-4e54-a83b-92c0ea4b08b4")
-	)
-	(label "GND"
-		(at 63.5 255.905 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f1ad0652-249a-420d-a9d4-32a8d0b40451")
 	)
 	(label "K3"
 		(at 44.45 139.7 90)
@@ -10268,6 +10260,73 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 101.6 224.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22858b69-0c97-48b2-aa5b-31eb220096d7")
+		(property "Reference" "#PWR017"
+			(at 101.6 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 101.6 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9684b9f-11a6-490a-acc7-7605bdcf7105")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -11497,7 +11556,7 @@
 	)
 	(symbol
 		(lib_id "Connector:USB_B_Micro")
-		(at 25.273 209.296 0)
+		(at 27.94 209.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11506,7 +11565,7 @@
 		(fields_autoplaced yes)
 		(uuid "521b1f39-1872-4d36-901c-b48493a8b7ae")
 		(property "Reference" "J2"
-			(at 25.273 199.771 0)
+			(at 27.94 200.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11514,7 +11573,7 @@
 			)
 		)
 		(property "Value" "USB_B_Micro"
-			(at 25.273 199.771 0)
+			(at 27.94 200.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11523,7 +11582,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.083 210.566 0)
+			(at 31.75 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11532,7 +11591,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 29.083 210.566 0)
+			(at 31.75 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11541,7 +11600,7 @@
 			)
 		)
 		(property "Description" "USB Micro Type B connector"
-			(at 25.273 209.296 0)
+			(at 27.94 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11985,6 +12044,73 @@
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 256.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5952f3f7-4030-4b97-96b5-0f68e659d5a9")
+		(property "Reference" "#PWR015"
+			(at 45.72 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a09d876c-5f4b-477c-9b45-78f0f2a269df")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -12957,6 +13083,140 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 26.67 219.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69e512f2-36a9-4a1f-8eca-4b5a01807c53")
+		(property "Reference" "#PWR016"
+			(at 26.67 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.67 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 26.67 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "711f77e7-4bab-4432-a825-d6dd1a203159")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 82.55 250.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6bb3dacb-8fae-4938-a380-01aacd79bb4f")
+		(property "Reference" "#PWR013"
+			(at 82.55 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 82.55 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 82.55 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e31cd4e9-45e3-4e7d-9e64-9d57eace31f3")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -15017,7 +15277,7 @@
 	)
 	(symbol
 		(lib_id "in14-clock:12V_to_200V")
-		(at 54.61 247.015 0)
+		(at 54.61 247.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15025,7 +15285,7 @@
 		(dnp no)
 		(uuid "b35dccb3-4656-41f4-8076-dd315e141569")
 		(property "Reference" "U3"
-			(at 54.61 248.285 0)
+			(at 54.61 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15033,7 +15293,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 54.61 247.65 0)
+			(at 54.61 248.285 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15041,7 +15301,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 250.825 0)
+			(at 54.61 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15050,7 +15310,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 250.825 0)
+			(at 54.61 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15059,7 +15319,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 250.825 0)
+			(at 54.61 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17506,6 +17766,73 @@
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 256.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fde9d859-69bc-49db-9b08-8b5ecd0ed8d5")
+		(property "Reference" "#PWR014"
+			(at 63.5 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "24ac3c18-4652-416c-9f84-b458c5726786")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
