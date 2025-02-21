@@ -11110,7 +11110,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 191.77 191.77 0)
 			(effects
 				(font
@@ -12134,7 +12134,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "white"
 			(at 100.0124 244.475 0)
 			(effects
 				(font
@@ -14879,7 +14879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 191.77 182.245 0)
 			(effects
 				(font
@@ -15019,7 +15019,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 191.77 167.64 0)
 			(effects
 				(font
@@ -15814,7 +15814,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 191.77 151.13 0)
 			(effects
 				(font
