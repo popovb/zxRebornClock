@@ -802,7 +802,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "CH32X035C8T6_0_1"
+		(symbol "CH32X035C8T6_1_1"
 			(rectangle
 				(start -21.59 0)
 				(end 19.05 -40.64)
@@ -811,11 +811,9 @@
 					(type default)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
-		)
-		(symbol "CH32X035C8T6_1_1"
 			(text "CH32X035C8T6"
 				(at -1.016 -19.05 0)
 				(effects
@@ -3001,7 +2999,7 @@
 					(color 255 0 0 1)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
 			(text "ИН-14"
