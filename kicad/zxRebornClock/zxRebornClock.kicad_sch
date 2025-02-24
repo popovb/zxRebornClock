@@ -9697,7 +9697,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_CK_RS282G05A3"
 			(at 163.83 148.59 0)
 			(effects
 				(font
@@ -12557,7 +12557,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_CK_RS282G05A3"
 			(at 163.83 163.83 0)
 			(effects
 				(font
