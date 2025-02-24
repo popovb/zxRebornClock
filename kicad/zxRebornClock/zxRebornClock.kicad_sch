@@ -15000,16 +15000,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "12V->200V"
 			(at 62.23 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:12v_200v"
 			(at 54.61 259.715 0)
 			(effects
 				(font
