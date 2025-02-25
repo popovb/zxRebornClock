@@ -5670,7 +5670,7 @@
 	(footprint "Connector_BarrelJack:BarrelJack_Horizontal"
 		(layer "F.Cu")
 		(uuid "418e7eef-a772-410c-9558-8abcd97914f3")
-		(at 169.361 108.115)
+		(at 222.5 141.0425)
 		(descr "DC Barrel Jack")
 		(tags "Power Jack")
 		(property "Reference" "J1"
@@ -7633,7 +7633,7 @@
 	(footprint "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
 		(layer "F.Cu")
 		(uuid "4a684caf-f62d-4cd3-bb67-d4c5b2b5eeb5")
-		(at 125.681 89.13)
+		(at 274.75 176.25)
 		(descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=9.5mm")
 		(tags "tact sw push 6mm")
 		(property "Reference" "SW4"
@@ -9249,7 +9249,7 @@
 	(footprint "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
 		(layer "F.Cu")
 		(uuid "552a8d7c-9cfc-4ea0-a9f0-86eea901b274")
-		(at 125.681 106.23)
+		(at 293.75 176.25)
 		(descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=9.5mm")
 		(tags "tact sw push 6mm")
 		(property "Reference" "SW6"
@@ -12479,7 +12479,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 		(layer "F.Cu")
 		(uuid "6a96d390-e36e-4cd5-8082-8f168fd0ef18")
-		(at 128.581 116.955)
+		(at 73.15 132.7)
 		(descr "module CMS SOT223 4 pins")
 		(tags "CMS SOT")
 		(property "Reference" "U2"
@@ -17383,7 +17383,7 @@
 	(footprint "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
 		(layer "F.Cu")
 		(uuid "b02e9f1d-8896-4382-957b-c31706425f07")
-		(at 125.681 97.68)
+		(at 284.25 176.25)
 		(descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=9.5mm")
 		(tags "tact sw push 6mm")
 		(property "Reference" "SW5"
@@ -18432,7 +18432,7 @@
 	(footprint "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
 		(layer "F.Cu")
 		(uuid "b86d6f69-234d-40b9-a966-0963ba001817")
-		(at 125.681 80.58)
+		(at 265.25 176.25)
 		(descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=9.5mm")
 		(tags "tact sw push 6mm")
 		(property "Reference" "SW3"
@@ -27746,7 +27746,7 @@
 	(footprint "Library:12v_200v"
 		(layer "B.Cu")
 		(uuid "400ff02b-d350-48fb-85e7-821b5f8a3b93")
-		(at 282.65165 150.149175)
+		(at 319.65165 150.149175)
 		(property "Reference" "U3"
 			(at 0 -22.699175 180)
 			(unlocked yes)
@@ -27965,7 +27965,7 @@
 	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
 		(layer "B.Cu")
 		(uuid "4ea9ba24-e6b5-43ea-b138-e99a196cb213")
-		(at 259 132.3)
+		(at 296 130.35)
 		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "H2"
@@ -28091,7 +28091,7 @@
 	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
 		(layer "B.Cu")
 		(uuid "88e2d754-9392-4a78-8466-ef0b37848423")
-		(at 306 112.95)
+		(at 343 115)
 		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "H4"
@@ -28217,7 +28217,7 @@
 	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
 		(layer "B.Cu")
 		(uuid "af8dda7b-5b7f-4e8e-9394-ca404be0012e")
-		(at 259 137.95)
+		(at 296 136)
 		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "H1"
@@ -28343,7 +28343,7 @@
 	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
 		(layer "B.Cu")
 		(uuid "b7422c1a-82c0-4cde-8001-4e41550da991")
-		(at 306 119)
+		(at 343 121.05)
 		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "H3"
