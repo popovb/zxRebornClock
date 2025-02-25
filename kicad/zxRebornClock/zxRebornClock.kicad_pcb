@@ -2152,7 +2152,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "53b95101-7890-4502-91f7-950928185da7")
-		(at 152.031 113.55)
+		(at 143.5 131.42)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J5"
@@ -2169,6 +2169,7 @@
 		(property "Value" "Conn_01x03"
 			(at 0 7.41 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "75f53e02-6625-46ee-9d3a-b050e8ffea8a")
 			(effects
 				(font
@@ -2374,6 +2375,7 @@
 		(fp_text user "${REFERENCE}"
 			(at 0 2.54 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "58e5d421-87c0-4c45-a014-7177077a394d")
 			(effects
 				(font
@@ -2643,7 +2645,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "55204c8b-bd38-4aeb-b505-767e89c2f9f3")
-		(at 190.9625 62.775)
+		(at 147.5 131.38)
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J3"
@@ -2660,6 +2662,7 @@
 		(property "Value" "Conn_01x04"
 			(at 0 9.95 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "ce27c79e-09f6-43ed-abe9-aeeba5bee46c")
 			(effects
 				(font
@@ -2865,6 +2868,7 @@
 		(fp_text user "${REFERENCE}"
 			(at 0 3.81 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "ee287eff-a7d4-4fb0-80b3-747401be4dee")
 			(effects
 				(font
@@ -4004,7 +4008,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23-6"
 		(layer "F.Cu")
 		(uuid "77eef257-7bda-4165-a5ee-d5db423f10c0")
-		(at 195.8625 70.05)
+		(at 241.3625 74.55)
 		(descr "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U4"
@@ -7446,7 +7450,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "ced18027-4d61-463f-aff1-67ce83a0a46a")
-		(at 195.6125 62.775)
+		(at 151.5 131.46)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J6"
@@ -7463,6 +7467,7 @@
 		(property "Value" "Conn_01x02"
 			(at 0 4.87 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "53138112-e35f-4091-a32f-9c3b5490e359")
 			(effects
 				(font
@@ -7668,6 +7673,7 @@
 		(fp_text user "${REFERENCE}"
 			(at 0 1.27 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "9e5ac9e8-7510-4dd4-b7bd-0a70a3ca69e9")
 			(effects
 				(font
@@ -7713,7 +7719,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "d7081ffd-5385-4d98-91ac-dee17c256378")
-		(at 147.381 113.55)
+		(at 139.5 131.42)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J4"
@@ -7730,6 +7736,7 @@
 		(property "Value" "Conn_01x03"
 			(at 0 7.41 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "01a7de83-b2b2-45da-8d59-f7ee4016325e")
 			(effects
 				(font
@@ -7935,6 +7942,7 @@
 		(fp_text user "${REFERENCE}"
 			(at 0 2.54 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "01472fbc-aee1-40e8-9454-6473db468dbe")
 			(effects
 				(font
