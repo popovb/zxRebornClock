@@ -3817,7 +3817,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "2e0461b3-6715-46cc-bd32-5e3d9543f5e8")
-		(at 234.9825 136.1665 90)
+		(at 224.5 136.4625 90)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C5"
@@ -6451,11 +6451,11 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "482fbee0-b0e7-4e8a-9c6d-e1985dbc2b46")
-		(at 239.5 138.525 90)
+		(at 216.5 132 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R1"
-			(at 0 -1.65 90)
+			(at -3 0 360)
 			(layer "F.SilkS")
 			(uuid "1edee021-e915-4c61-8a8d-be836955c986")
 			(effects
@@ -6466,7 +6466,7 @@
 			)
 		)
 		(property "Value" "1,0K"
-			(at 0 1.65 90)
+			(at 0 1.65 360)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d0d34818-a24f-4700-b66a-168e77a8ca89")
@@ -6478,7 +6478,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6491,7 +6491,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6504,7 +6504,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6522,16 +6522,6 @@
 		(sheetfile "zxRebornClock.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.227064 -0.735)
-			(end 0.227064 -0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5b0fcbd0-9b41-4d78-b2f0-6b1d512c947e")
-		)
-		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
 			(stroke
@@ -6542,24 +6532,14 @@
 			(uuid "16a6630b-afee-4b1d-a30b-1f96cae24e32")
 		)
 		(fp_line
-			(start 1.85 -0.95)
-			(end 1.85 0.95)
+			(start -0.227064 -0.735)
+			(end 0.227064 -0.735)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "79e06563-b042-49de-b06b-b8e3b4645590")
-		)
-		(fp_line
-			(start -1.85 -0.95)
-			(end 1.85 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8ea90126-da4a-46b7-88e9-da0a2d05ad11")
+			(layer "F.SilkS")
+			(uuid "5b0fcbd0-9b41-4d78-b2f0-6b1d512c947e")
 		)
 		(fp_line
 			(start 1.85 0.95)
@@ -6572,6 +6552,16 @@
 			(uuid "7fb4267b-86ca-4f35-9bd3-5ccf5b5145bd")
 		)
 		(fp_line
+			(start 1.85 -0.95)
+			(end 1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "79e06563-b042-49de-b06b-b8e3b4645590")
+		)
+		(fp_line
 			(start -1.85 0.95)
 			(end -1.85 -0.95)
 			(stroke
@@ -6582,24 +6572,14 @@
 			(uuid "9665956b-6c14-4b4f-b025-7d20635fb80d")
 		)
 		(fp_line
-			(start 1 -0.625)
-			(end 1 0.625)
+			(start -1.85 -0.95)
+			(end 1.85 -0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "3a11ccc8-09ed-4b49-9852-8bc251bace8d")
-		)
-		(fp_line
-			(start -1 -0.625)
-			(end 1 -0.625)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "fc36ca89-2de3-4fab-9f1f-2d104ceee99b")
+			(layer "F.CrtYd")
+			(uuid "8ea90126-da4a-46b7-88e9-da0a2d05ad11")
 		)
 		(fp_line
 			(start 1 0.625)
@@ -6612,6 +6592,16 @@
 			(uuid "ce922c41-714b-4e0a-81d2-27f05cca6ad2")
 		)
 		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3a11ccc8-09ed-4b49-9852-8bc251bace8d")
+		)
+		(fp_line
 			(start -1 0.625)
 			(end -1 -0.625)
 			(stroke
@@ -6621,8 +6611,18 @@
 			(layer "F.Fab")
 			(uuid "6226350b-1d69-41da-8ba6-4f3f5cd8f390")
 		)
+		(fp_line
+			(start -1 -0.625)
+			(end 1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fc36ca89-2de3-4fab-9f1f-2d104ceee99b")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0 0 360)
 			(layer "F.Fab")
 			(uuid "36d00d4a-8b6e-4894-a067-2c63f452641e")
 			(effects
@@ -6633,7 +6633,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1 0 90)
+			(at -1 0 180)
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.208333)
@@ -6642,7 +6642,7 @@
 			(uuid "50912e3e-3122-417e-b2a9-2d7ad670ebae")
 		)
 		(pad "2" smd roundrect
-			(at 1 0 90)
+			(at 1 0 180)
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.208333)
@@ -12516,11 +12516,11 @@
 	(footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "7a188d5f-e476-41f4-a484-f5abc5c620d4")
-		(at 239.5 134.525 90)
+		(at 212.5 132 180)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D1"
-			(at 0 -1.65 90)
+			(at 3 0 360)
 			(layer "F.SilkS")
 			(uuid "93e124c2-b718-4c8a-ade6-ead8a7c7607f")
 			(effects
@@ -12531,7 +12531,7 @@
 			)
 		)
 		(property "Value" "white"
-			(at 0 1.65 90)
+			(at 0 1.65 360)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dbfaa387-6fd7-4f4b-9953-8eaff3072e55")
@@ -12543,7 +12543,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12556,7 +12556,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12569,7 +12569,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 90)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12597,16 +12597,6 @@
 			(uuid "c7f361f7-0e8b-4c3e-8873-a1b00dd35e81")
 		)
 		(fp_line
-			(start -1.86 -0.96)
-			(end -1.86 0.96)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d0fd3fa8-4070-4b5d-857c-b4dddbae2ced")
-		)
-		(fp_line
 			(start -1.86 0.96)
 			(end 1 0.96)
 			(stroke
@@ -12617,24 +12607,14 @@
 			(uuid "5b22edb2-2e90-484b-8f32-286e8a7bed32")
 		)
 		(fp_line
-			(start 1.85 -0.95)
-			(end 1.85 0.95)
+			(start -1.86 -0.96)
+			(end -1.86 0.96)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "f33824df-1797-477b-90f8-6ca42913900d")
-		)
-		(fp_line
-			(start -1.85 -0.95)
-			(end 1.85 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "dd1727cd-4338-4b71-ae29-375c84c6b1ac")
+			(layer "F.SilkS")
+			(uuid "d0fd3fa8-4070-4b5d-857c-b4dddbae2ced")
 		)
 		(fp_line
 			(start 1.85 0.95)
@@ -12647,6 +12627,16 @@
 			(uuid "750c63c8-d5b5-4238-9fbb-5cb115ccfabc")
 		)
 		(fp_line
+			(start 1.85 -0.95)
+			(end 1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f33824df-1797-477b-90f8-6ca42913900d")
+		)
+		(fp_line
 			(start -1.85 0.95)
 			(end -1.85 -0.95)
 			(stroke
@@ -12655,6 +12645,26 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "d8fac61d-697b-46d9-bcfb-531ec98b9a20")
+		)
+		(fp_line
+			(start -1.85 -0.95)
+			(end 1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "dd1727cd-4338-4b71-ae29-375c84c6b1ac")
+		)
+		(fp_line
+			(start 1 0.6)
+			(end 1 -0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "73a461c5-b20a-4a0d-8710-df07a0b2dd7a")
 		)
 		(fp_line
 			(start 1 -0.6)
@@ -12677,26 +12687,6 @@
 			(uuid "64b8d394-08bf-4881-b31e-e2d22a1d5551")
 		)
 		(fp_line
-			(start -1 -0.3)
-			(end -1 0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "a84cea2c-982a-42e7-b4e4-d8288b7f8b56")
-		)
-		(fp_line
-			(start 1 0.6)
-			(end 1 -0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "73a461c5-b20a-4a0d-8710-df07a0b2dd7a")
-		)
-		(fp_line
 			(start -1 0.6)
 			(end 1 0.6)
 			(stroke
@@ -12706,8 +12696,18 @@
 			(layer "F.Fab")
 			(uuid "6214cb4b-4985-4a69-88db-59e5e61ac623")
 		)
+		(fp_line
+			(start -1 -0.3)
+			(end -1 0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a84cea2c-982a-42e7-b4e4-d8288b7f8b56")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0 0 360)
 			(layer "F.Fab")
 			(uuid "9cd28b2e-1408-427b-9b5c-4aa21a25a520")
 			(effects
@@ -12718,7 +12718,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1.025 0 90)
+			(at -1.025 0 180)
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.217391)
@@ -12728,7 +12728,7 @@
 			(uuid "dd278788-1b62-4214-b53e-2c800a2bf86a")
 		)
 		(pad "2" smd roundrect
-			(at 1.025 0 90)
+			(at 1.025 0 180)
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.217391)
@@ -23437,7 +23437,7 @@
 		(descr "DC Barrel Jack")
 		(tags "Power Jack")
 		(property "Reference" "J1"
-			(at -8.45 -5.75 360)
+			(at -9.5 0 360)
 			(layer "B.SilkS")
 			(uuid "3ee4b9c5-53be-4b78-83fd-0af107b2ec47")
 			(effects
@@ -23449,8 +23449,9 @@
 			)
 		)
 		(property "Value" "Jack DC"
-			(at -6.2 5.5 360)
+			(at -6.2 5.5 0)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "bb8167a5-fa4f-45a4-bf2f-2c9960e9b691")
 			(effects
 				(font
@@ -23806,8 +23807,9 @@
 			(uuid "d253d838-0de0-4867-b373-3b3db0b28084")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -3 2.95 360)
+			(at -3 2.95 0)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "30c9e816-5b50-4d5e-ba83-3f89e6aede29")
 			(effects
 				(font
@@ -23988,11 +23990,11 @@
 	(footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 		(layer "B.Cu")
 		(uuid "6a96d390-e36e-4cd5-8082-8f168fd0ef18")
-		(at 222.85 136.3 180)
+		(at 213.15 137 180)
 		(descr "module CMS SOT223 4 pins")
 		(tags "CMS SOT")
 		(property "Reference" "U2"
-			(at 0 4.5 360)
+			(at 0 0 90)
 			(layer "B.SilkS")
 			(uuid "f7e1592f-f54e-49f0-8b79-ce92a327d6e1")
 			(effects
@@ -24236,6 +24238,7 @@
 		(fp_text user "${REFERENCE}"
 			(at 0 0 90)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "5f6c26d2-4a50-491c-8b10-04bd160b2c11")
 			(effects
 				(font
@@ -24300,11 +24303,11 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "B.Cu")
 		(uuid "6dcc0aab-ca85-4f95-93a6-9f96c9005e4c")
-		(at 215.5375 138.5 180)
+		(at 210.9625 142 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C2"
-			(at 0 1.68 360)
+			(at -3.5375 0 360)
 			(layer "B.SilkS")
 			(uuid "a60310eb-f4e9-481d-b76b-c27d3ae66dc1")
 			(effects
@@ -26426,7 +26429,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 		(layer "B.Cu")
 		(uuid "d24c225b-c23a-4fea-8043-3027b318909e")
-		(at 232.5 138 90)
+		(at 222.0175 138.296 90)
 		(descr "CP, Radial series, Radial, pin pitch=3.50mm, , diameter=8mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 3.50mm  diameter 8mm Electrolytic Capacitor")
 		(property "Reference" "C4"
