@@ -66,59 +66,11 @@
 			)
 		)
 	)
-	(property "Link" "https://www.chipdip.ru/product0/9000565820"
-		(at -23.370921 270.567621 90)
+	(property "Link" "https://www.platan.ru/cgi-bin/qwery.pl/id=318826868"
+		(at -36.5533 233.75 90)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f9009980-0234-4ce3-b09c-8704b7721733")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Link" "https://aliexpress.ru/item/1005001699203887.html?spm=a2g2w.orderdetail.0.0.1cbb4aa6UPdjMI&sku_id=12000017203437476"
-		(at -40.06 258.94 -90)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "6b674fa7-3477-48d1-92b6-5343173272af")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Link" "https://aliexpress.ru/item/4000798077881.html?spm=a2g2w.orderdetail.0.0.635f4aa6UDS5z0&sku_id=10000008048731253"
-		(at -26 256 -90)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "5146b2aa-14a6-4f19-9c6e-b8d75f76ef54")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Sim.Device" "D"
-		(at -26 256 -90)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "b247281d-1406-4a78-af9b-7f3bffc287c6")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Sim.Pins" "1=K 2=A"
-		(at -26 256 -90)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "d293b04e-2bd6-4633-82ab-9809ab9480a9")
+		(uuid "9679a270-83ae-48e9-87a7-86b7acd9b584")
 		(effects
 			(font
 				(size 1 1)
@@ -150,150 +102,67 @@
 			)
 		)
 	)
-	(property "Link" "https://aliexpress.ru/item/32847096736.html?spm=a2g2w.orderdetail.0.0.961e4aa6zXOBsP&sku_id=65227930969"
-		(at 8 292 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "acd368c2-aad5-4736-af5d-5f6288cc00b0")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Link" "https://www.chipdip.ru/product/mpsa56-diotec"
-		(at -54.5133 241.71 90)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "704acef5-2e71-4220-80ab-d624af397258")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Link" "https://www.chipdip.ru/product0/9000565757"
-		(at -36.37092 265.06762 90)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "43e796e3-9622-48ff-95fb-b61d5edc32df")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Link" "https://aliexpress.ru/item/32847096736.html?spm=a2g2w.orderdetail.0.0.961e4aa6m8WYZn&sku_id=12000030032474500"
-		(at -23.5 237.5 180)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "a66daafb-60b9-4608-836f-7f9da8249ea0")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Link" "https://www.platan.ru/cgi-bin/qwery.pl/id=318826868"
-		(at -36.5533 233.75 90)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "9679a270-83ae-48e9-87a7-86b7acd9b584")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
 	(attr through_hole)
 	(fp_line
-		(start -20.90165 41.84835)
-		(end -20.90165 7.84835)
+		(start -20.9 41.8)
+		(end -20.9 45.6)
 		(stroke
-			(width 0.1)
+			(width 0.05)
 			(type default)
 		)
-		(layer "Edge.Cuts")
-		(uuid "fbe12af2-7aab-4f19-bd66-0f32a00a1c07")
+		(layer "F.CrtYd")
+		(uuid "20f78fe7-b879-41ec-9eae-d87308e39df7")
 	)
 	(fp_line
-		(start -17.15165 4.09835)
-		(end 16.84835 4.09835)
+		(start 15.4 4.1)
+		(end -20.9 4.1)
 		(stroke
-			(width 0.1)
+			(width 0.05)
 			(type default)
 		)
-		(layer "Edge.Cuts")
-		(uuid "29688023-047e-41bc-a768-b3e020993bb1")
+		(layer "F.CrtYd")
+		(uuid "8625ce3a-a36a-41a7-8217-59fb9349803c")
 	)
 	(fp_line
-		(start -17.15165 45.59835)
-		(end 16.84835 45.59835)
+		(start 17 45.6)
+		(end 20.6 45.6)
 		(stroke
-			(width 0.1)
+			(width 0.05)
 			(type default)
 		)
-		(layer "Edge.Cuts")
-		(uuid "318edc1a-d915-4b14-85b0-e762e7b7864e")
+		(layer "F.CrtYd")
+		(uuid "e266ba5d-d3da-4be2-a723-8445a53eeff5")
 	)
 	(fp_line
-		(start 20.59835 7.84835)
-		(end 20.59835 41.84835)
+		(start 20.6 4.1)
+		(end 15.4 4.1)
 		(stroke
-			(width 0.1)
+			(width 0.05)
 			(type default)
 		)
-		(layer "Edge.Cuts")
-		(uuid "84580e3a-99cf-45a3-a362-c4988fc9b345")
+		(layer "F.CrtYd")
+		(uuid "d00c2283-8b39-4eaa-b13e-258017f86227")
 	)
-	(fp_arc
-		(start -20.90165 7.84835)
-		(mid -19.8033 5.1967)
-		(end -17.15165 4.09835)
+	(fp_line
+		(start 20.6 9.3)
+		(end 20.6 4.1)
 		(stroke
-			(width 0.1)
+			(width 0.05)
 			(type default)
 		)
-		(layer "Edge.Cuts")
-		(uuid "d4f4b8e7-cc33-43bd-835b-978bc8c2dbc5")
+		(layer "F.CrtYd")
+		(uuid "875d8a03-2156-47bc-8289-1a6ab56cad4a")
 	)
-	(fp_arc
-		(start -17.15165 45.59835)
-		(mid -19.803286 44.499986)
-		(end -20.90165 41.84835)
+	(fp_rect
+		(start -20.9 4.1)
+		(end 20.6 45.6)
 		(stroke
-			(width 0.1)
+			(width 0.05)
 			(type default)
 		)
-		(layer "Edge.Cuts")
-		(uuid "9020c99d-2df7-4dc9-8434-239f8d648a7e")
-	)
-	(fp_arc
-		(start 16.84835 4.09835)
-		(mid 19.499986 5.196714)
-		(end 20.59835 7.84835)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "c2fe5558-dc1e-497f-bf81-aed6588497c1")
-	)
-	(fp_arc
-		(start 20.59835 41.84835)
-		(mid 19.5 44.5)
-		(end 16.84835 45.59835)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "71c35592-4091-413f-8b63-1b85b3269d33")
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "df8694aa-8590-41d6-80c2-adb75a16a0b0")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)

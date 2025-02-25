@@ -1103,7 +1103,7 @@
 	(footprint "Library:ИН-14"
 		(layer "F.Cu")
 		(uuid "127871a7-027c-4e99-b6f2-59377e755206")
-		(at 272.57 159 180)
+		(at 272.57 169 180)
 		(property "Reference" "VL2"
 			(at 0 11 0)
 			(unlocked yes)
@@ -5667,238 +5667,6 @@
 			)
 		)
 	)
-	(footprint "Library:12v_200v"
-		(layer "F.Cu")
-		(uuid "400ff02b-d350-48fb-85e7-821b5f8a3b93")
-		(at 102.50765 49.805)
-		(property "Reference" "U3"
-			(at 0 -0.5 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "35dd51d3-1f3c-4d70-8c56-c234ecc5962f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Value" "12V->200V"
-			(at 0 1 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "a286002d-4454-4cd6-bcdc-020a5e27bbf2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Library:12v_200v"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8dc44a0f-bc7a-45ec-b204-a8e60832ed63")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0ffefcdd-957f-4570-941c-c10001ee131e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6e7d0009-64db-401d-b894-bbe79c21d842")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Link" "https://www.platan.ru/cgi-bin/qwery.pl/id=318826868"
-			(at -36.5533 233.75 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "70d8aeda-670b-496d-a522-3894c354f454")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at -47.2433 242.94 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d7afdb40-ffa2-419e-a6ec-3f2f217fdf13")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at -47.2433 242.94 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e0d6c5ff-69b1-415b-a031-f2d59cfad6c4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/818e9b39-a970-4c4b-9409-9044977e634d")
-		(sheetname "Корневой лист")
-		(sheetfile "zxRebornClock.kicad_sch")
-		(attr through_hole)
-		(fp_line
-			(start -20.90165 41.84835)
-			(end -20.90165 7.84835)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(layer "Edge.Cuts")
-			(uuid "bf11b5f1-b36a-4700-9c78-b659337156b5")
-		)
-		(fp_line
-			(start -17.15165 4.09835)
-			(end 16.84835 4.09835)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(layer "Edge.Cuts")
-			(uuid "91d49c9d-fecc-4d62-8c7f-93f257bbc423")
-		)
-		(fp_line
-			(start -17.15165 45.59835)
-			(end 16.84835 45.59835)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(layer "Edge.Cuts")
-			(uuid "3ece388c-2fdc-4666-9085-0c8a9fa71694")
-		)
-		(fp_line
-			(start 20.59835 7.84835)
-			(end 20.59835 41.84835)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(layer "Edge.Cuts")
-			(uuid "ea7214e9-3b2f-4010-b6e1-fee7b7d17fae")
-		)
-		(fp_arc
-			(start -20.90165 7.84835)
-			(mid -19.8033 5.1967)
-			(end -17.15165 4.09835)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(layer "Edge.Cuts")
-			(uuid "2a469594-2273-4648-837a-f2f8926035a6")
-		)
-		(fp_arc
-			(start -17.15165 45.59835)
-			(mid -19.803286 44.499986)
-			(end -20.90165 41.84835)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(layer "Edge.Cuts")
-			(uuid "ef74be36-dc34-4ecb-9e22-669af389aaa4")
-		)
-		(fp_arc
-			(start 16.84835 4.09835)
-			(mid 19.499986 5.196714)
-			(end 20.59835 7.84835)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(layer "Edge.Cuts")
-			(uuid "266fffba-6144-4226-9d40-c013a8f9c684")
-		)
-		(fp_arc
-			(start 20.59835 41.84835)
-			(mid 19.5 44.5)
-			(end 16.84835 45.59835)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(layer "Edge.Cuts")
-			(uuid "a2b366b0-f4c0-42eb-8916-c9c3f62eebba")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 2.5 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "66a3daf0-5ea2-481b-afbf-98b68bccb8e6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "" np_thru_hole circle
-			(at -17.15165 7.84835)
-			(size 3.2 3.2)
-			(drill 3.2)
-			(layers "*.Cu" "*.Mask")
-			(uuid "7df2cf06-f2ca-4fc2-8edb-a8e0d6b1acd3")
-		)
-		(pad "" np_thru_hole circle
-			(at -17.15165 41.84835)
-			(size 3.2 3.2)
-			(drill 3.2)
-			(layers "*.Cu" "*.Mask")
-			(uuid "a42d84e6-1495-4f53-998b-7740ff2caaec")
-		)
-		(pad "" np_thru_hole circle
-			(at 16.84835 7.84835)
-			(size 3.2 3.2)
-			(drill 3.2)
-			(layers "*.Cu" "*.Mask")
-			(uuid "1efe8692-1533-4199-bba0-8bd3e1b9f195")
-		)
-		(pad "" np_thru_hole circle
-			(at 16.84835 41.84835)
-			(size 3.2 3.2)
-			(drill 3.2)
-			(layers "*.Cu" "*.Mask")
-			(uuid "5090669a-d743-49db-8e7e-46f519805871")
-		)
-	)
 	(footprint "Connector_BarrelJack:BarrelJack_Horizontal"
 		(layer "F.Cu")
 		(uuid "418e7eef-a772-410c-9558-8abcd97914f3")
@@ -8432,123 +8200,6 @@
 			(rotate
 				(xyz 0 0 0)
 			)
-		)
-	)
-	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
-		(layer "F.Cu")
-		(uuid "4ea9ba24-e6b5-43ea-b138-e99a196cb213")
-		(at 157.861 87.63)
-		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
-		(tags "test point THT pad")
-		(property "Reference" "H2"
-			(at 0 -2.898 0)
-			(layer "F.SilkS")
-			(uuid "bc38b295-d04b-429a-81c1-d438ec3a85aa")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 0 3.1 0)
-			(layer "F.Fab")
-			(uuid "37353d3b-bfe4-429d-85c3-8e767b8b5cff")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "25b0cd44-b863-4fc7-acd2-7b3518a0ca42")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "48d21bda-8d12-4c75-a3ba-1fbf1f8bf517")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7a8405d7-8d13-4c81-bf8a-92abb6691102")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/4eebc418-bdc5-48ab-97c9-2f6987a62b36")
-		(sheetname "Корневой лист")
-		(sheetfile "zxRebornClock.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 0 2.25)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.SilkS")
-			(uuid "803fd9e1-edd8-45f1-abdb-83f710b30500")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 2.5 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "ffbf11bb-3209-4b22-857b-c0f39e42b395")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.9 0)
-			(layer "F.Fab")
-			(uuid "c31c9fec-0ee0-4a13-9056-89da9e6005e1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 1 "GND")
-			(pinfunction "1")
-			(pintype "input")
-			(uuid "f657e1de-e47a-45d3-9fce-4b445e37a8f1")
 		)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
@@ -13796,7 +13447,7 @@
 	(footprint "Library:ИН-14"
 		(layer "F.Cu")
 		(uuid "74bcf64e-8a6d-455e-9a21-9982ce440e07")
-		(at 252.12 159 180)
+		(at 252.12 169 180)
 		(property "Reference" "VL1"
 			(at 0 11 0)
 			(unlocked yes)
@@ -15104,123 +14755,6 @@
 			(rotate
 				(xyz 0 0 0)
 			)
-		)
-	)
-	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
-		(layer "F.Cu")
-		(uuid "88e2d754-9392-4a78-8466-ef0b37848423")
-		(at 157.861 99.73)
-		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
-		(tags "test point THT pad")
-		(property "Reference" "H4"
-			(at 0 -2.898 0)
-			(layer "F.SilkS")
-			(uuid "6d311191-9184-4980-810e-78b6880b16e0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 0 3.1 0)
-			(layer "F.Fab")
-			(uuid "7f56b45f-4167-4447-a46a-79cc0e8e3678")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6fe6c993-2c38-4ded-a3c6-b05d018d7449")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9feca082-01e5-4737-b647-807e504f2c75")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "59de0b1c-a4be-4bdb-9d0f-357d36ff2fb5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/bd83ae2a-1723-42c0-a5d3-a42afa85549f")
-		(sheetname "Корневой лист")
-		(sheetfile "zxRebornClock.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 0 2.25)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.SilkS")
-			(uuid "03e2fac0-629a-4ee0-844a-926d856e5c83")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 2.5 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "1d419aef-e7c6-47df-b7e4-f394aa643c98")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.9 0)
-			(layer "F.Fab")
-			(uuid "436471c0-6046-42f8-8cfd-c71f27c98715")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 1 "GND")
-			(pinfunction "1")
-			(pintype "input")
-			(uuid "6797b27f-4bc9-413f-a475-f0df625f36b9")
 		)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
@@ -17846,123 +17380,6 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
-		(layer "F.Cu")
-		(uuid "af8dda7b-5b7f-4e8e-9394-ca404be0012e")
-		(at 157.861 81.58)
-		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
-		(tags "test point THT pad")
-		(property "Reference" "H1"
-			(at 0 -2.898 0)
-			(layer "F.SilkS")
-			(uuid "834fa202-9362-417e-a260-c1ffdf45768d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 0 3.1 0)
-			(layer "F.Fab")
-			(uuid "bc947963-075a-4bac-a3ad-ccff8844e1fa")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e3e9a37d-62d2-4661-97a2-390b6f7369e7")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6e9af172-76c5-424d-91df-1d8443ccf7a8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4c402941-ecd5-47d8-bade-e6063f3b4707")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/27e50c5a-3b44-43a7-9ab0-38503493765e")
-		(sheetname "Корневой лист")
-		(sheetfile "zxRebornClock.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 0 2.25)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.SilkS")
-			(uuid "431104ed-9d88-4c02-87fc-1d71a76ca6bb")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 2.5 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "8229b90a-ee92-498f-bf9e-e82c1509df57")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.9 0)
-			(layer "F.Fab")
-			(uuid "8b3dc72d-db23-4084-ac58-9f142a70778b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 4 "/12V")
-			(pinfunction "1")
-			(pintype "input")
-			(uuid "a3223dac-995b-492d-af84-65ae2bdb9efb")
-		)
-	)
 	(footprint "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
 		(layer "F.Cu")
 		(uuid "b02e9f1d-8896-4382-957b-c31706425f07")
@@ -19010,123 +18427,6 @@
 			(rotate
 				(xyz 0 0 0)
 			)
-		)
-	)
-	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
-		(layer "F.Cu")
-		(uuid "b7422c1a-82c0-4cde-8001-4e41550da991")
-		(at 157.861 93.68)
-		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
-		(tags "test point THT pad")
-		(property "Reference" "H3"
-			(at 0 -2.898 0)
-			(layer "F.SilkS")
-			(uuid "bffe213a-20ba-4b69-a6f4-8787032225d3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 0 3.1 0)
-			(layer "F.Fab")
-			(uuid "efab4e1c-49c4-4b2e-9f73-add5dc0b18e1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "49f759fd-4065-48b0-b6b2-ff49c8902d81")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6dac3217-5ef9-44f2-9f9b-df754f024ae9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f27f5505-9cff-4e7d-a905-8ac79f0aae9b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/58777f87-73b5-42d9-9198-bca1c4187345")
-		(sheetname "Корневой лист")
-		(sheetfile "zxRebornClock.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 0 2.25)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.SilkS")
-			(uuid "e33bc3ca-11b0-44d8-a2a6-e3c2b298427c")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 2.5 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "65c6d805-f222-42d8-ae7a-e0e132e3c8a4")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.9 0)
-			(layer "F.Fab")
-			(uuid "321508c1-3eb5-45da-9ffd-8b847866c72b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 15 "/200V")
-			(pinfunction "1")
-			(pintype "input")
-			(uuid "b713981e-b149-4211-bc11-d9163b5e44e9")
 		)
 	)
 	(footprint "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
@@ -25980,7 +25280,7 @@
 	(footprint "Library:ИН-14"
 		(layer "F.Cu")
 		(uuid "e29a1a1c-6c14-4d9c-896b-f2d1187b0009")
-		(at 313.85 159 180)
+		(at 313.85 169 180)
 		(property "Reference" "VL4"
 			(at 0 11 0)
 			(unlocked yes)
@@ -26478,7 +25778,7 @@
 	(footprint "Library:ИН-14"
 		(layer "F.Cu")
 		(uuid "e53ac40b-e10d-4b55-9546-8d5634bc7907")
-		(at 293 159 180)
+		(at 293 169 180)
 		(property "Reference" "VL3"
 			(at 0 11 0)
 			(unlocked yes)
@@ -28441,6 +27741,729 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+	)
+	(footprint "Library:12v_200v"
+		(layer "B.Cu")
+		(uuid "400ff02b-d350-48fb-85e7-821b5f8a3b93")
+		(at 282.65165 150.149175)
+		(property "Reference" "U3"
+			(at 0 -22.699175 180)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "2069e3d2-1dc8-44fe-80d0-41dde934d10d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "12V->200V"
+			(at 0 -24.199175 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "1eaddddd-51db-4a38-af20-e84e6f225170")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Library:12v_200v"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e84216c1-f558-41d0-a002-793ec9af327b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8ecec8a8-7fd1-4a7d-980b-3dca90c66e41")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ab0692b8-cd1e-4910-9be1-22caf74c262d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Link" "https://www.platan.ru/cgi-bin/qwery.pl/id=318826868"
+			(at -36.5533 -233.75 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "12260fa0-54d8-4f01-bc2e-b8dc83503b7e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at -47.2433 -242.94 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7048f50c-1bea-4a48-afd5-1a62dd60a512")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at -47.2433 -242.94 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ee9eaca5-7037-4c1a-894f-dfc5b22d5515")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/818e9b39-a970-4c4b-9409-9044977e634d")
+		(sheetname "Корневой лист")
+		(sheetfile "zxRebornClock.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -20.9 -45.6)
+			(end -20.9 -41.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "42603b49-03b1-40d2-9f14-35f474028ef1")
+		)
+		(fp_line
+			(start -20.9 -4.1)
+			(end 15.4 -4.1)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "d3fe4db9-df90-42a2-a111-4500a2a73a29")
+		)
+		(fp_line
+			(start 15.4 -4.1)
+			(end 20.6 -4.1)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "0c4b069d-0a24-4d3b-a88b-acda65f0568e")
+		)
+		(fp_line
+			(start 20.6 -45.6)
+			(end 17 -45.6)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "c385f62b-51ac-41a7-816d-1e331e2bc358")
+		)
+		(fp_line
+			(start 20.6 -4.1)
+			(end 20.6 -9.3)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "a9da7334-31f9-4181-821d-c3eeb240501b")
+		)
+		(fp_rect
+			(start -20.9 -4.1)
+			(end 20.6 -45.6)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill none)
+			(layer "B.CrtYd")
+			(uuid "885598c7-4204-4916-ac91-350000b77bb1")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2.5 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c5140618-c087-4786-b6d5-6674fb84b585")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at -17.15165 -41.84835)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "7aaa31d1-b537-461f-8b39-2ffd121b1c19")
+		)
+		(pad "" np_thru_hole circle
+			(at -17.15165 -7.84835)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "903e6bbe-c42e-4a15-b422-f9d1c610aea0")
+		)
+		(pad "" np_thru_hole circle
+			(at 16.84835 -41.84835)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "af3c89f4-dd77-419a-bacf-3db47a9809de")
+		)
+		(pad "" np_thru_hole circle
+			(at 16.84835 -7.84835)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "9aa9a24e-7d70-4b97-b68f-cc51eb20b0cc")
+		)
+	)
+	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
+		(layer "B.Cu")
+		(uuid "4ea9ba24-e6b5-43ea-b138-e99a196cb213")
+		(at 259 132.3)
+		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
+		(tags "test point THT pad")
+		(property "Reference" "H2"
+			(at 0 2.898 360)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "bc38b295-d04b-429a-81c1-d438ec3a85aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 0 -3.1 360)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "37353d3b-bfe4-429d-85c3-8e767b8b5cff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "25b0cd44-b863-4fc7-acd2-7b3518a0ca42")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "48d21bda-8d12-4c75-a3ba-1fbf1f8bf517")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7a8405d7-8d13-4c81-bf8a-92abb6691102")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "MountingHole*Pad*")
+		(path "/4eebc418-bdc5-48ab-97c9-2f6987a62b36")
+		(sheetname "Корневой лист")
+		(sheetfile "zxRebornClock.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 -2.25)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "803fd9e1-edd8-45f1-abdb-83f710b30500")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.5 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.CrtYd")
+			(uuid "ffbf11bb-3209-4b22-857b-c0f39e42b395")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.9 360)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c31c9fec-0ee0-4a13-9056-89da9e6005e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
+			(uuid "f657e1de-e47a-45d3-9fce-4b445e37a8f1")
+		)
+	)
+	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
+		(layer "B.Cu")
+		(uuid "88e2d754-9392-4a78-8466-ef0b37848423")
+		(at 306 112.95)
+		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
+		(tags "test point THT pad")
+		(property "Reference" "H4"
+			(at 0 2.898 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "6d311191-9184-4980-810e-78b6880b16e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 0 -3.1 360)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7f56b45f-4167-4447-a46a-79cc0e8e3678")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6fe6c993-2c38-4ded-a3c6-b05d018d7449")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9feca082-01e5-4737-b647-807e504f2c75")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "59de0b1c-a4be-4bdb-9d0f-357d36ff2fb5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "MountingHole*Pad*")
+		(path "/bd83ae2a-1723-42c0-a5d3-a42afa85549f")
+		(sheetname "Корневой лист")
+		(sheetfile "zxRebornClock.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 -2.25)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "03e2fac0-629a-4ee0-844a-926d856e5c83")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.5 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.CrtYd")
+			(uuid "1d419aef-e7c6-47df-b7e4-f394aa643c98")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "436471c0-6046-42f8-8cfd-c71f27c98715")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
+			(uuid "6797b27f-4bc9-413f-a475-f0df625f36b9")
+		)
+	)
+	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
+		(layer "B.Cu")
+		(uuid "af8dda7b-5b7f-4e8e-9394-ca404be0012e")
+		(at 259 137.95)
+		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
+		(tags "test point THT pad")
+		(property "Reference" "H1"
+			(at 0 2.898 360)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "834fa202-9362-417e-a260-c1ffdf45768d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 0 -3.1 360)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bc947963-075a-4bac-a3ad-ccff8844e1fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e3e9a37d-62d2-4661-97a2-390b6f7369e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6e9af172-76c5-424d-91df-1d8443ccf7a8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4c402941-ecd5-47d8-bade-e6063f3b4707")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "MountingHole*Pad*")
+		(path "/27e50c5a-3b44-43a7-9ab0-38503493765e")
+		(sheetname "Корневой лист")
+		(sheetfile "zxRebornClock.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 -2.25)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "431104ed-9d88-4c02-87fc-1d71a76ca6bb")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.5 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.CrtYd")
+			(uuid "8229b90a-ee92-498f-bf9e-e82c1509df57")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.9 360)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8b3dc72d-db23-4084-ac58-9f142a70778b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 4 "/12V")
+			(pinfunction "1")
+			(pintype "input")
+			(uuid "a3223dac-995b-492d-af84-65ae2bdb9efb")
+		)
+	)
+	(footprint "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
+		(layer "B.Cu")
+		(uuid "b7422c1a-82c0-4cde-8001-4e41550da991")
+		(at 306 119)
+		(descr "THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm")
+		(tags "test point THT pad")
+		(property "Reference" "H3"
+			(at 0 2.898 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "bffe213a-20ba-4b69-a6f4-8787032225d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 0 -3.1 360)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "efab4e1c-49c4-4b2e-9f73-add5dc0b18e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "49f759fd-4065-48b0-b6b2-ff49c8902d81")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6dac3217-5ef9-44f2-9f9b-df754f024ae9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f27f5505-9cff-4e7d-a905-8ac79f0aae9b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "MountingHole*Pad*")
+		(path "/58777f87-73b5-42d9-9198-bca1c4187345")
+		(sheetname "Корневой лист")
+		(sheetfile "zxRebornClock.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 -2.25)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "e33bc3ca-11b0-44d8-a2a6-e3c2b298427c")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.5 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.CrtYd")
+			(uuid "65c6d805-f222-42d8-ae7a-e0e132e3c8a4")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "321508c1-3eb5-45da-9ffd-8b847866c72b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 15 "/200V")
+			(pinfunction "1")
+			(pintype "input")
+			(uuid "b713981e-b149-4211-bc11-d9163b5e44e9")
 		)
 	)
 	(gr_line
