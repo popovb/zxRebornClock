@@ -7150,10 +7150,6 @@
 		(uuid "30243a21-569a-4aa9-a094-3b1fa065d346")
 	)
 	(no_connect
-		(at 46.99 139.7)
-		(uuid "3634c90d-cb6d-4c7e-996c-bf65582f1066")
-	)
-	(no_connect
 		(at 66.04 151.13)
 		(uuid "3e7258ab-8ffb-48aa-9dc5-50f307086bf4")
 	)
@@ -7166,20 +7162,16 @@
 		(uuid "506b45d9-0876-4739-9fe5-368aa84e33e4")
 	)
 	(no_connect
+		(at 57.15 185.42)
+		(uuid "53f4332a-c616-4015-97c0-6f00ffc0045d")
+	)
+	(no_connect
 		(at 138.43 232.41)
 		(uuid "547cdaa7-dca3-4c97-95c8-72dc79819f6f")
 	)
 	(no_connect
-		(at 52.07 139.7)
-		(uuid "5b71daf8-1085-43c2-8aa4-4a469c6f786f")
-	)
-	(no_connect
 		(at 20.32 158.75)
 		(uuid "6044f18a-289e-465c-9b94-42cebe3c3aa3")
-	)
-	(no_connect
-		(at 49.53 139.7)
-		(uuid "6da302ed-bdbf-43b5-af31-59dc50e616e2")
 	)
 	(no_connect
 		(at 138.43 224.79)
@@ -7200,10 +7192,6 @@
 	(no_connect
 		(at 138.43 219.71)
 		(uuid "996b0cf5-e735-4c71-845e-4e6bb53708fa")
-	)
-	(no_connect
-		(at 54.61 139.7)
-		(uuid "997641a3-98e4-4172-a2a8-fbecef3e746f")
 	)
 	(no_connect
 		(at 168.91 222.25)
@@ -7232,6 +7220,10 @@
 	(no_connect
 		(at 20.32 156.21)
 		(uuid "e96d1fc2-ed1e-49ed-911e-ab62741c931a")
+	)
+	(no_connect
+		(at 54.61 185.42)
+		(uuid "ef26fe4b-bac3-475e-bdd3-0e74a38ef3c3")
 	)
 	(no_connect
 		(at 66.04 166.37)
@@ -8914,7 +8906,7 @@
 		(uuid "3e7d5e3b-1746-40cc-9e94-00d03fc22716")
 	)
 	(label "B_MM"
-		(at 1.905 186.69 0)
+		(at 52.07 139.7 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9065,12 +9057,12 @@
 		(uuid "4e3cc47c-cff9-49f3-82e7-9c3b6f14e9af")
 	)
 	(label "B_F"
-		(at 57.15 185.42 270)
+		(at 46.99 139.7 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "51572036-1081-4e8b-84e1-c969c7ee0cce")
 	)
@@ -10288,7 +10280,7 @@
 		(uuid "ede35c7e-4aca-4c1c-ba8d-ffd6e7ce0dd4")
 	)
 	(label "B_HH"
-		(at 1.905 191.135 0)
+		(at 54.61 139.7 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10320,12 +10312,12 @@
 		(uuid "f0aac78c-3201-4984-a296-a98437d91d23")
 	)
 	(label "B_SS"
-		(at 54.61 185.42 270)
+		(at 49.53 139.7 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "f0d57dfa-37af-4e9b-b5f0-bdcaa90b3a25")
 	)
