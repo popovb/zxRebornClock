@@ -8914,12 +8914,12 @@
 		(uuid "3e7d5e3b-1746-40cc-9e94-00d03fc22716")
 	)
 	(label "B_MM"
-		(at 52.07 185.42 270)
+		(at 1.905 186.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "40ce2054-3945-4ddb-b3fa-187c4dc33475")
 	)
@@ -9386,7 +9386,7 @@
 		(uuid "869cc4c0-bde5-44ac-a3a6-d30b303a7bf1")
 	)
 	(label "ESP_EN"
-		(at 6.985 182.88 180)
+		(at 52.07 185.42 270)
 		(effects
 			(font
 				(size 1.27 1.27)
