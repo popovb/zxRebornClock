@@ -32684,14 +32684,6 @@
 		(uuid "3622c542-4892-495d-963d-b98f0c9b1dae")
 	)
 	(segment
-		(start 66.975472 156.524529)
-		(end 66.975471 156.524529)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 23)
-		(uuid "4b6a88e7-d39e-4c7d-8904-aa567af69359")
-	)
-	(segment
 		(start 151.1 157.9)
 		(end 166 143)
 		(width 0.2)
