@@ -6824,6 +6824,12 @@
 		)
 	)
 	(junction
+		(at 55.245 217.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02b36819-9b33-4e64-b786-f6ef6c7759ca")
+	)
+	(junction
 		(at 74.93 234.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7130,6 +7136,10 @@
 		(uuid "f9a640b3-fb44-477c-bd5e-78fec1994402")
 	)
 	(no_connect
+		(at 47.625 207.01)
+		(uuid "0a5f55a6-89b8-44ae-b158-2b0bbf768050")
+	)
+	(no_connect
 		(at 138.43 229.87)
 		(uuid "0b1d149e-bdeb-469b-bf65-a9141d774f24")
 	)
@@ -7188,6 +7198,10 @@
 	(no_connect
 		(at 168.91 229.87)
 		(uuid "81eb4b74-54f3-4e14-8e7b-9544ecda3f00")
+	)
+	(no_connect
+		(at 47.625 209.55)
+		(uuid "8333a726-d5bb-428f-b777-e49d191fe6c7")
 	)
 	(no_connect
 		(at 138.43 219.71)
@@ -7278,6 +7292,16 @@
 			(type default)
 		)
 		(uuid "1796673e-4c6c-4fc8-9597-124d327329c1")
+	)
+	(wire
+		(pts
+			(xy 55.245 199.39) (xy 64.135 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "187ad560-407c-4744-9c1c-feaea2997e4d")
 	)
 	(wire
 		(pts
@@ -7448,6 +7472,16 @@
 			(type default)
 		)
 		(uuid "38df8fcb-d4f8-4cb3-ad27-5847ba8a0b90")
+	)
+	(wire
+		(pts
+			(xy 64.135 210.82) (xy 64.135 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ae5dce8-f5c2-470e-a783-4bceb833c340")
 	)
 	(wire
 		(pts
@@ -8161,6 +8195,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.135 199.39) (xy 64.135 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6a0641f-c376-434c-8b6e-ab5f93159455")
+	)
+	(wire
+		(pts
 			(xy 29.21 137.16) (xy 24.13 137.16)
 		)
 		(stroke
@@ -8198,6 +8242,16 @@
 			(type default)
 		)
 		(uuid "ed06bd81-6942-4374-804e-2738358324b5")
+	)
+	(wire
+		(pts
+			(xy 64.135 217.17) (xy 55.245 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee9621e8-f7d7-4396-b150-c00d067ee6c1")
 	)
 	(wire
 		(pts
@@ -8347,6 +8401,16 @@
 			(justify left bottom)
 		)
 		(uuid "00e198b2-6c74-41d9-befe-6cfb4aa3e896")
+	)
+	(label "VBUS"
+		(at 55.245 199.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "00ea4216-37e6-4b09-ac76-e09c7bb14bad")
 	)
 	(label "0"
 		(at 46.99 109.22 0)
@@ -8610,6 +8674,16 @@
 		)
 		(uuid "1b8b7d0b-c88c-49b3-8939-93589cae3ee4")
 	)
+	(label "UDM"
+		(at 47.625 212.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1c7c6ae3-5b64-4286-aa77-d4781b472887")
+	)
 	(label "DIO"
 		(at 66.04 153.67 0)
 		(effects
@@ -8863,16 +8937,6 @@
 		)
 		(uuid "3b54d857-3ebb-49ba-8a1a-9ce55163ad08")
 	)
-	(label "UDP"
-		(at 50.8 207.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3b5b0e4c-eb1e-459e-b954-fcf1ea2fef1f")
-	)
 	(label "3"
 		(at 21.59 72.39 180)
 		(effects
@@ -8883,16 +8947,6 @@
 			(justify right bottom)
 		)
 		(uuid "3bc5605d-9539-40b8-818f-2bfb593a29af")
-	)
-	(label "UDM"
-		(at 50.8 204.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3d17ef47-1ced-4ff1-93db-6bf6a685fd35")
 	)
 	(label "K4"
 		(at 31.75 185.42 270)
@@ -9141,15 +9195,15 @@
 		)
 		(uuid "61076f06-8145-48c2-a01e-dc94bc3d37cf")
 	)
-	(label "UDM"
-		(at 50.8 212.09 180)
+	(label "UDP"
+		(at 47.625 204.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "64edfd98-8322-48aa-95ee-65b094b7364f")
+		(uuid "6518aaef-e411-4c23-bfe7-277ab5b28ca6")
 	)
 	(label "K5"
 		(at 41.91 185.42 270)
@@ -9427,16 +9481,6 @@
 			(justify left bottom)
 		)
 		(uuid "8ac44008-90a3-4644-87c4-7f0e3385db41")
-	)
-	(label "GND"
-		(at 58.42 217.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8d0676a6-7a13-4717-a9f1-5ec0f07534db")
 	)
 	(label "DOWNLOAD"
 		(at 71.755 156.21 0)
@@ -9773,16 +9817,6 @@
 			(justify left bottom)
 		)
 		(uuid "ba467994-dce1-4801-8ba1-8dd1e73ed30c")
-	)
-	(label "UDP"
-		(at 50.8 209.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "baaf9eda-d340-46f1-9a88-d48b73cf1ef9")
 	)
 	(label "TX"
 		(at 186.69 165.1 180)
@@ -10175,16 +10209,6 @@
 		)
 		(uuid "e0521115-3cbb-4fbc-9f82-66f8fafd95cc")
 	)
-	(label "VCC"
-		(at 58.42 199.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e1b0207a-f076-437c-9f01-6f91d7d38d68")
-	)
 	(label "B_SS"
 		(at 168.91 187.96 0)
 		(effects
@@ -10397,16 +10421,6 @@
 		(uuid "fc7c8926-55c0-4212-9ca0-f5be815f872e")
 	)
 	(label "VCC"
-		(at 58.42 224.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fe61eac0-1983-4373-b6a4-6bdac97e11a2")
-	)
-	(label "VCC"
 		(at 111.125 189.23 180)
 		(effects
 			(font
@@ -10552,7 +10566,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 58.42 220.98 0)
+		(at 64.135 207.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10560,7 +10574,7 @@
 		(dnp no)
 		(uuid "03eed9db-c2f2-47c1-a4cb-5d11d51c9fad")
 		(property "Reference" "C3"
-			(at 60.96 220.98 0)
+			(at 66.675 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10569,7 +10583,7 @@
 			)
 		)
 		(property "Value" "0,1uF"
-			(at 62.23 222.2499 0)
+			(at 67.945 208.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10579,7 +10593,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 59.3852 224.79 0)
+			(at 65.1002 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10588,7 +10602,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 220.98 0)
+			(at 64.135 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10597,7 +10611,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 58.42 220.98 0)
+			(at 64.135 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15282,7 +15296,7 @@
 	)
 	(symbol
 		(lib_id "Power_Protection:USBLC6-4SC6")
-		(at 58.42 207.01 0)
+		(at 55.245 207.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15290,7 +15304,7 @@
 		(dnp no)
 		(uuid "8244b607-123e-4c96-b7b1-70746cf86c97")
 		(property "Reference" "U4"
-			(at 60.325 200.66 0)
+			(at 57.15 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15299,7 +15313,7 @@
 			)
 		)
 		(property "Value" "USBLC6-4SC6"
-			(at 65.405 209.5499 0)
+			(at 62.23 209.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15309,7 +15323,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 60.96 217.17 0)
+			(at 57.785 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15320,7 +15334,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-4.pdf"
-			(at 60.96 219.71 0)
+			(at 57.785 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15330,7 +15344,7 @@
 			)
 		)
 		(property "Description" "Very low capacitance ESD protection diode, 4 data-line, SOT-23-6"
-			(at 58.42 207.01 0)
+			(at 55.245 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18656,6 +18670,73 @@
 			(project "zxRebornClock"
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 55.245 217.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f20b935b-3331-4775-ad1a-65c6c6aa8472")
+		(property "Reference" "#PWR014"
+			(at 55.245 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 55.245 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.245 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.245 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 55.245 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ba942e7-de38-4f0f-8a62-9e3072512fec")
+		)
+		(instances
+			(project "zxRebornClock"
+				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
