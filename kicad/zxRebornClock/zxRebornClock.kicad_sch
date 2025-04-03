@@ -10619,6 +10619,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 64.135 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8830f8bb-7f71-4be4-aa84-f45fad21a288")
 		)
@@ -10679,6 +10688,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 187.96 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 187.96 64.135 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11135,6 +11153,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 163.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "097a32fc-3740-4014-81fb-9a1288a5542d")
 		)
@@ -11204,16 +11231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://aliexpress.ru/item/4001227639043.html?sku_id=10000015368849017&spm=a2g2w.stores.seller_list.0.390e2b33TdpRsz"
-			(at 67.31 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
+		(property "Note" "10V Polar 8.0х3.5"
 			(at 67.31 238.76 0)
 			(effects
 				(font
@@ -11557,6 +11575,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 187.96 99.695 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7b1bee68-e6e3-4343-80b6-c30c3cd98858")
 		)
@@ -11617,6 +11644,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 187.96 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 187.96 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11818,6 +11854,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 187.96 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 187.96 84.455 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12028,6 +12073,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 187.96 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 187.96 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12300,6 +12354,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 187.96 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 187.96 79.375 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13408,6 +13471,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 153.67 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b2fc1f18-599e-4223-8b1a-ca77c75dc6db")
 		)
@@ -13621,6 +13693,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 187.96 69.215 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "346b6b30-02c1-4ee8-af21-e6fbe368a83a")
 		)
@@ -13681,6 +13762,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 187.96 94.615 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 187.96 94.615 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14447,6 +14537,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 187.96 74.295 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "219c3710-15de-42ea-856b-e0d68a55b076")
 		)
@@ -14574,6 +14673,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 187.96 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 187.96 104.775 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15070,6 +15178,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 187.96 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "84cafa6b-c3e9-4cf0-b04d-2276da62524a")
 		)
@@ -15433,16 +15550,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://aliexpress.ru/item/33007425729.html?sku_id=67085457162&spm=a2g2w.stores.seller_list.5.390e2b33TdpRsz"
-			(at 41.275 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "smd 0805"
+		(property "Note" "0805"
 			(at 41.275 238.76 0)
 			(effects
 				(font
@@ -16174,6 +16282,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 187.96 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4bfe24ce-39d3-4654-aeba-a4bc7d1e6c0c")
 		)
@@ -16301,6 +16418,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 187.96 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 187.96 89.535 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16543,6 +16669,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 187.96 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 187.96 53.975 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17185,6 +17320,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 27.94 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2387cd58-b0c9-43b9-b41b-db3c50135b82")
 		)
@@ -17254,16 +17398,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://aliexpress.ru/item/33007425729.html?sku_id=67085457162&spm=a2g2w.stores.seller_list.5.390e2b33TdpRsz"
-			(at 74.93 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "smd 0805"
+		(property "Note" "0805"
 			(at 74.93 238.76 0)
 			(effects
 				(font
@@ -18794,6 +18929,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 187.96 48.895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "57dd79a6-d9f3-473b-8855-9a47185a95e6")
 		)
@@ -19453,6 +19597,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 187.96 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 187.96 59.055 90)
 			(effects
 				(font
 					(size 1.27 1.27)
