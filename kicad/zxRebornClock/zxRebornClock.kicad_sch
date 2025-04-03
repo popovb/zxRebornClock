@@ -13308,6 +13308,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "led 0805"
+			(at 122.555 194.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "50ccb45f-c222-4a40-9ef9-59eec571e6a0")
 		)
@@ -13669,6 +13678,15 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 88.9 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "led 0805"
+			(at 88.9 246.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15177,6 +15195,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "led 0805"
+			(at 122.555 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6b169299-6b72-4397-8076-ce7a8513d952")
 		)
@@ -15555,6 +15582,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "https://github.com/popovb/NixiePowerSupply"
+			(at 54.61 255.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project ""
 				(path "/1f59fcac-59e1-4c3b-9ba4-e653e2ae108c"
@@ -15914,6 +15950,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 122.555 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "led 0805"
 			(at 122.555 182.88 0)
 			(effects
 				(font
@@ -17018,6 +17063,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "или KP40101D"
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6299485c-d267-4e9c-b21f-6aa7f70ba7a7")
 		)
@@ -17239,6 +17293,15 @@
 			)
 		)
 		(property "Description" "DC Optocoupler, Vce 80V, CTR 50-200%, DIP4"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "или KP40101D"
 			(at 162.56 114.3 0)
 			(effects
 				(font
@@ -17690,6 +17753,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "led 0805"
+			(at 122.555 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c91ea254-975f-403c-9d38-63984b659f16")
 		)
@@ -18132,6 +18204,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "или KP40101D"
+			(at 162.56 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "7fd4514c-f180-4d8d-87a0-59f7d51617c9")
 		)
@@ -18497,6 +18578,15 @@
 			)
 		)
 		(property "Description" "DC Optocoupler, Vce 80V, CTR 50-200%, DIP4"
+			(at 162.56 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "или KP40101D"
 			(at 162.56 101.6 0)
 			(effects
 				(font
@@ -19639,6 +19729,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 154.94 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 154.94 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
