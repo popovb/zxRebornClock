@@ -11034,6 +11034,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 134.62 214.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4c9885bd-e92e-4542-a91f-c3581c8ce19f")
 		)
@@ -11519,6 +11528,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 172.72 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 172.72 232.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12545,6 +12563,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 188.595 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 188.595 209.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16368,6 +16395,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 134.62 209.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "692da7bd-6f03-46f1-a5ed-d11d9f14d1f0")
 		)
@@ -17055,6 +17091,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 114.935 182.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "973667a5-31c1-4421-af60-6b230be5cb6d")
 		)
@@ -17404,6 +17449,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 88.9 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
 			(at 88.9 238.76 0)
 			(effects
 				(font
@@ -17855,6 +17909,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 188.595 214.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ae5941e1-bea7-4df0-adb1-27f15fa8e605")
 		)
@@ -18211,6 +18274,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 114.935 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 114.935 189.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18649,6 +18721,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 114.935 194.945 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "50ec03bb-2abc-40f9-b802-ac351808610b")
 		)
@@ -18709,6 +18790,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 114.935 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 114.935 176.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
