@@ -11964,6 +11964,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 124.46 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "71fee99d-deb2-45c6-a8be-36eadecacb4e")
 		)
@@ -12176,6 +12185,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 124.46 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 124.46 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12601,6 +12619,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 93.98 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "44d624d8-d1d7-4f9b-8230-d00a37faedd8")
 		)
@@ -12661,6 +12688,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 124.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 124.46 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13305,6 +13341,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 93.98 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 93.98 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14104,6 +14149,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 93.98 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 93.98 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15698,6 +15752,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "0805"
+			(at 124.46 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6cca12e6-f13b-4625-b353-43ac29cebcaf")
 		)
@@ -15994,6 +16057,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 124.46 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 124.46 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17043,6 +17115,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 93.98 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 93.98 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18418,6 +18499,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 93.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
+			(at 93.98 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
