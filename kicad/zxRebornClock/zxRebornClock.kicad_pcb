@@ -261,6 +261,19 @@
 				)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1de91de-0f2a-4a0d-97fb-796c581e5d80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/d7eb114a-c563-403d-babd-abce2ae5e5d0")
 		(sheetname "Корневой лист")
@@ -761,20 +774,7 @@
 				)
 			)
 		)
-		(property "Link" "https://aliexpress.ru/item/33007425729.html?sku_id=67085457162&spm=a2g2w.stores.seller_list.5.390e2b33TdpRsz"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f87e833c-d239-4894-9fb6-08da4635b81a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Note" "smd 0805"
+		(property "Note" "0805"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -997,6 +997,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "113ebd38-a2dd-4583-926f-98228fc7fb31")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1937,6 +1950,19 @@
 				)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57185f5c-241b-45f2-a1f0-490d6f2488d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e5445c41-44e6-43e0-86e1-7918dc3b0394")
 		(sheetname "Корневой лист")
@@ -2091,7 +2117,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C3"
-			(at 0 -1.75 360)
+			(at 0 -1.75 0)
 			(layer "F.SilkS")
 			(uuid "657e8cb9-efee-4071-b892-e6801a3afd7b")
 			(effects
@@ -2102,7 +2128,7 @@
 			)
 		)
 		(property "Value" "0,1uF"
-			(at 0 1.68 360)
+			(at 0 1.68 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7731dd5c-12ce-4977-a2f9-ce08429d35dc")
@@ -2148,6 +2174,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f01e8bf6-72e7-4778-bb0a-98f8bdc2b84a")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2258,7 +2297,7 @@
 			(uuid "7863b763-7135-4004-bc7f-037964841dba")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d0531fdd-1669-41fd-90d1-1377deeaa38a")
@@ -3036,6 +3075,19 @@
 				)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a19080e-f32f-4a69-8aeb-e723c47353bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/263d31b5-c019-4985-a0fe-6c207157bce8")
 		(sheetname "Корневой лист")
@@ -3532,6 +3584,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "led 0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63d4d4db-ebc3-44b8-a248-4a269e80538d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4165,6 +4230,19 @@
 				)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "210e60ed-bede-4b1e-80e8-764b06120746")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e67ec00c-ae67-40e3-aa5d-128476c9b1a8")
 		(sheetname "Корневой лист")
@@ -4376,6 +4454,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba0567b3-1950-4857-b795-248e980f3890")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5017,6 +5108,19 @@
 				)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "758dfb33-573d-4b35-97c8-97282f69d04d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/5ed4f412-0cd5-4355-98b9-8092f787e6eb")
 		(sheetname "Корневой лист")
@@ -5227,6 +5331,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3897fd4-1546-4d6e-bbc6-5c2930efe792")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5442,6 +5559,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "led 0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9d7c8f9-13e1-41a6-bd37-7b520b62429b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6405,6 +6535,19 @@
 				)
 			)
 		)
+		(property "Note" "led 0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6dadfa53-7caf-44a3-b638-f640c60990d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/8b4df370-b616-410f-b47e-0a958e786e06")
 		(sheetname "Корневой лист")
@@ -6642,6 +6785,19 @@
 				)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "207ba3f1-b7ee-4059-9fac-fb701f50ad1e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/af389756-049a-4e1a-8705-8efa31a09930")
 		(sheetname "Корневой лист")
@@ -6853,6 +7009,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "led 0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "160fd021-a450-4572-ae25-bb60d92f08bb")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7090,6 +7259,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "led 0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f28c5e62-f0fd-446b-9df3-d119dd2f7ac6")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7651,6 +7833,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05e8edfc-cebc-49db-9bd2-b47bb8b62bc0")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8440,6 +8635,19 @@
 				)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "313fecd2-8575-4c44-b006-9fb34abcb47e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/14036fe4-727e-4f75-880b-a5f3478d90fd")
 		(sheetname "Корневой лист")
@@ -8655,6 +8863,19 @@
 				)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68a304cc-57e0-4f60-a2f5-75c890d189e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/9c50b690-3d6c-4e0e-9aca-ae05bad9e5c1")
 		(sheetname "Корневой лист")
@@ -8866,6 +9087,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eafa5b5d-d738-4fdf-ae6e-15974d103d41")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -9404,6 +9638,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "fca43442-953f-4944-8d7e-8aa8d7d884b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/23991821-a1d1-4b37-bd5e-4d043c5a32db")
 		(sheetname "Корневой лист")
@@ -9620,6 +9868,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "fef9a1a6-3148-4329-a6e0-cb9f507db95d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -10118,6 +10380,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ba3b57c8-48f6-445f-9d70-c8bd5935f55c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/5bbf3098-2604-4b5e-8e26-0fedf6c905ee")
 		(sheetname "Корневой лист")
@@ -10610,6 +10886,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "или KP40101D"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "72e415c5-18db-45f8-ac6f-7a5d1e7d7951")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "DIP*W7.62mm*")
 		(path "/ade1cae2-055f-4e5a-b014-ada6a95295d3")
 		(sheetname "Корневой лист")
@@ -10899,6 +11189,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "14f5dbfe-d6fd-4099-83f8-8289f316eb6e")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -11722,6 +12026,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9cef657b-9635-4f77-bbd2-f63307acccad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/d319df5c-b9fc-4c5e-83bf-e266fa185ec8")
 		(sheetname "Корневой лист")
@@ -11943,6 +12261,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d106ee8d-665d-4d9d-ad34-87b462960304")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f38535d1-60ff-4b5a-b3ee-7b7b83f901aa")
 		(sheetname "Корневой лист")
@@ -12158,6 +12490,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "или KP40101D"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a176c965-a48f-4329-99c4-16f5d29e39a0")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -12729,6 +13075,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4abbac64-406f-4a5f-82bc-449291e77c75")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/697e2977-8ab7-4695-b371-f53643a772cb")
 		(sheetname "Корневой лист")
@@ -12944,6 +13304,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "34e4ba13-6051-4c1c-9bd6-1141a6eaa6b2")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -13170,6 +13544,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c99c66a5-fa6f-4f08-a66f-d86f929bdb4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0446b84f-3576-4a5a-9cf0-d55061cc9415")
 		(sheetname "Корневой лист")
@@ -13385,6 +13773,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ea74540f-b22d-448b-8a8d-4fd29f6badd9")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -13849,6 +14251,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "43169b77-684c-4cab-8cb2-8e8547eb3554")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/613e3227-1f0a-4c45-a4a0-c1e4239398e2")
 		(sheetname "Корневой лист")
@@ -14065,6 +14481,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8a8804e8-756d-4b6a-a886-125dadadc129")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -14289,37 +14719,12 @@
 				(justify mirror)
 			)
 		)
-		(property "Link" "https://www.platan.ru/cgi-bin/qwery.pl/id=318826868"
-			(at -36.5533 -233.75 90)
+		(property "Note" "https://github.com/popovb/NixiePowerSupply"
+			(at 0 0 0)
+			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "12260fa0-54d8-4f01-bc2e-b8dc83503b7e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at -47.2433 -242.94 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "7048f50c-1bea-4a48-afd5-1a62dd60a512")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at -47.2433 -242.94 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "ee9eaca5-7037-4c1a-894f-dfc5b22d5515")
+			(uuid "a1b48330-9dfa-46b8-891a-f4b23f033b8c")
 			(effects
 				(font
 					(size 1 1)
@@ -15212,6 +15617,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "917c2bf4-2ad8-4dc3-8447-f5421167203a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e7a0200c-4d81-4882-b6bb-b867642f6bde")
 		(sheetname "Корневой лист")
@@ -15433,6 +15852,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7188915c-f101-49ba-ac08-762e658f5d63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/a1ccd285-4bdd-43e3-9246-c2053b58c8d3")
 		(sheetname "Корневой лист")
@@ -15648,6 +16081,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "07da701b-e982-4a7c-9220-13fec339f169")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -15874,6 +16321,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "691667df-9f65-4027-ab3d-a7dab03dd3b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/a9701831-6fb6-43fa-a0ed-c8c3548d2fb8")
 		(sheetname "Корневой лист")
@@ -16089,6 +16550,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "89534690-4501-4e23-bf11-e05460aca787")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -16310,6 +16785,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "53bab147-25bc-4793-84ab-506324fa85bd")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -17220,6 +17709,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "673f5e4f-976c-4b2e-8400-972b5bd969be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/cf7ff81c-e453-4040-99b8-b7172df01fb6")
 		(sheetname "Корневой лист")
@@ -17375,7 +17878,7 @@
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J3"
-			(at 0 2.63 360)
+			(at 0 2.63 0)
 			(layer "B.SilkS")
 			(uuid "cbbb69b1-751c-4958-9be8-114a0dca0673")
 			(effects
@@ -17387,7 +17890,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 0 -9.95 360)
+			(at 0 -9.95 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "ce27c79e-09f6-43ed-abe9-aeeba5bee46c")
@@ -17733,6 +18236,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e0bf6af4-1383-4619-a0d2-ae88980ba301")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -18422,6 +18939,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2319b82b-3b46-4145-9166-c64a9d324a95")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/cf743c72-0967-483d-9653-acc23e5e6eef")
 		(sheetname "Корневой лист")
@@ -18637,6 +19168,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "868104f5-ddb0-4d13-9543-2601332fbc21")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -18863,6 +19408,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5c9b0c3b-6b3b-4905-86b9-19ac37db47de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/62c21984-688a-4700-a381-1769a71f0765")
 		(sheetname "Корневой лист")
@@ -19078,6 +19637,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5de089b6-6f64-4305-aa55-5eba4b259ac9")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -19304,6 +19877,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "657344fc-ad53-4a84-99ff-5cc4356344d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/32749dcf-1272-458c-b28f-a4ceb5bd4de8")
 		(sheetname "Корневой лист")
@@ -19520,6 +20107,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "или KP40101D"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "dadb8934-eaa8-4449-91e8-a7a13d37ddb7")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -19819,6 +20420,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "21bc8aa4-d511-4891-92b8-9e5002ecbfe8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/02ad711a-1052-4248-ba01-1cf737846f29")
 		(sheetname "Корневой лист")
@@ -20035,6 +20650,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "dbe0a1ef-7a62-4d42-a0f4-d40cf80ab096")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -20573,21 +21202,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Link" "https://aliexpress.ru/item/33007425729.html?sku_id=67085457162&spm=a2g2w.stores.seller_list.5.390e2b33TdpRsz"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "de116b5e-2c70-4cce-9197-24bd4363969e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Note" "smd 0805"
+		(property "Note" "0805"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -20821,6 +21436,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a4bd41b7-3a3d-4fc0-9ec4-de1a0862d4b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4f8d8892-fca4-4405-87ed-6ed11e3992e8")
 		(sheetname "Корневой лист")
@@ -20975,7 +21604,7 @@
 		(descr "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U4"
-			(at 3.1375 -0.05 360)
+			(at 3.1375 -0.05 0)
 			(layer "B.SilkS")
 			(uuid "6cee9bb1-23fb-4757-b090-f6d26bd0cb53")
 			(effects
@@ -20987,7 +21616,7 @@
 			)
 		)
 		(property "Value" "USBLC6-4SC6"
-			(at 0 -2.4 360)
+			(at 0 -2.4 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "6ce8cc81-5ee6-4813-8e9b-d9a4edaeea1a")
@@ -21000,7 +21629,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "16c6fdc9-d0d4-47eb-ae21-653ed3e63630")
@@ -21013,7 +21642,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-4.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "d52e1d50-fb9a-403a-8cfb-11e0b4f683be")
@@ -21026,7 +21655,7 @@
 			)
 		)
 		(property "Description" "Very low capacitance ESD protection diode, 4 data-line, SOT-23-6"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "e99c0149-b8f9-4261-b057-2faf946f627a")
@@ -21186,7 +21815,7 @@
 			(uuid "ebdb05a0-45b3-47c0-ac78-68690860ead7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "6521c222-78f1-4bca-a111-ef33c1ac8aa8")
@@ -21338,6 +21967,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "eb4c9643-4f74-46e6-8134-a75434518e3c")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -21559,6 +22202,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "или KP40101D"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a795f672-b006-4f7a-a09a-4173fb012e63")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -21853,6 +22510,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "77b50866-f346-45e7-a985-3a8cb381b310")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -22476,6 +23147,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "89e04d96-4167-4d93-9c77-4d94bfd49682")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/09434d28-2d4d-403d-90b1-5d91981dc5f8")
 		(sheetname "Корневой лист")
@@ -22692,6 +23377,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4546f9b9-f572-427d-b32c-9e0bfa63ceb4")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -22918,6 +23617,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "93799f94-cf40-4fcc-accc-a6ea9ed93559")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/96047383-4979-4ece-a509-f1796b0ec398")
 		(sheetname "Корневой лист")
@@ -23134,6 +23847,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7f434306-0336-4ca0-9d4a-15bfe531b65b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -23485,6 +24212,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "66f28be4-a9a8-4e7f-85de-7539e58e06a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/00dfc87e-04da-4a4e-8f2c-623a87d970a3")
 		(sheetname "Корневой лист")
@@ -23701,6 +24442,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1f269736-d8c4-46c8-8efe-6439e9f979e8")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -24325,6 +25080,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8abbd4da-5fde-4087-b6f9-e55924444fd9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ee868e01-8e46-40b3-b04e-e2dc781e485b")
 		(sheetname "Корневой лист")
@@ -24546,6 +25315,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0fe67b1f-8185-4f45-8f2b-e6a7e8c57106")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/25c1573a-f0cc-4ec9-8e3a-e6ccc2937634")
 		(sheetname "Корневой лист")
@@ -24761,6 +25544,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1aa85bae-eef7-4f4f-a57c-281be95f04a4")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -27036,21 +27833,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Link" "https://aliexpress.ru/item/4001227639043.html?sku_id=10000015368849017&spm=a2g2w.stores.seller_list.0.390e2b33TdpRsz"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "f2260253-a403-4f46-95c5-08cc5b07fba7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Note" ""
+		(property "Note" "10V Polar 8.0х3.5"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -29438,6 +30221,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "009d01c5-0e54-495a-b797-791720591349")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/fe5a6896-95ff-4635-97dd-978bfa22034c")
 		(sheetname "Корневой лист")
@@ -29653,6 +30450,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4bdded78-5efc-4fef-bf8a-99668d8197e2")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -30135,6 +30946,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f51eb35a-988c-4e3b-8eec-6d54a70ec5f7")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
