@@ -12357,6 +12357,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "Кнопка тактовая 6х6 мм"
+			(at 163.83 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "20f12a14-0978-443c-8f65-b0288cae416a")
 		)
@@ -14066,6 +14075,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "Кнопка тактовая 6х6 мм"
+			(at 163.83 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bdc92937-62cf-483c-8ca8-caf01df7baf7")
 		)
@@ -15053,6 +15071,15 @@
 			)
 		)
 		(property "Description" "Two pin crystal"
+			(at 76.2 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "часовой кварц"
 			(at 76.2 217.17 0)
 			(effects
 				(font
@@ -17393,6 +17420,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "Кнопка тактовая 6х6 мм"
+			(at 163.83 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f6283844-a5d5-4d91-8115-bef12032577a")
 		)
@@ -18524,6 +18560,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "Кнопка тактовая 6х6 мм"
+			(at 163.83 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d6b5a97b-c901-4470-92a1-c0e60fcb8a9e")
 		)
@@ -19413,6 +19458,15 @@
 			)
 		)
 		(property "Description" "Trickle-Charge Timekeeping Chip, 2.0V to 5.5V VCC, 0°C to +70°C, DIP-8"
+			(at 101.6 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "DIP-8"
 			(at 101.6 214.63 0)
 			(effects
 				(font

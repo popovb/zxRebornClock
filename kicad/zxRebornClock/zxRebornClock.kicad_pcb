@@ -1228,6 +1228,19 @@
 				)
 			)
 		)
+		(property "Note" "Кнопка тактовая 6х6 мм"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75c568c0-b4cf-403f-aa47-d398ba1cc37a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/ba93665d-1efa-417f-a8e7-924d522dbb73")
 		(sheetname "Корневой лист")
 		(sheetfile "zxRebornClock.kicad_sch")
@@ -1585,6 +1598,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "Кнопка тактовая 6х6 мм"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8dd8917-d827-4074-8919-3c09b9c19b97")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5813,6 +5839,19 @@
 				)
 			)
 		)
+		(property "Note" "Кнопка тактовая 6х6 мм"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84f625f7-1709-4362-a4b1-858f2483cbaa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/5fca50c1-f843-41b5-b2a2-73264c933f64")
 		(sheetname "Корневой лист")
 		(sheetfile "zxRebornClock.kicad_sch")
@@ -6170,6 +6209,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "Кнопка тактовая 6х6 мм"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "009c2126-9009-4c02-a160-7614f1058aec")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -11424,6 +11476,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "часовой кварц"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "dce749db-6a1f-4b7a-b7f3-5b25e7b916c1")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -29902,6 +29968,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "DIP-8"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6ffe5515-e679-42ec-a0bf-5c81cf5224dc")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
