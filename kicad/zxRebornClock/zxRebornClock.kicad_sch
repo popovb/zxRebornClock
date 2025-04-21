@@ -15658,6 +15658,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "SOT-23-6"
+			(at 55.245 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7cd4d97a-fc54-4d48-bfe1-f8fc8e0b49af")
 		)
@@ -19806,6 +19815,15 @@
 		)
 		(property "Description" ""
 			(at 10.16 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "LQFP-48"
+			(at 44.45 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
