@@ -12278,7 +12278,7 @@
 				)
 			)
 		)
-		(property "Value" "50K"
+		(property "Value" "50K 3362P"
 			(at 162.56 77.47 90)
 			(effects
 				(font
@@ -12306,6 +12306,15 @@
 		)
 		(property "Description" "Potentiometer"
 			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "https://aliexpress.ru/item/32844761642.html?sku_id=65126175526&spm=a2g2w.productlist.search_results.0.740e4652430OiV"
+			(at 162.56 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13077,7 +13086,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_B_Micro"
+		(property "Value" "MicroUSB type B розетка"
 			(at 27.94 200.025 0)
 			(effects
 				(font
@@ -13105,6 +13114,15 @@
 			)
 		)
 		(property "Description" "USB Micro Type B connector"
+			(at 27.94 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "Molex 105017-0001. https://aliexpress.ru/item/1005005284224038.html?sku_id=12000032486388313"
 			(at 27.94 209.55 0)
 			(effects
 				(font
@@ -15566,7 +15584,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "CR2032"
+		(property "Value" "Держатель CR2032"
 			(at 102.362 202.184 0)
 			(effects
 				(font
@@ -15594,6 +15612,15 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
+			(at 101.6 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "https://aliexpress.ru/item/4001240194584.html?spm=a2g2w.orderdetail.0.0.52824aa640KOvY&sku_id=10000015424733532"
 			(at 101.6 199.39 0)
 			(effects
 				(font

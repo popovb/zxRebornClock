@@ -14107,7 +14107,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "CR2032"
+		(property "Value" "Держатель CR2032"
 			(at 12.4 -13 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -14154,6 +14154,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "553b51f3-33dd-40da-8409-7982c7a69f9f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "https://aliexpress.ru/item/4001240194584.html?spm=a2g2w.orderdetail.0.0.52824aa640KOvY&sku_id=10000015424733532"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a2410c45-31c3-452b-8e57-21788129f898")
 			(effects
 				(font
 					(size 1 1)
@@ -18597,7 +18611,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "USB_B_Micro"
+		(property "Value" "MicroUSB type B розетка"
 			(at 0.3 -4.3375 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -18647,6 +18661,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "Molex 105017-0001. https://aliexpress.ru/item/1005005284224038.html?sku_id=12000032486388313"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "93c81333-2fc1-4c31-b032-2b8589d9fe87")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -30893,7 +30921,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "50K"
+		(property "Value" "50K 3362P"
 			(at 6.7769 -4.67565 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -30940,6 +30968,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "https://aliexpress.ru/item/32844761642.html?sku_id=65126175526&spm=a2g2w.productlist.search_results.0.740e4652430OiV"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5eccf8b2-abe0-4aba-b584-01726a2c95d2")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
