@@ -437,7 +437,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "ИН-14"
 			(at 0 -1.5 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3277,7 +3277,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "ИН-14"
 			(at 0 -1.5 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8078,7 +8078,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "ИН-14"
 			(at 0 -1.5 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8363,7 +8363,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "ИН-14"
 			(at 0 -1.5 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10183,6 +10183,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "SOT-23-3"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9155e598-1740-4019-833c-0fafdc7f374e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/feac31b1-7778-4eb5-81ef-a091823860f1")
 		(sheetname "Корневой лист")
@@ -10684,6 +10698,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "SOT-23-3"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7b6a951b-e192-43b5-99a0-f1d767621e7e")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -11843,6 +11871,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "SOT-23-3"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "edb88455-a1fb-4bd6-9f5d-06d7e7846f97")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/dc3040b0-4b14-4f86-b880-cc481a1374e7")
 		(sheetname "Корневой лист")
@@ -12887,6 +12929,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "SOT-23-3"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ff84afeb-40a1-49ac-8a26-3f51d277c592")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -15434,6 +15490,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "SOT-23-3"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a167443f-53f6-4bc8-8d54-b9f5b5fd8ab3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/0488b000-13db-4120-878f-624099c23cd3")
 		(sheetname "Корневой лист")
@@ -17240,6 +17310,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "SOT-23-3"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0e2613c4-f4f1-4b50-8d92-f3db8e1caee7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/5a60eed0-ef86-4934-b64f-8ac9471f7502")
 		(sheetname "Корневой лист")
@@ -17460,7 +17544,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "Гребёнка 1x3x2.54"
 			(at 0 -7.41 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -17981,7 +18065,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Conn_01x04"
+		(property "Value" "Гребёнка 1x4x2.54"
 			(at 0 -9.95 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -22978,6 +23062,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "SOT-23-3"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "47af00d6-251d-492a-8f1b-3c9917256d0c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/52ada36c-877b-49c7-92fa-32fdfb930516")
 		(sheetname "Корневой лист")
@@ -24780,6 +24878,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "SOT-23-3"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a34cc4a6-5ecc-4873-bb60-41afa646e610")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -26860,6 +26972,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "SOT-23-3"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ecbf95a4-ef29-4106-87dd-9465b62ae099")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/99c7327a-a769-4238-86e9-8fd3e94ea8f5")
 		(sheetname "Корневой лист")
@@ -27623,7 +27749,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "Гребёнка 1x2x2.54"
 			(at 0 -4.87 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -29658,7 +29784,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "Гребёнка 1x3x2.54"
 			(at 0 -7.41 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -31311,6 +31437,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "SOT-23-3"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ec43082a-82a1-4992-bedc-3bcae14053be")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
