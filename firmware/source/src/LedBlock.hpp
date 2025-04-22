@@ -17,6 +17,7 @@ namespace gric {
 
      private:
 	  void init(const Mcu&, const McuNetConfig&);
+	  void init(u8, const Mcu&, const PortPinConf&);
 
      private:
 	  Led led[4];
