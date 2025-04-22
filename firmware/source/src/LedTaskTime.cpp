@@ -10,3 +10,10 @@ gric::LedTaskTime::LedTaskTime():
 {
      return;
 }
+
+gric::LedTaskTime::LedTaskTime(ms_t v):
+     on(v),
+     off(v)
+{
+     return;
+}
