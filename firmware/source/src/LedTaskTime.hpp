@@ -13,6 +13,9 @@ namespace gric {
 	  LedTaskTime();
 	  LedTaskTime(ms_t);
 	  LedTaskTime(ms_t, ms_t);
+
+	  ms_t on;
+	  ms_t off;
      };
 }
 #endif // _GRIC_LED_TASK_TIME_HPP_

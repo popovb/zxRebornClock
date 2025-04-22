@@ -80,6 +80,7 @@ set(src_src
   ${src_dir}/Anodes.cpp
   ${src_dir}/Configurator.cpp
   ${src_dir}/LedBlock.cpp
+  ${src_dir}/LedTaskTime.cpp
 )
 
 add_library(src
