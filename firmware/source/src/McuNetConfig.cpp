@@ -27,6 +27,11 @@ gric::McuNetConfig::McuNetConfig():
 	  { McuNet::RTC_CE,   { PortName::A,  6 } },
 	  { McuNet::RTC_SCLK, { PortName::B,  0 } },
 	  { McuNet::RTC_IO,   { PortName::C,  6 } },
+
+	  { McuNet::L_RED,    { PortName::B,  8 } },
+	  { McuNet::L_YELLOW, { PortName::B,  7 } },
+	  { McuNet::L_GREEN,  { PortName::B,  6 } },
+	  { McuNet::L_BLUE,   { PortName::B,  5 } },
      }
 {
      return;
