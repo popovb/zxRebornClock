@@ -11,6 +11,7 @@
 #include "LedTaskMode.hpp"
 #include "LedTaskTime.hpp"
 #include "LedTask.hpp"
+#include "LedBlockControl.hpp"
 #include "core/PortName.hpp"
 #include "core/UartName.hpp"
 #include "core/PinTxConf.hpp"
@@ -361,6 +362,20 @@ TEST(test_34) {
      LedTask ld1(LedTaskMode::Off);
      LedTaskTime ltt3(500, 500);
      LedTask ld2(LedTaskMode::Limit, ltt3);
+}
+
+TEST(test_35) {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+     LedBlock lb(mcu, mnc);
+
+     LedBlockControl lbc(20, lb); // Расчёт сделать явно!
+     //
+     // TODO
+     //
 }
 /*
 TEST(test_30) {
