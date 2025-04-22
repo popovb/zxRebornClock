@@ -7,6 +7,7 @@
 #include "Anodes.hpp"
 #include "Esp12f.hpp"
 #include "LedColor.hpp"
+#include "LedBlock.hpp"
 #include "core/PortName.hpp"
 #include "core/UartName.hpp"
 #include "core/PinTxConf.hpp"
@@ -327,6 +328,15 @@ TEST(test_30) {
      CHECK(LedColor::Yellow == 1);
      CHECK(LedColor::Green == 2);
      CHECK(LedColor::Blue == 3);
+}
+
+TEST(test_31) {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+     LedBlock lb(mcu, mnc);
 }
 /*
 TEST(test_30) {
