@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2024 Boris Popov <popov@whitekefir.ru>
+// Copyright (c) 2025 Boris Popov <popov@whitekefir.ru>
 //
 
 #include "McuNetConfig.hpp"
@@ -17,6 +17,9 @@ namespace gric {
 
      private:
 	  void init(const Mcu&, const McuNetConfig&);
+
+     private:
+	  Led led[4];
      };
 }
 #endif // _GRIC_LED_BLOCK_HPP_

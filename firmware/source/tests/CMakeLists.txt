@@ -79,6 +79,7 @@ set(src_src
   ${src_dir}/Time.cpp
   ${src_dir}/Anodes.cpp
   ${src_dir}/Configurator.cpp
+  ${src_dir}/LedBlock.cpp
 )
 
 add_library(src

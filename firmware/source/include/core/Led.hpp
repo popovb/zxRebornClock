@@ -12,6 +12,7 @@ namespace gric {
      class Led {
 
 	  friend class Mcu;
+	  friend class LedBlock;
 
      public:
 	  void on();
