@@ -10,6 +10,7 @@
 #include "LedBlock.hpp"
 #include "LedTaskMode.hpp"
 #include "LedTaskTime.hpp"
+#include "LedTask.hpp"
 #include "core/PortName.hpp"
 #include "core/UartName.hpp"
 #include "core/PinTxConf.hpp"
@@ -353,6 +354,13 @@ TEST(test_33) {
      LedTaskTime ltt1;
      LedTaskTime ltt2(1000);
      LedTaskTime ltt3(500, 500);
+}
+
+TEST(test_34) {
+     using namespace gric;
+     LedTask ld1(LedTaskMode::Off);
+     LedTaskTime ltt3(500, 500);
+     LedTask ld2(LedTaskMode::Limit, ltt3);
 }
 /*
 TEST(test_30) {
