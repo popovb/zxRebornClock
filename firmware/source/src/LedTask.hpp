@@ -18,6 +18,7 @@ namespace gric {
 
      private:
 	  LedTaskMode::mode_t mode;
+	  LedTaskTime time;
      };
 }
 #endif // _GRIC_LED_TASK_HPP_

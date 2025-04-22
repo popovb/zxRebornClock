@@ -9,3 +9,11 @@ gric::LedTask::LedTask(LedTaskMode::mode_t v):
 {
      return;
 }
+
+gric::LedTask::LedTask(LedTaskMode::mode_t v1,
+		       const LedTaskTime& v2):
+     mode(v1),
+     time(v2)
+{
+     return;
+}
