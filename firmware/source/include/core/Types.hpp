@@ -17,5 +17,7 @@ namespace gric {
 
      using pin_t   = u8;
      using speed_t = u32;
+
+     using ms_t = u32;
 }
 #endif // _GRIC_TYPES_HPP_
