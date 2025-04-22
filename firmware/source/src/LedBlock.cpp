@@ -22,10 +22,7 @@ void gric::LedBlock::init(const Mcu& mcu,
      init(2, mcu, mnc.get(McuNet::L_GREEN));
      init(3, mcu, mnc.get(McuNet::L_BLUE));
 }
-     // const PortPinConf& rc = mnc.get(McuNet::L_RED);
-     // const PortPinConf& ry = mnc.get(McuNet::L_YELLOW);
-     // const PortPinConf& rg = mnc.get(McuNet::L_GREEN);
-     // const PortPinConf& rb = mnc.get(McuNet::L_BLUE);
-     //
-     // TODO
-     //
+
+void gric::LedBlock::init(u8 i, const Mcu& mcu, const PortPinConf& ppc) {
+     led[i] = mcu.get(LedConf(ppc.port, ppc.pin));
+}
