@@ -12,8 +12,8 @@ namespace gric {
      public:
 	  enum mode_t {
 	       Off     = 0,
-	       Once    = 1,
-	       Regular = 2,
+	       Limit   = 1,
+	       Unlimit = 2,
 	  };
      };
 }

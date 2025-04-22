@@ -344,8 +344,8 @@ TEST(test_31) {
 TEST(test_32) {
      using namespace gric;
      CHECK(LedTaskMode::Off == 0);
-     CHECK(LedTaskMode::Once == 1);
-     CHECK(LedTaskMode::Regular == 2);
+     CHECK(LedTaskMode::Limit == 1);
+     CHECK(LedTaskMode::Unlimit == 2);
 }
 
 TEST(test_33) {
