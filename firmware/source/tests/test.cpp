@@ -8,6 +8,7 @@
 #include "Esp12f.hpp"
 #include "LedColor.hpp"
 #include "LedBlock.hpp"
+#include "LedTaskMode.hpp"
 #include "core/PortName.hpp"
 #include "core/UartName.hpp"
 #include "core/PinTxConf.hpp"
@@ -337,6 +338,13 @@ TEST(test_31) {
      McuNetConfig mnc;
      cnf.init(mnc);
      LedBlock lb(mcu, mnc);
+}
+
+TEST(test_32) {
+     using namespace gric;
+     CHECK(LedTaskMode::Off == 0);
+     CHECK(LedTaskMode::Once == 1);
+     CHECK(LedTaskMode::Regular == 2);
 }
 /*
 TEST(test_30) {
