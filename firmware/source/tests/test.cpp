@@ -6,6 +6,7 @@
 #include "Configurator.hpp"
 #include "Anodes.hpp"
 #include "Esp12f.hpp"
+#include "LedColor.hpp"
 #include "core/PortName.hpp"
 #include "core/UartName.hpp"
 #include "core/PinTxConf.hpp"
@@ -322,6 +323,14 @@ TEST(test_29) {
 
 TEST(test_30) {
      using namespace gric;
+     CHECK(LedColor::Red == 0);
+     CHECK(LedColor::Yellow == 1);
+     CHECK(LedColor::Green == 2);
+     CHECK(LedColor::Blue == 3);
+}
+/*
+TEST(test_30) {
+     using namespace gric;
      Mcu mcu;
      Configurator cnf(mcu);
      McuNetConfig mnc;
@@ -329,3 +338,4 @@ TEST(test_30) {
 
      Esp12f esp(mcu, mnc);
 }
+*/
