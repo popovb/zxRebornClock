@@ -11,6 +11,8 @@ namespace gric {
 
      class DisplayTime {
 
+	  friend class Tubes;
+
      public:
 	  DisplayTime(ms_t, ms_t);
 

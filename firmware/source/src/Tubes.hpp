@@ -15,23 +15,17 @@ namespace gric {
      class Tubes {
 
      public:
-	  Tubes(const Anodes&, const Cathodes&);
-	  Tubes(const DisplayTime&,
-		const Anodes&,
-		const Cathodes&);
+	  Tubes(const DisplayTime&, const Anodes&, const Cathodes&);
 
 	  void display(u8[4]) const;
 
      private:
+	  const DisplayTime& time;
 	  const Anodes& as;
 	  const Cathodes& cs;
 
      private:
 	  DelayerNop<4'000'000> delay;
-
-     private:
-	  static constexpr u16 pause_time   = 3;
-	  static constexpr u16 display_time = 2;
 
      private:
 	  void display_1(u8) const;

@@ -4,7 +4,10 @@
 
 #include "Tubes.hpp"
 
-gric::Tubes::Tubes(const Anodes& v1, const Cathodes& v2):
+gric::Tubes::Tubes(const DisplayTime& v0,
+		   const Anodes& v1,
+		   const Cathodes& v2):
+     time(v0),
      as(v1),
      cs(v2)
 {
@@ -37,7 +40,7 @@ void gric::Tubes::display_4(u8 v) const {
 void gric::Tubes::display_(u8 n, u8 v) const {
      cs.set(v);
      as.set(n);
-     delay.ms(display_time);
+     delay.ms(time.display);
      as.clear(n);
-     delay.ms(pause_time);
+     delay.ms(time.pause);
 }
