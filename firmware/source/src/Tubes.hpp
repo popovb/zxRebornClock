@@ -19,6 +19,8 @@ namespace gric {
 
 	  void display(u8[4]) const;
 
+	  u32 calc_iters_per_second() const;
+
      private:
 	  const DisplayTime& time;
 	  const Anodes& as;
