@@ -3,6 +3,7 @@
 //
 
 #include "LedBlock.hpp"
+#include "LedTask.hpp"
 
 #ifndef _GRIC_LED_BLOCK_CONTROL_HPP_
 #define _GRIC_LED_BLOCK_CONTROL_HPP_
@@ -19,6 +20,9 @@ namespace gric {
      private:
 	  const ms_t poll_period;
 	  const LedBlock& block;
+
+     private:
+	  LedTask task[4];
      };
 }
 #endif // _GRIC_LED_BLOCK_CONTROL_HPP_

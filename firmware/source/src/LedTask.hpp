@@ -12,6 +12,8 @@ namespace gric {
 
      class LedTask {
 
+	  friend class LedBlockControl;
+
      public:
 	  LedTask(LedTaskMode::mode_t);
 	  LedTask(LedTaskMode::mode_t, const LedTaskTime&);
@@ -19,6 +21,9 @@ namespace gric {
      private:
 	  LedTaskMode::mode_t mode;
 	  LedTaskTime time;
+
+     private:
+	  LedTask();
      };
 }
 #endif // _GRIC_LED_TASK_HPP_

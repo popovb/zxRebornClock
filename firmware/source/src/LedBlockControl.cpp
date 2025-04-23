@@ -10,3 +10,9 @@ gric::LedBlockControl::LedBlockControl(ms_t v1, const LedBlock& v2):
 {
      return;
 }
+
+void gric::LedBlockControl::poll() const {
+     //
+     // TODO
+     //
+}
