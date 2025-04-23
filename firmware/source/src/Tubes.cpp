@@ -44,7 +44,3 @@ void gric::Tubes::display_(u8 n, u8 v) const {
      as.clear(n);
      delay.ms(time.pause);
 }
-
-gric::u32 gric::Tubes::calc_iters_per_second() const {
-     return 1000 / ((time.display + time.pause) * 4);
-}
