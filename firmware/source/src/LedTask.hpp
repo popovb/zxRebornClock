@@ -16,13 +16,14 @@ namespace gric {
 
      public:
 	  LedTask(LedTaskMode::mode_t);
-	  LedTask(LedTaskMode::mode_t, const LedTaskTime&);
+	  LedTask(LedTaskMode::mode_t, const LedTaskTime&, u32);
 
 	  operator bool() const;
 
      private:
 	  LedTaskMode::mode_t mode;
 	  LedTaskTime time;
+	  u32 repeat;
 
      private:
 	  LedTask();

@@ -363,7 +363,7 @@ TEST(test_34) {
      using namespace gric;
      LedTask ld1(LedTaskMode::Off);
      LedTaskTime ltt3(500, 500);
-     LedTask ld2(LedTaskMode::Limit, ltt3);
+     LedTask ld2(LedTaskMode::Limit, ltt3, 3);
 }
 
 TEST(test_35) {
