@@ -15,8 +15,8 @@ namespace gric {
 	  DisplayTime(ms_t, ms_t);
 
      private:
-	  // static constexpr u16 pause_time   = 3;
-	  // static constexpr u16 display_time = 2;
+	  ms_t display;
+	  ms_t pause;
      };
 }
 #endif // _GRIC_DISPLAY_TIME_HPP_

@@ -82,6 +82,7 @@ set(src_src
   ${src_dir}/LedBlock.cpp
   ${src_dir}/LedTaskTime.cpp
   ${src_dir}/LedTask.cpp
+  ${src_dir}/DisplayTime.cpp
 )
 
 add_library(src
