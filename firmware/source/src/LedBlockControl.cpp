@@ -12,7 +12,9 @@ gric::LedBlockControl::LedBlockControl(ms_t v1, const LedBlock& v2):
 }
 
 void gric::LedBlockControl::poll() const {
-     //
-     // TODO
-     //
+     for (u8 i = 0; i < len; i++) {
+	  auto& t = task[i];
+	  if (! t) continue;
+	  poll(i);
+     }
 }

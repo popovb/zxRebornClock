@@ -22,7 +22,11 @@ namespace gric {
 	  const LedBlock& block;
 
      private:
-	  LedTask task[4];
+	  const static u8 len = 4;
+	  LedTask task[len];
+
+     private:
+	  void poll(u8) const;
      };
 }
 #endif // _GRIC_LED_BLOCK_CONTROL_HPP_
