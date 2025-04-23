@@ -382,7 +382,7 @@ TEST(test_35) {
 
 TEST(test_36) {
      using namespace gric;
-     DisplayTime dt(2, 3);
+     DisplayTime dt(2, 3, 4);
 }
 
 TEST(test_37) {
@@ -395,7 +395,7 @@ TEST(test_37) {
      Anodes as(mcu, mnc);
      Cathodes cs(mcu, mnc);
 
-     DisplayTime dt(2, 3);
+     DisplayTime dt(2, 3, 4);
      Tubes tb(dt, as, cs);
 }
 
@@ -409,7 +409,7 @@ TEST(test_38) {
      Anodes as(mcu, mnc);
      Cathodes cs(mcu, mnc);
 
-     DisplayTime dt(2, 3);
+     DisplayTime dt(2, 3, 4);
      Tubes tb(dt, as, cs);
      CHECK(tb.calc_iters_per_second() == 50);
 }

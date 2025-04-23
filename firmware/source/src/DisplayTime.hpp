@@ -14,11 +14,12 @@ namespace gric {
 	  friend class Tubes;
 
      public:
-	  DisplayTime(ms_t, ms_t);
+	  DisplayTime(ms_t, ms_t, u8);
 
      private:
 	  ms_t display;
 	  ms_t pause;
+	  u8 n_lamps;
      };
 }
 #endif // _GRIC_DISPLAY_TIME_HPP_
