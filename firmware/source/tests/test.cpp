@@ -411,7 +411,21 @@ TEST(test_38) {
 
      DisplayTime dt(2, 3, 4);
      Tubes tb(dt, as, cs);
-     CHECK(dt.calc_iters_per_second() == 50);
+     CHECK(dt.iters_per_second() == 50);
+}
+
+TEST(test_39) {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+
+     Anodes as(mcu, mnc);
+     Cathodes cs(mcu, mnc);
+
+     DisplayTime dt(2, 3, 4);
+     CHECK(dt.iter_time() == 20);
 }
 /*
 TEST(test_30) {

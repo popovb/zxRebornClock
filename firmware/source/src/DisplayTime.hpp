@@ -16,12 +16,13 @@ namespace gric {
      public:
 	  DisplayTime(ms_t, ms_t, u8);
 
-	  u32 calc_iters_per_second() const;
+	  u32 iters_per_second() const;
+	  u32 iter_time() const;
 
      private:
-	  ms_t display;
-	  ms_t pause;
-	  u8 n_lamps;
+	  const ms_t display;
+	  const ms_t pause;
+	  const u8 n_lamps;
      };
 }
 #endif // _GRIC_DISPLAY_TIME_HPP_
