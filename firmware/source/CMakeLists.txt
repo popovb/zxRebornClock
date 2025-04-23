@@ -167,6 +167,7 @@ set(src
   ${src_dir}/SclkPin.cpp
   ${src_dir}/IoPin.cpp
   ${src_dir}/RtcPin.cpp
+  ${src_dir}/DisplayTime.cpp
 )
 
 add_executable(${name}.elf
