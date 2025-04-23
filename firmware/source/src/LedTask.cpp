@@ -23,3 +23,7 @@ gric::LedTask::LedTask(LedTaskMode::mode_t v1,
 {
      return;
 }
+
+gric::LedTask::operator bool() const {
+     return (mode != LedTaskMode::Off);
+}
