@@ -372,12 +372,10 @@ TEST(test_35) {
      Configurator cnf(mcu);
      McuNetConfig mnc;
      cnf.init(mnc);
+     DisplayTime dt(2, 3, 4);
      LedBlock lb(mcu, mnc);
-
-     // LedBlockControl lbc(20, lb); // Расчёт сделать явно!
-     //
-     // TODO
-     //
+     LedBlockControl lbc(dt.iter_time(), lb);
+     lbc.poll();
 }
 
 TEST(test_36) {
