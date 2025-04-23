@@ -13,13 +13,13 @@ namespace gric {
      class LedBlockControl {
 
      public:
-	  LedBlockControl(ms_t, const LedBlock&);
+	  LedBlockControl(ms_t, LedBlock&);
 
-	  void poll() const;
+	  void poll();
 
      private:
 	  const ms_t poll_period;
-	  const LedBlock& block;
+	  LedBlock& block;
 
      private:
 	  const static u8 len = 4;
@@ -27,8 +27,8 @@ namespace gric {
 	  bool on_start[len];
 
      private:
-	  void poll(u8) const;
-	  void poll_start(u8) const;
+	  void poll(u8);
+	  void poll_start(u8);
 	  void poll_continue(u8) const;
      };
 }

@@ -12,6 +12,8 @@ namespace gric {
 
      class LedBlock {
 
+	  friend class LedBlockControl;
+
      public:
 	  LedBlock(const Mcu&, const McuNetConfig&);
 

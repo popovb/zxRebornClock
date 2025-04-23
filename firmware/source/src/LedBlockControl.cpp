@@ -4,7 +4,7 @@
 
 #include "LedBlockControl.hpp"
 
-gric::LedBlockControl::LedBlockControl(ms_t v1, const LedBlock& v2):
+gric::LedBlockControl::LedBlockControl(ms_t v1, LedBlock& v2):
      poll_period(v1),
      block(v2),
      on_start{true, true, true, true,}
@@ -12,7 +12,7 @@ gric::LedBlockControl::LedBlockControl(ms_t v1, const LedBlock& v2):
      return;
 }
 
-void gric::LedBlockControl::poll() const {
+void gric::LedBlockControl::poll() {
      for (u8 i = 0; i < len; i++) {
 	  auto& t = task[i];
 	  if (! t) continue;
@@ -20,7 +20,12 @@ void gric::LedBlockControl::poll() const {
      }
 }
 
-void gric::LedBlockControl::poll(u8 i) const {
+void gric::LedBlockControl::poll(u8 i) {
      if (on_start[i]) return poll_start(i);
      poll_continue(i);
+}
+
+void gric::LedBlockControl::poll_start(u8 i) {
+     on_start[i] = false;
+     block.led[i].on();
 }
