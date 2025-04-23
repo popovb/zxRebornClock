@@ -17,9 +17,9 @@ int main() {
 
      Anodes as(mcu, mnc);
      Cathodes cs(mcu, mnc);
-     DisplayTime dt(2, 3);
+     DisplayTime dt(2, 3, 4);
+     u16 iters = dt.iters_per_second();
      Tubes tb(dt, as, cs);
-     u16 iters = tb.calc_iters_per_second();
 
      // Esp12f esp(mcu, mnc);
 
