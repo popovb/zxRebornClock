@@ -29,3 +29,8 @@ void gric::LedBlockControl::poll_start(u8 i) {
      on_start[i] = false;
      block.led[i].on();
 }
+
+void gric::LedBlockControl::poll_continue(u8 i) const {
+     if (block.led[i]) return poll_continue_up(i);
+     poll_continue_down(i);
+}

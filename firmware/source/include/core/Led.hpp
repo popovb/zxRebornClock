@@ -19,6 +19,8 @@ namespace gric {
 	  void off();
 	  void toggle();
 
+	  operator bool() const;
+
      private:
 	  bool emit;
 	  u32 port;
