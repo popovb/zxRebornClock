@@ -12,6 +12,7 @@
 #include "LedTaskTime.hpp"
 #include "LedTask.hpp"
 #include "LedBlockControl.hpp"
+#include "DisplayTime.hpp"
 #include "core/PortName.hpp"
 #include "core/UartName.hpp"
 #include "core/PinTxConf.hpp"
@@ -372,10 +373,15 @@ TEST(test_35) {
      cnf.init(mnc);
      LedBlock lb(mcu, mnc);
 
-     LedBlockControl lbc(20, lb); // Расчёт сделать явно!
+     // LedBlockControl lbc(20, lb); // Расчёт сделать явно!
      //
      // TODO
      //
+}
+
+TEST(test_36) {
+     using namespace gric;
+     DisplayTime dt(2, 3);
 }
 /*
 TEST(test_30) {
