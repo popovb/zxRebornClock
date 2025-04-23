@@ -23,6 +23,7 @@ namespace gric {
 	  const ms_t display;
 	  const ms_t pause;
 	  const u8 n_lamps;
+	  const u32 i_time;
      };
 }
 #endif // _GRIC_DISPLAY_TIME_HPP_
