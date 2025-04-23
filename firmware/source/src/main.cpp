@@ -19,6 +19,7 @@ int main() {
      Cathodes cs(mcu, mnc);
      DisplayTime dt(2, 3);
      Tubes tb(dt, as, cs);
+     u16 iters = tb.calc_iters_per_second();
 
      // Esp12f esp(mcu, mnc);
 
@@ -44,7 +45,7 @@ int main() {
 	  else
 	       tc.fill_prev(v);
 
-	  for (u8 i = 0; i < 51; i++) tb.display(v);
+	  for (u16 i = 0; i < iters; i++) tb.display(v);
 	  led.toggle();
      }
      return 0;
