@@ -13,6 +13,7 @@
 #include "LedTask.hpp"
 #include "LedBlockControl.hpp"
 #include "DisplayTime.hpp"
+#include "Tubes.hpp"
 #include "core/PortName.hpp"
 #include "core/UartName.hpp"
 #include "core/PinTxConf.hpp"
@@ -382,6 +383,20 @@ TEST(test_35) {
 TEST(test_36) {
      using namespace gric;
      DisplayTime dt(2, 3);
+}
+
+TEST(test_37) {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+
+     Anodes as(mcu, mnc);
+     Cathodes cs(mcu, mnc);
+
+     DisplayTime dt(2, 3);
+     Tubes tb(dt, as, cs);
 }
 /*
 TEST(test_30) {

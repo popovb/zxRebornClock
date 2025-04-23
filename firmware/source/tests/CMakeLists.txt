@@ -83,6 +83,8 @@ set(src_src
   ${src_dir}/LedTaskTime.cpp
   ${src_dir}/LedTask.cpp
   ${src_dir}/DisplayTime.cpp
+  ${src_dir}/Cathodes.cpp
+  ${src_dir}/Tubes.cpp
 )
 
 add_library(src

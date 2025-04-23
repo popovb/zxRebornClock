@@ -4,6 +4,7 @@
 
 #include "Anodes.hpp"
 #include "Cathodes.hpp"
+#include "DisplayTime.hpp"
 #include "core/DelayerNop.hpp"
 
 #ifndef _GRIC_TUBES_HPP_
@@ -15,6 +16,9 @@ namespace gric {
 
      public:
 	  Tubes(const Anodes&, const Cathodes&);
+	  Tubes(const DisplayTime&,
+		const Anodes&,
+		const Cathodes&);
 
 	  void display(u8[4]) const;
 
