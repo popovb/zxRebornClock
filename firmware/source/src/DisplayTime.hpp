@@ -16,6 +16,8 @@ namespace gric {
      public:
 	  DisplayTime(ms_t, ms_t, u8);
 
+	  u32 calc_iters_per_second() const;
+
      private:
 	  ms_t display;
 	  ms_t pause;

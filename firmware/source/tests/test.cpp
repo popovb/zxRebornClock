@@ -411,7 +411,7 @@ TEST(test_38) {
 
      DisplayTime dt(2, 3, 4);
      Tubes tb(dt, as, cs);
-     CHECK(tb.calc_iters_per_second() == 50);
+     CHECK(dt.calc_iters_per_second() == 50);
 }
 /*
 TEST(test_30) {
