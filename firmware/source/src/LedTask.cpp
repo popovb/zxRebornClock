@@ -4,6 +4,12 @@
 
 #include "LedTask.hpp"
 
+gric::LedTask::LedTask():
+     mode(LedTaskMode::Off)
+{
+     return;
+}
+
 gric::LedTask::LedTask(LedTaskMode::mode_t v):
      mode(v)
 {
