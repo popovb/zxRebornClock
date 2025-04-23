@@ -15,6 +15,10 @@ namespace gric {
 	  LedBlockControl(ms_t, const LedBlock&);
 
 	  void poll() const;
+
+     private:
+	  const ms_t poll_period;
+	  const LedBlock& block;
      };
 }
 #endif // _GRIC_LED_BLOCK_CONTROL_HPP_
