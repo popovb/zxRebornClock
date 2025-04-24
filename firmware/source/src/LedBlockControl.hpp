@@ -29,8 +29,8 @@ namespace gric {
      private:
 	  void poll(u8);
 	  void poll_start(u8);
-	  void poll_continue(u8) const;
-	  void poll_continue_up(u8) const;
+	  void poll_continue(u8);
+	  void poll_continue_up(u8);
 	  void poll_continue_down(u8) const;
      };
 }

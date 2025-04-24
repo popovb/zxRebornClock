@@ -30,7 +30,13 @@ void gric::LedBlockControl::poll_start(u8 i) {
      block.led[i].on();
 }
 
-void gric::LedBlockControl::poll_continue(u8 i) const {
+void gric::LedBlockControl::poll_continue(u8 i) {
      if (block.led[i]) return poll_continue_up(i);
      poll_continue_down(i);
+}
+
+void gric::LedBlockControl::poll_continue_up(u8 i) {
+     task[i].time.on -= poll_period;
+     if (task[i].time.on > 0) return;
+     block.led[i].off();
 }
