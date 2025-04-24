@@ -438,7 +438,60 @@ TEST(test_40) {
      LedTaskTime ltt(2, 3);
      LedTask lt(LedTaskMode::Limit, ltt, 3);
      lbc.set(LedColor::Red, lt);
-     //lbc.poll();
+
+     CHECK(! lb.led[0]);
+
+     lbc.poll();
+     CHECK(lb.led[0]);
+     lbc.poll();
+     CHECK(lb.led[0]);
+
+     lbc.poll();
+     CHECK(! lb.led[0]);
+     lbc.poll();
+     CHECK(! lb.led[0]);
+     lbc.poll();
+     CHECK(! lb.led[0]);
+
+     lbc.poll();
+     CHECK(lb.led[0]);
+     lbc.poll();
+     CHECK(lb.led[0]);
+
+     lbc.poll();
+     CHECK(! lb.led[0]);
+     lbc.poll();
+     CHECK(! lb.led[0]);
+     lbc.poll();
+     CHECK(! lb.led[0]);
+
+     lbc.poll();
+     CHECK(lb.led[0]);
+     lbc.poll();
+     CHECK(lb.led[0]);
+
+     lbc.poll();
+     CHECK(! lb.led[0]);
+     lbc.poll();
+     CHECK(! lb.led[0]);
+     lbc.poll();
+     CHECK(! lb.led[0]);
+
+     lbc.poll();
+     CHECK(! lb.led[0]);
+     lbc.poll();
+     CHECK(! lb.led[0]);
+     lbc.poll();
+     CHECK(! lb.led[0]);
+
+     lbc.set(LedColor::Red, lt);
+
+     CHECK(! lb.led[0]);
+
+     lbc.poll();
+     CHECK(lb.led[0]);
+     lbc.poll();
+     CHECK(lb.led[0]);
 }
 /*
 TEST(test_30) {

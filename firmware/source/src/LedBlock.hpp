@@ -21,7 +21,11 @@ namespace gric {
 	  void init(const Mcu&, const McuNetConfig&);
 	  void init(u8, const Mcu&, const PortPinConf&);
 
+#ifdef    UNITTEST
+     public:
+#else  // UNITTEST
      private:
+#endif // UNITTEST
 	  Led led[4];
      };
 }
