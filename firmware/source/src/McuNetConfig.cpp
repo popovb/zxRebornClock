@@ -22,8 +22,6 @@ gric::McuNetConfig::McuNetConfig():
 	  { McuNet::SA3,      { PortName::A, 11 } },
 	  { McuNet::SA4,      { PortName::A, 13 } },
 
-	  { McuNet::WL,       { PortName::A,  0 } },
-
 	  { McuNet::RTC_CE,   { PortName::A,  6 } },
 	  { McuNet::RTC_SCLK, { PortName::B,  0 } },
 	  { McuNet::RTC_IO,   { PortName::C,  6 } },

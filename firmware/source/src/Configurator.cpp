@@ -39,7 +39,6 @@ init(const McuNetConfig::NetPortPinConf& v) const {
 	  init_push_pull(v.conf);
 	  return;
 
-     case McuNet::WL:
      case McuNet::L_RED:
      case McuNet::L_YELLOW:
      case McuNet::L_GREEN:

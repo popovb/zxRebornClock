@@ -29,16 +29,14 @@ namespace gric {
 	       SA3      = 12,
 	       SA4      = 13,
 
-	       WL       = 14,
+	       RTC_CE   = 14,
+	       RTC_SCLK = 15,
+	       RTC_IO   = 16,
 
-	       RTC_CE   = 15,
-	       RTC_SCLK = 16,
-	       RTC_IO   = 17,
-
-	       L_RED    = 18,
-	       L_YELLOW = 19,
-	       L_GREEN  = 20,
-	       L_BLUE   = 21,
+	       L_RED    = 17,
+	       L_YELLOW = 18,
+	       L_GREEN  = 19,
+	       L_BLUE   = 20,
 	  };
      };
 }
