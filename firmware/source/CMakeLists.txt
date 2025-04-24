@@ -168,6 +168,10 @@ set(src
   ${src_dir}/IoPin.cpp
   ${src_dir}/RtcPin.cpp
   ${src_dir}/DisplayTime.cpp
+  ${src_dir}/LedBlockControl.cpp
+  ${src_dir}/LedBlock.cpp
+  ${src_dir}/LedTask.cpp
+  ${src_dir}/LedTaskTime.cpp
 )
 
 add_executable(${name}.elf

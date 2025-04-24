@@ -6,8 +6,62 @@
 #include "Rtc.hpp"
 #include "Time.hpp"
 #include "TimeChecker.hpp"
+#include "LedBlockControl.hpp"
 #include "core/Mcu.hpp"
 
+int main() {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+
+     Anodes as(mcu, mnc);
+     Cathodes cs(mcu, mnc);
+     DisplayTime dt(2, 3, 4);
+     u16 iters = dt.iters_per_second();
+     Tubes tb(dt, as, cs);
+
+     LedBlock lb(mcu, mnc);
+     LedBlockControl lbc(dt.iter_time(), lb);
+
+     LedTaskTime ltt_r(2000, 2000);
+     LedTaskTime ltt_y(1000, 1000);
+     LedTaskTime ltt_g(500, 500);
+     LedTaskTime ltt_b(250, 250);
+
+     LedTask lt0(LedTaskMode::Unlimit, ltt_r, 0);
+     LedTask lt1(LedTaskMode::Unlimit, ltt_y, 0);
+     LedTask lt2(LedTaskMode::Unlimit, ltt_g, 0);
+     LedTask lt3(LedTaskMode::Unlimit, ltt_b, 0);
+
+     lbc.set(LedColor::Red, lt0);
+     lbc.set(LedColor::Yellow, lt1);
+     lbc.set(LedColor::Green, lt2);
+     lbc.set(LedColor::Blue, lt3);
+
+     // Esp12f esp(mcu, mnc);
+     Rtc rtc(mcu, mnc);
+     Time tm = rtc.pull();
+     TimeChecker tc;
+     tc.put(tm);
+     u8 v[4];
+     while (true) {
+	  tm = rtc.pull();
+	  tc.put(tm);
+	  if (tc)
+	       tc.fill(v);
+	  else
+	       tc.fill_prev(v);
+
+	  for (u16 i = 0; i < iters; i++) {
+	       tb.display(v);
+	       lbc.poll();
+	  }
+     }
+     return 0;
+}
+/*
 int main() {
      using namespace gric;
      Mcu mcu;
@@ -50,7 +104,7 @@ int main() {
      }
      return 0;
 }
-/*
+
 int main() {
      using namespace gric;
      Mcu mcu;
