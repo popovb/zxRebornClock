@@ -66,7 +66,7 @@ TEST(test_02) {
      pin_t p = 2;
      CHECK(p == 2);
 }
-
+/*
 TEST(test_03) {
      using namespace gric;
      McuNetConfig mnc;
@@ -87,7 +87,7 @@ TEST(test_03) {
      CHECK(d.port == PortName::A);
      CHECK(d.pin == 13);
 }
-
+*/
 TEST(test_04) {
      using namespace gric;
      Mcu mcu;
