@@ -25,13 +25,16 @@ namespace gric {
 	  const static u8 len = 4;
 	  LedTask task[len];
 	  bool on_start[len];
+	  ms_t on_time[len];
+	  ms_t off_time[len];
+	  u32 repeat[len];
 
      private:
 	  void poll(u8);
 	  void poll_start(u8);
 	  void poll_continue(u8);
 	  void poll_continue_up(u8);
-	  void poll_continue_down(u8) const;
+	  void poll_continue_down(u8);
      };
 }
 #endif // _GRIC_LED_BLOCK_CONTROL_HPP_

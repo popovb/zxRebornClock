@@ -7,7 +7,10 @@
 gric::LedBlockControl::LedBlockControl(ms_t v1, LedBlock& v2):
      poll_period(v1),
      block(v2),
-     on_start{true, true, true, true,}
+     on_start{true, true, true, true,},
+     on_time{0, 0, 0, 0,},
+     off_time{0, 0, 0, 0,},
+     repeat{0, 0, 0, 0,}
 {
      return;
 }
@@ -36,7 +39,28 @@ void gric::LedBlockControl::poll_continue(u8 i) {
 }
 
 void gric::LedBlockControl::poll_continue_up(u8 i) {
-     task[i].time.on -= poll_period;
-     if (task[i].time.on > 0) return;
+     on_time[i] -= poll_period;
+     if (on_time[i] > 0) return;
      block.led[i].off();
+}
+
+void gric::LedBlockControl::poll_continue_down(u8 i) {
+     off_time[i] -= poll_period;
+     if (off_time[i] > 0) return;
+
+     if (task[i].mode == LedTaskMode::Limit) {
+	  --repeat[i];
+	  if (repeat[i] == 0) {
+	       task[i].mode = LedTaskMode::Off;
+	       return;
+	  }
+	  block.led[i].on();
+	  on_time[i] = task[i].time.on;
+	  off_time[i] = task[i].time.off;
+
+     } else if (task[i].mode == LedTaskMode::Unlimit) {
+	  block.led[i].on();
+	  on_time[i] = task[i].time.on;
+	  off_time[i] = task[i].time.off;
+     }
 }
