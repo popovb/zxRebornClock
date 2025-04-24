@@ -47,20 +47,25 @@ void gric::LedBlockControl::poll_continue_up(u8 i) {
 void gric::LedBlockControl::poll_continue_down(u8 i) {
      off_time[i] -= poll_period;
      if (off_time[i] > 0) return;
+     --repeat[i];
 
-     if (task[i].mode == LedTaskMode::Limit) {
-	  --repeat[i];
-	  if (repeat[i] == 0) {
-	       task[i].mode = LedTaskMode::Off;
-	       return;
-	  }
-	  block.led[i].on();
-	  on_time[i] = task[i].time.on;
-	  off_time[i] = task[i].time.off;
+     switch (task[i].mode) {
 
-     } else if (task[i].mode == LedTaskMode::Unlimit) {
-	  block.led[i].on();
-	  on_time[i] = task[i].time.on;
-	  off_time[i] = task[i].time.off;
+     case LedTaskMode::Limit:
+	  if (repeat[i] != 0) return poll_restart(i);
+	  task[i].mode = LedTaskMode::Off;
+	  break;
+
+     case LedTaskMode::Unlimit:
+	  return poll_restart(i);
+
+     default:
+	  break;
      }
+}
+
+void gric::LedBlockControl::poll_restart(u8 i) {
+     block.led[i].on();
+     on_time[i] = task[i].time.on;
+     off_time[i] = task[i].time.off;
 }

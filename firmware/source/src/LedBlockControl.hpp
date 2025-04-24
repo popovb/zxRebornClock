@@ -35,6 +35,7 @@ namespace gric {
 	  void poll_continue(u8);
 	  void poll_continue_up(u8);
 	  void poll_continue_down(u8);
+	  void poll_restart(u8);
      };
 }
 #endif // _GRIC_LED_BLOCK_CONTROL_HPP_
