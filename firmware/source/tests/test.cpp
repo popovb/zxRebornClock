@@ -425,6 +425,21 @@ TEST(test_39) {
      DisplayTime dt(2, 3, 4);
      CHECK(dt.iter_time() == 20);
 }
+
+TEST(test_40) {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+     LedBlock lb(mcu, mnc);
+     LedBlockControl lbc(1, lb);
+
+     LedTaskTime ltt(2, 3);
+     LedTask lt(LedTaskMode::Limit, ltt, 3);
+     lbc.set(LedColor::Red, lt);
+     //lbc.poll();
+}
 /*
 TEST(test_30) {
      using namespace gric;

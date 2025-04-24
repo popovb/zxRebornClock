@@ -4,6 +4,7 @@
 
 #include "LedBlock.hpp"
 #include "LedTask.hpp"
+#include "LedColor.hpp"
 
 #ifndef _GRIC_LED_BLOCK_CONTROL_HPP_
 #define _GRIC_LED_BLOCK_CONTROL_HPP_
@@ -16,6 +17,7 @@ namespace gric {
 	  LedBlockControl(ms_t, LedBlock&);
 
 	  void poll();
+	  void set(LedColor::color_t, const LedTask&);
 
      private:
 	  const ms_t poll_period;
