@@ -16,8 +16,8 @@ namespace gric {
      public:
 	  LedBlockControl(ms_t, LedBlock&);
 
-	  void poll();
 	  void set(LedColor::color_t, const LedTask&);
+	  void poll();
 
      private:
 	  const ms_t poll_period;

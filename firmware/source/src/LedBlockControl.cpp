@@ -7,12 +7,20 @@
 gric::LedBlockControl::LedBlockControl(ms_t v1, LedBlock& v2):
      poll_period(v1),
      block(v2),
-     on_start{true, true, true, true,},
+     on_start{false, false, false, false,},
      on_time{0, 0, 0, 0,},
      off_time{0, 0, 0, 0,},
      repeat{0, 0, 0, 0,}
 {
      return;
+}
+
+void gric::LedBlockControl::set(LedColor::color_t i, const LedTask& v) {
+     task[i] = v;
+     on_start[i] = true;
+     on_time[i] = v.time.on;
+     off_time[i] = v.time.off;
+     repeat[i] = v.repeat;
 }
 
 void gric::LedBlockControl::poll() {
