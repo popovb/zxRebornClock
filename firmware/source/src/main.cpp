@@ -7,6 +7,9 @@
 #include "Time.hpp"
 #include "TimeChecker.hpp"
 #include "LedBlockControl.hpp"
+#include "Counter.hpp"
+#include "DigitExtractor.hpp"
+
 #include "core/Mcu.hpp"
 
 int main() {
@@ -23,13 +26,20 @@ int main() {
      Tubes tb(dt, as, cs);
 
      Rtc rtc(mcu, mnc);
-     Time tn(16, 0);
+     Time tn(18, 30);
      rtc.set(tn);
      
      Time tm = rtc.pull();
      TimeChecker tc;
      tc.put(tm);
      u8 v[4];
+
+     // Counter cnt(989);
+     // DigitExtractor<4> de;
+     // //u8 v[4];
+     // de.extract(v, cnt.get());
+
+     
      while (true) {
 	  tm = rtc.pull();
 	  tc.put(tm);
@@ -39,10 +49,25 @@ int main() {
 	       tc.fill_prev(v);
 
 	  for (u16 i = 0; i < iters; i++) tb.display(v);
+	  // cnt.tick();
+	  // de.extract(v, cnt.get());
+
      }
      return 0;
 }
 /*
+     Counter cnt(989);
+     DigitExtractor<4> de;
+     u8 v[4];
+     de.extract(v, cnt.get());
+
+     while (true) {
+       for (u8 i = 0; i < 50; i++) tb.display(v);
+       cnt.tick();
+       de.extract(v, cnt.get());
+
+
+
 int main() {
      using namespace gric;
      Mcu mcu;
@@ -271,9 +296,9 @@ int main() {
      Cathodes cs(mcu, mnc);
      Tubes tb(as, cs);
 
-     const auto& ppc = mnc.get(McuNet::WL);
-     LedConf lc(ppc.port, ppc.pin);
-     Led led = mcu.get(lc);
+     // const auto& ppc = mnc.get(McuNet::WL);
+     // LedConf lc(ppc.port, ppc.pin);
+     // Led led = mcu.get(lc);
 
      Counter cnt(989);
      DigitExtractor<4> de;
@@ -284,7 +309,7 @@ int main() {
        for (u8 i = 0; i < 50; i++) tb.display(v);
        cnt.tick();
        de.extract(v, cnt.get());
-       led.toggle();
+       // led.toggle();
      }
      return 0;
 }
