@@ -24,3 +24,7 @@ gric::u32 gric::DisplayTime::iters_per_second() const {
 gric::ms_t gric::DisplayTime::display() const {
      return _display;
 }
+
+gric::ms_t gric::DisplayTime::blank() const {
+     return _blank;
+}
