@@ -32,3 +32,19 @@ gric::Time gric::Rtc::pull() const {
 
      return Time(hh.get(), mm.get());
 }
+
+void gric::Rtc::set(const Time& v) {
+     using namespace ds1302;
+     Hour hh(v.get_hour());
+     Minutes mm(v.get_minute());
+
+     Command h(Register::Hour,
+	       Target::Clock,
+	       Direction::Write);
+     Command m(Register::Minutes,
+	       Target::Clock,
+	       Direction::Write);
+
+     transfer.write(h, hh);
+     transfer.write(m, mm);
+}

@@ -22,6 +22,9 @@ namespace gric {
 	  void fill(u8[4]) const;
 	  operator bool() const;
 
+	  i8 get_hour() const;
+	  i8 get_minute() const;
+
      private:
 	  i8 hour;
 	  i8 minute;
