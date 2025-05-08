@@ -9,6 +9,7 @@
 #include "Time.hpp"
 #include "core/Mcu.hpp"
 #include "core/DelayerNop.hpp"
+#include "core/Delayer.hpp"
 #include "ds1302/Transfer.hpp"
 
 #ifndef _GRIC_RTC_HPP_
@@ -22,13 +23,15 @@ namespace gric {
 	  Rtc(const Mcu&, const McuNetConfig&);
 
 	  Time pull() const;
+	  void set(const Time&);
 
      private:
 	  CePin ce;
 	  SclkPin sclk;
 	  IoPin io;
 
-	  using Delayer = DelayerNop<4'000'000>;
+	  //using Delayer = DelayerNop<4'000'000>;
+	  //using Delayer = DelayerNop<4'000'000>;
 	  Delayer dln;
 
 	  using Transfer = ds1302::Transfer<RtcPin, Delayer>;

@@ -18,12 +18,46 @@ int main() {
 
      Anodes as(mcu, mnc);
      Cathodes cs(mcu, mnc);
-     DisplayTime dt(4, 150, 4);
+     DisplayTime dt(4000, 150, 4);
+     u16 iters = dt.iters_per_second();
+     Tubes tb(dt, as, cs);
+
+     Rtc rtc(mcu, mnc);
+     Time tn(16, 0);
+     rtc.set(tn);
+     
+     Time tm = rtc.pull();
+     TimeChecker tc;
+     tc.put(tm);
+     u8 v[4];
+     while (true) {
+	  tm = rtc.pull();
+	  tc.put(tm);
+	  if (tc)
+	       tc.fill(v);
+	  else
+	       tc.fill_prev(v);
+
+	  for (u16 i = 0; i < iters; i++) tb.display(v);
+     }
+     return 0;
+}
+/*
+int main() {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+
+     Anodes as(mcu, mnc);
+     Cathodes cs(mcu, mnc);
+     DisplayTime dt(4000, 150, 4);
      u16 iters = dt.iters_per_second();
      Tubes tb(dt, as, cs);
 
      LedBlock lb(mcu, mnc);
-     LedBlockControl lbc(dt.iter_time(), lb);
+     LedBlockControl lbc(1000, lb);
 
      LedTaskTime ltt_r(2000, 2000);
      LedTaskTime ltt_y(1000, 1000);
@@ -35,9 +69,9 @@ int main() {
      LedTask lt2(LedTaskMode::Unlimit, ltt_g, 0);
      LedTask lt3(LedTaskMode::Unlimit, ltt_b, 0);
 
-     lbc.set(LedColor::Red, lt0);
-     lbc.set(LedColor::Yellow, lt1);
-     lbc.set(LedColor::Green, lt2);
+     // lbc.set(LedColor::Red, lt0);
+     // lbc.set(LedColor::Yellow, lt1);
+     // lbc.set(LedColor::Green, lt2);
      lbc.set(LedColor::Blue, lt3);
 
      // Esp12f esp(mcu, mnc);
@@ -54,13 +88,12 @@ int main() {
 	  else
 	       tc.fill_prev(v);
 
-	  for (u16 i = 0; i < iters; i++) {
-	       tb.display(v);
-	       lbc.poll();
-	  }
+	  for (u16 i = 0; i < iters; i++) tb.display(v);
+	  // lbc.poll();
      }
      return 0;
 }
+*/
 /*
 int main() {
      using namespace gric;
