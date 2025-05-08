@@ -38,6 +38,10 @@ void gric::Time::fill(u8* v) const {
 gric::i8 gric::Time::get_hour() const {
      return hour;
 }
+
+gric::i8 gric::Time::get_minute() const {
+     return minute;
+}
 /////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////
