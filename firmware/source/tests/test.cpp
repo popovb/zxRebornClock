@@ -1,6 +1,8 @@
 #include "UnitTest++/UnitTest++.h"
 #include <iostream>
 
+#include "Counter.hpp"
+#include "DigitExtractor.hpp"
 #include "McuNet.hpp"
 #include "TimeChecker.hpp"
 #include "Configurator.hpp"
@@ -382,7 +384,7 @@ TEST(test_36) {
      using namespace gric;
      DisplayTime dt(2, 3, 4);
 }
-
+/*
 TEST(test_37) {
      using namespace gric;
      Mcu mcu;
@@ -493,7 +495,7 @@ TEST(test_40) {
      lbc.poll();
      CHECK(lb.led[0]);
 }
-/*
+
 TEST(test_30) {
      using namespace gric;
      Mcu mcu;
@@ -502,5 +504,62 @@ TEST(test_30) {
      cnf.init(mnc);
 
      Esp12f esp(mcu, mnc);
+}
+*/
+TEST(test_41) {
+     using namespace gric;
+     i8 m = 18;
+     i8 h = 16;
+     //u16 hm = (h << 8) | m;
+     u8 v[4] = { 0, 0, 0, 0, };
+     u8* vv = &(v[0]);
+
+     DigitExtractor<2> de;
+     de.extract(vv, m);
+     vv += 2;
+     de.extract(vv, h);
+
+     CHECK(v[0] == 8);
+     CHECK(v[1] == 1);
+     CHECK(v[2] == 6);
+     CHECK(v[3] == 1);
+     printf("%d %d %d %d\n", v[0], v[1], v[2], v[3]);
+}
+
+TEST(test_42) {
+     using namespace gric;
+
+     Counter cnt(989);
+     DigitExtractor<4> de;
+     u8 v[4];
+     de.extract(v, cnt.get());
+     
+     CHECK(v[0] == 9);
+     CHECK(v[1] == 8);
+     CHECK(v[2] == 9);
+     CHECK(v[3] == 0);
+     printf("%d %d %d %d\n", v[0], v[1], v[2], v[3]);
+}
+
+TEST(test_43) {
+     using namespace gric;
+
+     Counter cnt(1234);
+     DigitExtractor<4> de;
+     u8 v[4];
+     de.extract(v, cnt.get());
+     
+     // CHECK(v[0] == 9);
+     // CHECK(v[1] == 8);
+     // CHECK(v[2] == 9);
+     // CHECK(v[3] == 0);
+     printf("%d %d %d %d\n", v[0], v[1], v[2], v[3]);
+}
+/*
+void gric::Time::fill(u8* v) const {
+     DigitExtractor<2> de;
+     de.extract(v, minute);
+     v += 2;
+     de.extract(v, hour);
 }
 */
