@@ -40,7 +40,7 @@ void gric::Tubes::display_4(u8 v) const {
 void gric::Tubes::display_(u8 n, u8 v) const {
      cs.set(v);
      as.set(n);
-     delay.ms(time.display);
+     delay.ms(time.display());
      as.clear(n);
-     delay.ms(time.pause);
+     delay.us(time.blank());
 }
