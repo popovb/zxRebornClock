@@ -15,7 +15,8 @@ gric::LedBlockControl::LedBlockControl(ms_t v1, LedBlock& v2):
      return;
 }
 
-void gric::LedBlockControl::set(LedColor::color_t i, const LedTask& v) {
+void gric::LedBlockControl::set(LedColor::color_t i,
+				const LedTask& v) {
      task[i] = v;
      on_start[i] = true;
      on_time[i] = v.time.on;
@@ -47,14 +48,21 @@ void gric::LedBlockControl::poll_continue(u8 i) {
 }
 
 void gric::LedBlockControl::poll_continue_up(u8 i) {
-     on_time[i] -= poll_period;
-     if (on_time[i] > 0) return;
+     int v = on_time[i] - poll_period;
+     if (v > 0) {
+	  on_time[i] -= poll_period;
+	  return;
+     }
      block.led[i].off();
 }
 
 void gric::LedBlockControl::poll_continue_down(u8 i) {
-     off_time[i] -= poll_period;
-     if (off_time[i] > 0) return;
+     int v = off_time[i] - poll_period;
+     if (v > 0) {
+	  off_time[i] -= poll_period;
+	  return;
+     }
+
      --repeat[i];
 
      switch (task[i].mode) {
