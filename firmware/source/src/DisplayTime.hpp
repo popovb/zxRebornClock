@@ -21,6 +21,8 @@ namespace gric {
 	  us_t blank() const;
 
      private:
+	  const ms_t _display;
+	  const us_t _blank;
 	  const us_t i_time;
 	  const u32 iters;
      };
