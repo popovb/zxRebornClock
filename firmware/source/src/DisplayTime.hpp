@@ -11,18 +11,17 @@ namespace gric {
 
      class DisplayTime {
 
+	  friend class Tubes;
+
      public:
-	  DisplayTime(ms_t, us_t, u8);
+	  DisplayTime(us_t, us_t, u8);
 
 	  u32 iters_per_second() const;
 	  ms_t iter_time() const;
 
-	  ms_t display() const;
-	  us_t blank() const;
-
      private:
-	  const ms_t _display;
-	  const us_t _blank;
+	  const us_t display;
+	  const us_t blank;
 	  const us_t i_time;
 	  const u32 iters;
      };
