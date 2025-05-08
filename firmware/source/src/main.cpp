@@ -18,7 +18,7 @@ int main() {
 
      Anodes as(mcu, mnc);
      Cathodes cs(mcu, mnc);
-     DisplayTime dt(2, 3, 4);
+     DisplayTime dt(4, 150, 4);
      u16 iters = dt.iters_per_second();
      Tubes tb(dt, as, cs);
 
