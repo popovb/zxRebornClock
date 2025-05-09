@@ -18,8 +18,13 @@ gric::McuNetConfig::McuNetConfig():
 	  { McuNet::K0,       { PortName::A, 11 } },
 
 	  { McuNet::SA1,      { PortName::A,  1 } },
-	  { McuNet::SA2,      { PortName::A, 23 } },
-	  { McuNet::SA3,      { PortName::A,  0 } },
+
+	  //
+	  // TODO : перепутаны на плате
+	  //
+	  { McuNet::SA2,      { PortName::A,  0 } },
+	  { McuNet::SA3,      { PortName::A, 23 } },
+
 	  { McuNet::SA4,      { PortName::A, 22 } },
 
 	  { McuNet::RTC_CE,   { PortName::B,  1 } },

@@ -21,8 +21,8 @@ gric::Tubes::Tubes(DisplayTime& v0,
 
 void gric::Tubes::display(u8 v[4]) {
      display_1(v[3]);
-     display_2(v[1]);
-     display_3(v[2]);
+     display_2(v[2]);
+     display_3(v[1]);
      display_4(v[0]);
 }
 
