@@ -21,9 +21,10 @@ int main() {
 
      Anodes as(mcu, mnc);
      Cathodes cs(mcu, mnc);
-     DisplayTime dt(4000, 150, 4);
+     Tubes tb(as, cs);
+
+     DisplayTime dt = tb.get_times();
      u16 iters = dt.iters_per_second();
-     Tubes tb(dt, as, cs);
 
      Rtc rtc(mcu, mnc);
      Time tn(18, 30);
@@ -34,12 +35,6 @@ int main() {
      tc.put(tm);
      u8 v[4];
 
-     // Counter cnt(989);
-     // DigitExtractor<4> de;
-     // //u8 v[4];
-     // de.extract(v, cnt.get());
-
-     
      while (true) {
 	  tm = rtc.pull();
 	  tc.put(tm);
@@ -49,9 +44,6 @@ int main() {
 	       tc.fill_prev(v);
 
 	  for (u16 i = 0; i < iters; i++) tb.display(v);
-	  // cnt.tick();
-	  // de.extract(v, cnt.get());
-
      }
      return 0;
 }

@@ -6,7 +6,6 @@
 #include "Cathodes.hpp"
 #include "DisplayTime.hpp"
 #include "core/DelayerNop.hpp"
-#include "core/Delayer.hpp"
 
 #ifndef _GRIC_TUBES_HPP_
 #define _GRIC_TUBES_HPP_
@@ -16,27 +15,26 @@ namespace gric {
      class Tubes {
 
      public:
-	  Tubes(DisplayTime&, const Anodes&, const Cathodes&);
+	  Tubes(const Anodes&, const Cathodes&);
 
-	  void display(u8[4]);
+	  void display(u8[4]) const;
+
+	  DisplayTime get_times() const;
 
      private:
-	  DisplayTime& time;
 	  const Anodes& as;
 	  const Cathodes& cs;
 
      private:
-	  Delayer delay;
+	  using Delayer = DelayerNop<4'000'000>;
+	  Delayer delayer;
 
      private:
-	  void display_1(u8);
-	  void display_2(u8);
-	  void display_3(u8);
-	  void display_4(u8);
-	  void display_(u8, u8);
-	  void display_delay();
-	  void blank_delay();
-	  //volatile u32 tt;
+	  void display_1(u8) const;
+	  void display_2(u8) const;
+	  void display_3(u8) const;
+	  void display_4(u8) const;
+	  void display_(u8, u8) const;
      };
 }
 #endif // _GRIC_TUBES_HPP_
