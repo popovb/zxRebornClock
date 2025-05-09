@@ -17,6 +17,12 @@ gric::Tubes::Tubes(const Anodes& v1, const Cathodes& v2):
      return;
 }
 
+gric::DisplayTime gric::Tubes::get_times() const {
+     return DisplayTime(_TUBES_DISPLAY_TIME,
+			_TUBES_BLANK_TIME,
+			4);
+}
+
 void gric::Tubes::display(u8 v[4]) const {
      display_1(v[3]);
      display_2(v[2]);
