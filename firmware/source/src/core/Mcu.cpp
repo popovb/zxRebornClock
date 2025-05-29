@@ -77,6 +77,12 @@ gric::Led gric::Mcu::get(const LedConf& lc) const {
      return Led(poh.get(lc.port), pih.get(lc.pin));
 }
 
+gric::Button gric::Mcu::get(const ButtonConf& lc) const {
+     PortHolder poh;
+     PinHolder pih;
+     return Button(poh.get(lc.port), pih.get(lc.pin));
+}
+
 gric::Pin gric::Mcu::get(const PortPinConf& pc) const {
      PortHolder poh;
      PinHolder pih;
