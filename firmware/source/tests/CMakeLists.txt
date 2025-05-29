@@ -37,6 +37,7 @@ set(core_src
   ${core_dir}/PinConf.cpp
   ${core_dir}/LedConf.cpp
   ${core_dir}/LedPinConf.cpp
+  ${core_dir}/ButtonPinConf.cpp
   ${core_dir}/PortPinConf.cpp
   ${core_dir}/ClockToggler.cpp
   ${core_dir}/RccPortHolder.cpp
