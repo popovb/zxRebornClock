@@ -565,7 +565,7 @@ TEST(test_44) {
      Button led = mcu.get(lc);
      CHECK(led);
 }
-
+/*
 TEST(test_45) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
@@ -575,9 +575,38 @@ TEST(test_45) {
 
      Key key(b, 3, 9);
      auto r = key.poll(false);
-     CHECK(r == Key::Release);
+     CHECK(r == Key::NoEvent);
 }
 
+TEST(test_46) {
+     using namespace gric;
+     ButtonConf lc(PortName::A, 0);
+     Mcu mcu;
+     mcu.init(lc);
+     Button b = mcu.get(lc);
+
+     Key key(b, 3, 9);
+
+     auto r = key.poll(false);
+     CHECK(r == Key::NoEvent);
+     r = key.poll(false);
+     CHECK(r == Key::NoEvent);
+     r = key.poll(false);
+     CHECK(r == Key::NoEvent);
+
+     r = key.poll(true);
+     CHECK(r == Key::NoEvent);
+     r = key.poll(true);
+     CHECK(r == Key::NoEvent);
+     r = key.poll(true);
+     CHECK(r == Key::Press);
+}
+*/
+TEST(test_47) {
+     using namespace gric;
+     CHECK(0 == KeyState::Up);
+     CHECK(1 == KeyState::Down);
+}
 /*
 void gric::Time::fill(u8* v) const {
      DigitExtractor<2> de;

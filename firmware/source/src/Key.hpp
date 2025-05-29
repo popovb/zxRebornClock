@@ -2,6 +2,7 @@
 // Copyright (c) 2025 Boris Popov <popov@whitekefir.ru>
 //
 
+#include "KeyState.hpp"
 #include "core/Button.hpp"
 
 #ifndef _GRIC_KEY_HPP_
@@ -13,10 +14,11 @@ namespace gric {
 
      public:
 	  enum event_t : u8 {
-	       Release   = 0,
-	       Press     = 1,
-	       LongPress = 2,
-	       Repeat    = 3,
+	       NoEvent   = 0,
+	       Release   = 1,
+	       Press     = 2,
+	       LongPress = 3,
+	       Repeat    = 4,
 	  };
 
      public:
