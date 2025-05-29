@@ -607,6 +607,15 @@ TEST(test_47) {
      CHECK(0 == KeyState::Up);
      CHECK(1 == KeyState::Down);
 }
+
+TEST(test_48) {
+     using namespace gric;
+     CHECK(KeyEvent::Undef == 0);
+     CHECK(KeyEvent::Release == 1);
+     CHECK(KeyEvent::Press == 2);
+     CHECK(KeyEvent::LongPress == 3);
+     CHECK(KeyEvent::Repeat == 4);
+}
 /*
 void gric::Time::fill(u8* v) const {
      DigitExtractor<2> de;
