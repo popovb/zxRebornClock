@@ -33,6 +33,13 @@ namespace gric {
 	  Button button;
 	  press_t press;
 	  long_press_t long_press;
+
+     private:
+	  u32 counter;
+
+     private:
+	  event_t poll_down();
+	  event_t poll_up();
      };
 }
 #endif // _GRIC_KEY_HPP_

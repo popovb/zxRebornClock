@@ -7,7 +7,13 @@
 gric::Key::Key(const Button& b, press_t v1, long_press_t v2):
      button(b),
      press(v1),
-     long_press(v2)
+     long_press(v2),
+     counter(0)
 {
      return;
+}
+
+gric::Key::event_t gric::Key::poll(bool v) {
+     if (v) return poll_down();
+     return poll_up();
 }
