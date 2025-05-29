@@ -28,13 +28,21 @@ gric::KeyEvent::event_t gric::Key::up() {
      }
      return KeyEvent::Undef;
 }
-/*
-gric::Key::event_t gric::Key::down() {
+
+gric::KeyEvent::event_t gric::Key::down() {
+     if (state == KeyState::Down) {
+	  //
+	  // TODO
+	  //
+	  return KeyEvent::Undef;
+     }
+
      ++counter;
      if (counter == press) {
 	  counter = 0;
-	  return Press;
+	  return KeyEvent::Press;
      }
-     return Release;
+
+     return KeyEvent::Undef;
 }
-*/
+
