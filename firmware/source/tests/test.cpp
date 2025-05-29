@@ -555,6 +555,15 @@ TEST(test_43) {
      // CHECK(v[3] == 0);
      printf("%d %d %d %d\n", v[0], v[1], v[2], v[3]);
 }
+
+TEST(test_44) {
+     using namespace gric;
+     ButtonConf lc(PortName::A, 0);
+     Mcu mcu;
+     mcu.init(lc);
+     Button led = mcu.get(lc);
+     CHECK(led);
+}
 /*
 void gric::Time::fill(u8* v) const {
      DigitExtractor<2> de;
