@@ -17,3 +17,10 @@ gric::PortPinConf::PortPinConf(const LedConf& v):
 {
      return;
 }
+
+gric::PortPinConf::PortPinConf(const ButtonConf& v):
+     port(v.port),
+     pin(v.pin)
+{
+     return;
+}
