@@ -97,6 +97,7 @@ set(core_src
   ${core_dir}/LedPinConf.cpp
   ${core_dir}/ButtonPinConf.cpp
   ${core_dir}/Led.cpp
+  ${core_dir}/Button.cpp
   ${core_dir}/Pin.cpp
   ${core_dir}/PinRxConf.cpp
   ${core_dir}/PinTxConf.cpp
