@@ -6,6 +6,7 @@
 #include "PinConf.hpp"
 #include "PrintConf.hpp"
 #include "LedConf.hpp"
+#include "ButtonConf.hpp"
 #include "UartConf.hpp"
 #include "Led.hpp"
 #include "Uart.hpp"
@@ -26,6 +27,7 @@ namespace gric {
 	  void init(const Pin&, const PinConf&) const;
 	  void init(const PrintConf&) const;
 	  void init(const LedConf&);
+	  void init(const ButtonConf&);
 	  void init(const UartConf&);
 
 	  Pin get(const PortPinConf&) const;
