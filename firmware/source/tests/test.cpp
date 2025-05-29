@@ -565,7 +565,7 @@ TEST(test_44) {
      Button led = mcu.get(lc);
      CHECK(led);
 }
-/*
+
 TEST(test_45) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
@@ -574,8 +574,8 @@ TEST(test_45) {
      Button b = mcu.get(lc);
 
      Key key(b, 3, 9);
-     auto r = key.poll(false);
-     CHECK(r == Key::NoEvent);
+     auto r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
 }
 
 TEST(test_46) {
@@ -587,21 +587,21 @@ TEST(test_46) {
 
      Key key(b, 3, 9);
 
-     auto r = key.poll(false);
-     CHECK(r == Key::NoEvent);
-     r = key.poll(false);
-     CHECK(r == Key::NoEvent);
-     r = key.poll(false);
-     CHECK(r == Key::NoEvent);
+     auto r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
 
-     r = key.poll(true);
-     CHECK(r == Key::NoEvent);
-     r = key.poll(true);
-     CHECK(r == Key::NoEvent);
-     r = key.poll(true);
-     CHECK(r == Key::Press);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Press);
 }
-*/
+
 TEST(test_47) {
      using namespace gric;
      CHECK(0 == KeyState::Up);
