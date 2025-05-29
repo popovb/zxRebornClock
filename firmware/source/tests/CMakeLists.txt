@@ -90,6 +90,7 @@ set(src_src
   ${src_dir}/Cathodes.cpp
   ${src_dir}/Tubes.cpp
   ${src_dir}/LedBlockControl.cpp
+  ${src_dir}/Key.cpp
 )
 
 add_library(src

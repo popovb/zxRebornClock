@@ -19,6 +19,9 @@ namespace gric {
 	  Key(const Button&, press_t, long_press_t);
 
      private:
+	  Button button;
+	  press_t press;
+	  long_press_t long_press;
      };
 }
 #endif // _GRIC_KEY_HPP_
