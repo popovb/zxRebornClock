@@ -22,3 +22,12 @@ gric::Key::event_t gric::Key::poll_up() {
      counter = 0;
      return Release;
 }
+
+gric::Key::event_t gric::Key::poll_down() {
+     ++counter;
+     if (counter == press) {
+	  counter = 0;
+	  return Press;
+     }
+     return Release;
+}
