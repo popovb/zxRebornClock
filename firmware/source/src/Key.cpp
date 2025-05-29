@@ -17,3 +17,8 @@ gric::Key::event_t gric::Key::poll(bool v) {
      if (v) return poll_down();
      return poll_up();
 }
+
+gric::Key::event_t gric::Key::poll_up() {
+     counter = 0;
+     return Release;
+}
