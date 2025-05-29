@@ -37,6 +37,11 @@ namespace gric {
 	       L_YELLOW = 18,
 	       L_GREEN  = 19,
 	       L_BLUE   = 20,
+
+	       B_HH     = 21,
+	       B_MM     = 22,
+	       B_SS     = 23,
+	       B_F      = 24,
 	  };
      };
 }

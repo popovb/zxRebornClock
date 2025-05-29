@@ -35,6 +35,11 @@ gric::McuNetConfig::McuNetConfig():
 	  { McuNet::L_YELLOW, { PortName::B,  7 } },
 	  { McuNet::L_GREEN,  { PortName::B,  6 } },
 	  { McuNet::L_BLUE,   { PortName::B,  5 } },
+
+	  { McuNet::B_HH,     { PortName::C, 14 } },
+	  { McuNet::B_MM,     { PortName::C, 15 } },
+	  { McuNet::B_SS,     { PortName::A,  8 } },
+	  { McuNet::B_F,      { PortName::A,  9 } },
      }
 {
      return;

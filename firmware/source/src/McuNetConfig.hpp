@@ -27,7 +27,7 @@ namespace gric {
 	  u8 size() const;
 
      private:
-	  static constexpr u8 len = 21;
+	  static constexpr u8 len = 25;
 	  const NetPortPinConf pp[len];
      };
 }

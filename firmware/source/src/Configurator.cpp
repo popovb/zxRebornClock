@@ -46,6 +46,13 @@ init(const McuNetConfig::NetPortPinConf& v) const {
 	  init_led(v.conf);
 	  return;
 
+     case McuNet::B_HH:
+     case McuNet::B_MM:
+     case McuNet::B_SS:
+     case McuNet::B_F:
+	  init_button(v.conf);
+	  return;
+
      default:
 	  return;
      }
