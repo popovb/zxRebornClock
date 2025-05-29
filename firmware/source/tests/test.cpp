@@ -1,6 +1,7 @@
 #include "UnitTest++/UnitTest++.h"
 #include <iostream>
 
+#include "Key.hpp"
 #include "Counter.hpp"
 #include "DigitExtractor.hpp"
 #include "McuNet.hpp"
@@ -564,6 +565,22 @@ TEST(test_44) {
      Button led = mcu.get(lc);
      CHECK(led);
 }
+
+TEST(test_45) {
+     using namespace gric;
+     ButtonConf lc(PortName::A, 0);
+     Mcu mcu;
+     mcu.init(lc);
+     Button b = mcu.get(lc);
+
+     Key key(b, 3, 9);
+     //
+     // TODO
+     //
+     // CHECK(led);
+}
+
+
 /*
 void gric::Time::fill(u8* v) const {
      DigitExtractor<2> de;
