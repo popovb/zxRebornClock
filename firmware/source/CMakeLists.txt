@@ -93,7 +93,9 @@ set(core_src
   ${core_dir}/RccPortHolder.cpp
   ${core_dir}/PrintConf.cpp
   ${core_dir}/LedConf.cpp
+  ${core_dir}/ButtonConf.cpp
   ${core_dir}/LedPinConf.cpp
+  ${core_dir}/ButtonPinConf.cpp
   ${core_dir}/Led.cpp
   ${core_dir}/Pin.cpp
   ${core_dir}/PinRxConf.cpp
