@@ -4,6 +4,7 @@
 
 #include "PortName.hpp"
 #include "LedConf.hpp"
+#include "ButtonConf.hpp"
 
 #ifndef _GRIC_MCU_PORT_PIN_CONF_HPP_
 #define _GRIC_MCU_PORT_PIN_CONF_HPP_
@@ -13,6 +14,7 @@ namespace gric {
      struct PortPinConf {
 	  PortPinConf(PortName::name_t, pin_t);
 	  PortPinConf(const LedConf&);
+	  PortPinConf(const ButtonConf&);
 
 	  PortName::name_t port;
 	  pin_t pin;

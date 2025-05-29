@@ -6,6 +6,7 @@
 #include "Gpio.hpp"
 #include "Usart.hpp"
 #include "LedPinConf.hpp"
+#include "ButtonPinConf.hpp"
 #include "PortHolder.hpp"
 #include "PinHolder.hpp"
 #include "UsartHolder.hpp"
@@ -62,6 +63,12 @@ void gric::Mcu::init(const LedConf& v) {
      LedPinConf lpc;
      init(pp, lpc);
      get(v).off();
+}
+
+void gric::Mcu::init(const ButtonConf& v) {
+     PortPinConf pp(v);
+     ButtonPinConf lpc;
+     init(pp, lpc);
 }
 
 gric::Led gric::Mcu::get(const LedConf& lc) const {
