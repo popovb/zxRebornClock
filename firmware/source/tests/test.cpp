@@ -574,12 +574,9 @@ TEST(test_45) {
      Button b = mcu.get(lc);
 
      Key key(b, 3, 9);
-     //
-     // TODO
-     //
-     // CHECK(led);
+     auto r = key.poll(false);
+     CHECK(r == Key::Release);
 }
-
 
 /*
 void gric::Time::fill(u8* v) const {
