@@ -48,6 +48,7 @@ set(core_src
   ${core_dir}/PortHolder.cpp
   ${core_dir}/PrintConf.cpp
   ${core_dir}/Led.cpp
+  ${core_dir}/Button.cpp
   ${core_dir}/Pin.cpp
   ${core_dir}/Gpio.cpp
   ${core_dir}/PinRxConf.cpp
