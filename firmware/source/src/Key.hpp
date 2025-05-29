@@ -38,8 +38,8 @@ namespace gric {
 	  u32 counter;
 
      private:
-	  event_t poll_down();
-	  event_t poll_up();
+	  event_t down();
+	  event_t up();
      };
 }
 #endif // _GRIC_KEY_HPP_

@@ -14,16 +14,16 @@ gric::Key::Key(const Button& b, press_t v1, long_press_t v2):
 }
 
 gric::Key::event_t gric::Key::poll(bool v) {
-     if (v) return poll_down();
-     return poll_up();
+     if (v) return down();
+     return up();
 }
 
-gric::Key::event_t gric::Key::poll_up() {
+gric::Key::event_t gric::Key::up() {
      counter = 0;
      return Release;
 }
 
-gric::Key::event_t gric::Key::poll_down() {
+gric::Key::event_t gric::Key::down() {
      ++counter;
      if (counter == press) {
 	  counter = 0;
