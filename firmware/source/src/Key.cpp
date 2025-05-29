@@ -12,12 +12,12 @@ gric::Key::Key(const Button& b, press_t v1, long_press_t v2):
 {
      return;
 }
-/*
-gric::Key::event_t gric::Key::poll(bool v) {
-     if (v) return down();
+
+gric::KeyEvent::event_t gric::Key::poll(KeyState::state_t v) {
+     if (v == KeyState::Down) return down();
      return up();
 }
-
+/*
 gric::Key::event_t gric::Key::up() {
      counter = 0;
      return Release;
