@@ -38,7 +38,6 @@ namespace gric {
 
      private:
 	  KeyState::state_t state;
-	  KeyEvent::event_t event;
      };
 }
 #endif // _GRIC_KEY_HPP_

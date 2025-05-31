@@ -10,8 +10,7 @@ gric::Key::Key(const Button& b, press_t v1, long_press_t v2):
      long_press(v2),
      counter(0),
      repeat(false),
-     state(KeyState::Up),
-     event(KeyEvent::Undef)
+     state(KeyState::Up)
 {
      return;
 }
