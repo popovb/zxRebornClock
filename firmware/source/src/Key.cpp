@@ -33,6 +33,7 @@ gric::KeyEvent::event_t gric::Key::up() {
 
 gric::KeyEvent::event_t gric::Key::down() {
      ++counter;
+     state = KeyState::Down;
      if (counter == press) {
 	  counter = 0;
 	  if (repeat) {
