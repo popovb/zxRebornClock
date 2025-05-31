@@ -21,6 +21,8 @@ namespace gric {
 	  Key(press_t, long_press_t);
 	  Key(const Button&, press_t, long_press_t);
 
+	  void set(const Button&);
+
 	  KeyEvent::event_t poll(KeyState::state_t);
 	  KeyEvent::event_t poll();
 

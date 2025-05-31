@@ -20,10 +20,9 @@ void gric::KeyBlock::init(const Mcu& mcu,
      init(s, mcu, mnc.get(McuNet::B_SS));
      init(f, mcu, mnc.get(McuNet::B_F));
 }
-/*
-void gric::KeyBlock::init(Button& i,
+
+void gric::KeyBlock::init(Key& i,
 			  const Mcu& mcu,
 			  const PortPinConf& ppc) {
-     i = mcu.get(ButtonConf(ppc.port, ppc.pin));
+     i.set(mcu.get(ButtonConf(ppc.port, ppc.pin)));
 }
-*/
