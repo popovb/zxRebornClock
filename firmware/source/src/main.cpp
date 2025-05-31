@@ -71,6 +71,10 @@ int main() {
 	  for (u16 i = 0; i < iters; i++) {
 	       tb.display(v);
 	       lbc.poll();
+	       auto kbe = kb.poll();
+	       //
+	       // TODO
+	       //
 	  }
      }
      return 0;

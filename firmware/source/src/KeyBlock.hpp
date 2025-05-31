@@ -3,6 +3,8 @@
 //
 
 #include "McuNetConfig.hpp"
+#include "Key.hpp"
+#include "KeyBlockEvent.hpp"
 #include "core/Mcu.hpp"
 
 #ifndef _GRIC_KEY_BLOCK_HPP_
@@ -15,15 +17,17 @@ namespace gric {
      public:
 	  KeyBlock(const Mcu&, const McuNetConfig&);
 
-     private:
-	  void init(const Mcu&, const McuNetConfig&);
-	  void init(Button&, const Mcu&, const PortPinConf&);
+	  KeyBlockEvent poll();
 
      private:
-	  Button h;
-	  Button m;
-	  Button s;
-	  Button f;
+	  void init(const Mcu&, const McuNetConfig&);
+	  void init(Key&, const Mcu&, const PortPinConf&);
+
+     private:
+	  Key h;
+	  Key m;
+	  Key s;
+	  Key f;
      };
 }
 #endif // _GRIC_KEY_BLOCK_HPP_

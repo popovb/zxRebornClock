@@ -18,6 +18,7 @@ namespace gric {
 	  using long_press_t = u32;
 
      public:
+	  Key(press_t, long_press_t);
 	  Key(const Button&, press_t, long_press_t);
 
 	  KeyEvent::event_t poll(KeyState::state_t);

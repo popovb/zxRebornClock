@@ -4,7 +4,12 @@
 
 #include "KeyBlock.hpp"
 
-gric::KeyBlock::KeyBlock(const Mcu& m, const McuNetConfig& c) {
+gric::KeyBlock::KeyBlock(const Mcu& m, const McuNetConfig& c):
+     h(4, 101),
+     m(4, 101),
+     s(4, 101),
+     f(4, 101)
+{
      init(m, c);
 }
 
@@ -15,9 +20,10 @@ void gric::KeyBlock::init(const Mcu& mcu,
      init(s, mcu, mnc.get(McuNet::B_SS));
      init(f, mcu, mnc.get(McuNet::B_F));
 }
-
+/*
 void gric::KeyBlock::init(Button& i,
 			  const Mcu& mcu,
 			  const PortPinConf& ppc) {
      i = mcu.get(ButtonConf(ppc.port, ppc.pin));
 }
+*/
