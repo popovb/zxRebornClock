@@ -5,6 +5,13 @@
 #include "core/Button.hpp"
 #include "Gpio.hpp"
 
+gric::Button::Button():
+     port(0),
+     pin(0)
+{
+     return;
+}
+
 gric::Button::Button(u32 p, u32 i):
      port(p),
      pin(i)
