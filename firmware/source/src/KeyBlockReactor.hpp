@@ -22,6 +22,12 @@ namespace gric {
      private:
 	  const LedBlockControl& lbc;
 	  const Rtc& rtc;
+
+     private:
+	  void hour(KeyEvent::event_t) const;
+	  void minute(KeyEvent::event_t) const;
+	  void second(KeyEvent::event_t) const;
+	  void func(KeyEvent::event_t) const;
      };
 }
 #endif // _GRIC_KEY_BLOCK_REACTOR_HPP_
