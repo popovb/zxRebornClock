@@ -12,6 +12,7 @@
 #include "TimeChecker.hpp"
 #include "LedBlockControl.hpp"
 #include "KeyBlock.hpp"
+#include "KeyBlockReactor.hpp"
 #include "core/Mcu.hpp"
 
 int main() {
@@ -38,6 +39,7 @@ int main() {
      LedBlockControl lbc(dt.iter_time(), lb);
 
      KeyBlock kb(mcu, mnc);
+     KeyBlockReactor kbr(lbc, rtc);
 
      // LedTaskTime ltt_r(2000, 2000);
      // LedTaskTime ltt_y(1000, 1000);
@@ -53,7 +55,6 @@ int main() {
      // lbc.set(LedColor::Yellow, lt1);
      // lbc.set(LedColor::Green, lt2);
      // lbc.set(LedColor::Blue, lt3);
-
      
      Time tm = rtc.pull();
      TimeChecker tc;
@@ -70,11 +71,9 @@ int main() {
 
 	  for (u16 i = 0; i < iters; i++) {
 	       tb.display(v);
-	       lbc.poll();
 	       auto kbe = kb.poll();
-	       //
-	       // TODO
-	       //
+	       kbr.handle(kbe);
+	       lbc.poll();
 	  }
      }
      return 0;
