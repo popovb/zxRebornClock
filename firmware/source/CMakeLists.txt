@@ -176,6 +176,7 @@ set(src
   ${src_dir}/KeyBlock.cpp
   ${src_dir}/Key.cpp
   ${src_dir}/LedTask.cpp
+  ${src_dir}/KeyBlockReactor.cpp
   ${src_dir}/LedTaskTime.cpp
 )
 

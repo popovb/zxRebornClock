@@ -20,6 +20,8 @@ namespace gric {
 	  void handle(const KeyBlockEvent&) const;
 
      private:
+	  const LedBlockControl& lbc;
+	  const Rtc& rtc;
      };
 }
 #endif // _GRIC_KEY_BLOCK_REACTOR_HPP_
