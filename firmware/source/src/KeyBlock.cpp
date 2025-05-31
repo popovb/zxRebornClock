@@ -26,3 +26,12 @@ void gric::KeyBlock::init(Key& i,
 			  const PortPinConf& ppc) {
      i.set(mcu.get(ButtonConf(ppc.port, ppc.pin)));
 }
+
+gric::KeyBlockEvent gric::KeyBlock::poll() {
+     KeyBlockEvent kbe;
+     kbe.hour = h.poll();
+     kbe.minute = m.poll();
+     kbe.second = s.poll();
+     kbe.func = f.poll();
+     return kbe;
+}
