@@ -1,3 +1,7 @@
+//
+// Copyright (c) 2025 Boris Popov <popov@whitekefir.ru>
+//
+
 #include "Configurator.hpp"
 #include "McuNetConfig.hpp"
 #include "Anodes.hpp"
@@ -7,8 +11,71 @@
 #include "Time.hpp"
 #include "TimeChecker.hpp"
 #include "LedBlockControl.hpp"
+#include "KeyBlock.hpp"
 #include "core/Mcu.hpp"
 
+int main() {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+
+     Anodes as(mcu, mnc);
+     Cathodes cs(mcu, mnc);
+     Tubes tb(as, cs);
+
+     DisplayTime dt = tb.get_times();
+     u16 iters = dt.iters_per_second();
+
+     Rtc rtc(mcu, mnc);
+     // TIME SET EXAMPLE
+     // Time tn(18, 30);
+     // rtc.set(tn);
+
+
+     LedBlock lb(mcu, mnc);
+     LedBlockControl lbc(dt.iter_time(), lb);
+
+     KeyBlock kb(mcu, mnc);
+
+     // LedTaskTime ltt_r(2000, 2000);
+     // LedTaskTime ltt_y(1000, 1000);
+     // LedTaskTime ltt_g(500, 500);
+     // LedTaskTime ltt_b(250, 250);
+
+     // LedTask lt0(LedTaskMode::Unlimit, ltt_r, 0);
+     // LedTask lt1(LedTaskMode::Unlimit, ltt_y, 0);
+     // LedTask lt2(LedTaskMode::Unlimit, ltt_g, 0);
+     // LedTask lt3(LedTaskMode::Unlimit, ltt_b, 0);
+
+     // lbc.set(LedColor::Red, lt0);
+     // lbc.set(LedColor::Yellow, lt1);
+     // lbc.set(LedColor::Green, lt2);
+     // lbc.set(LedColor::Blue, lt3);
+
+     
+     Time tm = rtc.pull();
+     TimeChecker tc;
+     tc.put(tm);
+     u8 v[4];
+
+     while (true) {
+	  tm = rtc.pull();
+	  tc.put(tm);
+	  if (tc)
+	       tc.fill(v);
+	  else
+	       tc.fill_prev(v);
+
+	  for (u16 i = 0; i < iters; i++) {
+	       tb.display(v);
+	       lbc.poll();
+	  }
+     }
+     return 0;
+}
+/*
 int main() {
      using namespace gric;
      Mcu mcu;
@@ -68,7 +135,7 @@ int main() {
      }
      return 0;
 }
-/*
+
 #include "debug.h"
 int main() {
      //
