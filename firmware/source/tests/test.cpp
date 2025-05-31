@@ -710,7 +710,14 @@ TEST(test_51) {
      r = key.poll(KeyState::Down);
      CHECK(r == KeyEvent::Undef);
      r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::LongPress);
+
+     r = key.poll(KeyState::Down);
      CHECK(r == KeyEvent::Repeat);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
 }
 
 TEST(test_52) {
@@ -816,7 +823,7 @@ TEST(test_54) {
      mcu.init(lc);
      Button b = mcu.get(lc);
 
-     Key key(b, 3, 9);
+     Key key(b, 3, 5);
 
      auto r = key.poll(KeyState::Up);
      CHECK(r == KeyEvent::Undef);

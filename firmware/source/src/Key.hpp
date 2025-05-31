@@ -29,7 +29,8 @@ namespace gric {
 	  long_press_t long_press;
 
      private:
-	  u32 counter;
+	  u32 press_cnt;
+	  u32 long_press_cnt;
 	  bool repeat;
 
      private:
