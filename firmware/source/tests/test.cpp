@@ -869,3 +869,15 @@ TEST(test_54) {
      r = key.poll(KeyState::Down);
      CHECK(r == KeyEvent::Undef);
 }
+
+TEST(test_55) {
+     using namespace gric;
+     ButtonConf lc(PortName::A, 0);
+     Mcu mcu;
+     mcu.init(lc);
+     Button b = mcu.get(lc);
+
+     Key key(b, 3, 5);
+
+     auto r = key.poll();
+}
