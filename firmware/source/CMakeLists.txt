@@ -173,6 +173,7 @@ set(src
   ${src_dir}/DisplayTime.cpp
   ${src_dir}/LedBlockControl.cpp
   ${src_dir}/LedBlock.cpp
+  ${src_dir}/KeyBlock.cpp
   ${src_dir}/LedTask.cpp
   ${src_dir}/LedTaskTime.cpp
 )

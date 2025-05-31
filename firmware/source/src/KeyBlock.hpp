@@ -18,6 +18,12 @@ namespace gric {
      private:
 	  void init(const Mcu&, const McuNetConfig&);
 	  void init(u8, const Mcu&, const PortPinConf&);
+
+     private:
+	  Button h;
+	  Button m;
+	  Button s;
+	  Button f;
      };
 }
 #endif // _GRIC_KEY_BLOCK_HPP_
