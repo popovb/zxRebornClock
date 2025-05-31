@@ -27,6 +27,10 @@ gric::Key::Key(const Button& b, press_t v1, long_press_t v2):
      return;
 }
 
+void gric::Key::set(const Button& v) {
+     button = v;
+}
+
 #ifdef UNITTEST
 gric::KeyEvent::event_t gric::Key::poll(KeyState::state_t v) {
      if (v == KeyState::Down) return down();
