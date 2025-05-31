@@ -9,6 +9,7 @@ gric::Key::Key(const Button& b, press_t v1, long_press_t v2):
      press(v1),
      long_press(v2),
      counter(0),
+     repeat(false),
      state(KeyState::Up),
      event(KeyEvent::Undef)
 {
@@ -22,6 +23,7 @@ gric::KeyEvent::event_t gric::Key::poll(KeyState::state_t v) {
 
 gric::KeyEvent::event_t gric::Key::up() {
      counter = 0;
+     repeat = false;
      if (state == KeyState::Down) {
 	  state = KeyState::Up;
 	  return KeyEvent::Release;
@@ -30,19 +32,16 @@ gric::KeyEvent::event_t gric::Key::up() {
 }
 
 gric::KeyEvent::event_t gric::Key::down() {
-     if (state == KeyState::Down) {
-	  //
-	  // TODO
-	  //
-	  return KeyEvent::Undef;
-     }
-
      ++counter;
      if (counter == press) {
 	  counter = 0;
-	  return KeyEvent::Press;
-     }
+	  if (repeat) {
+	       return KeyEvent::Repeat;
 
+	  } else {
+	       repeat = true;
+	       return KeyEvent::Press;
+	  }
+     }
      return KeyEvent::Undef;
 }
-

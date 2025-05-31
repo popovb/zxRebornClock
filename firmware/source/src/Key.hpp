@@ -30,6 +30,7 @@ namespace gric {
 
      private:
 	  u32 counter;
+	  bool repeat;
 
      private:
 	  KeyEvent::event_t down();
