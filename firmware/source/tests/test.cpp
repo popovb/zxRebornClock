@@ -616,11 +616,30 @@ TEST(test_48) {
      CHECK(KeyEvent::LongPress == 3);
      CHECK(KeyEvent::Repeat == 4);
 }
-/*
-void gric::Time::fill(u8* v) const {
-     DigitExtractor<2> de;
-     de.extract(v, minute);
-     v += 2;
-     de.extract(v, hour);
+
+TEST(test_49) {
+     using namespace gric;
+     ButtonConf lc(PortName::A, 0);
+     Mcu mcu;
+     mcu.init(lc);
+     Button b = mcu.get(lc);
+
+     Key key(b, 3, 9);
+
+     auto r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
+
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Press);
+
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
 }
-*/
