@@ -4,6 +4,17 @@
 
 #include "Key.hpp"
 
+gric::Key::Key(press_t v1, long_press_t v2):
+     press(v1),
+     long_press(v2),
+     press_cnt(0),
+     long_press_cnt(0),
+     repeat(false),
+     state(KeyState::Up)
+{
+     return;
+}
+
 gric::Key::Key(const Button& b, press_t v1, long_press_t v2):
      button(b),
      press(v1),
