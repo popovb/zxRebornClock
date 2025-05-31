@@ -33,3 +33,10 @@ void gric::KeyBlockReactor::minute(KeyEvent::event_t e) const {
      LedTask t(LedTaskMode::Limit, ltt, 1);
      lbc.set(LedColor::Yellow, t);
 }
+
+void gric::KeyBlockReactor::second(KeyEvent::event_t e) const {
+     if (e != KeyEvent::Press) return;
+     LedTaskTime ltt(250, 250);
+     LedTask t(LedTaskMode::Limit, ltt, 1);
+     lbc.set(LedColor::Green, t);
+}
