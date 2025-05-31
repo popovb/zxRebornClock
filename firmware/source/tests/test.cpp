@@ -753,3 +753,58 @@ TEST(test_52) {
      r = key.poll(KeyState::Up);
      CHECK(r == KeyEvent::Undef);
 }
+
+TEST(test_53) {
+     using namespace gric;
+     ButtonConf lc(PortName::A, 0);
+     Mcu mcu;
+     mcu.init(lc);
+     Button b = mcu.get(lc);
+
+     Key key(b, 3, 9);
+
+     auto r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
+
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Press);
+
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Repeat);
+
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Release);
+
+     r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Up);
+     CHECK(r == KeyEvent::Undef);
+
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Press);
+
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Undef);
+     r = key.poll(KeyState::Down);
+     CHECK(r == KeyEvent::Repeat);
+}
