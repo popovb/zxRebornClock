@@ -15,8 +15,9 @@ void gric::KeyBlock::init(const Mcu& mcu,
      init(s, mcu, mnc.get(McuNet::B_SS));
      init(f, mcu, mnc.get(McuNet::B_F));
 }
-/*
-void gric::KeyBlock::init(u8 i, const Mcu& mcu, const PortPinConf& ppc) {
-     led[i] = mcu.get(KeyConf(ppc.port, ppc.pin));
+
+void gric::KeyBlock::init(Button& i,
+			  const Mcu& mcu,
+			  const PortPinConf& ppc) {
+     i = mcu.get(ButtonConf(ppc.port, ppc.pin));
 }
-*/
