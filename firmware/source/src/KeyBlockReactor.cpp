@@ -5,7 +5,7 @@
 #include "KeyBlockReactor.hpp"
 
 gric::KeyBlockReactor::
-KeyBlockReactor(const LedBlockControl& a, const Rtc& b):
+KeyBlockReactor(LedBlockControl& a, const Rtc& b):
      lbc(a),
      rtc(b)
 {
@@ -18,4 +18,11 @@ handle(const KeyBlockEvent& kbe) const {
      minute(kbe.minute);
      second(kbe.second);
      func(kbe.func);
+}
+
+void gric::KeyBlockReactor::hour(KeyEvent::event_t e) const {
+     if (e != KeyEvent::Press) return;
+     LedTaskTime ltt(250, 250);
+     LedTask t(LedTaskMode::Limit, ltt, 1);
+     lbc.set(LedColor::Red, t);
 }

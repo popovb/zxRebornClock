@@ -14,13 +14,13 @@ namespace gric {
      class KeyBlockReactor {
 
      public:
-	  KeyBlockReactor(const LedBlockControl&,
+	  KeyBlockReactor(LedBlockControl&,
 			  const Rtc&);
 
 	  void handle(const KeyBlockEvent&) const;
 
      private:
-	  const LedBlockControl& lbc;
+	  LedBlockControl& lbc;
 	  const Rtc& rtc;
 
      private:
