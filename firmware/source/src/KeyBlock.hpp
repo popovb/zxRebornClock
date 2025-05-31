@@ -17,7 +17,7 @@ namespace gric {
 
      private:
 	  void init(const Mcu&, const McuNetConfig&);
-	  void init(u8, const Mcu&, const PortPinConf&);
+	  void init(Button&, const Mcu&, const PortPinConf&);
 
      private:
 	  Button h;

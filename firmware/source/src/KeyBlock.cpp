@@ -7,15 +7,15 @@
 gric::KeyBlock::KeyBlock(const Mcu& m, const McuNetConfig& c) {
      init(m, c);
 }
-/*
+
 void gric::KeyBlock::init(const Mcu& mcu,
 			  const McuNetConfig& mnc) {
-     init(0, mcu, mnc.get(McuNet::L_RED));
-     init(1, mcu, mnc.get(McuNet::L_YELLOW));
-     init(2, mcu, mnc.get(McuNet::L_GREEN));
-     init(3, mcu, mnc.get(McuNet::L_BLUE));
+     init(h, mcu, mnc.get(McuNet::B_HH));
+     init(m, mcu, mnc.get(McuNet::B_MM));
+     init(s, mcu, mnc.get(McuNet::B_SS));
+     init(f, mcu, mnc.get(McuNet::B_F));
 }
-
+/*
 void gric::KeyBlock::init(u8 i, const Mcu& mcu, const PortPinConf& ppc) {
      led[i] = mcu.get(KeyConf(ppc.port, ppc.pin));
 }
