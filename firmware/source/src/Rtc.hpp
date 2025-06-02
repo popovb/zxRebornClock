@@ -40,6 +40,7 @@ namespace gric {
 
      private:
 	  void set_hour(u8) const;
+	  void set_minute(u8) const;
      };
 }
 #endif // _GRIC_RTC_HPP_

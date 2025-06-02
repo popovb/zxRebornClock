@@ -33,24 +33,12 @@ gric::Time gric::Rtc::pull() const {
 
      return Time(hh.get(), mm.get());
 }
-/*
+
 void gric::Rtc::set(const Time& v) {
-     ds1302::Hour hh(v.get_hour());
-     ds1302::Minutes mm(v.get_minute());
-
-     using namespace ds1302;
-
-     Command h(Register::Hour,
-	       Target::Clock,
-	       Direction::Write);
-     Command m(Register::Minutes,
-	       Target::Clock,
-	       Direction::Write);
-
-     transfer.write(h, hh);
-     transfer.write(m, mm);
+     set_hour(v.get_hour());
+     set_minute(v.get_minute());
 }
-*/
+
 void gric::Rtc::set(const Hour& h) const {
      set_hour(h.get());
 }
@@ -64,4 +52,15 @@ void gric::Rtc::set_hour(u8 v) const {
 	       Direction::Write);
 
      transfer.write(h, hh);
+}
+
+void gric::Rtc::set_minute(u8 v) const {
+     ds1302::Minutes mm(v);
+
+     using namespace ds1302;
+     Command m(Register::Minutes,
+	       Target::Clock,
+	       Direction::Write);
+
+     transfer.write(m, mm);
 }
