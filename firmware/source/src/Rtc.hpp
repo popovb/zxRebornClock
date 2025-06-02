@@ -37,6 +37,9 @@ namespace gric {
 
 	  using Transfer = ds1302::Transfer<RtcPin, Delayer>;
 	  Transfer transfer;
+
+     private:
+	  void set_hour(u8) const;
      };
 }
 #endif // _GRIC_RTC_HPP_

@@ -16,6 +16,8 @@ namespace gric {
 
 	  void operator++();
 
+	  u8 get() const;
+
      private:
 	  u8 value;
      };
