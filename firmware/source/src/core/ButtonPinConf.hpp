@@ -11,6 +11,7 @@ namespace gric {
 
      struct ButtonPinConf : public PinConf {
 	  ButtonPinConf();
+	  ButtonPinConf(PinMode::mode_t);
      };
 }
 #endif // _GRIC_BUTTON_PIN_CONF_HPP_
