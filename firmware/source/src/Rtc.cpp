@@ -34,13 +34,17 @@ gric::Time gric::Rtc::pull() const {
      return Time(hh.get(), mm.get());
 }
 
-void gric::Rtc::set(const Time& v) {
+void gric::Rtc::set(const Time& v) const {
      set_hour(v.get_hour());
      set_minute(v.get_minute());
 }
 
 void gric::Rtc::set(const Hour& h) const {
      set_hour(h.get());
+}
+
+void gric::Rtc::set(const Minute& m) const {
+     set_minute(m.get());
 }
 
 void gric::Rtc::set_hour(u8 v) const {

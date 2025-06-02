@@ -25,7 +25,7 @@ namespace gric {
 
 	  Time pull() const;
 
-	  void set(const Time&);
+	  void set(const Time&) const;
 	  void set(const Hour&) const;
 	  void set(const Minute&) const;
 
