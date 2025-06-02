@@ -7,6 +7,7 @@
 #include "SclkPin.hpp"
 #include "IoPin.hpp"
 #include "Time.hpp"
+#include "Hour.hpp"
 #include "core/Mcu.hpp"
 #include "core/DelayerNop.hpp"
 #include "ds1302/Transfer.hpp"
@@ -22,7 +23,9 @@ namespace gric {
 	  Rtc(const Mcu&, const McuNetConfig&);
 
 	  Time pull() const;
+
 	  void set(const Time&);
+	  void set(const Hour&) const;
 
      private:
 	  CePin ce;
