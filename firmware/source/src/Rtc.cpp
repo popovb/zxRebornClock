@@ -54,3 +54,14 @@ void gric::Rtc::set(const Time& v) {
 void gric::Rtc::set(const Hour& h) const {
      set_hour(h.get());
 }
+
+void gric::Rtc::set_hour(u8 v) const {
+     ds1302::Hour hh(v);
+
+     using namespace ds1302;
+     Command h(Register::Hour,
+	       Target::Clock,
+	       Direction::Write);
+
+     transfer.write(h, hh);
+}
