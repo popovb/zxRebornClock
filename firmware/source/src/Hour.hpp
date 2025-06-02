@@ -15,6 +15,9 @@ namespace gric {
 	  Hour(u8, u8);
 
 	  void operator++();
+
+     private:
+	  u8 value;
      };
 }
 #endif // _GRIC_HOUR_HPP_
