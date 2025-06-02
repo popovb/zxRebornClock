@@ -17,7 +17,7 @@ namespace gric {
 	  KeyBlockReactor(LedBlockControl&,
 			  const Rtc&);
 
-	  void handle(const KeyBlockEvent&) const;
+	  void handle(const KeyBlockEvent&, u8[4]) const;
 
      private:
 	  LedBlockControl& lbc;

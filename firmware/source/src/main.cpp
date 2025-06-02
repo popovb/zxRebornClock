@@ -72,7 +72,7 @@ int main() {
 	  for (u16 i = 0; i < iters; i++) {
 	       tb.display(v);
 	       auto kbe = kb.poll();
-	       kbr.handle(kbe);
+	       kbr.handle(kbe, v);
 	       lbc.poll();
 	  }
      }

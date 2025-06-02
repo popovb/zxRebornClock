@@ -13,7 +13,7 @@ KeyBlockReactor(LedBlockControl& a, const Rtc& b):
 }
 
 void gric::KeyBlockReactor::
-handle(const KeyBlockEvent& kbe) const {
+handle(const KeyBlockEvent& kbe, u8 v[4]) const {
      hour(kbe.hour);
      minute(kbe.minute);
      second(kbe.second);
