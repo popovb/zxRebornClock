@@ -8,6 +8,7 @@
 #include "IoPin.hpp"
 #include "Time.hpp"
 #include "Hour.hpp"
+#include "Minute.hpp"
 #include "core/Mcu.hpp"
 #include "core/DelayerNop.hpp"
 #include "ds1302/Transfer.hpp"
@@ -26,6 +27,7 @@ namespace gric {
 
 	  void set(const Time&);
 	  void set(const Hour&) const;
+	  void set(const Minute&) const;
 
      private:
 	  CePin ce;
