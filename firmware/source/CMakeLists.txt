@@ -179,6 +179,7 @@ set(src
   ${src_dir}/KeyBlockReactor.cpp
   ${src_dir}/LedTaskTime.cpp
   ${src_dir}/Hour.cpp
+  ${src_dir}/Minute.cpp
 )
 
 add_executable(${name}.elf
