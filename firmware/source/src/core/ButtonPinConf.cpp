@@ -9,3 +9,9 @@ gric::ButtonPinConf::ButtonPinConf():
 {
      return;
 }
+
+gric::ButtonPinConf::ButtonPinConf(PinMode::mode_t v):
+     PinConf(PinDir::In, v)
+{
+     return;
+}
