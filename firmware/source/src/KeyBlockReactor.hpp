@@ -24,8 +24,8 @@ namespace gric {
 	  const Rtc& rtc;
 
      private:
-	  void hour(KeyEvent::event_t) const;
-	  void minute(KeyEvent::event_t) const;
+	  void hour(KeyEvent::event_t, u8, u8) const;
+	  void minute(KeyEvent::event_t, u8, u8) const;
 	  void second(KeyEvent::event_t) const;
 	  void func(KeyEvent::event_t) const;
      };

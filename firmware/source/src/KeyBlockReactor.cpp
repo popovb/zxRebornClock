@@ -14,21 +14,29 @@ KeyBlockReactor(LedBlockControl& a, const Rtc& b):
 
 void gric::KeyBlockReactor::
 handle(const KeyBlockEvent& kbe, u8 v[4]) const {
-     hour(kbe.hour);
-     minute(kbe.minute);
+     hour(kbe.hour, v[3], v[2]);
+     minute(kbe.minute, v[1], v[0]);
      second(kbe.second);
      func(kbe.func);
 }
 
-void gric::KeyBlockReactor::hour(KeyEvent::event_t e) const {
+void gric::KeyBlockReactor::hour(KeyEvent::event_t e,
+				 u8 v1, u8 v2) const {
      if (e != KeyEvent::Press) return;
+     //
+     // TODO
+     //
      LedTaskTime ltt(250, 250);
      LedTask t(LedTaskMode::Limit, ltt, 1);
      lbc.set(LedColor::Red, t);
 }
 
-void gric::KeyBlockReactor::minute(KeyEvent::event_t e) const {
+void gric::KeyBlockReactor::minute(KeyEvent::event_t e,
+				   u8 v1, u8 v2) const {
      if (e != KeyEvent::Press) return;
+     //
+     // TODO
+     //
      LedTaskTime ltt(250, 250);
      LedTask t(LedTaskMode::Limit, ltt, 1);
      lbc.set(LedColor::Yellow, t);
