@@ -14,3 +14,7 @@ void gric::Hour::operator++() {
      ++value;
      if (value > 23) value = 0;
 }
+
+gric::u8 gric::Hour::get() const {
+     return value;
+}
