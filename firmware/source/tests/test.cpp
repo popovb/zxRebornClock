@@ -561,7 +561,7 @@ TEST(test_44) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
      Mcu mcu;
-     mcu.init(lc);
+     mcu.init(lc, PinMode::Float);
      Button led = mcu.get(lc);
      CHECK(led);
 }
@@ -570,7 +570,7 @@ TEST(test_45) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
      Mcu mcu;
-     mcu.init(lc);
+     mcu.init(lc, PinMode::Float);
      Button b = mcu.get(lc);
 
      Key key(b, 3, 9);
@@ -582,7 +582,7 @@ TEST(test_46) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
      Mcu mcu;
-     mcu.init(lc);
+     mcu.init(lc, PinMode::Float);
      Button b = mcu.get(lc);
 
      Key key(b, 3, 9);
@@ -621,7 +621,7 @@ TEST(test_49) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
      Mcu mcu;
-     mcu.init(lc);
+     mcu.init(lc, PinMode::Float);
      Button b = mcu.get(lc);
 
      Key key(b, 3, 9);
@@ -648,7 +648,7 @@ TEST(test_50) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
      Mcu mcu;
-     mcu.init(lc);
+     mcu.init(lc, PinMode::Float);
      Button b = mcu.get(lc);
 
      Key key(b, 3, 9);
@@ -679,7 +679,7 @@ TEST(test_51) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
      Mcu mcu;
-     mcu.init(lc);
+     mcu.init(lc, PinMode::Float);
      Button b = mcu.get(lc);
 
      Key key(b, 3, 9);
@@ -724,7 +724,7 @@ TEST(test_52) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
      Mcu mcu;
-     mcu.init(lc);
+     mcu.init(lc, PinMode::Float);
      Button b = mcu.get(lc);
 
      Key key(b, 3, 9);
@@ -765,7 +765,7 @@ TEST(test_53) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
      Mcu mcu;
-     mcu.init(lc);
+     mcu.init(lc, PinMode::Float);
      Button b = mcu.get(lc);
 
      Key key(b, 3, 9);
@@ -820,7 +820,7 @@ TEST(test_54) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
      Mcu mcu;
-     mcu.init(lc);
+     mcu.init(lc, PinMode::Float);
      Button b = mcu.get(lc);
 
      Key key(b, 3, 5);
@@ -874,7 +874,7 @@ TEST(test_55) {
      using namespace gric;
      ButtonConf lc(PortName::A, 0);
      Mcu mcu;
-     mcu.init(lc);
+     mcu.init(lc, PinMode::Float);
      Button b = mcu.get(lc);
 
      Key key(b, 3, 5);
