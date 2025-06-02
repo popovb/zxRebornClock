@@ -70,9 +70,9 @@ void gric::Configurator::init_led(const PortPinConf& v) const {
      LedConf lc(v.port, v.pin);
      mcu.init(lc);
 }
-/*
-void gric::Configurator::init_button(const PortPinConf& v) const {
+
+void gric::Configurator::
+init_button(const PortPinConf& v, PinMode::mode_t p) const {
      ButtonConf bc(v.port, v.pin);
-     mcu.init(bc);
+     mcu.init(bc, p);
 }
-*/

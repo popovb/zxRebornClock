@@ -64,13 +64,13 @@ void gric::Mcu::init(const LedConf& v) {
      init(pp, lpc);
      get(v).off();
 }
-
+/*
 void gric::Mcu::init(const ButtonConf& v) {
      PortPinConf pp(v);
      ButtonPinConf lpc;
      init(pp, lpc);
 }
-
+*/
 gric::Led gric::Mcu::get(const LedConf& lc) const {
      PortHolder poh;
      PinHolder pih;

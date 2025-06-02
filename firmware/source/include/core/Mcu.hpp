@@ -28,7 +28,7 @@ namespace gric {
 	  void init(const Pin&, const PinConf&) const;
 	  void init(const PrintConf&) const;
 	  void init(const LedConf&);
-	  void init(const ButtonConf&);
+	  void init(const ButtonConf&, PinMode::mode_t);
 	  void init(const UartConf&);
 
 	  Pin get(const PortPinConf&) const;
