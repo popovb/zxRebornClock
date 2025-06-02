@@ -48,9 +48,12 @@ init(const McuNetConfig::NetPortPinConf& v) const {
 
      case McuNet::B_HH:
      case McuNet::B_MM:
+	  init_button(v.conf, PinMode::Float);
+	  return;
+
      case McuNet::B_SS:
      case McuNet::B_F:
-	  init_button(v.conf);
+	  init_button(v.conf, PinMode::PullDown);
 	  return;
 
      default:
@@ -67,8 +70,9 @@ void gric::Configurator::init_led(const PortPinConf& v) const {
      LedConf lc(v.port, v.pin);
      mcu.init(lc);
 }
-
+/*
 void gric::Configurator::init_button(const PortPinConf& v) const {
      ButtonConf bc(v.port, v.pin);
      mcu.init(bc);
 }
+*/
