@@ -180,6 +180,7 @@ set(src
   ${src_dir}/LedTaskTime.cpp
   ${src_dir}/Hour.cpp
   ${src_dir}/Minute.cpp
+  ${src_dir}/RedLed.cpp
 )
 
 add_executable(${name}.elf
