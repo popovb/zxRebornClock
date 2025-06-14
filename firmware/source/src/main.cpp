@@ -32,7 +32,9 @@ int main() {
      ///////////////////////////////////////////////
      bl.on();
      esp.enable();
+     dl.ms(1000);
      esp.send(EspCommand::at);
+     dl.ms(1000);
      //
      // TODO working
      //
