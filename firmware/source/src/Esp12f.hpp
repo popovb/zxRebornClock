@@ -3,6 +3,7 @@
 //
 
 #include "McuNetConfig.hpp"
+#include "EspReceiveBuffer.hpp"
 #include "core/Mcu.hpp"
 
 #ifndef _GRIC_ESP_12_F_HPP_
@@ -19,6 +20,7 @@ namespace gric {
 	  void disable() const;
 
 	  void send(const char*) const;
+	  void receive(const EspReceiveBuffer&) const;
 
      private:
 	  void init_pin(const Mcu&, const McuNetConfig&);

@@ -18,6 +18,7 @@ int main() {
      cnf.init(mnc);
 
      Esp12f esp(mcu, mnc);
+     EspReceiveBuffer erb;
      RedLed rl(mcu, mnc);
      BlueLed bl(mcu, mnc);
      rl.on();
@@ -35,10 +36,7 @@ int main() {
      dl.ms(1000);
      esp.send(EspCommand::at);
      dl.ms(1000);
-     //
-     // TODO working
-     //
-     // dl.ms(3000);
+     esp.receive(erb);
      esp.disable();
      bl.off();
      ///////////////////////////////////////////////
