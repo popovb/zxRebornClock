@@ -31,6 +31,13 @@ gric::Led::Led(u32 p, u32 i):
      return;
 }
 
+gric::Led::Led():
+     port(0),
+     pin(0)
+{
+     return;
+}
+
 gric::Led::operator bool() const {
      return emit;
 }
