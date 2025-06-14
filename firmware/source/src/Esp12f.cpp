@@ -14,3 +14,12 @@ init_pin(const Mcu& m, const McuNetConfig& mnc) {
      const PortPinConf& ppc = mnc.get(McuNet::ESP_EN);
      chip_select = m.get(PortPinConf(ppc.port, ppc.pin));
 }
+
+void gric::Esp12f::
+init_uart(const Mcu& m, const McuNetConfig& mnc) {
+     // const PortPinConf& ppc = mnc.get(McuNet::ESP_EN);
+     // chip_select = m.get(PortPinConf(ppc.port, ppc.pin));
+     //
+     // TODO
+     //
+}
