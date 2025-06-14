@@ -36,6 +36,7 @@ init(const McuNetConfig::NetPortPinConf& v) const {
      case McuNet::RTC_CE:
      case McuNet::RTC_SCLK:
      case McuNet::RTC_IO:
+     case McuNet::ESP_EN:
 	  init_push_pull(v.conf);
 	  return;
 
@@ -56,12 +57,21 @@ init(const McuNetConfig::NetPortPinConf& v) const {
 	  init_button(v.conf, PinMode::PullDown);
 	  return;
 
+     case McuNet::ESP_RX:
+	  init_tx_for_esp(v.conf);
+	  return;
+
+     case McuNet::ESP_TX:
+	  init_rx_for_esp(v.conf);
+	  return;
+
      default:
 	  return;
      }
 }
 
-void gric::Configurator::init_push_pull(const PortPinConf& v) const {
+void gric::Configurator::
+init_push_pull(const PortPinConf& v) const {
      PinConf pc(PinDir::Out, PinMode::PushPull);
      mcu.init(v, pc);
 }

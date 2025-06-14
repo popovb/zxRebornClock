@@ -40,6 +40,10 @@ gric::McuNetConfig::McuNetConfig():
 	  { McuNet::B_MM,     { PortName::C, 15 } },
 	  { McuNet::B_SS,     { PortName::A,  8 } },
 	  { McuNet::B_F,      { PortName::A,  9 } },
+
+	  { McuNet::ESP_EN,   { PortName::B,  2 } },
+	  { McuNet::ESP_RX,   { PortName::A,  2 } },
+	  { McuNet::ESP_TX,   { PortName::A,  3 } },
      }
 {
      return;

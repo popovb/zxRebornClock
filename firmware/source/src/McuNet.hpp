@@ -42,6 +42,10 @@ namespace gric {
 	       B_MM     = 22,
 	       B_SS     = 23,
 	       B_F      = 24,
+
+	       ESP_EN   = 25,
+	       ESP_RX   = 26,
+	       ESP_TX   = 27,
 	  };
      };
 }
