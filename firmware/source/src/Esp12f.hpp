@@ -16,7 +16,12 @@ namespace gric {
 	  Esp12f(const Mcu&, const McuNetConfig&);
 
      private:
-	  void init(const Mcu&, const McuNetConfig&);
+	  void init_pin(const Mcu&, const McuNetConfig&);
+	  void init_uart(const Mcu&, const McuNetConfig&);
+
+     private:
+	  Pin chip_select;
+	  Uart uart;
      };
 }
 #endif // _GRIC_ESP_12_F_HPP_

@@ -183,6 +183,7 @@ set(src
   ${src_dir}/RedLed.cpp
   ${src_dir}/BlueLed.cpp
   ${src_dir}/SimpleLed.cpp
+  ${src_dir}/Esp12f.cpp
 )
 
 add_executable(${name}.elf
