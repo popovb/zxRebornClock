@@ -20,10 +20,12 @@ namespace gric {
       	  void on();
       	  void off();
 
-      private:
-     // 	  void init(const Mcu&, const McuNetConfig&);
+     private:
+      	  void init(const Mcu&,
+		    const McuNetConfig&,
+		    McuNet::net_t);
 
-     // private:
+     private:
       	  Led led;
      };
 }
