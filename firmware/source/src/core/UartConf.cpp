@@ -5,13 +5,9 @@
 #include "core/UartConf.hpp"
 
 gric::UartConf::UartConf(UartName::name_t a,
-			 u32 b,
-			 const PinTxConf& c,
-			 const PinRxConf& d):
+			 u32 b):
      name(a),
-     speed(b),
-     pin_tx(c),
-     pin_rx(d)
+     speed(b)
 {
      return;
 }

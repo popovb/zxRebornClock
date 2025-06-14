@@ -8,6 +8,8 @@
 #include "LedConf.hpp"
 #include "ButtonConf.hpp"
 #include "UartConf.hpp"
+#include "PinTxConf.hpp"
+#include "PinRxConf.hpp"
 #include "Led.hpp"
 #include "Button.hpp"
 #include "Uart.hpp"

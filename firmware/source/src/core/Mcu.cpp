@@ -27,8 +27,6 @@ void gric::Mcu::init() const {
 
 void gric::Mcu::init(const UartConf& uc) {
      if (pct.is_off(uc.name)) pct.on(uc.name);
-     init(uc.pin_tx);
-     init(uc.pin_rx);
      init(uc.name, uc.speed);
 }
 
