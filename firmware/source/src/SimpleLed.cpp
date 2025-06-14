@@ -14,9 +14,9 @@ void gric::SimpleLed::on() {
      led.on();
 }
 
-// void gric::SimpleLed::off() {
-//      led.off();
-// }
+void gric::SimpleLed::off() {
+     led.off();
+}
 
 // void gric::SimpleLed::init(const Mcu& m, const McuNetConfig& c) {
 //      const PortPinConf& ppc = c.get(McuNet::L_RED);
