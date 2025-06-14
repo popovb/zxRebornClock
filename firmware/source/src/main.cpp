@@ -3,6 +3,25 @@
 //
 
 #include "Configurator.hpp"
+#include "RedLed.hpp"
+#include "core/Mcu.hpp"
+
+int main() {
+     using namespace gric;
+     Mcu mcu;
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+
+     RedLed rl(mcu, mnc);
+     rl.on();
+     //
+     // TODO
+     //
+     rl.off();
+}
+/* work
+#include "Configurator.hpp"
 #include "McuNetConfig.hpp"
 #include "Anodes.hpp"
 #include "Cathodes.hpp"
@@ -78,6 +97,7 @@ int main() {
      }
      return 0;
 }
+*/
 /*
 int main() {
      using namespace gric;
