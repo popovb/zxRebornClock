@@ -10,9 +10,9 @@ gric::SimpleLed::SimpleLed(const Mcu& m,
      init(m, c, n);
 }
 
-// void gric::SimpleLed::on() {
-//      led.on();
-// }
+void gric::SimpleLed::on() {
+     led.on();
+}
 
 // void gric::SimpleLed::off() {
 //      led.off();
