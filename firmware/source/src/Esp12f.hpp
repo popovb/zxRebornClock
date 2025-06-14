@@ -15,6 +15,9 @@ namespace gric {
      public:
 	  Esp12f(const Mcu&, const McuNetConfig&);
 
+	  void enable() const;
+	  void disable() const;
+
      private:
 	  void init_pin(const Mcu&, const McuNetConfig&);
 	  void init_uart(const Mcu&, const McuNetConfig&);
