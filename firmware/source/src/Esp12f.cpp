@@ -11,9 +11,11 @@ gric::Esp12f::Esp12f(Mcu& m, const McuNetConfig& mnc) {
 
 void gric::Esp12f::enable() const {
      chip_select.write(true);
+     uart.enable();
 }
 
 void gric::Esp12f::disable() const {
+     uart.disable();
      chip_select.write(false);
 }
 
@@ -27,4 +29,13 @@ void gric::Esp12f::init_uart(Mcu& m) {
      UartConf uc(UartName::Uart2, 115200);
      m.init(uc);
      uart = m.get(UartName::Uart2);
+}
+
+void gric::Esp12f::send(const char* s) const {
+     char* p = (char*)s;
+     while ((*p) != 0) {
+	  uart.send(*p);
+	  while (! uart.tx_empty()) { ; }
+	  ++p;
+     }
 }
