@@ -11,7 +11,7 @@ namespace gric {
 
      public:
 	  static constexpr const int size = 32;
-	  char buffer[32];
+	  char buffer[size];
 
      public:
 	  void clean();
