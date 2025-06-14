@@ -30,6 +30,8 @@ namespace gric {
 	  void init(const LedConf&);
 	  void init(const ButtonConf&, PinMode::mode_t);
 	  void init(const UartConf&);
+	  void init(const PinTxConf&);
+	  void init(const PinRxConf&);
 
 	  Pin get(const PortPinConf&) const;
 	  Led get(const LedConf&) const;
@@ -40,8 +42,6 @@ namespace gric {
 	  void init() const;
 	  void nvic_config() const;
 	  void clock_update() const;
-	  void init(const PinTxConf&);
-	  void init(const PinRxConf&);
 	  void init(UartName::name_t, u32) const;
 
      private:

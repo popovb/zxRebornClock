@@ -86,3 +86,9 @@ init_button(const PortPinConf& v, PinMode::mode_t p) const {
      ButtonConf bc(v.port, v.pin);
      mcu.init(bc, p);
 }
+
+void gric::Configurator::
+init_tx_for_esp(const PortPinConf& v) const {
+     PinTxConf p(v.port, v.pin);
+     mcu.init(p);
+}
