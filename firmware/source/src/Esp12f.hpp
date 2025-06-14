@@ -20,7 +20,7 @@ namespace gric {
 	  void disable() const;
 
 	  void send(const char*) const;
-	  void receive(const EspReceiveBuffer&) const;
+	  void receive(EspReceiveBuffer&) const;
 
      private:
 	  void init_pin(const Mcu&, const McuNetConfig&);

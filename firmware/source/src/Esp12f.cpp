@@ -39,3 +39,14 @@ void gric::Esp12f::send(const char* s) const {
 	  ++p;
      }
 }
+
+void gric::Esp12f::
+receive(EspReceiveBuffer& erb) const {
+     erb.clean();
+     int count = 0;
+     while (uart.rx_not_empty()) {
+	  if (count == (erb.size - 1)) break;
+	  erb.buffer[count] = uart.receive();
+	  ++count;
+     }
+}

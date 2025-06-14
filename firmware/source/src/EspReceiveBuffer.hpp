@@ -12,6 +12,9 @@ namespace gric {
      public:
 	  static constexpr const int size = 32;
 	  char buffer[32];
+
+     public:
+	  void clean();
      };
 }
 #endif // _GRIC_ESP_RECEIVE_BUFFER_HPP_
