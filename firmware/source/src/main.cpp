@@ -6,6 +6,7 @@
 #include "RedLed.hpp"
 #include "BlueLed.hpp"
 #include "Esp12f.hpp"
+#include "EspCommand.hpp"
 #include "core/Mcu.hpp"
 #include "core/DelayerNop.hpp"
 
@@ -31,10 +32,11 @@ int main() {
      ///////////////////////////////////////////////
      bl.on();
      esp.enable();
+     esp.send(EspCommand::at);
      //
      // TODO working
      //
-     dl.ms(3000);
+     // dl.ms(3000);
      esp.disable();
      bl.off();
      ///////////////////////////////////////////////
