@@ -181,6 +181,7 @@ set(src
   ${src_dir}/Hour.cpp
   ${src_dir}/Minute.cpp
   ${src_dir}/RedLed.cpp
+  ${src_dir}/BlueLed.cpp
   ${src_dir}/SimpleLed.cpp
 )
 
