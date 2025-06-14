@@ -2,6 +2,7 @@
 // Copyright (c) 2025 Boris Popov <popov@whitekefir.ru>
 //
 
+#include "SimpleLed.hpp"
 #include "McuNetConfig.hpp"
 #include "core/Mcu.hpp"
 
@@ -10,19 +11,20 @@
 
 namespace gric {
 
-     class RedLed {
+     class RedLed : public SimpleLed {
 
      public:
-	  RedLed(const Mcu&, const McuNetConfig&);
+	  RedLed(const Mcu&,
+		 const McuNetConfig&);
 
-	  void on();
-	  void off();
+     // 	  void on();
+     // 	  void off();
 
-     private:
-	  void init(const Mcu&, const McuNetConfig&);
+     // private:
+     // 	  void init(const Mcu&, const McuNetConfig&);
 
-     private:
-	  Led led;
+     // private:
+     // 	  Led led;
      };
 }
 #endif // _GRIC_RED_LED_HPP_
