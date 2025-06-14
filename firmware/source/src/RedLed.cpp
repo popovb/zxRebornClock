@@ -11,3 +11,7 @@ gric::RedLed::RedLed(const Mcu& m, const McuNetConfig& c) {
 void gric::RedLed::on() {
      led.on();
 }
+
+void gric::RedLed::off() {
+     led.off();
+}
