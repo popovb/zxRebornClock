@@ -4,7 +4,9 @@
 
 #include "Configurator.hpp"
 #include "RedLed.hpp"
+#include "BlueLed.hpp"
 #include "core/Mcu.hpp"
+#include "core/DelayerNop.hpp"
 
 int main() {
      using namespace gric;
@@ -14,11 +16,26 @@ int main() {
      cnf.init(mnc);
 
      RedLed rl(mcu, mnc);
+     BlueLed bl(mcu, mnc);
      rl.on();
-     //
-     // TODO
-     //
+
+     using Delayer = DelayerNop<4'000'000>;
+     Delayer dl;
+
+     dl.ms(500);
      rl.off();
+     dl.ms(500);
+
+     ///////////////////////////////////////////////
+     bl.on();
+     //
+     // TODO working
+     //
+     dl.ms(3000);
+     bl.off();
+     ///////////////////////////////////////////////
+     
+     while (true) { ; };
 }
 /* work
 #include "Configurator.hpp"

@@ -6,16 +6,16 @@
 #include "McuNetConfig.hpp"
 #include "core/Mcu.hpp"
 
-#ifndef _GRIC_RED_LED_HPP_
-#define _GRIC_RED_LED_HPP_
+#ifndef _GRIC_BLUE_LED_HPP_
+#define _GRIC_BLUE_LED_HPP_
 
 namespace gric {
 
-     class RedLed : public SimpleLed {
+     class BlueLed : public SimpleLed {
 
      public:
-	  RedLed(const Mcu&,
-		 const McuNetConfig&);
+	  BlueLed(const Mcu&,
+		  const McuNetConfig&);
      };
 }
-#endif // _GRIC_RED_LED_HPP_
+#endif // _GRIC_BLUE_LED_HPP_
