@@ -5,6 +5,7 @@
 #include "Configurator.hpp"
 #include "RedLed.hpp"
 #include "BlueLed.hpp"
+#include "Esp12f.hpp"
 #include "core/Mcu.hpp"
 #include "core/DelayerNop.hpp"
 
@@ -15,6 +16,7 @@ int main() {
      McuNetConfig mnc;
      cnf.init(mnc);
 
+     Esp12f esp(mcu, mnc);
      RedLed rl(mcu, mnc);
      BlueLed bl(mcu, mnc);
      rl.on();
