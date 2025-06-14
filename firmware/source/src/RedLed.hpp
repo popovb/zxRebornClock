@@ -15,12 +15,15 @@ namespace gric {
      public:
 	  RedLed(const Mcu&, const McuNetConfig&);
 
-	  void on() const;
-	  void off() const;
+	  void on();
+	  void off();
 
      private:
 	  void init(const Mcu&, const McuNetConfig&);
 	  // void init(Key&, const Mcu&, const PortPinConf&);
+
+     private:
+	  Led led;
      };
 }
 #endif // _GRIC_RED_LED_HPP_

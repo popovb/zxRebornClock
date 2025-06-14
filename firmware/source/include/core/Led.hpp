@@ -12,9 +12,11 @@ namespace gric {
      class Led {
 
 	  friend class Mcu;
-	  friend class LedBlock;
 
      public:
+	  Led(u32, u32);
+	  Led();
+
 	  void on();
 	  void off();
 	  void toggle();
@@ -25,9 +27,6 @@ namespace gric {
 	  bool emit;
 	  u32 port;
 	  u32 pin;
-
-     private:
-	  Led(u32, u32);
      };
 }
 #endif // _GRIC_MCU_LED_HPP_

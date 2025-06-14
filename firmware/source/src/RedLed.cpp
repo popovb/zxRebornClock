@@ -7,3 +7,7 @@
 gric::RedLed::RedLed(const Mcu& m, const McuNetConfig& c) {
      init(m, c);
 }
+
+void gric::RedLed::on() {
+     led.on();
+}
