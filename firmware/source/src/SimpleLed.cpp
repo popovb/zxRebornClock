@@ -18,7 +18,9 @@ void gric::SimpleLed::off() {
      led.off();
 }
 
-// void gric::SimpleLed::init(const Mcu& m, const McuNetConfig& c) {
-//      const PortPinConf& ppc = c.get(McuNet::L_RED);
-//      led = m.get(LedConf(ppc.port, ppc.pin));
-// }
+void gric::SimpleLed::init(const Mcu& m,
+			   const McuNetConfig& c,
+			   McuNet::net_t v) {
+     const PortPinConf& ppc = c.get(v);
+     led = m.get(LedConf(ppc.port, ppc.pin));
+}
