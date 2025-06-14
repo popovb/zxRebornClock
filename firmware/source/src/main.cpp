@@ -34,9 +34,13 @@ int main() {
      bl.on();
      esp.enable();
      dl.ms(1000);
+     rl.on();
      esp.send(EspCommand::at);
+     rl.off();
      dl.ms(1000);
+     rl.on();
      esp.receive(erb);
+     rl.off();
      esp.disable();
      bl.off();
      ///////////////////////////////////////////////
