@@ -13,6 +13,10 @@ void gric::Esp12f::enable() const {
      chip_select.write(true);
 }
 
+void gric::Esp12f::disable() const {
+     chip_select.write(false);
+}
+
 void gric::Esp12f::
 init_pin(const Mcu& m, const McuNetConfig& mnc) {
      const PortPinConf& ppc = mnc.get(McuNet::ESP_EN);
