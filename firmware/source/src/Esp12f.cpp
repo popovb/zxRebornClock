@@ -58,7 +58,7 @@ void gric::Esp12f::
 receive(EspReceiveBuffer& erb) const {
      erb.clean();
      int count = 0;
-     int empty_count = 400;
+     int empty_count = 800;
      //while (uart.rx_not_empty()) {
      while (true) {
 	  if (empty_count == 0) break;
@@ -73,8 +73,6 @@ receive(EspReceiveBuffer& erb) const {
 	  //if (v == '\r') break;
 	  //if (v == '\0') break;
 	  erb.buffer[count] = v;
-	  printf("%x ", erb.buffer[count]);
 	  ++count;
        }
-       printf("\r\nreceive: %d\r\n", count);
 }
