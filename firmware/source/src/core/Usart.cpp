@@ -40,7 +40,7 @@ bool gric::Usart::rx_not_empty(u32) const {
 
 void gric::Usart::init(UartName::name_t n, u32 s) const {
      UsartHolder uh;
-     USART_InitTypeDef u;
+     USART_InitTypeDef u = { 0, };
      u.USART_BaudRate = s;
      u.USART_WordLength = USART_WordLength_8b;
      u.USART_StopBits = USART_StopBits_1;
@@ -59,11 +59,13 @@ void gric::Usart::enable(u32 v) const {
 }
 
 void gric::Usart::send(u32 u, u8 v) const {
-     USART_SendData((USART_TypeDef*)u, v);
+     u16 vv = v;
+     USART_SendData((USART_TypeDef*)u, vv);
 }
 
 gric::u8 gric::Usart::receive(u32 u) const {
-     return USART_ReceiveData((USART_TypeDef*)u);
+     u16 vv = USART_ReceiveData((USART_TypeDef*)u);
+     return vv & 0x00FF;
 }
 
 bool gric::Usart::tx_empty(u32 u) const {
