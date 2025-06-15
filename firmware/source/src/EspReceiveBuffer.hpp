@@ -10,7 +10,7 @@ namespace gric {
      class EspReceiveBuffer {
 
      public:
-	  static constexpr const int size = 64;
+	  static constexpr const int size = 128;
 	  char buffer[size];
 
      public:

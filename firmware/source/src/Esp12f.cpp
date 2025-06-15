@@ -43,22 +43,23 @@ void gric::Esp12f::init_uart(Mcu& m) {
 
 void gric::Esp12f::send(const char* s) const {
      char* p = (char*)s;
-     int c = 0;
+     //   int c = 0;
      while ((*p) != 0) {
 	  uart.send(*p);
 	  while (! uart.tx_empty()) { ; }
 	  //while (! uart.rx_not_empty()) { ; }
 	  ++p;
-	  ++c;
+//	  ++c;
      }
-     printf("send: %d\r\n", c);
+     while (! uart.tx_empty()) { ; }
+//     printf("send: %d\r\n", c);
 }
 
 void gric::Esp12f::
 receive(EspReceiveBuffer& erb) const {
      erb.clean();
      int count = 0;
-     int empty_count = 800;
+     int empty_count = 1600;
      //while (uart.rx_not_empty()) {
      while (true) {
 	  if (empty_count == 0) break;

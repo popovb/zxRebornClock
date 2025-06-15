@@ -40,15 +40,17 @@ int main() {
 	  bl.on();
 	  //dl.ms(1000);
 	  esp.on();
-	  dl.ms(1000);
+	  dl.ms(300);
 	  esp.uart_enable();
 
 	  // esp.send(EspCommand::echo_off);
-	  // dl.ms(1000);
+	  // dl.ms(100);
+
+	  esp.send(EspCommand::at);
+	  esp.receive(erb);
+	  printf("%s\r\n", erb.buffer);
 
 	  esp.send(EspCommand::uart_def);
-	  //dl.ms(500);
-	  
 	  esp.receive(erb);
 	  printf("%s\r\n", erb.buffer);
 	  
