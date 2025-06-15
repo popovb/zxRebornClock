@@ -47,6 +47,7 @@ void gric::Esp12f::send(const char* s) const {
      while ((*p) != 0) {
 	  uart.send(*p);
 	  while (! uart.tx_empty()) { ; }
+	  //while (! uart.rx_not_empty()) { ; }
 	  ++p;
 	  ++c;
      }
@@ -57,12 +58,23 @@ void gric::Esp12f::
 receive(EspReceiveBuffer& erb) const {
      erb.clean();
      int count = 0;
+     int empty_count = 400;
      //while (uart.rx_not_empty()) {
-       while (true) {
+     while (true) {
+	  if (empty_count == 0) break;
+	  if (uart.rx_empty()) {
+	       --empty_count;
+	       continue;
+	  }
 	  if (count == (erb.size - 1)) break;
-	  erb.buffer[count] = uart.receive();
-	  //printf("%d ", erb.buffer[count]);
+
+	  
+	  u8 v = uart.receive();
+	  //if (v == '\r') break;
+	  //if (v == '\0') break;
+	  erb.buffer[count] = v;
+	  printf("%x ", erb.buffer[count]);
 	  ++count;
-     }
-       //printf("receive %d\r\n", count);
+       }
+       printf("\r\nreceive: %d\r\n", count);
 }

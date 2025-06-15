@@ -77,4 +77,9 @@ bool gric::Usart::rx_not_empty(u32 u) const {
      return (USART_GetFlagStatus((USART_TypeDef*)u,
 				 USART_FLAG_RXNE) == SET);
 }
+
+bool gric::Usart::rx_empty(u32 u) const {
+     return (USART_GetFlagStatus((USART_TypeDef*)u,
+				 USART_FLAG_RXNE) == RESET);
+}
 #endif

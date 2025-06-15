@@ -38,13 +38,21 @@ int main() {
      //for (int i = 0; i < 3; i++) {
 	  ///////////////////////////////////////////////
 	  bl.on();
-	  esp.uart_enable();
-	  dl.ms(1000);
+	  //dl.ms(1000);
 	  esp.on();
-	  dl.ms(3000);
+	  dl.ms(1000);
+	  esp.uart_enable();
 
+	  esp.send(EspCommand::echo_off);
+	  dl.ms(1000);
+
+	  esp.send(EspCommand::uart_def);
+	  //dl.ms(500);
+	  
 	  esp.receive(erb);
+	  printf("\r\nbegin\r\n");
 	  printf("%s\r\n", erb.buffer);
+	  printf("end\r\n");
 	  
 	  // esp.enable();
 	  // dl.ms(5000);

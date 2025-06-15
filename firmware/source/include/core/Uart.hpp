@@ -24,6 +24,7 @@ namespace gric {
 
 	  bool tx_empty() const;
 	  bool rx_not_empty() const;
+	  bool rx_empty() const;
 
      private:
 	  u32 usart;
