@@ -35,7 +35,7 @@ int main() {
      rl.off();
      dl.ms(500);
 
-     //for (int i = 0; i < 3; i++) {
+     for (int i = 0; i < 3; i++) {
 	  ///////////////////////////////////////////////
 	  bl.on();
 	  //dl.ms(1000);
@@ -73,12 +73,12 @@ int main() {
 
 	  // rl.off();
 	  // esp.disable();
-	  esp.off();
 	  esp.uart_disable();
+	  esp.off();
 	  bl.off();
-	  // dl.ms(1000);
+	  dl.ms(1000);
 	  ///////////////////////////////////////////////
-	  //}
+	  }
      while (true) { ; };
 }
 /* work
