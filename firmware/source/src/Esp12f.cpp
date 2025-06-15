@@ -9,14 +9,22 @@ gric::Esp12f::Esp12f(Mcu& m, const McuNetConfig& mnc) {
      init_uart(m);
 }
 
-void gric::Esp12f::enable() const {
+void gric::Esp12f::on() const {
      chip_select.write(true);
+}
+
+void gric::Esp12f::off() const {
+     chip_select.write(false);
+}
+
+void gric::Esp12f::uart_enable() const {
+     //chip_select.write(true);
      uart.enable();
 }
 
-void gric::Esp12f::disable() const {
+void gric::Esp12f::uart_disable() const {
      uart.disable();
-     chip_select.write(false);
+     //chip_select.write(false);
 }
 
 void gric::Esp12f::
@@ -31,22 +39,30 @@ void gric::Esp12f::init_uart(Mcu& m) {
      uart = m.get(UartName::Uart2);
 }
 
+#include "debug.h"
+
 void gric::Esp12f::send(const char* s) const {
      char* p = (char*)s;
+     int c = 0;
      while ((*p) != 0) {
 	  uart.send(*p);
 	  while (! uart.tx_empty()) { ; }
 	  ++p;
+	  ++c;
      }
+     printf("send: %d\r\n", c);
 }
 
 void gric::Esp12f::
 receive(EspReceiveBuffer& erb) const {
      erb.clean();
      int count = 0;
-     while (uart.rx_not_empty()) {
+     //while (uart.rx_not_empty()) {
+       while (true) {
 	  if (count == (erb.size - 1)) break;
 	  erb.buffer[count] = uart.receive();
+	  //printf("%d ", erb.buffer[count]);
 	  ++count;
      }
+       //printf("receive %d\r\n", count);
 }

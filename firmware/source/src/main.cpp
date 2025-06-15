@@ -9,10 +9,15 @@
 #include "EspCommand.hpp"
 #include "core/Mcu.hpp"
 #include "core/DelayerNop.hpp"
+#include "debug.h"
 
 int main() {
      using namespace gric;
      Mcu mcu;
+
+     PrintConf pc(115200);
+     mcu.init(pc);
+
      Configurator cnf(mcu);
      McuNetConfig mnc;
      cnf.init(mnc);
@@ -30,24 +35,42 @@ int main() {
      rl.off();
      dl.ms(500);
 
-     for (int i = 0; i < 3; i++) {
-     ///////////////////////////////////////////////
-     bl.on();
-     esp.enable();
-     dl.ms(1000);
-     rl.on();
-     esp.send(EspCommand::at);
-     rl.off();
-     dl.ms(1000);
-     rl.on();
-     esp.receive(erb);
-     rl.off();
-     esp.disable();
-     bl.off();
-     dl.ms(1000);
-     ///////////////////////////////////////////////
-     }
-     
+     //for (int i = 0; i < 3; i++) {
+	  ///////////////////////////////////////////////
+	  bl.on();
+	  esp.uart_enable();
+	  dl.ms(1000);
+	  esp.on();
+	  dl.ms(3000);
+
+	  esp.receive(erb);
+	  printf("%s\r\n", erb.buffer);
+	  
+	  // esp.enable();
+	  // dl.ms(5000);
+	  // rl.on();
+
+	  // //esp.receive(erb);
+
+	  // //printf("%s\r\n", erb.buffer);
+
+	  
+	  // esp.send(EspCommand::at);
+	  // rl.off();
+	  // dl.ms(3000);
+	  // rl.on();
+	  // esp.receive(erb);
+
+	  // printf("%s\r\n", erb.buffer);
+
+	  // rl.off();
+	  // esp.disable();
+	  esp.off();
+	  esp.uart_disable();
+	  bl.off();
+	  // dl.ms(1000);
+	  ///////////////////////////////////////////////
+	  //}
      while (true) { ; };
 }
 /* work

@@ -16,8 +16,11 @@ namespace gric {
      public:
 	  Esp12f(Mcu&, const McuNetConfig&);
 
-	  void enable() const;
-	  void disable() const;
+	  void uart_enable() const;
+	  void uart_disable() const;
+
+	  void on() const;
+	  void off() const;
 
 	  void send(const char*) const;
 	  void receive(EspReceiveBuffer&) const;
