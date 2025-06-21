@@ -21,6 +21,7 @@ namespace gric {
 	  u8 receive(u32) const;
 
 	  bool tx_empty(u32) const;
+	  bool tx_not_empty(u32) const;
 	  bool rx_not_empty(u32) const;
 	  bool rx_empty(u32) const;
      };
