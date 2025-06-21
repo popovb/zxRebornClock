@@ -55,6 +55,7 @@ int main() {
      ///
 
      ///
+     erb.reset();
      esp.send(EspCommand::time);
      while (! erb.completed()) {
 	  if (esp.has_data()) esp.receive_byte(erb);
