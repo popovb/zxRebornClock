@@ -41,6 +41,7 @@ int main() {
      dl.ms(300);
      esp.uart_enable();
 
+     ///
      esp.send(EspCommand::at);
      while (! erb.completed()) {
 	  if (esp.has_data()) esp.receive_byte(erb);
@@ -51,6 +52,20 @@ int main() {
      if (erb.ok()) {
 	  printf("GOOD ANSWER!\r\n");
      }
+     ///
+
+     ///
+     esp.send(EspCommand::time);
+     while (! erb.completed()) {
+	  if (esp.has_data()) esp.receive_byte(erb);
+     }
+
+     printf("%s\r\n", erb.get());
+
+     if (erb.ok()) {
+	  printf("GOOD ANSWER!\r\n");
+     }
+     ///
 
      esp.uart_disable();
      esp.off();
