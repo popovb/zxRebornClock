@@ -24,3 +24,7 @@ void gric::EspReceiveBuffer::put(char v) {
 bool gric::EspReceiveBuffer::completed() const {
      return (cr == 3);
 }
+
+const char* gric::EspReceiveBuffer::get() const {
+     return buffer;
+}
