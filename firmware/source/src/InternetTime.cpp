@@ -40,6 +40,10 @@ gric::u8 gric::InternetTime::hour() const {
      return h;
 }
 
+gric::u8 gric::InternetTime::minute() const {
+     return m;
+}
+
 gric::u8 gric::InternetTime::second() const {
      return s;
 }
