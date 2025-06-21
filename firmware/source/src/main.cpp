@@ -66,6 +66,7 @@ int main() {
 
      Esp12f esp(mcu, mnc);
      InternetTime it(esp);
+     it.test();
 
      while (true) {
 	  tm = rtc.pull();

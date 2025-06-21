@@ -14,6 +14,8 @@ namespace gric {
      public:
 	  InternetTime(const Esp12f&);
 
+	  void test();
+
      private:
 	  const Esp12f& esp;
      };
