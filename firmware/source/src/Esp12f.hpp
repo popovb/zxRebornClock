@@ -28,6 +28,7 @@ namespace gric {
      private:
 	  void init_pin(const Mcu&, const McuNetConfig&);
 	  void init_uart(Mcu&);
+	  void wait_sending() const;
 
      private:
 	  Pin chip_select;
