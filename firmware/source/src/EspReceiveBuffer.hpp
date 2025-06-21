@@ -13,6 +13,8 @@ namespace gric {
 	  static constexpr const int size = 128;
 	  char buffer[size];
 
+	  void put(char);
+
      public:
 	  void clean();
      };

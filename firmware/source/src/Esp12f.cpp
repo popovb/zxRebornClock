@@ -55,6 +55,12 @@ void gric::Esp12f::wait_sending() const {
 }
 
 void gric::Esp12f::
+receive_one(EspReceiveBuffer& erb) const {
+     if (uart.rx_empty()) return;
+     erb.put(uart.rx_empty());
+}
+
+void gric::Esp12f::
 receive(EspReceiveBuffer& erb) const {
      erb.clean();
      int count = 0;
