@@ -23,6 +23,7 @@ namespace gric {
 	  u8 receive() const;
 
 	  bool tx_empty() const;
+	  bool tx_not_empty() const;
 	  bool rx_not_empty() const;
 	  bool rx_empty() const;
 

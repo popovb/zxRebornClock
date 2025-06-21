@@ -50,7 +50,9 @@ void gric::Esp12f::send(const char* s) const {
      }
 }
 
-//while (! uart.tx_empty()) { ; }
+void gric::Esp12f::wait_sending() const {
+     while (uart.tx_not_empty()) { ; }
+}
 
 void gric::Esp12f::
 receive(EspReceiveBuffer& erb) const {
