@@ -5,6 +5,7 @@
 #include "Rtc.hpp"
 #include "ds1302/Hour.hpp"
 #include "ds1302/Minutes.hpp"
+#include "ds1302/Seconds.hpp"
 
 gric::Rtc::Rtc(const Mcu& mcu, const McuNetConfig& cnf):
      ce(mcu, cnf),
@@ -69,6 +70,17 @@ void gric::Rtc::set_minute(u8 v) const {
 
      using namespace ds1302;
      Command m(Register::Minutes,
+	       Target::Clock,
+	       Direction::Write);
+
+     transfer.write(m, mm);
+}
+
+void gric::Rtc::set_second(u8 v) const {
+     ds1302::Seconds mm(v);
+
+     using namespace ds1302;
+     Command m(Register::Seconds,
 	       Target::Clock,
 	       Direction::Write);
 
