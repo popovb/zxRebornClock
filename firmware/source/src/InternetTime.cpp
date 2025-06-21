@@ -58,6 +58,9 @@ void gric::InternetTime::poll() {
      case Enable:
 	  return poll_enable();
 
+     case EspOn:
+	  return poll_esp_on();
+
      default:
 	  return;
      }
