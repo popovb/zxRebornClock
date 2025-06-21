@@ -73,6 +73,11 @@ bool gric::Usart::tx_empty(u32 u) const {
 				 USART_FLAG_TXE) == SET);
 }
 
+bool gric::Usart::tx_not_empty(u32 u) const {
+     return (USART_GetFlagStatus((USART_TypeDef*)u,
+				 USART_FLAG_TXE) == RESET);
+}
+
 bool gric::Usart::rx_not_empty(u32 u) const {
      return (USART_GetFlagStatus((USART_TypeDef*)u,
 				 USART_FLAG_RXNE) == SET);
