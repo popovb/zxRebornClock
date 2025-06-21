@@ -54,6 +54,10 @@ gric::i8 gric::Time::get_hour() const {
 gric::i8 gric::Time::get_minute() const {
      return minute;
 }
+
+gric::i8 gric::Time::get_second() const {
+     return second;
+}
 /////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////
