@@ -28,3 +28,10 @@ bool gric::EspReceiveBuffer::completed() const {
 const char* gric::EspReceiveBuffer::get() const {
      return buffer;
 }
+
+bool gric::EspReceiveBuffer::ok() const {
+     if (ndx < 8) return false;
+     if (buffer[ndx - 2] != 'K') return false;
+     if (buffer[ndx - 3] != 'O') return false;
+     return true;
+}
