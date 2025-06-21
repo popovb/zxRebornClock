@@ -14,6 +14,10 @@ namespace gric {
      public:
 	  SecondsCounter(u16);
 
+	  void operator++();
+	  operator bool() const;
+	  void reset();
+
      private:
 	  const u16 max;
      };

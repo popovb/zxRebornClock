@@ -17,6 +17,7 @@ namespace gric {
 	  enum state_t {
 	       Disable,
 	       Enable,
+	       EspOn,
 	  };
 
      public:

@@ -62,3 +62,11 @@ void gric::InternetTime::poll() {
 	  return;
      }
 }
+
+void gric::InternetTime::poll_enable() {
+     ++sc;
+     if (! sc) return;
+     sc.reset();
+     esp.on();
+     state = EspOn;
+}
