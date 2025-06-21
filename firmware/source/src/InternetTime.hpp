@@ -35,6 +35,7 @@ namespace gric {
 	  const Esp12f& esp;
 	  state_t state;
 	  EspReceiveBuffer erb;
+	  bool new_time;
 
 	  using Delayer = DelayerNop<4'000'000>;
 	  Delayer dl;
