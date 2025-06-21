@@ -22,6 +22,12 @@ namespace gric {
 	  InternetTime(const Esp12f&);
 
 	  void test();
+	  void poll();
+	  bool has_new_time() const;
+
+	  u8 hour() const;
+	  u8 minute() const;
+	  u8 second() const;
 
      private:
 	  const Esp12f& esp;

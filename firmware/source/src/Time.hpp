@@ -18,6 +18,7 @@ namespace gric {
      public:
 	  Time();
 	  Time(u8, u8);
+	  Time(u8, u8, u8);
 
 	  void fill(u8[4]) const;
 	  operator bool() const;

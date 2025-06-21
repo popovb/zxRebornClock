@@ -69,6 +69,14 @@ int main() {
      it.test();
 
      while (true) {
+	  it.poll();
+	  if (it.has_new_time()) {
+	       Time tn(it.hour(),
+		       it.minute(),
+		       it.second());
+	       rtc.set(tn);
+	  }
+
 	  tm = rtc.pull();
 	  tc.put(tm);
 	  if (tc)
