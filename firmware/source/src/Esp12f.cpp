@@ -59,7 +59,6 @@ receive(EspReceiveBuffer& erb) const {
      erb.clean();
      int count = 0;
      int empty_count = 1600;
-     //while (uart.rx_not_empty()) {
      while (true) {
 	  if (empty_count == 0) break;
 	  if (uart.rx_empty()) {
@@ -67,11 +66,7 @@ receive(EspReceiveBuffer& erb) const {
 	       continue;
 	  }
 	  if (count == (erb.size - 1)) break;
-
-	  
 	  u8 v = uart.receive();
-	  //if (v == '\r') break;
-	  //if (v == '\0') break;
 	  erb.buffer[count] = v;
 	  ++count;
        }

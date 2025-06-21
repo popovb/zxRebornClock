@@ -24,6 +24,7 @@ namespace gric {
 
 	  void send(const char*) const;
 	  void receive(EspReceiveBuffer&) const;
+	  void receive_one(EspReceiveBuffer&) const;
 
      private:
 	  void init_pin(const Mcu&, const McuNetConfig&);

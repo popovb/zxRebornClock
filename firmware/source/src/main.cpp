@@ -35,6 +35,61 @@ int main() {
      rl.off();
      dl.ms(500);
 
+     ///////////////////////////////////////////////
+     bl.on();
+     esp.on();
+     dl.ms(300);
+     esp.uart_enable();
+
+     esp.send(EspCommand::at);
+     dl.ms(20);
+     esp.receive_one(erb);
+     dl.ms(20);
+     esp.receive_one(erb);
+     dl.ms(20);
+     esp.receive_one(erb);
+     dl.ms(20);
+     esp.receive_one(erb);
+
+     printf("_%s_", erb.buffer);
+
+     // esp.send(EspCommand::uart_def);
+     // esp.receive(erb);
+     // printf("%s\r\n", erb.buffer);
+
+     esp.uart_disable();
+     esp.off();
+     bl.off();
+     dl.ms(1000);
+     ///////////////////////////////////////////////
+
+     while (true) { ; };
+}
+/*
+int main() {
+     using namespace gric;
+     Mcu mcu;
+
+     PrintConf pc(115200);
+     mcu.init(pc);
+
+     Configurator cnf(mcu);
+     McuNetConfig mnc;
+     cnf.init(mnc);
+
+     Esp12f esp(mcu, mnc);
+     EspReceiveBuffer erb;
+     RedLed rl(mcu, mnc);
+     BlueLed bl(mcu, mnc);
+     rl.on();
+
+     using Delayer = DelayerNop<4'000'000>;
+     Delayer dl;
+
+     dl.ms(500);
+     rl.off();
+     dl.ms(500);
+
      for (int i = 0; i < 3; i++) {
 	  ///////////////////////////////////////////////
 	  bl.on();
@@ -58,7 +113,7 @@ int main() {
 	  }
      while (true) { ; };
 }
-/* work
+// work
 #include "Configurator.hpp"
 #include "McuNetConfig.hpp"
 #include "Anodes.hpp"
