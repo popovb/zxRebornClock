@@ -29,6 +29,7 @@ namespace gric {
      private:
 	  i8 hour;
 	  i8 minute;
+	  i8 second;
      };
      ///////////////////////////////////////////////////////////
 

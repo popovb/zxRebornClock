@@ -74,7 +74,7 @@ int main() {
 	       Time tn(it.hour(),
 		       it.minute(),
 		       it.second());
-	       rtc.set(tn);
+	       rtc.set_w_second(tn);
 	  }
 
 	  tm = rtc.pull();

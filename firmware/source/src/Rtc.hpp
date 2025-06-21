@@ -26,6 +26,7 @@ namespace gric {
 	  Time pull() const;
 
 	  void set(const Time&) const;
+	  void set_w_second(const Time&) const;
 	  void set(const Hour&) const;
 	  void set(const Minute&) const;
 

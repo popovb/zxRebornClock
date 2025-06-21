@@ -8,21 +8,33 @@
 /////////////////////////////////////////////////////////////////
 gric::Time::Time():
      hour(-1),
-     minute(-1)
+     minute(-1),
+     second(-1)
 {
      return;
 }
 
 gric::Time::Time(u8 h, u8 m):
      hour(h),
-     minute(m)
+     minute(m),
+     second(0)
+{
+     return;
+}
+
+gric::Time::Time(u8 h, u8 m, u8 s):
+     hour(h),
+     minute(m),
+     second(s)
 {
      return;
 }
 
 gric::Time::operator bool() const {
+     if (second < 0) return false;
      if (minute < 0) return false;
      if (hour < 0) return false;
+     if (second > 59) return false;
      if (minute > 59) return false;
      if (hour > 23) return false;
      return true;
