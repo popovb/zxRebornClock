@@ -14,16 +14,15 @@ namespace gric {
      public:
 	  EspReceiveBuffer();
 
-	  static constexpr const int size = 128;
-	  char buffer[size];
-
 	  void put(char);
 	  bool completed() const;
+	  void reset();
 
-     public:
-	  void clean();
+	  const char* get() const;
 
      private:
+	  static constexpr const int size = 128;
+	  char buffer[size];
 	  u8 ndx;
 	  u8 cr;
      };

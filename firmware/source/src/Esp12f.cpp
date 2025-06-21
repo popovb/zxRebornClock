@@ -18,13 +18,11 @@ void gric::Esp12f::off() const {
 }
 
 void gric::Esp12f::uart_enable() const {
-     //chip_select.write(true);
      uart.enable();
 }
 
 void gric::Esp12f::uart_disable() const {
      uart.disable();
-     //chip_select.write(false);
 }
 
 void gric::Esp12f::
@@ -38,8 +36,6 @@ void gric::Esp12f::init_uart(Mcu& m) {
      m.init(uc);
      uart = m.get(UartName::Uart2);
 }
-
-#include "debug.h"
 
 void gric::Esp12f::send(const char* s) const {
      char* p = (char*)s;
@@ -60,13 +56,10 @@ bool gric::Esp12f::has_data() const {
 
 void gric::Esp12f::
 receive_one(EspReceiveBuffer& erb) const {
-     // if (! uart.rx_not_empty()) return;
      u8 v = uart.receive();
-     // printf("%x ", v);
-     //if (uart.rx_empty()) return;
      erb.put(v);
 }
-
+/*
 void gric::Esp12f::
 receive(EspReceiveBuffer& erb) const {
      erb.clean();
@@ -84,3 +77,4 @@ receive(EspReceiveBuffer& erb) const {
 	  ++count;
        }
 }
+*/
