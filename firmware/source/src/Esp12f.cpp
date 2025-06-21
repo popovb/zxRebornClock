@@ -54,10 +54,17 @@ void gric::Esp12f::wait_sending() const {
      while (uart.tx_not_empty()) { ; }
 }
 
+bool gric::Esp12f::has_data() const {
+     return uart.rx_not_empty();
+}
+
 void gric::Esp12f::
 receive_one(EspReceiveBuffer& erb) const {
-     if (uart.rx_empty()) return;
-     erb.put(uart.rx_empty());
+     // if (! uart.rx_not_empty()) return;
+     u8 v = uart.receive();
+     // printf("%x ", v);
+     //if (uart.rx_empty()) return;
+     erb.put(v);
 }
 
 void gric::Esp12f::

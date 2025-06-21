@@ -42,16 +42,34 @@ int main() {
      esp.uart_enable();
 
      esp.send(EspCommand::at);
-     dl.ms(20);
-     esp.receive_one(erb);
-     dl.ms(20);
-     esp.receive_one(erb);
-     dl.ms(20);
-     esp.receive_one(erb);
-     dl.ms(20);
-     esp.receive_one(erb);
+     dl.ms(1);
 
-     printf("_%s_", erb.buffer);
+     while (! erb.completed()) {
+	  if (esp.has_data()) {
+	       esp.receive_one(erb);
+	       dl.ms(1);
+	  }
+     }
+     
+     /*
+     for (int i = 0; i < 10000000; i++) {
+	  //dl.ms(200);
+	  esp.receive_one(erb);
+	  //printf("%s\r\n", erb.buffer);
+     }
+     */
+     // dl.ms(80);
+     // esp.receive_one(erb);
+     // dl.ms(80);
+     // esp.receive_one(erb);
+     // dl.ms(80);
+     // esp.receive_one(erb);
+     // dl.ms(80);
+     // esp.receive_one(erb);
+
+     printf("\r\n***\r\n");
+     printf("%s\r\n", erb.buffer);
+     //printf("_%s_", erb.buffer);
 
      // esp.send(EspCommand::uart_def);
      // esp.receive(erb);
@@ -65,6 +83,7 @@ int main() {
 
      while (true) { ; };
 }
+
 /*
 int main() {
      using namespace gric;

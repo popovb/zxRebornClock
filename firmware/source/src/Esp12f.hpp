@@ -26,6 +26,8 @@ namespace gric {
 	  void receive(EspReceiveBuffer&) const;
 	  void receive_one(EspReceiveBuffer&) const;
 
+	  bool has_data() const;
+
      private:
 	  void init_pin(const Mcu&, const McuNetConfig&);
 	  void init_uart(Mcu&);
