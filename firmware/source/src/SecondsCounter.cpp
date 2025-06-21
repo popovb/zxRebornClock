@@ -13,3 +13,7 @@ gric::SecondsCounter::SecondsCounter(u16 v):
 void gric::SecondsCounter::reset() {
      curr = 0;
 }
+
+void gric::SecondsCounter::operator++() {
+     ++curr;
+}
