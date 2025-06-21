@@ -25,6 +25,7 @@ namespace gric {
 
 	  i8 get_hour() const;
 	  i8 get_minute() const;
+	  i8 get_second() const;
 
      private:
 	  i8 hour;

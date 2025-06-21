@@ -39,6 +39,12 @@ void gric::Rtc::set(const Time& v) const {
      set_minute(v.get_minute());
 }
 
+void gric::Rtc::set_w_second(const Time& v) const {
+     set_hour(v.get_hour());
+     set_minute(v.get_minute());
+     set_second(v.get_second());
+}
+
 void gric::Rtc::set(const Hour& h) const {
      set_hour(h.get());
 }
