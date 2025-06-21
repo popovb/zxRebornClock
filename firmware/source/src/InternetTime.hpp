@@ -13,6 +13,9 @@ namespace gric {
 
      public:
 	  InternetTime(const Esp12f&);
+
+     private:
+	  const Esp12f& esp;
      };
 }
 #endif // _GRIC_INTERNET_TIME_HPP_

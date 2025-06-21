@@ -185,6 +185,7 @@ set(src
   ${src_dir}/SimpleLed.cpp
   ${src_dir}/Esp12f.cpp
   ${src_dir}/EspReceiveBuffer.cpp
+  ${src_dir}/InternetTime.cpp
 )
 
 add_executable(${name}.elf
