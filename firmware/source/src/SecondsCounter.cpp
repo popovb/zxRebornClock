@@ -7,5 +7,9 @@
 gric::SecondsCounter::SecondsCounter(u16 v):
      max(v)
 {
-     return;
+     reset();
+}
+
+void gric::SecondsCounter::reset() {
+     curr = 0;
 }

@@ -20,6 +20,7 @@ namespace gric {
 
      private:
 	  const u16 max;
+	  u16 curr;
      };
 }
 #endif // _GRIC_SECONDS_COUNTER_HPP_
