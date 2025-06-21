@@ -55,7 +55,7 @@ bool gric::Esp12f::has_data() const {
 }
 
 void gric::Esp12f::
-receive_one(EspReceiveBuffer& erb) const {
+receive_byte(EspReceiveBuffer& erb) const {
      u8 v = uart.receive();
      erb.put(v);
 }

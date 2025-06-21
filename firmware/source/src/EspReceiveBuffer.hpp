@@ -15,7 +15,10 @@ namespace gric {
 	  EspReceiveBuffer();
 
 	  void put(char);
+
 	  bool completed() const;
+	  bool ok() const;
+
 	  void reset();
 
 	  const char* get() const;
