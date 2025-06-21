@@ -40,6 +40,10 @@ namespace gric {
 
 	  constexpr static u8 tryed = 100;
 	  SecondsCounter sc;
+
+	  u8 h;
+	  u8 m;
+	  u8 s;
      };
 }
 #endif // _GRIC_INTERNET_TIME_HPP_

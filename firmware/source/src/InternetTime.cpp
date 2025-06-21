@@ -35,3 +35,7 @@ void gric::InternetTime::test() {
 
      if (erb.ok()) state = Enable;
 }
+
+gric::u8 gric::InternetTime::hour() const {
+     return h;
+}
