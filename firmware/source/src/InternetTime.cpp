@@ -33,6 +33,8 @@ void gric::InternetTime::test() {
 	  }
      }
 
+     esp.uart_disable();
+     esp.off();
      if (erb.ok()) state = Enable;
 }
 
