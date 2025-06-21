@@ -3,6 +3,7 @@
 //
 
 #include "Esp12f.hpp"
+#include "SecondsCounter.hpp"
 #include "core/DelayerNop.hpp"
 
 #ifndef _GRIC_INTERNET_TIME_HPP_
@@ -38,6 +39,7 @@ namespace gric {
 	  Delayer dl;
 
 	  constexpr static u8 tryed = 100;
+	  SecondsCounter sc;
      };
 }
 #endif // _GRIC_INTERNET_TIME_HPP_

@@ -7,7 +7,8 @@
 
 gric::InternetTime::InternetTime(const Esp12f& v):
      esp(v),
-     state(Disable)
+     state(Disable),
+     sc(3600)
 {
      return;
 }
