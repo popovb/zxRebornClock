@@ -17,3 +17,7 @@ void gric::SecondsCounter::reset() {
 void gric::SecondsCounter::operator++() {
      ++curr;
 }
+
+gric::SecondsCounter::operator bool() const {
+     return (curr == max);
+}
