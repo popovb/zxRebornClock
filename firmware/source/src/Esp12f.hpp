@@ -23,9 +23,7 @@ namespace gric {
 	  void off() const;
 
 	  void send(const char*) const;
-	  void receive(EspReceiveBuffer&) const;
 	  void receive_byte(EspReceiveBuffer&) const;
-
 	  bool has_data() const;
 
      private:

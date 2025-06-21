@@ -59,22 +59,3 @@ receive_byte(EspReceiveBuffer& erb) const {
      u8 v = uart.receive();
      erb.put(v);
 }
-/*
-void gric::Esp12f::
-receive(EspReceiveBuffer& erb) const {
-     erb.clean();
-     int count = 0;
-     int empty_count = 1600;
-     while (true) {
-	  if (empty_count == 0) break;
-	  if (uart.rx_empty()) {
-	       --empty_count;
-	       continue;
-	  }
-	  if (count == (erb.size - 1)) break;
-	  u8 v = uart.receive();
-	  erb.buffer[count] = v;
-	  ++count;
-       }
-}
-*/
