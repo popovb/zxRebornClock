@@ -43,16 +43,12 @@ void gric::Esp12f::init_uart(Mcu& m) {
 
 void gric::Esp12f::send(const char* s) const {
      char* p = (char*)s;
-     //   int c = 0;
      while ((*p) != 0) {
 	  uart.send(*p);
 	  while (! uart.tx_empty()) { ; }
-	  //while (! uart.rx_not_empty()) { ; }
 	  ++p;
-//	  ++c;
      }
      while (! uart.tx_empty()) { ; }
-//     printf("send: %d\r\n", c);
 }
 
 void gric::Esp12f::

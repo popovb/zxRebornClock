@@ -38,13 +38,9 @@ int main() {
      for (int i = 0; i < 3; i++) {
 	  ///////////////////////////////////////////////
 	  bl.on();
-	  //dl.ms(1000);
 	  esp.on();
 	  dl.ms(300);
 	  esp.uart_enable();
-
-	  // esp.send(EspCommand::echo_off);
-	  // dl.ms(100);
 
 	  esp.send(EspCommand::at);
 	  esp.receive(erb);
@@ -53,26 +49,7 @@ int main() {
 	  esp.send(EspCommand::uart_def);
 	  esp.receive(erb);
 	  printf("%s\r\n", erb.buffer);
-	  
-	  // esp.enable();
-	  // dl.ms(5000);
-	  // rl.on();
 
-	  // //esp.receive(erb);
-
-	  // //printf("%s\r\n", erb.buffer);
-
-	  
-	  // esp.send(EspCommand::at);
-	  // rl.off();
-	  // dl.ms(3000);
-	  // rl.on();
-	  // esp.receive(erb);
-
-	  // printf("%s\r\n", erb.buffer);
-
-	  // rl.off();
-	  // esp.disable();
 	  esp.uart_disable();
 	  esp.off();
 	  bl.off();
