@@ -25,6 +25,7 @@ namespace gric {
 
      private:
 	  u8 ndx;
+	  u8 cr;
      };
 }
 #endif // _GRIC_ESP_RECEIVE_BUFFER_HPP_
