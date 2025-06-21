@@ -47,3 +47,16 @@ gric::u8 gric::InternetTime::minute() const {
 gric::u8 gric::InternetTime::second() const {
      return s;
 }
+
+void gric::InternetTime::poll() {
+     switch (state) {
+     case Disable:
+	  return;
+
+     case Enable:
+	  return poll_enable();
+
+     default:
+	  return;
+     }
+}

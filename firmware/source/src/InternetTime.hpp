@@ -44,6 +44,9 @@ namespace gric {
 	  u8 h;
 	  u8 m;
 	  u8 s;
+
+     private:
+	  void poll_enable();
      };
 }
 #endif // _GRIC_INTERNET_TIME_HPP_
