@@ -31,7 +31,15 @@ bool gric::Usart::tx_empty(u32) const {
      return true;
 }
 
+bool gric::Usart::rx_empty(u32) const {
+     return true;
+}
+
 bool gric::Usart::rx_not_empty(u32) const {
+     return true;
+}
+
+bool gric::Usart::tx_not_empty(u32) const {
      return true;
 }
 
