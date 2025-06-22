@@ -20,7 +20,7 @@ void gric::InternetTime::test() {
      state = Disable;
 
      esp.on();
-     dl.ms(300);
+     dl.ms(3000);
      esp.uart_enable();
 
      esp.send(EspCommand::at);
@@ -35,9 +35,14 @@ void gric::InternetTime::test() {
 	  }
      }
 
+     if (erb.ok()) {
+	  state = Enable;
+	  enable_ntp();
+
+     } else {
+	  esp.off();
+     }
      esp.uart_disable();
-     esp.off();
-     if (erb.ok()) state = Enable;
 }
 
 void gric::InternetTime::poll_esp_on() {
@@ -56,7 +61,6 @@ void gric::InternetTime::poll_esp_on() {
      }
 
      esp.uart_disable();
-     esp.off();
      state = Enable;
 
      TimeStringExtractor tse(erb.get());
@@ -97,14 +101,13 @@ void gric::InternetTime::poll_enable() {
      ++sc;
      if (! sc) return;
      sc.reset();
-     esp.on();
      state = EspOn;
 }
 
 void gric::InternetTime::forced() {
+     if (state == Disable) return;
      new_time = false;
      sc.reset();
-     esp.on();
      state = EspOn;
 }
 

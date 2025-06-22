@@ -51,6 +51,7 @@ namespace gric {
      private:
 	  void poll_enable();
 	  void poll_esp_on();
+	  void enable_ntp() const;
      };
 }
 #endif // _GRIC_INTERNET_TIME_HPP_
