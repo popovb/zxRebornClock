@@ -23,6 +23,7 @@ namespace gric {
      public:
 	  InternetTime(const Esp12f&);
 
+	  void forced();
 	  void test();
 	  void poll();
 	  bool has_new_time() const;
