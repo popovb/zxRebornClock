@@ -28,9 +28,6 @@ void gric::KeyBlockReactor::hour(KeyEvent::event_t e,
      Hour h(v1, v2);
      ++h;
      rtc.set(h);
-     LedTaskTime ltt(250, 250);
-     LedTask t(LedTaskMode::Limit, ltt, 1);
-     lbc.set(LedColor::Red, t);
 }
 
 void gric::KeyBlockReactor::minute(KeyEvent::event_t e,
@@ -39,9 +36,6 @@ void gric::KeyBlockReactor::minute(KeyEvent::event_t e,
      Minute m(v1, v2);
      ++m;
      rtc.set(m);
-     LedTaskTime ltt(250, 250);
-     LedTask t(LedTaskMode::Limit, ltt, 1);
-     lbc.set(LedColor::Yellow, t);
 }
 
 void gric::KeyBlockReactor::second(KeyEvent::event_t e) const {
