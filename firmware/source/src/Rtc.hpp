@@ -30,6 +30,8 @@ namespace gric {
 	  void set(const Hour&) const;
 	  void set(const Minute&) const;
 
+	  void clear_second() const;
+
      private:
 	  CePin ce;
 	  SclkPin sclk;
