@@ -18,6 +18,13 @@ namespace gric {
 
      private:
 	  const char* str;
+
+     private:
+	  u8 find_cr_2() const;
+	  u16 load_year(u8, u8&) const;
+	  u8 load_second(u8&) const;
+	  u8 load_minute(u8&) const;
+	  u8 load_hour(u8&) const;
      };
 }
 #endif // _GRIC_TIME_STRING_EXTRACTOR_HPP_
