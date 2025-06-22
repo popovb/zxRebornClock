@@ -86,3 +86,7 @@ void gric::Rtc::set_second(u8 v) const {
 
      transfer.write(m, mm);
 }
+
+void gric::Rtc::clear_second() const {
+     set_second(0);
+}
