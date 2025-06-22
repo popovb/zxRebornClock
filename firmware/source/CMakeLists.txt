@@ -187,6 +187,7 @@ set(src
   ${src_dir}/EspReceiveBuffer.cpp
   ${src_dir}/InternetTime.cpp
   ${src_dir}/SecondsCounter.cpp
+  ${src_dir}/TimeStringExtractor.cpp
 )
 
 add_executable(${name}.elf

@@ -15,6 +15,9 @@ namespace gric {
 	  TimeStringExtractor(const char*);
 
 	  bool extract_to(u8, u8, u8) const;
+
+     private:
+	  const char* str;
      };
 }
 #endif // _GRIC_TIME_STRING_EXTRACTOR_HPP_
