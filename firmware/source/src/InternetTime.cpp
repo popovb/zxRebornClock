@@ -15,6 +15,10 @@ gric::InternetTime::InternetTime(const Esp12f& v):
      return;
 }
 
+void gric::InternetTime::enable_ntp() const {
+     esp.send(EspCommand::ntp_cfg);
+}
+
 void gric::InternetTime::test() {
      erb.reset();
      state = Disable;
