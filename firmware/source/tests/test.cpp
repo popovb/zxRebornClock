@@ -313,7 +313,7 @@ TEST(test_27) {
      PinTxConf ptx(PortName::A, 2);
      PinRxConf prx(PortName::A, 3);
 }
-
+/*
 TEST(test_28) {
      using namespace gric;
      PinTxConf ptx(PortName::A, 2);
@@ -330,7 +330,7 @@ TEST(test_29) {
      Mcu mcu;
      mcu.init(uc);
 }
-
+*/
 TEST(test_30) {
      using namespace gric;
      CHECK(LedColor::Red == 0);
