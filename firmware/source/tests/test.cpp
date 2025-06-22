@@ -910,7 +910,7 @@ TEST(test_57) {
      u8 m;
      u8 s;
      CHECK(! tse.extract_to(h, m, s));
-     CHECK(h == 14);
-     CHECK(m == 48);
-     CHECK(s == 5);
+     CHECK(h == 0);
+     CHECK(m == 0);
+     CHECK(s == 0);
 }

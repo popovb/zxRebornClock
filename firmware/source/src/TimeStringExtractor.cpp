@@ -86,11 +86,9 @@ extract_to(u8& h, u8& m, u8& s) const {
      if (cr2 == 0) return false;
      u8 next;
      u16 y = load_year(cr2, next);
+     if (y == 1970) return false;
      s = load_second(next);
      m = load_minute(next);
      h = load_hour(next);
-     //
-     // TODO
-     //
      return true;
 }
