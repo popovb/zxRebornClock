@@ -100,3 +100,7 @@ void gric::InternetTime::poll_enable() {
      esp.on();
      state = EspOn;
 }
+
+bool gric::InternetTime::has_new_time() const {
+     return new_time;
+}
