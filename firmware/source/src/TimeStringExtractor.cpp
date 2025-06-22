@@ -18,7 +18,7 @@ OK\r";
 gric::u8
 gric::TimeStringExtractor::load_hour(u8& i) const {
      char s[3] = { '\0', };
-     u8 n = find_rev(i, ':');
+     u8 n = find_rev(i, ' ');
      i = n;
      s[0] = str[i + 1];
      s[1] = str[i + 2];
