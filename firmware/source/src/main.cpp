@@ -33,40 +33,20 @@ int main() {
 
      Rtc rtc(mcu, mnc);
 
-     // TIME SET EXAMPLE
-     // Time tn(18, 30);
-     // rtc.set(tn);
-
+     Esp12f esp(mcu, mnc);
+     InternetTime it(esp);
+     it.test();
 
      LedBlock lb(mcu, mnc);
      LedBlockControl lbc(dt.iter_time(), lb);
 
      KeyBlock kb(mcu, mnc);
-     KeyBlockReactor kbr(lbc, rtc);
+     KeyBlockReactor kbr(lbc, rtc, it);
 
-     // LedTaskTime ltt_r(2000, 2000);
-     // LedTaskTime ltt_y(1000, 1000);
-     // LedTaskTime ltt_g(500, 500);
-     // LedTaskTime ltt_b(250, 250);
-
-     // LedTask lt0(LedTaskMode::Unlimit, ltt_r, 0);
-     // LedTask lt1(LedTaskMode::Unlimit, ltt_y, 0);
-     // LedTask lt2(LedTaskMode::Unlimit, ltt_g, 0);
-     // LedTask lt3(LedTaskMode::Unlimit, ltt_b, 0);
-
-     // lbc.set(LedColor::Red, lt0);
-     // lbc.set(LedColor::Yellow, lt1);
-     // lbc.set(LedColor::Green, lt2);
-     // lbc.set(LedColor::Blue, lt3);
-     
      Time tm = rtc.pull();
      TimeChecker tc;
      tc.put(tm);
      u8 v[4];
-
-     Esp12f esp(mcu, mnc);
-     InternetTime it(esp);
-     it.test();
 
      while (true) {
 	  it.poll();

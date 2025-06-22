@@ -7,9 +7,12 @@
 #include "Minute.hpp"
 
 gric::KeyBlockReactor::
-KeyBlockReactor(LedBlockControl& a, const Rtc& b):
+KeyBlockReactor(LedBlockControl& a,
+		const Rtc& b,
+		InternetTime& t):
      lbc(a),
-     rtc(b)
+     rtc(b),
+     it(t)
 {
      return;
 }

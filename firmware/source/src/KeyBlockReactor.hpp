@@ -5,6 +5,7 @@
 #include "KeyBlockEvent.hpp"
 #include "LedBlockControl.hpp"
 #include "Rtc.hpp"
+#include "InternetTime.hpp"
 
 #ifndef _GRIC_KEY_BLOCK_REACTOR_HPP_
 #define _GRIC_KEY_BLOCK_REACTOR_HPP_
@@ -15,13 +16,15 @@ namespace gric {
 
      public:
 	  KeyBlockReactor(LedBlockControl&,
-			  const Rtc&);
+			  const Rtc&,
+			  InternetTime&);
 
 	  void handle(const KeyBlockEvent&, u8[4]) const;
 
      private:
 	  LedBlockControl& lbc;
 	  const Rtc& rtc;
+	  InternetTime& it;
 
      private:
 	  void hour(KeyEvent::event_t, u8, u8) const;
