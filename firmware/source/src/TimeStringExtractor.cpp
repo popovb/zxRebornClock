@@ -16,6 +16,16 @@ const char* in = "AT+CIPSNTPTIME?\r\n\
 OK\r";
 */
 gric::u8
+gric::TimeStringExtractor::load_hour(u8& i) const {
+     char s[3] = { '\0', };
+     u8 n = find_rev(i, ':');
+     i = n;
+     s[0] = str[i + 1];
+     s[1] = str[i + 2];
+     return atoi(s);
+}
+
+gric::u8
 gric::TimeStringExtractor::load_minute(u8& i) const {
      char s[3] = { '\0', };
      u8 n = find_rev(i + 1, ':');
@@ -37,14 +47,13 @@ gric::TimeStringExtractor::load_second(u8& i) const {
 
 gric::u16
 gric::TimeStringExtractor::load_year(u8 cr, u8& i) const {
-     char y[5];
+     char y[5] = { '\0', };
      u8 n = find_rev(cr, ' ');
      i = n;
      y[0] = str[i + 1];
      y[1] = str[i + 2];
      y[2] = str[i + 3];
      y[3] = str[i + 4];
-     y[4] = '\0';
      return atoi(y);
 }
 
