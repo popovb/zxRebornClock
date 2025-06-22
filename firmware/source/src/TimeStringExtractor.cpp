@@ -41,6 +41,15 @@ gric::u8 gric::TimeStringExtractor::find_cr_2() const {
      return 0;
 }
 
+gric::u8 gric::TimeStringExtractor::
+find_rev(u8 i, char c) const {
+     while (i != 0) {
+	  if (str[i] == 'c') return i;
+	  --i;
+     }
+     return 0;
+}
+
 bool gric::TimeStringExtractor::
 extract_to(u8& h, u8& m, u8& s) const {
      h = m = s = 0;
