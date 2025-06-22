@@ -898,3 +898,19 @@ TEST(test_56) {
      CHECK(m == 48);
      CHECK(s == 5);
 }
+
+const char* in2 = "AT+CIPSNTPTIME?\r\n\
++CIPSNTPTIME:Thu Aug 04 14:48:05 1970\r\n\
+OK\r";
+
+TEST(test_57) {
+     using namespace gric;
+     TimeStringExtractor tse(in2);
+     u8 h;
+     u8 m;
+     u8 s;
+     CHECK(! tse.extract_to(h, m, s));
+     CHECK(h == 14);
+     CHECK(m == 48);
+     CHECK(s == 5);
+}
