@@ -25,6 +25,8 @@ gric::TimeStringExtractor::load_hour(u8& i) const {
      return atoi(s);
 }
 
+#include <iostream>
+
 gric::u8
 gric::TimeStringExtractor::load_minute(u8& i) const {
      char s[3] = { '\0', };
@@ -32,6 +34,7 @@ gric::TimeStringExtractor::load_minute(u8& i) const {
      i = n;
      s[0] = str[i + 1];
      s[1] = str[i + 2];
+     std::cerr << "\n{" << s << "}\n";
      return atoi(s);
 }
 
@@ -88,7 +91,7 @@ extract_to(u8& h, u8& m, u8& s) const {
      u16 y = load_year(cr2, next);
      s = load_second(next);
      m = load_minute(next);
-     m = load_hour(next);
+     h = load_hour(next);
      //
      // TODO
      //
