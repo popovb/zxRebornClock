@@ -3,6 +3,7 @@
 //
 
 #include "TimeStringExtractor.hpp"
+#include <cstdlib>
 
 gric::TimeStringExtractor::TimeStringExtractor(const char* v):
      str(v)
@@ -14,6 +15,19 @@ const char* in = "AT+CIPSNTPTIME?\r\n\
 +CIPSNTPTIME:Thu Aug 04 14:48:05 2016\r\n\
 OK\r";
 */
+gric::u16
+gric::TimeStringExtractor::load_year(u8 cr, u8& i) const {
+     char y[5];
+     u8 n = find_rev(i, ' ');
+     i = n;
+     y[0] = str[i + 1];
+     y[1] = str[i + 2];
+     y[2] = str[i + 3];
+     y[3] = str[i + 4];
+     y[4] = '\0';
+     return atoi(y);
+}
+
 gric::u8 gric::TimeStringExtractor::find_cr_2() const {
      char* p = (char*)str;
      u8 i = 0;

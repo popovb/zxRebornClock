@@ -25,6 +25,7 @@ namespace gric {
 	  u8 load_second(u8&) const;
 	  u8 load_minute(u8&) const;
 	  u8 load_hour(u8&) const;
+	  u8 find_rev(u8, char) const;
      };
 }
 #endif // _GRIC_TIME_STRING_EXTRACTOR_HPP_
