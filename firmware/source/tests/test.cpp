@@ -890,7 +890,11 @@ OK\r";
 TEST(test_56) {
      using namespace gric;
      TimeStringExtractor tse(in);
-     //
-     // TODO
-     //
+     u8 h;
+     u8 m;
+     u8 s;
+     CHECK(tse.extract_to(h, m, s));
+     CHECK(h == 14);
+     CHECK(m == 48);
+     CHECK(s == 5);
 }
