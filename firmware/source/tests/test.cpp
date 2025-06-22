@@ -1,6 +1,7 @@
 #include "UnitTest++/UnitTest++.h"
 #include <iostream>
 
+#include "TimeStringExtractor.hpp"
 #include "Key.hpp"
 #include "Counter.hpp"
 #include "DigitExtractor.hpp"
@@ -880,4 +881,16 @@ TEST(test_55) {
      Key key(b, 3, 5);
 
      auto r = key.poll();
+}
+
+const char* in = "AT+CIPSNTPTIME?\r\n\
++CIPSNTPTIME:Thu Aug 04 14:48:05 2016\r\n\
+OK\r";
+
+TEST(test_56) {
+     using namespace gric;
+     TimeStringExtractor tse(in);
+     //
+     // TODO
+     //
 }

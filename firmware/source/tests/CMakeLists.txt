@@ -91,6 +91,7 @@ set(src_src
   ${src_dir}/Tubes.cpp
   ${src_dir}/LedBlockControl.cpp
   ${src_dir}/Key.cpp
+  ${src_dir}/TimeStringExtractor.cpp
 )
 
 add_library(src
