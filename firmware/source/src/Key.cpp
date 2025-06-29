@@ -75,3 +75,7 @@ gric::KeyEvent::event_t gric::Key::down() {
      }
      return KeyEvent::Undef;
 }
+
+bool gric::Key::pressed() const {
+     return button;
+}
