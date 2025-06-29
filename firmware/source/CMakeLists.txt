@@ -182,6 +182,7 @@ set(src
   ${src_dir}/Minute.cpp
   ${src_dir}/RedLed.cpp
   ${src_dir}/BlueLed.cpp
+  ${src_dir}/GreenLed.cpp
   ${src_dir}/SimpleLed.cpp
   ${src_dir}/Esp12f.cpp
   ${src_dir}/EspReceiveBuffer.cpp
