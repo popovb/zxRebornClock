@@ -19,7 +19,7 @@
 #include "core/Mcu.hpp"
 #include "core/DelayerNop.hpp"
 
-int set_settings(gric::GreenLed&);
+int set_settings(gric::Mcu&, gric::GreenLed&);
 
 int main() {
      using namespace gric;
@@ -48,7 +48,7 @@ int main() {
      KeyBlockReactor kbr(lbc, rtc, it);
 
      GreenLed gl(mcu, mnc);
-     if (kb.f_pressed()) return set_settings(gl);
+     if (kb.f_pressed()) return set_settings(mcu, gl);
 
      Time tm = rtc.pull();
      TimeChecker tc;
@@ -84,7 +84,7 @@ int main() {
 using Delayer = gric::DelayerNop<4'000'000>;
 Delayer delayer;
 
-int set_settings(gric::GreenLed& gl) {
+int set_settings(gric::Mcu& mcu, gric::GreenLed& gl) {
      gl.on();
      //
      // TODO
