@@ -5,7 +5,7 @@
 #include "GreenLed.hpp"
 
 gric::GreenLed::GreenLed(const Mcu& m, const McuNetConfig& c):
-     SimpleLed(m, c, McuNet::L_RED)
+     SimpleLed(m, c, McuNet::L_GREEN)
 {
      return;
 }
