@@ -106,3 +106,9 @@ init_rx_for_esp(const PortPinConf& v) const {
      PinRxConf p(v.port, v.pin);
      mcu.init(p);
 }
+
+void gric::Configurator::
+init_uart_rx(const PortPinConf& v) const {
+     PinRxConf p(v.port, v.pin);
+     mcu.init(p);
+}
