@@ -15,7 +15,11 @@
 #include "KeyBlockReactor.hpp"
 #include "Esp12f.hpp"
 #include "InternetTime.hpp"
+#include "GreenLed.hpp"
 #include "core/Mcu.hpp"
+#include "core/DelayerNop.hpp"
+
+int set_settings(gric::GreenLed&);
 
 int main() {
      using namespace gric;
@@ -35,13 +39,16 @@ int main() {
 
      Esp12f esp(mcu, mnc);
      InternetTime it(esp);
-     it.test();
+     // it.test();
 
      LedBlock lb(mcu, mnc);
      LedBlockControl lbc(dt.iter_time(), lb);
 
      KeyBlock kb(mcu, mnc);
      KeyBlockReactor kbr(lbc, rtc, it);
+
+     GreenLed gl(mcu, mnc);
+     if (kb.f_pressed()) return set_settings(gl);
 
      Time tm = rtc.pull();
      TimeChecker tc;
@@ -71,5 +78,18 @@ int main() {
 	       lbc.poll();
 	  }
      }
+     return 0;
+}
+
+using Delayer = gric::DelayerNop<4'000'000>;
+Delayer delayer;
+
+int set_settings(gric::GreenLed& gl) {
+     gl.on();
+     //
+     // TODO
+     //
+     delayer.ms(5000);
+     gl.off();
      return 0;
 }

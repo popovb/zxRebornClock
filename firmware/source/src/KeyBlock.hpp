@@ -19,6 +19,8 @@ namespace gric {
 
 	  KeyBlockEvent poll();
 
+	  bool f_pressed() const;
+
      private:
 	  void init(const Mcu&, const McuNetConfig&);
 	  void init(Key&, const Mcu&, const PortPinConf&);
