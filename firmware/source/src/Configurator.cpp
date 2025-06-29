@@ -65,6 +65,14 @@ init(const McuNetConfig::NetPortPinConf& v) const {
 	  init_rx_for_esp(v.conf);
 	  return;
 
+     case McuNet::RX:
+	  init_uart_rx(v.conf);
+	  return;
+
+     case McuNet::TX:
+	  init_uart_tx(v.conf);
+	  return;
+
      default:
 	  return;
      }

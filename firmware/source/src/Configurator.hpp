@@ -28,6 +28,8 @@ namespace gric {
 			   PinMode::mode_t) const;
 	  void init_tx_for_esp(const PortPinConf&) const;
 	  void init_rx_for_esp(const PortPinConf&) const;
+	  void init_uart_rx(const PortPinConf&) const;
+	  void init_uart_tx(const PortPinConf&) const;
      };
 }
 #endif // _GRIC_CONFIGURATOR_HPP_

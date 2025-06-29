@@ -44,6 +44,9 @@ gric::McuNetConfig::McuNetConfig():
 	  { McuNet::ESP_EN,   { PortName::B,  2 } },
 	  { McuNet::ESP_RX,   { PortName::A,  2 } },
 	  { McuNet::ESP_TX,   { PortName::A,  3 } },
+
+	  { McuNet::RX,       { PortName::B, 11 } },
+	  { McuNet::TX,       { PortName::B, 10 } },
      }
 {
      return;

@@ -46,6 +46,9 @@ namespace gric {
 	       ESP_EN   = 25,
 	       ESP_RX   = 26,
 	       ESP_TX   = 27,
+
+	       RX       = 28,
+	       TX       = 29,
 	  };
      };
 }
