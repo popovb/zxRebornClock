@@ -91,5 +91,6 @@ int set_settings(gric::GreenLed& gl) {
      //
      delayer.ms(5000);
      gl.off();
+     while (true) { ; }
      return 0;
 }
