@@ -16,6 +16,7 @@
 #include "Esp12f.hpp"
 #include "InternetTime.hpp"
 #include "GreenLed.hpp"
+#include "UartExchanger.hpp"
 #include "core/Mcu.hpp"
 #include "core/DelayerNop.hpp"
 
@@ -81,11 +82,12 @@ int main() {
      return 0;
 }
 
-using Delayer = gric::DelayerNop<4'000'000>;
-Delayer delayer;
-
 int set_settings(gric::Mcu& mcu, gric::GreenLed& gl) {
+     using namespace gric;
+     using Delayer = DelayerNop<4'000'000>;
+     Delayer delayer;
      gl.on();
+     UartExchanger ue(mcu);
      //
      // TODO
      //
