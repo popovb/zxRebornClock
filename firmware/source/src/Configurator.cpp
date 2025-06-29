@@ -112,3 +112,9 @@ init_uart_rx(const PortPinConf& v) const {
      PinRxConf p(v.port, v.pin);
      mcu.init(p);
 }
+
+void gric::Configurator::
+init_uart_tx(const PortPinConf& v) const {
+     PinTxConf p(v.port, v.pin);
+     mcu.init(p);
+}
