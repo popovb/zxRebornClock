@@ -35,3 +35,7 @@ gric::KeyBlockEvent gric::KeyBlock::poll() {
      kbe.func = f.poll();
      return kbe;
 }
+
+bool gric::KeyBlock::f_pressed() const {
+     return f.pressed();
+}

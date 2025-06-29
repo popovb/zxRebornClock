@@ -26,6 +26,8 @@ namespace gric {
 	  KeyEvent::event_t poll(KeyState::state_t);
 	  KeyEvent::event_t poll();
 
+	  bool pressed() const;
+
      private:
 	  Button button;
 	  press_t press;
