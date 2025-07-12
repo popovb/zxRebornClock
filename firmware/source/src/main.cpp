@@ -88,10 +88,13 @@ int set_settings(gric::Mcu& mcu, gric::GreenLed& gl) {
      Delayer delayer;
      gl.on();
      UartExchanger ue(mcu);
+     ue.enable();
+     ue.write("UartExchanger>");
      //
      // TODO
      //
      delayer.ms(5000);
+     ue.disable();
      gl.off();
      while (true) { ; }
      return 0;

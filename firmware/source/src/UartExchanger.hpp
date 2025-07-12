@@ -14,6 +14,10 @@ namespace gric {
      public:
 	  UartExchanger(Mcu&);
 
+	  void enable() const;
+	  void disable() const;
+	  void write(const char*) const;
+
      private:
 	  void init_uart(Mcu&);
 
