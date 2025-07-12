@@ -4,7 +4,9 @@
 
 #include "UartExchanger.hpp"
 
-gric::UartExchanger::UartExchanger(Mcu& v) {
+gric::UartExchanger::UartExchanger(Mcu& v):
+     buffer{ '\0', }
+{
      init_uart(v);
 }
 
@@ -33,4 +35,8 @@ void gric::UartExchanger::write(const char* s) const {
 
 void gric::UartExchanger::wait_sending() const {
      while (uart.tx_not_empty()) { ; }
+}
+
+void gric::UartExchanger::write_buffer() const {
+     write(buffer);
 }
