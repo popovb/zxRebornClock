@@ -189,6 +189,7 @@ set(src
   ${src_dir}/InternetTime.cpp
   ${src_dir}/SecondsCounter.cpp
   ${src_dir}/TimeStringExtractor.cpp
+  ${src_dir}/UartExchanger.cpp
 )
 
 add_executable(${name}.elf
