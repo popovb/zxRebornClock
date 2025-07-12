@@ -30,3 +30,7 @@ void gric::UartExchanger::write(const char* s) const {
 	  ++p;
      }
 }
+
+void gric::UartExchanger::wait_sending() const {
+     while (uart.tx_not_empty()) { ; }
+}

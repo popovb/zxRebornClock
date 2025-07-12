@@ -20,7 +20,7 @@ namespace gric {
 
      private:
 	  void init_uart(Mcu&);
-	  bool wait_sending() const;
+	  void wait_sending() const;
 
      private:
 	  Uart uart;
