@@ -21,3 +21,12 @@ void gric::UartExchanger::enable() const {
 void gric::UartExchanger::disable() const {
      uart.disable();
 }
+
+void gric::UartExchanger::write(const char* s) const {
+     char* p = (char*)s;
+     while ((*p) != 0) {
+	  uart.send(*p);
+	  wait_sending();
+	  ++p;
+     }
+}
