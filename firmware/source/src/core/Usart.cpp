@@ -48,7 +48,7 @@ bool gric::Usart::tx_not_empty(u32) const {
 
 void gric::Usart::init(UartName::name_t n, u32 s) const {
      UsartHolder uh;
-     USART_InitTypeDef u = { 0, };
+     USART_InitTypeDef u;
      u.USART_BaudRate = s;
      u.USART_WordLength = USART_WordLength_8b;
      u.USART_StopBits = USART_StopBits_1;

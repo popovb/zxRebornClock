@@ -3,6 +3,7 @@
 //
 
 #include "core/ClockToggler.hpp"
+#include "core/UartName.hpp"
 #include "RccPortHolder.hpp"
 #include "RccUsartHolder.hpp"
 
@@ -64,13 +65,19 @@ void gric::ClockToggler::off(PortName::name_t v) {
 
 void gric::ClockToggler::on(UartName::name_t v) {
      RccUsartHolder rah;
-     RCC_APB1PeriphClockCmd(rah.get(v), ENABLE);
+     if (v == UartName::Uart1)
+	  RCC_APB2PeriphClockCmd(rah.get(v), ENABLE);
+     else
+	  RCC_APB1PeriphClockCmd(rah.get(v), ENABLE);
      uart_state[v] = true;
 }
 
 void gric::ClockToggler::off(UartName::name_t v) {
      RccUsartHolder rah;
-     RCC_APB1PeriphClockCmd(rah.get(v), DISABLE);
+     if (v == UartName::Uart1)
+	  RCC_APB2PeriphClockCmd(rah.get(v), DISABLE);
+     else
+	  RCC_APB1PeriphClockCmd(rah.get(v), DISABLE);
      uart_state[v] = false;
 }
 #endif
