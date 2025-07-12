@@ -17,3 +17,7 @@ void gric::UartExchanger::init_uart(Mcu& m) {
 void gric::UartExchanger::enable() const {
      uart.enable();
 }
+
+void gric::UartExchanger::disable() const {
+     uart.disable();
+}
