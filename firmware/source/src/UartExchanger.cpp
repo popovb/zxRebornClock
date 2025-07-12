@@ -13,3 +13,7 @@ void gric::UartExchanger::init_uart(Mcu& m) {
      m.init(uc);
      uart = m.get(UartName::Uart1);
 }
+
+void gric::UartExchanger::enable() const {
+     uart.enable();
+}
