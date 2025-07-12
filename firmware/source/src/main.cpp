@@ -84,16 +84,17 @@ int main() {
 
 int set_settings(gric::Mcu& mcu, gric::GreenLed& gl) {
      using namespace gric;
-     using Delayer = DelayerNop<4'000'000>;
-     Delayer delayer;
+     // using Delayer = DelayerNop<4'000'000>;
+     // Delayer delayer;
      gl.on();
      UartExchanger ue(mcu);
      ue.enable();
-     ue.write("UartExchanger>");
+     ue.write("Time Zone (int):");
+     ue.read();
+     ue.write_buffer();
      //
      // TODO
      //
-     delayer.ms(5000);
      ue.disable();
      gl.off();
      while (true) { ; }
