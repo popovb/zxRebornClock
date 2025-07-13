@@ -109,7 +109,9 @@ int set_settings(gric::Mcu& mcu, gric::GreenLed& gl) {
      strcpy(pass, ue.get());
 
      ue.write(tzs);
+     ue.write(" ");
      ue.write(ap);
+     ue.write(" ");
      ue.write(pass);
      //
      // TODO
