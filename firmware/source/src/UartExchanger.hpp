@@ -30,6 +30,7 @@ namespace gric {
      private:
 	  static constexpr u8 len = 128;
 	  char buffer[len];
+	  u8 ndx;
      };
 }
 #endif // _GRIC_UART_EXCHANGER_HPP_

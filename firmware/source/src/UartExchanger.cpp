@@ -5,7 +5,8 @@
 #include "UartExchanger.hpp"
 
 gric::UartExchanger::UartExchanger(Mcu& v):
-     buffer{ '\0', }
+     buffer{ '\0', },
+     ndx(0)
 {
      init_uart(v);
 }
@@ -39,4 +40,20 @@ void gric::UartExchanger::wait_sending() const {
 
 void gric::UartExchanger::write_buffer() const {
      write(buffer);
+}
+
+void gric::UartExchanger::read() {
+     while (true) {
+	  if (uart.rx_not_empty()) {
+	       u8 c = uart.receive();
+	       if (c == '\r') return;
+	       if (c == '\n') return;
+	       if (c == 0x00) continue;
+	       if (c < 0x21) continue;
+	       if (c > 0x7E) continue;
+	       buffer[ndx] = c;
+	       ++ndx;
+	       if (ndx == len - 2) return;
+	  }
+     }
 }
