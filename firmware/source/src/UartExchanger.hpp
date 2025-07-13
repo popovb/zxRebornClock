@@ -19,6 +19,7 @@ namespace gric {
 	  void write(const char*) const;
 	  void write_buffer() const;
 	  void read();
+	  void reset();
 
      private:
 	  void init_uart(Mcu&);

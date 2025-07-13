@@ -14,7 +14,23 @@ ser.xonxoff = 0
 ser.rtscts = 0
 
 ser.open()
-ser.write(b'hello\r\n')
-s = ser.read(6)
-ser.close()
+
+tz = input("TimeZone: ")
+ser.write(tz.encode())
+ser.write(b'\r\n')
+s = ser.read(128)
 print(s)
+
+ap = input("AcessPoint: ")
+ser.write(ap.encode())
+ser.write(b'\r\n')
+s = ser.read(128)
+print(s)
+
+pas = input("Password: ")
+ser.write(pas.encode())
+ser.write(b'\r\n')
+s = ser.read(128)
+print(s)
+
+ser.close()
