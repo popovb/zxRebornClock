@@ -11,6 +11,11 @@ gric::UartExchanger::UartExchanger(Mcu& v):
      init_uart(v);
 }
 
+void gric::UartExchanger::reset() {
+     ndx = 0;
+     for (u8 i = 0; i < len; i++) buffer[i] = '\0';
+}
+
 void gric::UartExchanger::init_uart(Mcu& m) {
      UartConf uc(UartName::Uart1, 115200);
      m.init(uc);
