@@ -16,10 +16,13 @@ namespace gric {
 
 	  void enable() const;
 	  void disable() const;
+
 	  void write(const char*) const;
 	  void write_buffer() const;
+
 	  void read();
 	  void reset();
+
 	  const char* get() const;
 
      private:

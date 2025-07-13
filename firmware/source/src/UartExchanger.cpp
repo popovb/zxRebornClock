@@ -62,3 +62,7 @@ void gric::UartExchanger::read() {
 	  }
      }
 }
+
+const char* gric::UartExchanger::get() const {
+     return buffer;
+}
