@@ -17,19 +17,19 @@ ser.open()
 
 tz = input("TimeZone: ")
 ser.write(tz.encode())
-ser.write(b'\r\n')
+ser.write(b'\r')
 s = ser.read(128)
 print(s)
 
 ap = input("AcessPoint: ")
 ser.write(ap.encode())
-ser.write(b'\r\n')
+ser.write(b'\r')
 s = ser.read(128)
 print(s)
 
 pas = input("Password: ")
 ser.write(pas.encode())
-ser.write(b'\r\n')
+ser.write(b'\r')
 s = ser.read(128)
 print(s)
 
