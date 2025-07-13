@@ -89,7 +89,7 @@ int set_settings(gric::Mcu& mcu, gric::GreenLed& gl) {
      gl.on();
      UartExchanger ue(mcu);
      ue.enable();
-     ue.write("Time Zone (int):");
+     //ue.write("Time Zone (int):");
      ue.read();
      ue.write_buffer();
      //
