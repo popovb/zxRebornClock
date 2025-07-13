@@ -19,6 +19,7 @@
 #include "UartExchanger.hpp"
 #include "core/Mcu.hpp"
 #include "core/DelayerNop.hpp"
+#include <cstring>
 
 int set_settings(gric::Mcu&, gric::GreenLed&);
 
@@ -91,18 +92,25 @@ int set_settings(gric::Mcu& mcu, gric::GreenLed& gl) {
      ue.enable();
      //ue.write("Time Zone (int):");
 
-     ue.reset();
-     ue.read();
-     ue.write_buffer();
+     char tzs[128];
+     char ap[128];
+     char pass[128];
 
      ue.reset();
      ue.read();
-     ue.write_buffer();
+     strcpy(tzs, ue.get());
 
      ue.reset();
      ue.read();
-     ue.write_buffer();
+     strcpy(ap, ue.get());
 
+     ue.reset();
+     ue.read();
+     strcpy(pass, ue.get());
+
+     ue.write(tzs);
+     ue.write(ap);
+     ue.write(pass);
      //
      // TODO
      //
