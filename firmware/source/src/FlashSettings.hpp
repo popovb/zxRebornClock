@@ -27,7 +27,7 @@ namespace gric {
 
      private:
 	  bool flash_erase() const;
-	  bool falsh_write() const;
+	  bool flash_write() const;
      };
 }
 #endif // _GRIC_FLASH_SETTINGS_HPP_

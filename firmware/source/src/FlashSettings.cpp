@@ -38,10 +38,14 @@ void gric::FlashSettings::set_pass(const char* v) {
 
 bool gric::FlashSettings::write() const {
      if (flash_erase())
-	  return falsh_write();
+	  return flash_write();
      return false;
 }
 
 bool gric::FlashSettings::flash_erase() const {
      return mcu.flash_erase(adr, len);
+}
+
+bool gric::FlashSettings::flash_write() const {
+     return mcu.flash_write(adr, (const u32*)&_settings, len);
 }
