@@ -26,6 +26,10 @@ gric::i8 gric::FlashSettings::get_tz() const {
      return _settings.tz;
 }
 
+const char* gric::FlashSettings::get_ap() const {
+     return _settings.ap;
+}
+
 void gric::FlashSettings::set_tz(const char* v) {
      _settings.tz = atoi(v);
 }
