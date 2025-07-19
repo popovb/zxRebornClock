@@ -17,6 +17,7 @@
 #include "InternetTime.hpp"
 #include "GreenLed.hpp"
 #include "UartExchanger.hpp"
+#include "FlashSettings.hpp"
 #include "core/Mcu.hpp"
 #include "core/DelayerNop.hpp"
 #include <cstring>
@@ -85,12 +86,9 @@ int main() {
 
 int set_settings(gric::Mcu& mcu, gric::GreenLed& gl) {
      using namespace gric;
-     // using Delayer = DelayerNop<4'000'000>;
-     // Delayer delayer;
      gl.on();
      UartExchanger ue(mcu);
      ue.enable();
-     //ue.write("Time Zone (int):");
 
      char tzs[128];
      char ap[128];
@@ -108,14 +106,15 @@ int set_settings(gric::Mcu& mcu, gric::GreenLed& gl) {
      ue.read();
      strcpy(pass, ue.get());
 
-     ue.write(tzs);
-     ue.write(" ");
-     ue.write(ap);
-     ue.write(" ");
-     ue.write(pass);
-     //
-     // TODO
-     //
+     FlashSettings fs(mcu);
+     fs.set_tz(tzs);
+     fs.set_ap(ap);
+     fs.set_pass(pass);
+
+     if (fs.write()) {
+	  ue.write("OK");
+     }
+
      ue.disable();
      gl.off();
      while (true) { ; }
