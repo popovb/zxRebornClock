@@ -35,3 +35,9 @@ void gric::FlashSettings::set_pass(const char* v) {
      strncpy(_settings.pass, v, 63);
      _settings.pass[63] = '\0';
 }
+
+bool gric::FlashSettings::write() const {
+     if (flash_erase())
+	  return falsh_write();
+     return false;
+}
