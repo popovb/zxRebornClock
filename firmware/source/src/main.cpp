@@ -22,6 +22,8 @@
 #include "core/DelayerNop.hpp"
 #include <cstring>
 
+#include "debug.h"
+
 int set_settings(gric::Mcu&, gric::GreenLed&);
 
 int main() {
@@ -30,6 +32,21 @@ int main() {
      Configurator cnf(mcu);
      McuNetConfig mnc;
      cnf.init(mnc);
+
+
+     ///
+     FlashSettings fs(mcu);
+     fs.read();
+     PrintConf pc(115200);
+     mcu.init(pc);
+     printf("\r\n%d %s %s\r\n",
+	    fs.get_tz(),
+	    fs.get_ap(),
+	    fs.get_pass());
+
+     while (true) { ; }
+     ///
+
 
      Anodes as(mcu, mnc);
      Cathodes cs(mcu, mnc);

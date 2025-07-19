@@ -15,10 +15,15 @@ namespace gric {
 	  FlashSettings(Mcu&);
 
 	  bool write() const;
+	  void read() const;
 
 	  void set_tz(const char*);
 	  void set_ap(const char*);
 	  void set_pass(const char*);
+
+	  i8 get_tz() const;
+	  const char* get_ap() const;
+	  const char* get_pass() const;
 
      private:
 	  Mcu& mcu;
