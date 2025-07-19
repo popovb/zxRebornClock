@@ -98,6 +98,11 @@ bool gric::Mcu::flash_erase(u32 a, u32 l) const {
      return (s == FLASH_COMPLETE);
 }
 
+bool gric::Mcu::flash_write(u32 a, u32* b, u32 l) const {
+     FLASH_Status s = FLASH_ROM_WRITE(a, b, l);
+     return (s == FLASH_COMPLETE);
+}
+
 #ifdef    UNITTEST
 
 void gric::Mcu::init(const PrintConf&) const {
