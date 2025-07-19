@@ -40,6 +40,8 @@ namespace gric {
 	  Button get(const ButtonConf&) const;
 	  Uart get(UartName::name_t) const;
 
+	  bool flash_erase(u32, u32) const;
+
      private:
 	  void init() const;
 	  void nvic_config() const;

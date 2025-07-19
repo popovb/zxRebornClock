@@ -41,3 +41,7 @@ bool gric::FlashSettings::write() const {
 	  return falsh_write();
      return false;
 }
+
+bool gric::FlashSettings::flash_erase() const {
+     return mcu.flash_erase(adr, len);
+}
