@@ -4,12 +4,12 @@
 
 #include "FlashSettings.hpp"
 #include <cstdlib>
+#include <cstring>
 
 struct _Settings {
      gric::i8 tz;
-     //
-     // TODO
-     //
+     char ap[64];
+     char pass[64];
 };
 
 static _Settings _settings;
@@ -24,4 +24,9 @@ gric::FlashSettings::FlashSettings(Mcu& v):
 
 void gric::FlashSettings::set_tz(const char* v) {
      _settings.tz = atoi(v);
+}
+
+void gric::FlashSettings::set_ap(const char* v) {
+     strncpy(_settings.ap, v, 63);
+     _settings.ap[63] = '\0';
 }
