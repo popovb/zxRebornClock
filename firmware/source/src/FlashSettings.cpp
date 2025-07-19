@@ -30,6 +30,10 @@ const char* gric::FlashSettings::get_ap() const {
      return _settings.ap;
 }
 
+const char* gric::FlashSettings::get_pass() const {
+     return _settings.pass;
+}
+
 void gric::FlashSettings::set_tz(const char* v) {
      _settings.tz = atoi(v);
 }
