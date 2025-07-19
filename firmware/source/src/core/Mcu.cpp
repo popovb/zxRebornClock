@@ -13,6 +13,7 @@
 
 #ifndef UNITTEST
 #include "ch32x035.h"
+#include "ch32x035_flash.h"
 #include "debug.h"
 #endif
 
@@ -90,6 +91,11 @@ gric::Pin gric::Mcu::get(const PortPinConf& pc) const {
 gric::Uart gric::Mcu::get(UartName::name_t n) const {
      UsartHolder uh;
      return uh.get(n);
+}
+
+bool gric::Mcu::flash_erase(u32 a, u32 l) const {
+     FLASH_Status s = FLASH_ROM_ERASE(a, l);
+     return (s == FLASH_COMPLETE);
 }
 
 #ifdef    UNITTEST
