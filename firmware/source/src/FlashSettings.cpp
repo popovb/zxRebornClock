@@ -30,3 +30,8 @@ void gric::FlashSettings::set_ap(const char* v) {
      strncpy(_settings.ap, v, 63);
      _settings.ap[63] = '\0';
 }
+
+void gric::FlashSettings::set_pass(const char* v) {
+     strncpy(_settings.pass, v, 63);
+     _settings.pass[63] = '\0';
+}
