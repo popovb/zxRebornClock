@@ -19,10 +19,7 @@
 #include "UartExchanger.hpp"
 #include "FlashSettings.hpp"
 #include "core/Mcu.hpp"
-#include "core/DelayerNop.hpp"
 #include <cstring>
-
-#include "debug.h"
 
 int set_settings(gric::Mcu&, gric::GreenLed&);
 
@@ -33,20 +30,8 @@ int main() {
      McuNetConfig mnc;
      cnf.init(mnc);
 
-
-     ///
      FlashSettings fs(mcu);
      fs.read();
-     PrintConf pc(115200);
-     mcu.init(pc);
-     printf("\r\n%d %s %s\r\n",
-	    fs.get_tz(),
-	    fs.get_ap(),
-	    fs.get_pass());
-
-     while (true) { ; }
-     ///
-
 
      Anodes as(mcu, mnc);
      Cathodes cs(mcu, mnc);
@@ -59,7 +44,7 @@ int main() {
 
      Esp12f esp(mcu, mnc);
      InternetTime it(esp);
-     // it.test();
+     it.test();
 
      LedBlock lb(mcu, mnc);
      LedBlockControl lbc(dt.iter_time(), lb);
