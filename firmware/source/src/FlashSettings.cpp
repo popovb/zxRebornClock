@@ -22,6 +22,10 @@ gric::FlashSettings::FlashSettings(Mcu& v):
      return;
 }
 
+gric::i8 gric::FlashSettings::get_tz() const {
+     return _settings.tz;
+}
+
 void gric::FlashSettings::set_tz(const char* v) {
      _settings.tz = atoi(v);
 }
