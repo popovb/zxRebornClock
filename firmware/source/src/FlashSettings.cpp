@@ -22,6 +22,10 @@ gric::FlashSettings::FlashSettings(Mcu& v):
      return;
 }
 
+void gric::FlashSettings::read() const {
+     _settings = *(_Settings*)adr;
+}
+
 gric::i8 gric::FlashSettings::get_tz() const {
      return _settings.tz;
 }
