@@ -190,6 +190,7 @@ set(src
   ${src_dir}/SecondsCounter.cpp
   ${src_dir}/TimeStringExtractor.cpp
   ${src_dir}/UartExchanger.cpp
+  ${src_dir}/FlashSettings.cpp
 )
 
 add_executable(${name}.elf

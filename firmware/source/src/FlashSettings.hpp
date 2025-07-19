@@ -19,6 +19,11 @@ namespace gric {
 	  void set_tz(const char*);
 	  void set_ap(const char*);
 	  void set_pass(const char*);
+
+     private:
+	  Mcu& mcu;
+	  const u32 adr;
+	  const u32 len;
      };
 }
 #endif // _GRIC_FLASH_SETTINGS_HPP_
