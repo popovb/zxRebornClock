@@ -67,6 +67,7 @@ int main() {
 		       it.minute(),
 		       it.second());
 	       rtc.set_w_second(tn);
+	       it.reset_new_time();
 	  }
 
 	  tm = rtc.pull();

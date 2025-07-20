@@ -34,7 +34,9 @@ namespace gric {
 	  void forced();
 	  void test();
 	  void poll();
+
 	  bool has_new_time() const;
+	  void reset_new_time();
 
 	  u8 hour() const;
 	  u8 minute() const;
@@ -68,6 +70,8 @@ namespace gric {
 	  void poll_on_mode();
 	  void poll_on_ap();
 	  void poll_on_ap_pause();
+	  void poll_on_ntp();
+	  void fix_time();
      };
 }
 #endif // _GRIC_INTERNET_TIME_HPP_

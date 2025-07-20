@@ -41,10 +41,9 @@ void gric::InternetTime::test() {
      esp.uart_disable();
      esp.off();
 }
-/*
-void gric::InternetTime::poll_esp_on() {
+
+void gric::InternetTime::poll_on_ntp() {
      erb.reset();
-     esp.uart_enable();
      esp.send(EspCommand::time);
      u8 n = 0;
      while (! erb.completed()) {
@@ -58,13 +57,16 @@ void gric::InternetTime::poll_esp_on() {
      }
 
      esp.uart_disable();
-     state = Enable;
+     esp.off();
+     stage = Sleep;
 
      TimeStringExtractor tse(erb.get());
-     if (tse.extract_to(h, m, s))
+     if (tse.extract_to(h, m, s)) {
 	  new_time = true;
+	  fix_time();
+     }
 }
-*/
+
 gric::u8 gric::InternetTime::hour() const {
      return h;
 }
@@ -113,15 +115,6 @@ void gric::InternetTime::poll_on_ap_pause() {
      stage = Ntp;
 }
 
-/*
-void gric::InternetTime::poll_enable() {
-     // new_time = false;
-     // ++sc;
-     // if (! sc) return;
-     // sc.reset();
-     // state = EspOn;
-}
-*/
 void gric::InternetTime::poll() {
      if (esp_state == Off) return;
 
@@ -139,24 +132,12 @@ void gric::InternetTime::poll() {
      case ApPause:
 	  return poll_on_ap_pause();
 
+     case Ntp:
+	  return poll_on_ntp();
+
      default:
 	  break;
      }
-     /*
-     switch (state) {
-     case Disable:
-	  return;
-
-     case Enable:
-	  return poll_enable();
-
-     case EspOn:
-	  return poll_esp_on();
-
-     default:
-	  return;
-     }
-     */
 }
 
 void gric::InternetTime::forced() {
