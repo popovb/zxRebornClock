@@ -10,23 +10,19 @@ gric::InternetTime::InternetTime(const Esp12f& v,
 				 const FlashSettings& x):
      esp(v),
      fs(x),
-     state(Disable),
+     esp_state(Off),
+     stage(Sleep),
+     on_start(true),
      new_time(false),
      sc(3600)
 {
      return;
 }
 
-void gric::InternetTime::enable_ntp() const {
-     esp.send(EspCommand::ntp_cfg);
-}
-
 void gric::InternetTime::test() {
-     erb.reset();
-     state = Disable;
-
      esp.on();
-     dl.ms(3000);
+     erb.reset();
+     dl.ms(1000);
      esp.uart_enable();
 
      esp.send(EspCommand::at);
@@ -41,16 +37,11 @@ void gric::InternetTime::test() {
 	  }
      }
 
-     if (erb.ok()) {
-	  state = Enable;
-	  enable_ntp();
-
-     } else {
-	  esp.off();
-     }
+     if (erb.ok()) esp_state = On;
      esp.uart_disable();
+     esp.off();
 }
-
+/*
 void gric::InternetTime::poll_esp_on() {
      erb.reset();
      esp.uart_enable();
@@ -73,7 +64,7 @@ void gric::InternetTime::poll_esp_on() {
      if (tse.extract_to(h, m, s))
 	  new_time = true;
 }
-
+*/
 gric::u8 gric::InternetTime::hour() const {
      return h;
 }
@@ -87,6 +78,17 @@ gric::u8 gric::InternetTime::second() const {
 }
 
 void gric::InternetTime::poll() {
+     if (esp_state == Off) return;
+
+     switch (stage) {
+
+     case Sleep:
+	  return poll_on_sleep();
+
+     default:
+	  break;
+     }
+     /*
      switch (state) {
      case Disable:
 	  return;
@@ -100,21 +102,22 @@ void gric::InternetTime::poll() {
      default:
 	  return;
      }
+     */
 }
-
+/*
 void gric::InternetTime::poll_enable() {
-     new_time = false;
-     ++sc;
-     if (! sc) return;
-     sc.reset();
-     state = EspOn;
+     // new_time = false;
+     // ++sc;
+     // if (! sc) return;
+     // sc.reset();
+     // state = EspOn;
 }
-
+*/
 void gric::InternetTime::forced() {
-     if (state == Disable) return;
-     new_time = false;
-     sc.reset();
-     state = EspOn;
+     // if (state == Disable) return;
+     // new_time = false;
+     // sc.reset();
+     // state = EspOn;
 }
 
 bool gric::InternetTime::has_new_time() const {

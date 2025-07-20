@@ -15,11 +15,19 @@ namespace gric {
      class InternetTime {
 
      private:
-	  enum state_t {
-	       Disable,
-	       Enable,
-	       EspOn,
+	  enum esp_state_t {
+	       Off,
+	       On,
 	  };
+
+	  enum stage_t {
+	       Sleep,
+	  };
+	  // enum state_t {
+	  //      Disable,
+	  //      Enable,
+	  //      EspOn,
+	  // };
 
      public:
 	  InternetTime(const Esp12f&, const FlashSettings&);
@@ -37,7 +45,9 @@ namespace gric {
 	  const Esp12f& esp;
 	  const FlashSettings& fs;
 
-	  state_t state;
+	  esp_state_t esp_state;
+	  stage_t stage;
+	  bool on_start;
 	  EspReceiveBuffer erb;
 	  bool new_time;
 
@@ -52,9 +62,7 @@ namespace gric {
 	  u8 s;
 
      private:
-	  void poll_enable();
-	  void poll_esp_on();
-	  void enable_ntp() const;
+	  void poll_on_sleep();
      };
 }
 #endif // _GRIC_INTERNET_TIME_HPP_
