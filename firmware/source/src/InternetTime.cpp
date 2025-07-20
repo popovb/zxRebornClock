@@ -78,10 +78,17 @@ gric::u8 gric::InternetTime::second() const {
 }
 
 void gric::InternetTime::poll_on_sleep() {
+     erb.reset();
      new_time = false;
      if (on_start) start();
      ++sc;
      if (sc) start();
+}
+
+void gric::InternetTime::start() {
+     esp.on();
+     esp.uart_enable();
+     stage = Mode;
 }
 /*
 void gric::InternetTime::poll_enable() {
@@ -99,6 +106,9 @@ void gric::InternetTime::poll() {
 
      case Sleep:
 	  return poll_on_sleep();
+
+     case Mode:
+	  return poll_on_mode();
 
      default:
 	  break;

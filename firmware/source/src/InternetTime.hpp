@@ -22,6 +22,7 @@ namespace gric {
 
 	  enum stage_t {
 	       Sleep,
+	       Mode,
 	  };
 	  // enum state_t {
 	  //      Disable,
@@ -64,6 +65,7 @@ namespace gric {
      private:
 	  void start();
 	  void poll_on_sleep();
+	  void poll_on_mode();
      };
 }
 #endif // _GRIC_INTERNET_TIME_HPP_
