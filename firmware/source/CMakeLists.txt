@@ -191,6 +191,7 @@ set(src
   ${src_dir}/TimeStringExtractor.cpp
   ${src_dir}/UartExchanger.cpp
   ${src_dir}/FlashSettings.cpp
+  ${src_dir}/EspCommand.cpp
 )
 
 add_executable(${name}.elf

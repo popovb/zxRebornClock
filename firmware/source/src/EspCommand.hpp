@@ -20,6 +20,10 @@ namespace gric {
 	       "AT+UART_DEF?\r\n";
 	  static constexpr const char* station_mode =
 	       "AT+CWMODE=1\r\n";
+	  static constexpr const char* end =
+	       "\r\n";
+	  static constexpr const char* ap =
+	       "AT+CWJAP_CUR";
 
      public:
 	  static void build_ap(char*, const char*, const char*);
