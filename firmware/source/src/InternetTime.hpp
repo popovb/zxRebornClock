@@ -25,6 +25,7 @@ namespace gric {
 	       Mode,
 	       Ap,
 	       ApPause,
+	       NtpPause,
 	       Ntp,
 	  };
 
@@ -63,6 +64,7 @@ namespace gric {
 	  u8 s;
 
 	  u8 ap_pause;
+	  u8 ntp_pause;
 
      private:
 	  void start();
@@ -70,6 +72,7 @@ namespace gric {
 	  void poll_on_mode();
 	  void poll_on_ap();
 	  void poll_on_ap_pause();
+	  void poll_on_ntp_pause();
 	  void poll_on_ntp();
 	  void fix_time();
      };

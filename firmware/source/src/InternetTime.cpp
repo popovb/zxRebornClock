@@ -6,6 +6,8 @@
 #include "EspCommand.hpp"
 #include "TimeStringExtractor.hpp"
 
+#include "debug.h"
+
 gric::InternetTime::InternetTime(const Esp12f& v,
 				 const FlashSettings& x):
      esp(v),
@@ -20,6 +22,7 @@ gric::InternetTime::InternetTime(const Esp12f& v,
 }
 
 void gric::InternetTime::test() {
+     printf("test\r\n");
      esp.on();
      erb.reset();
      dl.ms(1000);
@@ -37,12 +40,16 @@ void gric::InternetTime::test() {
 	  }
      }
 
-     if (erb.ok()) esp_state = On;
+     if (erb.ok()) {
+	  esp_state = On;
+	  printf("test ok\r\n");
+     }
      esp.uart_disable();
      esp.off();
 }
 
 void gric::InternetTime::poll_on_ntp() {
+     printf("poll_on_ntp\r\n");
      erb.reset();
      esp.send(EspCommand::time);
      u8 n = 0;
@@ -56,12 +63,19 @@ void gric::InternetTime::poll_on_ntp() {
 	  }
      }
 
+     printf("%s\r\n", erb.get());
+
+     //
+     //
+     //
+
      esp.uart_disable();
      esp.off();
      stage = Sleep;
 
      TimeStringExtractor tse(erb.get());
      if (tse.extract_to(h, m, s)) {
+	  printf("poll_on_ntp OK\r\n");
 	  new_time = true;
 	  fix_time();
      }
@@ -88,6 +102,7 @@ void gric::InternetTime::poll_on_sleep() {
 }
 
 void gric::InternetTime::start() {
+     printf("start\r\n");
      esp.on();
      esp.uart_enable();
      stage = Mode;
@@ -96,22 +111,35 @@ void gric::InternetTime::start() {
 }
 
 void gric::InternetTime::poll_on_mode() {
+     printf("poll_on_mode\r\n");
      esp.send(EspCommand::station_mode);
      stage = Ap;
 }
 
 void gric::InternetTime::poll_on_ap() {
+     printf("poll_on_ap\r\n");
      char b[192];
      EspCommand::build_ap(b, fs.get_ap(), fs.get_pass());
      esp.send(b);
      stage = ApPause;
-     ap_pause = 5;
+     ap_pause = 10;
+     printf("%s\r\n", b);
 }
 
 void gric::InternetTime::poll_on_ap_pause() {
+     printf("poll_on_ap_pause\r\n");
      --ap_pause;
      if (ap_pause != 0) return;
      esp.send(EspCommand::ntp_cfg);
+     printf("%s\r\n", EspCommand::ntp_cfg);
+     stage = NtpPause;
+     ntp_pause = 35;
+}
+
+void gric::InternetTime::poll_on_ntp_pause() {
+     printf("poll_on_ntp_pause\r\n");
+     --ntp_pause;
+     if (ntp_pause != 0) return;
      stage = Ntp;
 }
 
@@ -132,6 +160,9 @@ void gric::InternetTime::poll() {
      case ApPause:
 	  return poll_on_ap_pause();
 
+     case NtpPause:
+	  return poll_on_ntp_pause();
+
      case Ntp:
 	  return poll_on_ntp();
 
@@ -151,3 +182,16 @@ bool gric::InternetTime::has_new_time() const {
 void gric::InternetTime::reset_new_time() {
      new_time = false;
 }
+
+void gric::InternetTime::fix_time() {
+     i8 nh = h + fs.get_tz();
+     if (nh >= 24) nh = nh - 24;
+     if (nh < 0) nh = nh + 24;
+     h = nh;
+}
+/*
+AT+CWJAP_CUR?
+No AP
+
+OK
+*/
