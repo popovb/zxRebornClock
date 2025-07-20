@@ -3,6 +3,7 @@
 //
 
 #include "EspReceiveBuffer.hpp"
+#include <cstring>
 
 gric::EspReceiveBuffer::EspReceiveBuffer() {
      reset();
@@ -35,9 +36,11 @@ bool gric::EspReceiveBuffer::ok() const {
      if (buffer[ndx - 3] != 'O') return false;
      return true;
 }
-/*
-AT+CWJAP_CUR?
-No AP
 
-OK
-*/
+bool gric::EspReceiveBuffer::no_ap() const {
+     if (strstr(buffer, "No AP") != NULL)
+	  return true;
+     if (strstr(buffer, "busy") != NULL)
+	  return true;
+     return false;
+}

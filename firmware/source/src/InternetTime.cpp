@@ -6,8 +6,6 @@
 #include "EspCommand.hpp"
 #include "TimeStringExtractor.hpp"
 
-#include "debug.h"
-
 gric::InternetTime::InternetTime(const Esp12f& v,
 				 const FlashSettings& x):
      esp(v),
@@ -22,18 +20,13 @@ gric::InternetTime::InternetTime(const Esp12f& v,
 }
 
 void gric::InternetTime::test() {
-     printf("test\r\n");
      esp.on();
-     erb.reset();
      dl.ms(1000);
      esp.uart_enable();
 
      send_and_receive(EspCommand::at, 3);
+     if (erb.ok()) esp_state = On;
 
-     if (erb.ok()) {
-	  esp_state = On;
-	  printf("test ok\r\n");
-     }
      esp.uart_disable();
      esp.off();
 }
@@ -54,9 +47,7 @@ void gric::InternetTime::send_and_receive(const char* s, u8 v) {
 }
 
 void gric::InternetTime::poll_on_ntp() {
-     printf("poll_on_ntp\r\n");
      send_and_receive(EspCommand::time, 4);
-     printf("%s\r\n", erb.get());
 
      esp.uart_disable();
      esp.off();
@@ -64,7 +55,6 @@ void gric::InternetTime::poll_on_ntp() {
 
      TimeStringExtractor tse(erb.get());
      if (tse.extract_to(h, m, s)) {
-	  printf("poll_on_ntp OK\r\n");
 	  new_time = true;
 	  fix_time();
      }
@@ -83,15 +73,12 @@ gric::u8 gric::InternetTime::second() const {
 }
 
 void gric::InternetTime::poll_on_sleep() {
-     erb.reset();
-     new_time = false;
      if (on_start) start();
      ++sc;
      if (sc) start();
 }
 
 void gric::InternetTime::start() {
-     printf("start\r\n");
      esp.on();
      esp.uart_enable();
      stage = Mode;
@@ -100,51 +87,40 @@ void gric::InternetTime::start() {
 }
 
 void gric::InternetTime::poll_on_mode() {
-     printf("poll_on_mode\r\n");
      esp.send(EspCommand::station_mode);
      stage = Ap;
 }
 
 void gric::InternetTime::poll_on_ap() {
-     printf("poll_on_ap\r\n");
      char b[192];
      EspCommand::build_ap(b, fs.get_ap(), fs.get_pass());
      esp.send(b);
      stage = ApPause;
      ap_pause = 10;
-     printf("%s\r\n", b);
 }
 
 void gric::InternetTime::poll_on_ap_pause() {
-     printf("poll_on_ap_pause\r\n");
      --ap_pause;
      if (ap_pause != 0) return;
      stage = ApTest;
 }
 
 void gric::InternetTime::poll_on_ap_test() {
-     printf("poll_on_ap_test\r\n");
      send_and_receive(EspCommand::ap_test, 4);
-     printf("%s\r\n", erb.get());
 
-     if (erb.ok()) {
-	  if (erb.no_ap()) {
-	       esp.uart_disable();
-	       esp.off();
-	       stage = Sleep;
-	       printf("to sleep\r\n");
-	       return;
-	  }
+     if (erb.no_ap()) {
+	  esp.uart_disable();
+	  esp.off();
+	  stage = Sleep;
+	  return;
      }
 
      esp.send(EspCommand::ntp_cfg);
-     printf("%s\r\n", EspCommand::ntp_cfg);
      stage = NtpPause;
      ntp_pause = 35;
 }
 
 void gric::InternetTime::poll_on_ntp_pause() {
-     printf("poll_on_ntp_pause\r\n");
      --ntp_pause;
      if (ntp_pause != 0) return;
      stage = Ntp;

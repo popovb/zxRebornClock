@@ -30,9 +30,6 @@ int main() {
      McuNetConfig mnc;
      cnf.init(mnc);
 
-     PrintConf pc(115200);
-     mcu.init(pc);
-
      FlashSettings fs(mcu);
      fs.read();
 
