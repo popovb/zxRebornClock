@@ -66,6 +66,7 @@ namespace gric {
 	  void poll_on_sleep();
 	  void poll_on_mode();
 	  void poll_on_ap();
+	  void poll_on_ap_pause();
      };
 }
 #endif // _GRIC_INTERNET_TIME_HPP_

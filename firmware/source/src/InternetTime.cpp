@@ -129,6 +129,9 @@ void gric::InternetTime::poll() {
      case Ap:
 	  return poll_on_ap();
 
+     case ApPause:
+	  return poll_on_ap_pause();
+
      default:
 	  break;
      }
