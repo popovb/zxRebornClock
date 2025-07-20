@@ -25,6 +25,7 @@ namespace gric {
 	       Mode,
 	       Ap,
 	       ApPause,
+	       ApTest,
 	       NtpPause,
 	       Ntp,
 	  };
@@ -72,6 +73,7 @@ namespace gric {
 	  void poll_on_mode();
 	  void poll_on_ap();
 	  void poll_on_ap_pause();
+	  void poll_on_ap_test();
 	  void poll_on_ntp_pause();
 	  void poll_on_ntp();
 	  void fix_time();

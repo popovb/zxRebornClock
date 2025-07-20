@@ -22,6 +22,8 @@ namespace gric {
 	       "\r\n";
 	  static constexpr const char* ap =
 	       "AT+CWJAP_CUR";
+	  static constexpr const char* ap_test =
+	       "AT+CWJAP_CUR?\r\n";
 	  static constexpr const char* ntp_cfg =
 	       "AT+CIPSNTPCFG=1,0\r\n";
      public:

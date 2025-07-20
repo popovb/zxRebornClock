@@ -18,6 +18,7 @@ namespace gric {
 
 	  bool completed(u8) const;
 	  bool ok() const;
+	  bool no_ap() const;
 
 	  void reset();
 

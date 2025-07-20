@@ -119,6 +119,24 @@ void gric::InternetTime::poll_on_ap_pause() {
      printf("poll_on_ap_pause\r\n");
      --ap_pause;
      if (ap_pause != 0) return;
+     stage = ApTest;
+}
+
+void gric::InternetTime::poll_on_ap_test() {
+     printf("poll_on_ap_test\r\n");
+     send_and_receive(EspCommand::ap_test, 4);
+     printf("%s\r\n", erb.get());
+
+     if (erb.ok()) {
+	  if (erb.no_ap()) {
+	       esp.uart_disable();
+	       esp.off();
+	       stage = Sleep;
+	       printf("to sleep\r\n");
+	       return;
+	  }
+     }
+
      esp.send(EspCommand::ntp_cfg);
      printf("%s\r\n", EspCommand::ntp_cfg);
      stage = NtpPause;
@@ -148,6 +166,9 @@ void gric::InternetTime::poll() {
 
      case ApPause:
 	  return poll_on_ap_pause();
+
+     case ApTest:
+	  return poll_on_ap_test();
 
      case NtpPause:
 	  return poll_on_ntp_pause();
