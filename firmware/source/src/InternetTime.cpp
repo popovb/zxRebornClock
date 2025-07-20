@@ -147,3 +147,7 @@ void gric::InternetTime::forced() {
 bool gric::InternetTime::has_new_time() const {
      return new_time;
 }
+
+void gric::InternetTime::reset_new_time() {
+     new_time = false;
+}
