@@ -77,6 +77,21 @@ gric::u8 gric::InternetTime::second() const {
      return s;
 }
 
+void gric::InternetTime::poll_on_sleep() {
+     new_time = false;
+     if (on_start) start();
+     ++sc;
+     if (sc) start();
+}
+/*
+void gric::InternetTime::poll_enable() {
+     // new_time = false;
+     // ++sc;
+     // if (! sc) return;
+     // sc.reset();
+     // state = EspOn;
+}
+*/
 void gric::InternetTime::poll() {
      if (esp_state == Off) return;
 
@@ -104,20 +119,9 @@ void gric::InternetTime::poll() {
      }
      */
 }
-/*
-void gric::InternetTime::poll_enable() {
-     // new_time = false;
-     // ++sc;
-     // if (! sc) return;
-     // sc.reset();
-     // state = EspOn;
-}
-*/
+
 void gric::InternetTime::forced() {
-     // if (state == Disable) return;
-     // new_time = false;
-     // sc.reset();
-     // state = EspOn;
+     on_start = true;
 }
 
 bool gric::InternetTime::has_new_time() const {

@@ -62,6 +62,7 @@ namespace gric {
 	  u8 s;
 
      private:
+	  void start();
 	  void poll_on_sleep();
      };
 }
