@@ -97,6 +97,15 @@ void gric::InternetTime::poll_on_mode() {
      esp.send(EspCommand::station_mode);
      stage = Ap;
 }
+
+void gric::InternetTime::poll_on_ap() {
+     char b[192];
+     EspCommand::build_ap(b, fs.get_ap(), fs.get_pass());
+     esp.send(b);
+     stage = ApPause;
+     ap_pause = 5;
+}
+
 /*
 void gric::InternetTime::poll_enable() {
      // new_time = false;
@@ -116,6 +125,9 @@ void gric::InternetTime::poll() {
 
      case Mode:
 	  return poll_on_mode();
+
+     case Ap:
+	  return poll_on_ap();
 
      default:
 	  break;

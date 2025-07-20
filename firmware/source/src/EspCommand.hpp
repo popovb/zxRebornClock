@@ -20,6 +20,9 @@ namespace gric {
 	       "AT+UART_DEF?\r\n";
 	  static constexpr const char* station_mode =
 	       "AT+CWMODE=1\r\n";
+
+     public:
+	  static void build_ap(char*, const char*, const char*);
      };
 }
 #endif // _GRIC_ESP_COMMAND_HPP_

@@ -24,12 +24,8 @@ namespace gric {
 	       Sleep,
 	       Mode,
 	       Ap,
+	       ApPause,
 	  };
-	  // enum state_t {
-	  //      Disable,
-	  //      Enable,
-	  //      EspOn,
-	  // };
 
      public:
 	  InternetTime(const Esp12f&, const FlashSettings&);
@@ -63,10 +59,13 @@ namespace gric {
 	  u8 m;
 	  u8 s;
 
+	  u8 ap_pause;
+
      private:
 	  void start();
 	  void poll_on_sleep();
 	  void poll_on_mode();
+	  void poll_on_ap();
      };
 }
 #endif // _GRIC_INTERNET_TIME_HPP_
