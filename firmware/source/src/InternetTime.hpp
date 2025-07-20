@@ -23,6 +23,7 @@ namespace gric {
 	  enum stage_t {
 	       Sleep,
 	       Mode,
+	       Ap,
 	  };
 	  // enum state_t {
 	  //      Disable,

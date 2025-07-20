@@ -89,6 +89,13 @@ void gric::InternetTime::start() {
      esp.on();
      esp.uart_enable();
      stage = Mode;
+     on_start = false;
+     sc.reset();
+}
+
+void gric::InternetTime::poll_on_mode() {
+     esp.send(EspCommand::station_mode);
+     stage = Ap;
 }
 /*
 void gric::InternetTime::poll_enable() {
