@@ -6,8 +6,10 @@
 #include "EspCommand.hpp"
 #include "TimeStringExtractor.hpp"
 
-gric::InternetTime::InternetTime(const Esp12f& v):
+gric::InternetTime::InternetTime(const Esp12f& v,
+				 const FlashSettings& x):
      esp(v),
+     fs(x),
      state(Disable),
      new_time(false),
      sc(3600)

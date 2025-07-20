@@ -43,7 +43,7 @@ int main() {
      Rtc rtc(mcu, mnc);
 
      Esp12f esp(mcu, mnc);
-     InternetTime it(esp);
+     InternetTime it(esp, fs);
      it.test();
 
      LedBlock lb(mcu, mnc);

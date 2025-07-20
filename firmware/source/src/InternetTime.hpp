@@ -3,6 +3,7 @@
 //
 
 #include "Esp12f.hpp"
+#include "FlashSettings.hpp"
 #include "SecondsCounter.hpp"
 #include "core/DelayerNop.hpp"
 
@@ -21,7 +22,7 @@ namespace gric {
 	  };
 
      public:
-	  InternetTime(const Esp12f&);
+	  InternetTime(const Esp12f&, const FlashSettings&);
 
 	  void forced();
 	  void test();
@@ -34,6 +35,8 @@ namespace gric {
 
      private:
 	  const Esp12f& esp;
+	  const FlashSettings& fs;
+
 	  state_t state;
 	  EspReceiveBuffer erb;
 	  bool new_time;
