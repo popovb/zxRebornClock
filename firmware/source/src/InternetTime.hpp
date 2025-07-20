@@ -25,6 +25,7 @@ namespace gric {
 	       Mode,
 	       Ap,
 	       ApPause,
+	       Ntp,
 	  };
 
      public:

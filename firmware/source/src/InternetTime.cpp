@@ -106,6 +106,13 @@ void gric::InternetTime::poll_on_ap() {
      ap_pause = 5;
 }
 
+void gric::InternetTime::poll_on_ap_pause() {
+     --ap_pause;
+     if (ap_pause != 0) return;
+     esp.send(EspCommand::ntp_cfg);
+     stage = Ntp;
+}
+
 /*
 void gric::InternetTime::poll_enable() {
      // new_time = false;

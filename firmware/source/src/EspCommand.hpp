@@ -12,8 +12,6 @@ namespace gric {
      public:
 	  static constexpr const char* at =
 	       "AT\r\n";
-	  static constexpr const char* ntp_cfg =
-	       "AT+CIPSNTPCFG=1,3\r\n";
 	  static constexpr const char* time =
 	       "AT+CIPSNTPTIME?\r\n";
 	  static constexpr const char* uart_def =
@@ -24,7 +22,8 @@ namespace gric {
 	       "\r\n";
 	  static constexpr const char* ap =
 	       "AT+CWJAP_CUR";
-
+	  static constexpr const char* ntp_cfg =
+	       "AT+CIPSNTPCFG=1,0\r\n";
      public:
 	  static void build_ap(char*, const char*, const char*);
      };
