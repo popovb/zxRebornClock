@@ -75,6 +75,7 @@ namespace gric {
 	  void poll_on_ntp_pause();
 	  void poll_on_ntp();
 	  void fix_time();
+	  void send_and_receive(const char*, u8);
      };
 }
 #endif // _GRIC_INTERNET_TIME_HPP_

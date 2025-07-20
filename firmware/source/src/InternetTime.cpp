@@ -28,17 +28,7 @@ void gric::InternetTime::test() {
      dl.ms(1000);
      esp.uart_enable();
 
-     esp.send(EspCommand::at);
-     u8 n = 0;
-     while (! erb.completed()) {
-	  if (n == tryed) break;
-	  if (esp.has_data()) {
-	       esp.receive_byte(erb);
-	       n = 0;
-	  } else {
-	       ++n;
-	  }
-     }
+     send_and_receive(EspCommand::at, 3);
 
      if (erb.ok()) {
 	  esp_state = On;
@@ -48,12 +38,11 @@ void gric::InternetTime::test() {
      esp.off();
 }
 
-void gric::InternetTime::poll_on_ntp() {
-     printf("poll_on_ntp\r\n");
+void gric::InternetTime::send_and_receive(const char* s, u8 v) {
      erb.reset();
-     esp.send(EspCommand::time);
+     esp.send(s);
      u8 n = 0;
-     while (! erb.completed()) {
+     while (! erb.completed(v)) {
 	  if (n == tryed) break;
 	  if (esp.has_data()) {
 	       esp.receive_byte(erb);
@@ -62,12 +51,12 @@ void gric::InternetTime::poll_on_ntp() {
 	       ++n;
 	  }
      }
+}
 
+void gric::InternetTime::poll_on_ntp() {
+     printf("poll_on_ntp\r\n");
+     send_and_receive(EspCommand::time, 4);
      printf("%s\r\n", erb.get());
-
-     //
-     //
-     //
 
      esp.uart_disable();
      esp.off();
@@ -189,9 +178,3 @@ void gric::InternetTime::fix_time() {
      if (nh < 0) nh = nh + 24;
      h = nh;
 }
-/*
-AT+CWJAP_CUR?
-No AP
-
-OK
-*/

@@ -21,8 +21,8 @@ void gric::EspReceiveBuffer::put(char v) {
      ++ndx;
 }
 
-bool gric::EspReceiveBuffer::completed() const {
-     return (cr == 3);
+bool gric::EspReceiveBuffer::completed(u8 v) const {
+     return (cr == v);
 }
 
 const char* gric::EspReceiveBuffer::get() const {
@@ -35,3 +35,9 @@ bool gric::EspReceiveBuffer::ok() const {
      if (buffer[ndx - 3] != 'O') return false;
      return true;
 }
+/*
+AT+CWJAP_CUR?
+No AP
+
+OK
+*/

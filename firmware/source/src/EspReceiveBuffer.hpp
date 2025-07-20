@@ -16,7 +16,7 @@ namespace gric {
 
 	  void put(char);
 
-	  bool completed() const;
+	  bool completed(u8) const;
 	  bool ok() const;
 
 	  void reset();
