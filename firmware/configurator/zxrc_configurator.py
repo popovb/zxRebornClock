@@ -1,32 +1,43 @@
 #!/bin/env python3
+#
+# Copyright (c) 2025 Boris Popov <popov@whitekefir.ru>
+#
 
-import serial
+import sys
+from SerialPortFinder import find_serial_ports
+from EasySerial import EasyPort
 
-ser = serial.Serial()
+ports = find_serial_ports()
+if len(ports) == 0:
+    sys.exit('Serial ports not found!')
 
-ser.baudrate = 115200
-ser.port = '/dev/ttyUSB0'
-ser.bytesize = 8
-ser.parity = 'N'
-ser.stopbits = 1
-ser.timeout = 1
-ser.xonxoff = 0
-ser.rtscts = 0
+j = 0
+for i in ports:
+    print('{0} - {1}'.format(i, j))
+    j = j + 1
 
-ser.open()
+sel = input('Select port number: ')
+sel = int(sel)
+if (sel < 0) or (sel >= len(ports)):
+    sys.exit('Error of selecting port!')
+
+print('{0}: {1}'.format('Selected', ports[sel]))
+ep = EasyPort(ports[sel])
+ep.open()
 
 tz = input("TimeZone: ")
-ser.write(tz.encode())
-ser.write(b'\r')
+ep.write(tz.encode())
+ep.write(b'\r')
 
 ap = input("AccessPoint: ")
-ser.write(ap.encode())
-ser.write(b'\r')
+ep.write(ap.encode())
+ep.write(b'\r')
 
 pas = input("Password: ")
-ser.write(pas.encode())
-ser.write(b'\r')
+ep.write(pas.encode())
+ep.write(b'\r')
 
-s = ser.read(256)
+s = ep.read()
 print(s)
-ser.close()
+
+ep.close()
