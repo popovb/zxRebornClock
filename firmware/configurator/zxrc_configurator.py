@@ -38,6 +38,11 @@ ep.write(pas.encode())
 ep.write(b'\r')
 
 s = ep.read()
-print(s)
+print('')
+if b'OK' in s:
+    print('Success!')
+else:
+    print('Error!')
+print('')
 
 ep.close()
