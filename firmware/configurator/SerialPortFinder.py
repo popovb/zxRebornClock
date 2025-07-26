@@ -57,9 +57,15 @@ def find_serial_win():
         for i in itertools.count():
             try:
                 val = winreg.EnumValue(key, i)
-                # Only return USBSER devices
+                if 'VCP' in val[0]:
+                    ports.append(str(val[1]))
+
+                if 'Serial' in val[0]:
+                    ports.append(str(val[1]))
+
                 if 'USBSER' in val[0]:
                     ports.append(str(val[1]))
+
             except EnvironmentError:
                 break
     return ports
