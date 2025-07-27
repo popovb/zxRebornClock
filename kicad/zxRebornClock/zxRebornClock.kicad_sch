@@ -7609,16 +7609,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 217.17) (xy 88.9 217.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38d1b1fe-d9f5-4b51-a61e-6f0fe158757a")
-	)
-	(wire
-		(pts
 			(xy 124.46 73.66) (xy 132.08 73.66)
 		)
 		(stroke
@@ -7789,16 +7779,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 220.98) (xy 88.9 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58b487ec-a4a0-4cbf-935b-91ede20a8fb1")
-	)
-	(wire
-		(pts
 			(xy 172.72 77.47) (xy 173.99 77.47)
 		)
 		(stroke
@@ -7956,6 +7936,16 @@
 			(type default)
 		)
 		(uuid "705f0265-2c1f-461f-b4b8-55c3eebca0ad")
+	)
+	(wire
+		(pts
+			(xy 88.9 222.25) (xy 88.9 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7894af32-37ca-4a89-b039-b5bf170b0c83")
 	)
 	(wire
 		(pts
@@ -8139,6 +8129,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 214.63) (xy 88.9 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9580e9b4-9963-45a9-8582-b93aa9342e50")
+	)
+	(wire
+		(pts
 			(xy 93.98 92.71) (xy 101.6 92.71)
 		)
 		(stroke
@@ -8166,16 +8166,6 @@
 			(type default)
 		)
 		(uuid "adc0bf77-ed5f-4f9f-9dc5-7ac7720f6c82")
-	)
-	(wire
-		(pts
-			(xy 88.9 220.98) (xy 88.9 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b31dc578-43c9-4500-8043-324cc6b17b67")
 	)
 	(wire
 		(pts
@@ -8246,16 +8236,6 @@
 			(type default)
 		)
 		(uuid "c93b5d6f-dffe-40b2-b63e-456078809b2e")
-	)
-	(wire
-		(pts
-			(xy 72.39 217.17) (xy 72.39 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbca1e5d-286f-4c48-b5fb-94c8822c4dd8")
 	)
 	(wire
 		(pts
@@ -8399,6 +8379,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 214.63) (xy 88.9 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec11aa05-bf36-4381-ad32-c49da99346f1")
+	)
+	(wire
+		(pts
 			(xy 101.6 109.22) (xy 101.6 111.76)
 		)
 		(stroke
@@ -8426,6 +8416,16 @@
 			(type default)
 		)
 		(uuid "ee9621e8-f7d7-4396-b150-c00d067ee6c1")
+	)
+	(wire
+		(pts
+			(xy 81.28 222.25) (xy 88.9 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2184789-7f3a-4391-ba99-63581e66a455")
 	)
 	(wire
 		(pts
@@ -15276,7 +15276,7 @@
 	)
 	(symbol
 		(lib_id "Device:Crystal")
-		(at 76.2 217.17 0)
+		(at 81.28 218.44 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15284,7 +15284,7 @@
 		(dnp no)
 		(uuid "744ff5e2-9750-4e74-9619-7e1b43ebd06c")
 		(property "Reference" "Y1"
-			(at 76.2 211.836 0)
+			(at 86.614 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15292,7 +15292,7 @@
 			)
 		)
 		(property "Value" "32768"
-			(at 76.2 213.614 0)
+			(at 84.836 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15300,7 +15300,7 @@
 			)
 		)
 		(property "Footprint" "Crystal:Crystal_C38-LF_D3.0mm_L8.0mm_Horizontal"
-			(at 76.2 217.17 0)
+			(at 81.28 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15309,7 +15309,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 76.2 217.17 0)
+			(at 81.28 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15318,7 +15318,7 @@
 			)
 		)
 		(property "Description" "Two pin crystal"
-			(at 76.2 217.17 0)
+			(at 81.28 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15327,7 +15327,7 @@
 			)
 		)
 		(property "Note" "часовой кварц"
-			(at 76.2 217.17 0)
+			(at 81.28 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19943,7 +19943,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
 			(at 101.6 227.33 0)
 			(effects
 				(font
