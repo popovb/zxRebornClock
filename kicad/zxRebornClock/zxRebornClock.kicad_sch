@@ -16420,7 +16420,7 @@
 				)
 			)
 		)
-		(property "Value" "MC34063AD"
+		(property "Value" "MC34063"
 			(at 34.036 247.396 0)
 			(effects
 				(font
@@ -16448,6 +16448,15 @@
 			)
 		)
 		(property "Description" "1.5A, step-up/down/inverting switching regulator, 3-40V Vin, 100kHz, SO-8"
+			(at 34.29 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "SOIC-8"
 			(at 34.29 245.11 0)
 			(effects
 				(font
@@ -22790,7 +22799,16 @@
 				(hide yes)
 			)
 		)
-		(property "Note" "DIP-8"
+		(property "Note" "SO-8"
+			(at 88.9 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field6" ""
 			(at 88.9 190.5 0)
 			(effects
 				(font
