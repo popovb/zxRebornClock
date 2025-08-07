@@ -14514,6 +14514,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "SOD-80"
+			(at 50.8 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c20ebf87-d8bd-4d42-9f4c-98f223b02160")
 		)
@@ -20250,6 +20259,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "SMA"
+			(at 68.58 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4d82401f-5096-4ef1-92f2-b69960c1c97c")
 		)
@@ -20790,6 +20808,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 62.23 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "SMA"
+			(at 62.23 208.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21432,7 +21459,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220uH, 12x12"
+		(property "Value" "220uH"
 			(at 66.04 237.49 0)
 			(effects
 				(font
@@ -21469,6 +21496,15 @@
 			)
 		)
 		(property "Link" "https://aliexpress.ru/item/1005001699203887.html?spm=a2g2w.orderdetail.0.0.1cbb4aa6UPdjMI&sku_id=12000017203437476"
+			(at 64.77 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "smd 12x12"
 			(at 64.77 236.22 0)
 			(effects
 				(font

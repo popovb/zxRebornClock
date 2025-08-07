@@ -11199,6 +11199,34 @@
 				(justify mirror)
 			)
 		)
+		(property "Node" "SMA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "fc066b91-cacb-49ea-9e90-6d0cfe244028")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "SMA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "df1eac43-d919-44e1-9327-d3709cfe409d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "D*SMA*")
 		(path "/bfa5451f-d4f3-446e-a485-4dd318f8c179")
 		(sheetname "/")
@@ -11759,6 +11787,34 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "a2fedb3e-2d3b-4299-9637-a82edeeec5d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Node" "SOD-80"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "39045b7c-3eda-44fc-847c-ccd633db62ed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "SOD-80"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a5151347-9c0f-4a2d-b093-57923228fb36")
 			(effects
 				(font
 					(size 1 1)
@@ -24664,7 +24720,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "220uH, 12x12"
+		(property "Value" "220uH"
 			(at 0 -7.6 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -24711,6 +24767,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "05a451f5-386c-4ffc-b5c2-0e643225d088")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "smd 12x12"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f98dc408-6cfc-4a5f-aeaa-ece54976a4f9")
 			(effects
 				(font
 					(size 1 1)
@@ -35946,6 +36016,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "9c712afb-6a38-4c13-8a16-b4dd39020c83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "SMA"
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b22f190c-c7c1-41fa-8245-b99bf54fa6a5")
 			(effects
 				(font
 					(size 1 1)
