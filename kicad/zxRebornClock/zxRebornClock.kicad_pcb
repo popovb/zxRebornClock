@@ -13625,7 +13625,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.01uF, 0805"
+		(property "Value" "0.01uF"
 			(at 0 -1.68 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -13670,6 +13670,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "a40b98bc-6cf6-4aa1-9640-de90eb4e6827")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0c6774ad-ae7a-4020-9b08-13036a4b39a9")
 			(effects
 				(font
 					(size 1 1)
@@ -15597,7 +15611,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "220uF 16V LESR Polar 6.3x2.5"
+		(property "Value" "220uF"
 			(at 1.25 -4.4 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -15642,6 +15656,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "255e01ab-fb81-444e-ba7a-b5b6023b4d42")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "16V LESR Polar 6.3x2.5"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "51dd618e-51f2-4c0f-87ee-2b96c6736138")
 			(effects
 				(font
 					(size 1 1)
@@ -25895,7 +25923,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "2.2uF 250V Polar 6.3x2.5"
+		(property "Value" "2.2uF"
 			(at 1.25 -4.4 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -25940,6 +25968,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "fc683289-c25b-4835-bc62-fe6eba0e8462")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "250V Polar 6.3x2.5"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b1317003-02a9-4390-9689-f573d4b76ff3")
 			(effects
 				(font
 					(size 1 1)
@@ -28748,7 +28790,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "2200pF, 0805"
+		(property "Value" "2200pF"
 			(at 0 -1.68 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -28793,6 +28835,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "212e910b-1bc7-41a1-b43e-580d660a8643")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a7ca53d8-e4ce-4ce5-a170-1e88a81ad7b4")
 			(effects
 				(font
 					(size 1 1)

@@ -12519,7 +12519,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220uF 16V LESR Polar 6.3x2.5"
+		(property "Value" "220uF"
 			(at 59.69 236.601 0)
 			(effects
 				(font
@@ -12556,6 +12556,15 @@
 			)
 		)
 		(property "Link" "https://www.chipdip.ru/product0/9000565757"
+			(at 55.88 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "16V LESR Polar 6.3x2.5"
 			(at 55.88 236.22 0)
 			(effects
 				(font
@@ -13175,7 +13184,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uF 250V Polar 6.3x2.5"
+		(property "Value" "2.2uF"
 			(at 81.28 246.761 0)
 			(effects
 				(font
@@ -13212,6 +13221,15 @@
 			)
 		)
 		(property "Link" "https://www.chipdip.ru/product0/9000565820"
+			(at 77.47 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "250V Polar 6.3x2.5"
 			(at 77.47 246.38 0)
 			(effects
 				(font
@@ -19040,7 +19058,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.01uF, 0805"
+		(property "Value" "0.01uF"
 			(at 69.85 265.43 0)
 			(effects
 				(font
@@ -19077,6 +19095,15 @@
 			)
 		)
 		(property "Link" "https://www.chipdip.ru/product/grm2195c1h103j"
+			(at 66.04 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
 			(at 66.04 264.16 0)
 			(effects
 				(font
@@ -19518,7 +19545,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2200pF, 0805"
+		(property "Value" "2200pF"
 			(at 25.4 255.27 0)
 			(effects
 				(font
@@ -19555,6 +19582,15 @@
 			)
 		)
 		(property "Link" "https://www.chipdip.ru/product/grm2165c1h222j"
+			(at 21.59 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
 			(at 21.59 254 0)
 			(effects
 				(font
