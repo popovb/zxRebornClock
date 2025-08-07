@@ -15055,7 +15055,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470K, 1%"
+		(property "Value" "470K 1%"
 			(at 74.93 257.81 0)
 			(effects
 				(font
@@ -15092,6 +15092,15 @@
 			)
 		)
 		(property "Link" "https://aliexpress.ru/item/32847096736.html?spm=a2g2w.orderdetail.0.0.961e4aa6m8WYZn&sku_id=12000030032474500"
+			(at 72.39 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "THT"
 			(at 72.39 256.54 0)
 			(effects
 				(font
@@ -18515,7 +18524,7 @@
 				)
 			)
 		)
-		(property "Value" "0.33, 0805"
+		(property "Value" "0.33"
 			(at 34.29 228.6 90)
 			(effects
 				(font
@@ -18551,6 +18560,15 @@
 			)
 		)
 		(property "Link" "https://aliexpress.ru/item/1005001794062302.html?spm=a2g2w.orderdetail.0.0.3b194aa6BKKUxl&sku_id=12000017594821115"
+			(at 34.29 232.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "0805"
 			(at 34.29 232.41 90)
 			(effects
 				(font
@@ -20879,7 +20897,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K, 0805"
+		(property "Value" "1K"
 			(at 49.53 260.35 0)
 			(effects
 				(font
@@ -20913,6 +20931,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Note" "0805"
+			(at 46.99 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -23478,7 +23505,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3K, 1%"
+		(property "Value" "3K 1%"
 			(at 74.93 265.43 0)
 			(effects
 				(font
@@ -23515,6 +23542,15 @@
 			)
 		)
 		(property "Link" "https://aliexpress.ru/item/32847096736.html?spm=a2g2w.orderdetail.0.0.961e4aa6zXOBsP&sku_id=65227930969"
+			(at 72.39 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "THT"
 			(at 72.39 264.16 0)
 			(effects
 				(font
