@@ -18821,6 +18821,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "SOT-23"
+			(at 54.61 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5e1ac127-ac88-4b5e-9364-6bd84b902675")
 		)
@@ -20310,7 +20319,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRF740, TO-220"
+		(property "Value" "IRF740"
 			(at 68.58 251.46 0)
 			(effects
 				(font
@@ -20350,6 +20359,15 @@
 			)
 		)
 		(property "Link" "https://www.platan.ru/cgi-bin/qwery.pl/id=318826868"
+			(at 62.23 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "TO-220"
 			(at 62.23 250.19 0)
 			(effects
 				(font

@@ -21548,6 +21548,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Note" "SOT-23"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "991da94d-364b-4057-af35-9be9cdf850fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/9a49e435-6b80-4fc9-8a3d-4ee4b4ec5483")
 		(sheetname "/")
@@ -31780,7 +31794,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "IRF740, TO-220"
+		(property "Value" "IRF740"
 			(at 2.54 -2.2 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -31825,6 +31839,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "22f825f1-d7f9-477e-b578-c45070a2c9f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Note" "TO-220"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7287ed71-bf1d-409f-85bc-7bb5cca4c8f7")
 			(effects
 				(font
 					(size 1 1)
