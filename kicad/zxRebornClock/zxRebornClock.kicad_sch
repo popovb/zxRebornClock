@@ -21486,7 +21486,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220uH"
+		(property "Value" "100uH"
 			(at 66.04 237.49 0)
 			(effects
 				(font
@@ -21496,7 +21496,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_12x12mm_H8mm"
+		(property "Footprint" "Library:L_D8mm_P3mm"
 			(at 64.77 236.22 0)
 			(effects
 				(font
