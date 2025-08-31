@@ -21522,7 +21522,7 @@
 				)
 			)
 		)
-		(property "Link" "https://aliexpress.ru/item/1005001699203887.html?spm=a2g2w.orderdetail.0.0.1cbb4aa6UPdjMI&sku_id=12000017203437476"
+		(property "Link" "https://www.chipdip.ru/product/cdpk0608-101k-100mkgn-katushka-induktivnosti-sce-9001493361"
 			(at 64.77 236.22 0)
 			(effects
 				(font
@@ -21531,7 +21531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Note" "smd 12x12"
+		(property "Note" "CDPK0608-101K, YDPK0608-101K, https://www.chipdip.ru/product/cdpk0608-101k-100mkgn-katushka-induktivnosti-sce-9001493361"
 			(at 64.77 236.22 0)
 			(effects
 				(font
