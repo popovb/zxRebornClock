@@ -1,0 +1,126 @@
+(footprint "L_D8mm_P3mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "CDPK0608, YDPK0608")
+	(property "Reference" "REF**"
+		(at 1.5 -4.85 0)
+		(layer "F.SilkS")
+		(uuid "c747303b-9786-4bb7-a567-7d644df6c8f6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_D8mm_P3mm"
+		(at 1.5 4.85 0)
+		(layer "F.Fab")
+		(uuid "eab5ccc1-b42a-46e0-91eb-edd281967be2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "35693b42-c226-4dc9-827c-cd66e65ed0ed")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3b0b9def-9374-4235-9725-dfb1367ba90a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center 1.5 0)
+		(end 1.5 3.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "abcd30aa-6587-4893-9b07-3b04d35b6cb9")
+	)
+	(fp_circle
+		(center 1.5 0)
+		(end 1.5 4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "15c00ca4-d0f1-48f5-8975-0a95c74ba21f")
+	)
+	(fp_circle
+		(center 1.5 0)
+		(end 1.5 3.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d021ab1a-a505-4d65-89b0-5843d8ce52a2")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.5 0 0)
+		(layer "F.Fab")
+		(uuid "2e61e21f-d2f3-471e-a1c5-69735eafc05e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.4 2.4)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "aef4a0d4-e7a6-403d-b3b2-ee1b59c10df2")
+	)
+	(pad "2" thru_hole circle
+		(at 3 0)
+		(size 2.4 2.4)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ac3d23ca-3800-46b2-8d1c-70ad4768af10")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/L_Radial_D7.2mm_P3.00mm_Murata_1700.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
