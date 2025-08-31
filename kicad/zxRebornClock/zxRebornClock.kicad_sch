@@ -6,8 +6,8 @@
 	(paper "A4" portrait)
 	(title_block
 		(title "zxRebornClock (часы на газоразрядных лампах ИН-14)")
-		(date "2025-07-27")
-		(rev "версия 1")
+		(date "2025-08-31")
+		(rev "версия 1.1")
 		(company "https://t.me/emacser2015")
 	)
 	(lib_symbols
@@ -14162,7 +14162,7 @@
 				)
 			)
 		)
-		(property "Value" "50K 3362P"
+		(property "Value" "50K"
 			(at 162.56 77.47 90)
 			(effects
 				(font
