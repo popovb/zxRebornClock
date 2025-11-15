@@ -56,4 +56,4 @@
 
 ## Если не заработало?
 
-Тогла идём сюда и спрашиваем https://t.me/zxRebornClock
+Тогда идём сюда и спрашиваем https://t.me/zxRebornClock
